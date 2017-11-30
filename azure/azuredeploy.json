@@ -294,7 +294,7 @@
           "autoUpgradeMinorVersion": true,
           "settings": {
             "fileUris": [
-              "https://raw.githubusercontent.com/ryanRfox/bitshares-core/ubuntu-vm/azure/add_witness_node.sh"
+              "https://raw.githubusercontent.com/ryanRfox/bitshares-core/azure-ubuntu-vm/azure/add_witness_node.sh"
             ],
             "commandToExecute": "[concat('sh add_witness_node.sh ', parameters('adminUsername'), ' ', reference(resourceId('Microsoft.Network/publicIPAddresses', variables('publicIPAddressName'))).dnsSettings.fqdn, ' ', parameters('accountNamesCommaDelimited'), ' ', parameters('ubuntuSKU'), ' ', parameters('gitBranch'))]"
           }
