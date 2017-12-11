@@ -15,8 +15,9 @@ if [ $UBUNTU_VERSION = "17.10" ]; then
 else
     LOCAL_IP=`ifconfig|xargs|awk '{print $7}'|sed -e 's/[a-z]*:/''/'`
 fi
-RPC_PORT=8090
 P2P_PORT=1776
+RPC_PORT=8090
+TLS_PORT=443
 GITHUB_REPOSITORY=https://github.com/bitshares/bitshares-core.git
 PROJECT=bitshares-core
 BRANCH=$5
@@ -33,6 +34,7 @@ echo "nproc: $NPROC"
 echo "eth0: $LOCAL_IP"
 echo "P2P_PORT: $P2P_PORT"
 echo "RPC_PORT: $RPC_PORT"
+echo "TLS_PORT: $TLS_PORT"
 echo "GITHUB_REPOSITORY: $GITHUB_REPOSITORY"
 echo "PROJECT: $PROJECT"
 echo "BRANCH: $BRANCH"
@@ -153,6 +155,69 @@ if [ "$BRANCH" = "master" ]; then
 fi
 
 service $PROJECT start
+
+##################################################################################################
+# OPTIONAL: Expose a secure web socket (WSS) endpoint to the public Internet. Install nginx web  #
+# server to proxy RPC data over TLS connection to the backend block producing node RPC endpoint. #
+##################################################################################################
+apt-get -y install software-properties-common
+add-apt-repository -y ppa:certbot/certbot
+apt-get update
+apt-get -y install nginx python-certbot-nginx 
+mkdir -p /var/www/$FQDN
+cat >/var/www/$FQDN/index.html <<EOL
+<html>
+  <head>
+    <title>$PROJECT API</title>
+  </head>
+  <body>
+    <h1>$PROJECT API</h1>
+  </body>
+</html>
+EOL
+
+cat >/etc/nginx/sites-available/$FQDN <<EOL
+upstream websockets {
+    server $LOCAL_IP:$RPC_PORT;
+}
+server {
+    listen 443 ssl;
+    server_name $FQDN;
+    root /var/www/$FQDN/;
+    # Force HTTPS (this may break some websocket clients that try to connect via HTTP)
+    if (\$scheme != "https") {
+            return 301 https://\$host\$request_uri;
+    }
+    keepalive_timeout 65;
+    keepalive_requests 100000;
+    sendfile on;
+    tcp_nopush on;
+    tcp_nodelay on;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_prefer_server_ciphers on;
+    ssl_ciphers 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA';
+    ssl_session_timeout 1d;
+    ssl_session_cache shared:SSL:50m;
+    ssl_stapling on;
+    ssl_stapling_verify on;
+    add_header Strict-Transport-Security max-age=15768000;
+    location / {
+        access_log off;
+        proxy_pass http://websockets;
+        proxy_set_header X-Real-IP \$remote_addr;
+        proxy_set_header Host \$host;
+        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
+        proxy_next_upstream     error timeout invalid_header http_500;
+        proxy_connect_timeout   2;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade \$http_upgrade;
+        proxy_set_header Connection "upgrade";
+    }
+}
+EOL
+
+ln -s /etc/nginx/sites-available/$FQDN /etc/nginx/sites-enabled/$FQDN
+certbot --nginx -d $FQDN -n 
 
 ##################################################################################################
 # This VM is now configured as a block producing node. However, it will not sign blocks until    #
