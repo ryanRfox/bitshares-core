@@ -135,7 +135,6 @@ sed -i 's/# witness-id =/witness-id = '$WITNESS_ID'/g' /home/$USER_NAME/$PROJECT
 sed -i 's/private-key =/private-key = '$WITNESS_KEY_PAIR' \nprivate-key =/g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
 sed -i 's/# rpc-endpoint =/rpc-endpoint = '$LOCAL_IP':'$RPC_PORT'/g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
 sed -i 's/# plugins =/plugins = witness/g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
-sed -i 's/level=debug/level=info/g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
 
 ##################################################################################################
 # OPTIONAL: Download a recent blockchain snapshot from a trusted source. The blockchain is large #
