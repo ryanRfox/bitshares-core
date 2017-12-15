@@ -158,12 +158,14 @@ service $PROJECT start
 
 ##################################################################################################
 # OPTIONAL: Expose a secure web socket (WSS) endpoint to the public Internet. Install nginx web  #
-# server to proxy RPC data over TLS connection to the backend block producing node RPC endpoint. #
+# server to proxy RPC data over a TLS connection to the upstream web socket for the block        #
+# producing node. Request a TLS certificate from Let's Encrypt, then set a cronjob for renewals. # 
 ##################################################################################################
 apt-get -y install software-properties-common
 add-apt-repository -y ppa:certbot/certbot
 apt-get update
 apt-get -y install nginx python-certbot-nginx 
+rm /etc/nginx/sites-enabled/default
 mkdir -p /var/www/$FQDN
 cat >/var/www/$FQDN/index.html <<EOL
 <html>
@@ -217,7 +219,10 @@ server {
 EOL
 
 ln -s /etc/nginx/sites-available/$FQDN /etc/nginx/sites-enabled/$FQDN
-certbot --nginx -d $FQDN -n 
+# Request a certificate from Let's Encrypt for the fully qualified doname name, allowing certbot to configure nginx automatically
+certbot --nginx -d $FQDN -n --agree-tos --email none@here.com
+# Append a cronjob to the existing set to renew the certificate every 60 days, then cleanup the temp file
+crontab -l > cronjobs; echo '02 02 02 */2 * certbot renew >/dev/null 2>&1' >> cronjobs; crontab cronjobs; rm cronjobs
 
 ##################################################################################################
 # This VM is now configured as a block producing node. However, it will not sign blocks until    #
