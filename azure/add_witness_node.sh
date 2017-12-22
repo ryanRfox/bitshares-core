@@ -157,6 +157,38 @@ fi
 service $PROJECT start
 
 ##################################################################################################
+# OPTIONAL: Install Elasticsearch to store market and account history to a local database. This  #
+# reduces memory usage as operations are committed to disk and blockchain state remains in RAM.  #
+# However, disk storage goes wy up. Java is a prerequisite, so it will also be installed.        #
+##################################################################################################
+service $PROJECT stop
+add-apt-repository -y ppa:webupd8team/java
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+# TODO: Resolve documented issue with Elasticsearch 6.x version; Use 5.x for now. 
+# echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-6.x.list
+echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list
+echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | sudo debconf-set-selections
+apt-get update
+apt -y install default-jre default-jdk oracle-java8-installer elasticsearch
+service elasticsearch start # It takes a bit of time to initialize Elasticsearch, so may need to sleep after starting
+
+pip3 install elasticsearch elasticsearch-dsl flask-cors
+/usr/local/src/
+git clone https://github.com/oxarbitrage/bitshares-es-wrapper.git
+cd bitshares-es-wrapper
+export FLASK_APP=wrapper.py
+flask run
+
+# Update configuration file
+sed -i 's%# elasticsearch-node-url =%elasticsearch-node-url = http://localhost:9200/%g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
+sed -i 's/# elasticsearch-bulk-replay =/elasticsearch-bulk-replay = 10000/g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
+sed -i 's/# elasticsearch-bulk-sync =/elasticsearch-bulk-sync = 100/g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
+sed -i 's/# elasticsearch-logs =/elasticsearch-logs = true/g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
+sed -i 's/# elasticsearch-visitor =/elasticsearch-visitor = true/g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
+sed -i 's/plugins = witness/plugins = witness market_history account_history elasticsearch/g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
+service $PROJECT start 
+
+##################################################################################################
 # OPTIONAL: Expose a secure web socket (WSS) endpoint to the public Internet. Install nginx web  #
 # server to proxy RPC data over a TLS connection to the upstream web socket for the block        #
 # producing node. Request a TLS certificate from Let's Encrypt, then set a cronjob for renewals. # 
