@@ -67,22 +67,6 @@ time git clone $GITHUB_REPOSITORY
 cd $PROJECT
 time git checkout $BRANCH
 time git submodule update --init --recursive
-
-if [ "$BRANCH" = "master" ]; then
-    ##################################################################################################
-    # APPLY NEW FC BUILD HERE (already included in develop branch)                                   #
-    ##################################################################################################
-    sed -i 's%bitshares/bitshares-fc%aautushka/bitshares-fc%g' /usr/local/src/$PROJECT/.gitmodules
-    time git submodule update --remote libraries/fc
-
-    ##################################################################################################
-    # APPLY UPDATE FOR GCC 7.2 BUILD ERRORS HERE (already included in the develop branch)            #
-    ##################################################################################################
-    sed -i 's%template<typename T> class get_typename{};%template<typename... T> struct get_typename;%g' libraries/fc/include/fc/reflect/typename.hpp
-    sed -i 's%template<typename... T> struct get_typename<T...>  { static const char* name()   { return typeid(static_variant<T...>).name();   } };%template<typename... T> struct get_typename  { static const char* name()   { return typeid(static_variant<T...>).name();   } };%g' libraries/fc/include/fc/static_variant.hpp
-    ##################################################################################################
-fi
-
 time cmake -DCMAKE_BUILD_TYPE=$BUILD_TYPE .
 time make -j$NPROC
 
@@ -90,7 +74,7 @@ cp /usr/local/src/$PROJECT/programs/witness_node/witness_node /usr/bin/$WITNESS_
 cp /usr/local/src/$PROJECT/programs/cli_wallet/cli_wallet /usr/bin/$CLI_WALLET
 
 ##################################################################################################
-# Configure bitshares-core service. Enable it to start on boot.                                  #
+# Create bitshares-core service. Enable it to start on boot.                                     #
 ##################################################################################################
 cat >/lib/systemd/system/$PROJECT.service <<EOL
 [Unit]
@@ -166,12 +150,15 @@ add-apt-repository -y ppa:webupd8team/java
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 # TODO: Resolve documented issue with Elasticsearch 6.x version; Use 5.x for now. 
 # echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-6.x.list
-echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list
+echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list
 echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | sudo debconf-set-selections
 apt-get update
 apt -y install default-jre default-jdk oracle-java8-installer elasticsearch
+systemctl daemon-reload
+systemctl enable elasticsearch
 service elasticsearch start # It takes a bit of time to initialize Elasticsearch, so may need to sleep after starting
 
+apt -y install python3-pip
 pip3 install elasticsearch elasticsearch-dsl flask-cors
 /usr/local/src/
 git clone https://github.com/oxarbitrage/bitshares-es-wrapper.git
@@ -179,13 +166,35 @@ cd bitshares-es-wrapper
 export FLASK_APP=wrapper.py
 flask run
 
+pip3 install websocket-client requests psycopg2
+
+##################################################################################################
+# Reconfigure bitshares-core service to Want Elasticsearch. Ensure Elasticsearch starts first.   #
+##################################################################################################
+cat >/lib/systemd/system/$PROJECT.service <<EOL
+[Unit]
+Description=Job that runs $PROJECT daemon
+After=elasticsearch.service
+[Service]
+Type=simple
+Environment=statedir=/home/$USER_NAME/$PROJECT/witness_node
+ExecStartPre=/bin/mkdir -p /home/$USER_NAME/$PROJECT/witness_node
+ExecStart=/usr/bin/$WITNESS_NODE --data-dir /home/$USER_NAME/$PROJECT/witness_node
+
+TimeoutSec=300
+[Install]
+WantedBy=multi-user.target
+Wants=elasticsearch.service
+EOL
+systemctl daemon-reload
+
 # Update configuration file
 sed -i 's%# elasticsearch-node-url =%elasticsearch-node-url = http://localhost:9200/%g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
 sed -i 's/# elasticsearch-bulk-replay =/elasticsearch-bulk-replay = 10000/g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
 sed -i 's/# elasticsearch-bulk-sync =/elasticsearch-bulk-sync = 100/g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
 sed -i 's/# elasticsearch-logs =/elasticsearch-logs = true/g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
 sed -i 's/# elasticsearch-visitor =/elasticsearch-visitor = true/g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
-sed -i 's/plugins = witness/plugins = witness market_history account_history elasticsearch/g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
+sed -i 's/plugins = witness/plugins = witness market_history elasticsearch/g' /home/$USER_NAME/$PROJECT/witness_node/config.ini
 service $PROJECT start 
 
 ##################################################################################################
