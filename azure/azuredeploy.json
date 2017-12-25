@@ -28,7 +28,7 @@
       },
       "vmSize": {
         "type": "string",
-        "defaultValue": "Standard_DS2_V3",
+        "defaultValue": "Standard_D2s_V3",
         "allowedValues": [
           "Standard_B2s",
           "Standard_B2ms",
@@ -89,6 +89,15 @@
       "apiVersion": "2015-06-15"
     },
     "resources": [
+      {
+        "type": "Microsoft.Storage/storageAccounts",
+        "name": "[variables('storageAccountName')]",
+        "apiVersion": "2017-03-30",
+        "location": "[resourceGroup().location]",
+        "properties": {
+          "accountType": "[variables('storageAccountType')]"
+        }
+      },
       {
         "type": "Microsoft.Network/networkSecurityGroups",
         "name": "[variables('nsgName')]",
@@ -255,12 +264,6 @@
                 "id": "[resourceId('Microsoft.Network/networkInterfaces',variables('nicName'))]"
               }
             ]
-          },
-          "diagnosticsProfile": {
-            "bootDiagnostics": {
-              "enabled": "true",
-              "storageUri": "[concat('http://',variables('storageAccountName'),'.blob.core.windows.net')]"
-            }
           }
         }
       },  
