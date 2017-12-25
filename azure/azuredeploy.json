@@ -77,6 +77,7 @@
       "subnetPrefix": "10.0.0.0/24",
       "storageAccountType": "Standard_LRS",
       "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'bitshares')]",
+      "diskSizeGB": "128",
       "nsgName": "BitShares-nsg",
       "nsgID": "[resourceId('Microsoft.Network/networkSecurityGroups',variables('nsgName'))]",
       "publicIPAddressName": "BitSharesPublicIP",
@@ -101,6 +102,21 @@
         "properties": {}
       },
       {
+        "type": "Microsoft.Compute/disks",
+        "name": "[concat(variables('vmName'),'-datadisk1')]",
+        "apiVersion": "2017-03-30",
+        "location": "[resourceGroup().location]",
+        "sku": {
+          "name": "[variables('storageAccountType')]"
+        },
+        "properties": {
+            "creationData": {
+                "createOption": "Empty"
+            },
+            "diskSizeGB": "[variables('diskSizeGB')]"
+        }
+    },
+    {
         "type": "Microsoft.Network/networkSecurityGroups",
         "name": "[variables('nsgName')]",
         "apiVersion": "[variables('apiVersion')]",
@@ -224,7 +240,8 @@
         "location": "[resourceGroup().location]",
         "dependsOn": [
           "[concat('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]",
-          "[concat('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
+          "[concat('Microsoft.Network/networkInterfaces/', variables('nicName'))]",
+          "[resourceId('Microsoft.Compute/disks/', concat(variables('vmName'),'-datadisk1'))]"  
         ],
         "properties": {
           "hardwareProfile": {
@@ -243,17 +260,16 @@
               "version": "latest"
             },
             "osDisk": {
-              "createOption": "fromImage"
+              "createOption": "FromImage"
             },
             "dataDisks": [
               {
-                  "name": "datadisk1",
-                  "diskSizeGB": 128,
-                  "lun": 0,
-                  "vhd": {
-                    "uri": "[concat(reference(resourceId('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))).primaryEndpoints.blob, 'vhds/datadisk1.vhd')]"
-                  },
-                  "createOption": "Empty"
+                "lun": 0,
+                "name": "[concat(variables('vmName'),'-datadisk1')]",
+                "createOption": "Attach",
+                "managedDisk": {
+                    "id": "[resourceId('Microsoft.Compute/disks/', concat(variables('vmName'),'-datadisk1'))]"
+                }
               }
             ]
           },
