@@ -109,7 +109,7 @@ service $PROJECT stop
 # TODO: ensure graceful results if get_witness querey fails                                      #
 ##################################################################################################
 screen -dmS $CLI_WALLET /usr/bin/$CLI_WALLET --server-rpc-endpoint=$PUBLIC_BLOCKCHAIN_SERVER --rpc-http-endpoint=127.0.0.1:8093
-sleep 4; # allow time for CLI Wallet to connect to public blockchain server and open local RPC listener.
+sleep 10; # allow time for CLI Wallet to connect to public blockchain server and open local RPC listener.
 WITNESS_KEY_PAIR=$(curl -s --data '{"jsonrpc": "2.0", "method": "suggest_brain_key", "params": [], "id": 1}' http://127.0.0.1:8093 | \
     python3 -c "import sys, json; keys=json.load(sys.stdin); print('[\"'+keys['result']['pub_key']+'\",\"'+keys['result']['wif_priv_key']+'\"]')")
 WITNESS_ID=$(curl -s --data '{"jsonrpc": "2.0", "method": "get_witness", "params": ["'$WITNESS_NAMES'"], "id": 1}' http://127.0.0.1:8093 | \
@@ -156,17 +156,17 @@ apt-get update
 apt -y install default-jre default-jdk oracle-java8-installer elasticsearch
 systemctl daemon-reload
 systemctl enable elasticsearch
-service elasticsearch start # It takes a bit of time to initialize Elasticsearch, so may need to sleep after starting
+# TODO: service elasticsearch start # It takes a bit of time to initialize Elasticsearch, so may need to sleep after starting
 
 apt -y install python3-pip
-pip3 install elasticsearch elasticsearch-dsl flask-cors
-/usr/local/src/
+pip3 install elasticsearch elasticsearch-dsl flask flask-cors
+cd /usr/local/src/
 git clone https://github.com/oxarbitrage/bitshares-es-wrapper.git
 cd bitshares-es-wrapper
 export FLASK_APP=wrapper.py
-flask run
+# flask run # TODO: comment the print statement in wrapper.py
 
-pip3 install websocket-client requests psycopg2
+pip3 install websocket-client psycopg2
 
 ##################################################################################################
 # Reconfigure bitshares-core service to Want Elasticsearch. Ensure Elasticsearch starts first.   #
