@@ -243,10 +243,7 @@
               "version": "latest"
             },
             "osDisk": {
-              "createOption": "fromImage",
-              "managedDisk": {
-                  "storageAccountType": "[variables('storageAccountType')"
-              }
+              "createOption": "fromImage"
             },
             "dataDisks": [
               {
