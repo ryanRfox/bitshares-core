@@ -140,7 +140,7 @@
             {
               "name": "BitShares-RCP",
               "properties": {
-                "description": "TLS port for hosting BitShares service",
+                "description": "TLS port for API service",
                 "protocol": "Tcp",
                 "sourcePortRange": "*",
                 "destinationPortRange": "443",
@@ -208,13 +208,14 @@
         }
       },
       {
-        "apiVersion": "[variables('apiVersion')]",
-        "type": "Microsoft.Network/networkInterfaces",
         "name": "[variables('nicName')]",
+        "type": "Microsoft.Network/networkInterfaces",
+        "apiVersion": "2016-09-01",
         "location": "[resourceGroup().location]",
         "dependsOn": [
+          "[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]",
           "[concat('Microsoft.Network/publicIPAddresses/', variables('publicIPAddressName'))]",
-          "[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]"
+          "[concat('Microsoft.Network/networkSecurityGroups/', parameters('networkSecurityGroupName'))]"
         ],
         "properties": {
           "ipConfigurations": [

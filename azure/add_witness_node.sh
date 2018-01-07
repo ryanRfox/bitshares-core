@@ -60,6 +60,13 @@ time apt-get -y install ntp g++ git make cmake libbz2-dev libdb++-dev libdb-dev 
                         libboost-all-dev
 
 ##################################################################################################
+# Configure the attached datadisk using the Azure disk utilities script for Ubuntu.              #
+##################################################################################################
+wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/shared_scripts/ubuntu/vm-disk-utils-0.1.sh
+bash vm-disk-utils-0.1.sh
+rm vm-disk-utils-0.1.sh
+
+##################################################################################################
 # Build BitShares from source                                                                    #
 ##################################################################################################
 cd /usr/local/src
