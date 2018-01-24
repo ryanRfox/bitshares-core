@@ -4,17 +4,17 @@ BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
 Author: Ryan R. Fox (`"fox"`) [1-4]
 
 Intent
-
 ======
-* Increase the development capacity of the BitShares Core Team.
-* Work collaboratively with the existing development resources, Abit and Alfredo Garcia, and the UI Team, led by Bill Butler.
-* Deliver transparent coordination of BitShares development efforts to the community.
-* Expand the use and function of collaboration tools.
+
+* Increase the development capacity of the BitShares Core Team
+* Work collaboratively with the existing development resources, Abit and Alfredo Garcia, and the UI Team, led by Bill Butler
+* Deliver transparent coordination of BitShares development efforts to the community
+* Expand the use and function of collaboration tools
 
 Background
 ==========
 
-I have contributed to BitShares from its inception. You will find my account (`"1.2.167"`) within the genesis block and many bitsharestalk.org threads from 2014 detailing my testing feedback as we iterated toward launching the BitShares blockchain. I have respectfully collaborated with the thought leaders of this community, and am now ready to serve in an expanded role. I request your continued support.
+I have contributed to BitShares from its inception. You will find my account (`"1.2.167"`) within the genesis block and many bitsharestalk.org threads from 2014 detailing my testing feedback as we iterated toward launching the BitShares blockchain [1]. I have respectfully collaborated with the thought leaders of this community, and am now ready to serve in an expanded role. I request your continued support.
 
 Worker
 ======
@@ -38,7 +38,7 @@ Core Team Roles (Team Member | Hourly Rate USD):
 * (1) Code Reviewer (Peter Conrad | $200)
 * (1) Documentation Specialist (Open | $50)
 
-The BitShares Core Team use various collaboration tools to organize their work, convey ideas and aid development efforts. All tools provide read/reviewer access for the community to observe progress and provide feedback. Write/contributor access may be limited to a specific Core Team role(s). 
+The BitShares Core Team use various collaboration tools to organize their work, convey ideas and aid development efforts. All tools provide read/reviewer access for the community to observe progress and provide feedback. Write/contributor access may be limited to a specific Core Team role(s). Team Members are encouraged to office within a co-working space to expose the BitShares platform therein and form collaberoration opportunities. The Core Team will meet prior to each of the scheduled DevCon events for team building and in person collaberation. The Core Team will then participate in conference events in constructive ways.
 
 Collaboration Tools (Vendor | Monthly Expense USD):
 ===================================================
@@ -64,14 +64,16 @@ Core Release (Hard Fork):
 BitShares Core Team Principals:
 ===============================
 Collegiality
-* Maintain timely collaborative communications with each BitShare Core Team Member
+* Maintain timely collaborative communications with each BitShares Core Team Member
 * Participate in at least two of three weekly Collaboration Sessions (see Coordinator description)
 * Work at least 75% of your weekly hours between Tuesday - Thursday
   * Facilitates ad hoc collaboration
   * Facilitates healthy work/life balance
+
 Transparency
 * Maintain working increments within Community facing collaboration tools
 * Submit invoices on time and with proper references to effort performed
+
 Delivery
 * Deliver the highest value work first
 * Deliver working increments with invoice
@@ -105,7 +107,7 @@ Coordinator Key Performance Indicators
 * Facilitate standing collaboration sessions (Thrice weekly 2-hour blocks dispersed for international participation)
 * Approve invoices submitted by Core Team Members
 * Maintain vendor relationships for collaboration tools
-* Arrange accomdations for Developer Conference attendees
+* Arrange accommodations for Developer Conference attendees
 
 Core Developer (Full Time - 40 hours per week)
 ==============================================
@@ -171,41 +173,44 @@ Budget
 ======
 
 Weekly Budget Items (at full utilization):
-* (1) Coordinator (40 hours @ $125 = $5,000)...............$  5,000
-* (3) Core Developer (120 hours @ $200 = $24,000)..........$ 24,000
-* (1) Business Analyst (40 hours @ $125 = $5,000)..........$  5,000
-* (1) UI/UX Liaison (10 hours @ $125 = $1,250).............$  1,250
-* (1) QA/Tester (30 hours @ $125 = $3,750).................$  3,750
-* (1) Code Reviewer (10 hours @ $200 = $2,000).............$  2,000
-* (1) Documentation Specialist (30 hours @ $50 = $1,500)...$  1,500
-                                                           ========
-* SUM WEEKLY BUDGET ITEMS..................................$ 42,500
-* CONVERTED TO DAILY BUDGET (sum / 7 days)..........................$   6,071
+| Positions | Role (hours @ rate)                 | Amount (USD) |
+| ---------:|:------------------------------------| ------------:|
+| 1         | Coordinator (40 @ $125)             |       $5,000 |
+| 3         | Core Developer (120 @ $200)         |      $24,000 |
+| 1         | Business Analyst (40 @ $125)        |       $5,000 |
+| 1         | UI/UX Liaison (10 @ $125)           |       $1,250 |
+| 1         | QA/Tester (30 @ $125)               |       $3,750 |
+| 1         | Code Reviewer (10 @ $200)           |       $2,000 |
+| 1         | Documentation Specialist (30 @ $50) |       $1,500 |
+|       SUM | WEEKLY BUDGET ITEMS                 |      $42,500 |
+| CONVERTED | TO DAILY BUDGET (sum / 7 days)      |       $6,071 |
 
 Monthly Budget Items (at full utilization):
-* Code Repository (1 @ $0 =  $0)...........................$      0
-* Product Roadmap (2 @ $124 = $248)........................$    248
-* Process Models (2 @ $53 = $106)..........................$    106
-* Infrastructure Environment (1 @ $200 = $200).............$    200
-* Physical presence (5 @ $350 = $1,750)....................$  1,750
-                                                           ========
-* SUM MONTHLY BUDGET ITEMS.................................$  2,304
-* CONVERTED TO DAILY BUDGET (sum / 30 days)..........................$     77
+| Licenses  | Description (rate)                  | Amount (USD) |
+| ---------:|:------------------------------------| ------------:|
+| 1         | Code Repository ($0)                |           $0 |
+| 2         | Product Roadmap ($124)              |         $248 |
+| 2         | Process Models ($53)                |         $106 |
+| 1         | Infrastructure Environment ($200)   |         $200 |
+| 1         | Co-working Space ($350)             |       $1,750 |
+|       SUM | WEEKLY MONTHLY ITEMS                |       $2,304 |
+| CONVERTED | TO DAILY BUDGET (sum / 30 days)     |          $77 |
 
 One-Time Budget Items (at full utilization):
-* DevCon Spring 2018 - Shanghai, China 
-  * Travel round trip (5 @ $2000 = $10,000)................$ 10,000
-  * Lodging (5 nights x 5 @ $150 = 3,750)..................$  3,750
-  * Meals (5 days x 5 @ $60 = $1,500)......................$  1,500
-* DevCon Autumn 2018 - TBD, Europe
-  * Travel round trip (5 @ $2000 = $10,000)................$ 10,000
-  * Lodging (5 nights x 5 @ $200 = $5,000).................$  5,000
-  * Meals (5 days x 5 @ $80 = $2,000)......................$  2,000
-* SUM ONE-TIME BUDGET ITEMS................................$ 32,250
-                                                           ========
-* CONVERTED TO DAILY BUDGET (sum / 11 months / 30 days)..............$     98
-                                                                     ========
-* `SUM DAILY DAILY BUDGET ITEMS.......................................$  6,246`
+| Positions | Role (maximum allowance)             | Amount (USD) |
+| ---------:|:-------------------------------------| ------------:|
+|           | DevCon Spring 2018 - Shanghai, China |              |
+| 5 FTE     | Travel round trip (up to $2000)      |      $10,000 |
+| 5 nights  | Lodging (up to $150)                 |       $3,750 |
+| 5 days    | Meals (up to $60)                    |       $1,500 |
+|           | DevCon Autumn 2018 - TBD, Europe     |              |
+| 5 FTE     | Travel round trip (up to $2000)      |      $10,000 |
+| 5 nights  | Lodging (up to $200)                 |       $5,000 |
+| 5 days    | Meals (up to $80)                    |       $2,000 |
+|       SUM | ONE-TIME BUDGET ITEMS                |      $32,250 |
+| CONVERTED | TO DAILY BUDGET (sum / 11mo / 30d)   |          $98 |
+
+`SUM DAILY BUDGET ITEMS: $6,246`
 
 Duration and Pay
 ================
@@ -222,15 +227,15 @@ Calculation:
 * 2.5 = multiplier to cover market fluctuations and borrow at 2.5x collateral if needed
 * $6,246 usd/day * 2.53 bts/usd * 2.5 = 39,506 BTS/day
 
-USD payment will be in bitUSD with method developed by @xeroc [6]. CNY payment may be requested and fulfilled with bitCNY using 6.37 USD/CNY. A Core Team Member must declare their payment method with their first invoice and may not change it during calendar year 2018. Contingency: should world events disrupt the USD/CNY rate by +/- 10%, the invoice will be remitted in bitUSD to honor the budget.
+USD payment will be in bitUSD with method developed by @xeroc [7]. CNY payment may be requested and fulfilled with bitCNY using 6.37 USD/CNY. A Core Team Member must declare their payment method with their first invoice and may not change it during calendar year 2018. Contingency: should world events disrupt the USD/CNY rate by +/- 10%, the invoice will be remitted in bitUSD to honor the budget.
 
 References
 ==========
 
-[1] ([link](https://bitsharestalk.org/index.php?action=profile;u=5333))
-[2] ([link](https://github.com/ryanRfox))
-[3] ([link](https://linkedin.com/in/ryanRfox))
-[4] ([link](https://twitter.com/ryanRfox))
-[5] ([link](http://www.bitshares.foundation/worker/))
-[5] ([link](http://www.bitshares.foundation/accounting))
-[7] ([link](https://github.com/xeroc/worker-proposals/blob/master/2017-02.md#worker))
+* [1] [BitShares Talk Profile: fox](https://bitsharestalk.org/index.php?action=profile;u=5333)
+* [2] [GitHub Repo: ryanRfox](https://github.com/ryanRfox)
+* [3] [LinkedIn Profile: ryanRfox](https://linkedin.com/in/ryanRfox)
+* [4] [Twitter Profile: ryanRfox](https://twitter.com/ryanRfox)
+* [5] [BBF Budget Worker Template](http://www.bitshares.foundation/worker/)
+* [5] [BBF Transparent Accounting](http://www.bitshares.foundation/accounting)
+* [7] [Xeroc's Worker Payment Template](https://github.com/xeroc/worker-proposals/blob/master/2017-02.md#worker)
