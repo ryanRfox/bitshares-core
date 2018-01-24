@@ -86,6 +86,7 @@ Coordinator (Full Time - 40 hours per week)
 Onsite Office Hours (WeWork Boston, MA, US)
 * 14:30 - 22:30 UTC Monday - Thursday
 * 14:00 - 20:00 UTC Friday
+
 Collaboration Sessions
 * 02:00 - 04:00 UTC Tuesday
 * 19:00 - 21:00 UTC Wednesday
@@ -173,8 +174,9 @@ Budget
 ======
 
 Weekly Budget Items (at full utilization):
+
 | Positions | Role (hours @ rate)                 | Amount (USD) |
-| ---------:|:------------------------------------| ------------:|
+| ---------:|:----------------------------------- | ------------:|
 | 1         | Coordinator (40 @ $125)             |       $5,000 |
 | 3         | Core Developer (120 @ $200)         |      $24,000 |
 | 1         | Business Analyst (40 @ $125)        |       $5,000 |
@@ -186,8 +188,9 @@ Weekly Budget Items (at full utilization):
 | CONVERTED | TO DAILY BUDGET (sum / 7 days)      |       $6,071 |
 
 Monthly Budget Items (at full utilization):
+
 | Licenses  | Description (rate)                  | Amount (USD) |
-| ---------:|:------------------------------------| ------------:|
+| ---------:|:----------------------------------- | ------------:|
 | 1         | Code Repository ($0)                |           $0 |
 | 2         | Product Roadmap ($124)              |         $248 |
 | 2         | Process Models ($53)                |         $106 |
@@ -197,8 +200,9 @@ Monthly Budget Items (at full utilization):
 | CONVERTED | TO DAILY BUDGET (sum / 30 days)     |          $77 |
 
 One-Time Budget Items (at full utilization):
+
 | Positions | Role (maximum allowance)             | Amount (USD) |
-| ---------:|:-------------------------------------| ------------:|
+|:--------- |:------------------------------------ | ------------:|
 |           | DevCon Spring 2018 - Shanghai, China |              |
 | 5 FTE     | Travel round trip (up to $2000)      |      $10,000 |
 | 5 nights  | Lodging (up to $150)                 |       $3,750 |
@@ -207,7 +211,7 @@ One-Time Budget Items (at full utilization):
 | 5 FTE     | Travel round trip (up to $2000)      |      $10,000 |
 | 5 nights  | Lodging (up to $200)                 |       $5,000 |
 | 5 days    | Meals (up to $80)                    |       $2,000 |
-|       SUM | ONE-TIME BUDGET ITEMS                |      $32,250 |
+| SUM       | ONE-TIME BUDGET ITEMS                |      $32,250 |
 | CONVERTED | TO DAILY BUDGET (sum / 11mo / 30d)   |          $98 |
 
 `SUM DAILY BUDGET ITEMS: $6,246`
@@ -232,10 +236,10 @@ USD payment will be in bitUSD with method developed by @xeroc [7]. CNY payment m
 References
 ==========
 
-* [1] [BitShares Talk Profile: fox](https://bitsharestalk.org/index.php?action=profile;u=5333)
-* [2] [GitHub Repo: ryanRfox](https://github.com/ryanRfox)
-* [3] [LinkedIn Profile: ryanRfox](https://linkedin.com/in/ryanRfox)
-* [4] [Twitter Profile: ryanRfox](https://twitter.com/ryanRfox)
-* [5] [BBF Budget Worker Template](http://www.bitshares.foundation/worker/)
-* [5] [BBF Transparent Accounting](http://www.bitshares.foundation/accounting)
-* [7] [Xeroc's Worker Payment Template](https://github.com/xeroc/worker-proposals/blob/master/2017-02.md#worker)
+* [1] BitShares Talk Profile: [fox](https://bitsharestalk.org/index.php?action=profile;u=5333)
+* [2] GitHub Repo: [ryanRfox](https://github.com/ryanRfox)
+* [3] LinkedIn Profile: [ryanRfox](https://linkedin.com/in/ryanRfox)
+* [4] Twitter Profile: [ryanRfox](https://twitter.com/ryanRfox)
+* [5] BBF [Budget Worker Template](http://www.bitshares.foundation/worker/)
+* [5] BBF [Transparent Accounting](http://www.bitshares.foundation/accounting)
+* [7] Xeroc's [Worker Payment Template](https://github.com/xeroc/worker-proposals/blob/master/2017-02.md#worker)
