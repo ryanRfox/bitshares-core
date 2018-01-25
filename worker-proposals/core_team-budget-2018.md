@@ -1,4 +1,4 @@
-DRAFT 2.1
+DRAFT 2.2
 
 BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
 ====================================================
@@ -34,32 +34,32 @@ The BitShares Core Team is a self-organizing agile-principled team focused on de
 
 * BitShares Core Team Budget:
 
-| Roles (described below)  | Rate Range (Hourly USD) | Team Members | Estimated Hours |
-|:------------------------ | -----------------------:|:------------ |:--------------- |
-| Coordinator              |             $125 - $150 | <Open>       | 40 hours weekly |
-| Core Developer           |             $125 - $200 | <Open>       | 40 hours weekly |
-| Core Developer           |             $125 - $200 | <Open>       | 40 hours weekly |
-| Core Developer           |             $125 - $200 | <Open>       | 40 hours weekly |
-| Business Analyst         |             $ 75 - $125 | <Open>       | 40 hours weekly |
-| Business Analyst         |             $ 75 - $125 | <Open>       | 20 hours weekly |
-| QA/Tester                |             $ 75 - $125 | <Open>       | 30 hours weekly |
-| Documentation Specialist |             $ 60 - $ 90 | <Open>       | 30 hours weekly |
-| UI/UX Liaison            |                    $125 | <Open>       | 10 hours weekly |
+| Roles (described below)  | Rate Range (Hourly USD) | Estimated Hours |
+|:------------------------ | -----------------------:|:--------------- |
+| Coordinator              |             $125 - $150 | 40 hours weekly |
+| Core Developer           |             $125 - $200 | 40 hours weekly |
+| Core Developer           |             $125 - $200 | 40 hours weekly |
+| Core Developer           |             $125 - $200 | 40 hours weekly |
+| Business Analyst         |             $ 75 - $125 | 40 hours weekly |
+| Business Analyst         |             $ 75 - $125 | 20 hours weekly |
+| QA/Tester                |             $ 75 - $125 | 30 hours weekly |
+| Documentation Specialist |             $ 60 - $ 90 | 30 hours weekly |
+| UI/UX Liaison            |                    $125 | 10 hours weekly |
 
-* Initial BitShares Core Team
+* Initial BitShares Core Team:
 
 | Roles (described below)  | Rate Range (Hourly USD) | Team Members | Estimated Hours |
 |:------------------------ | -----------------------:|:------------ |:--------------- |
 | Coordinator              |             $125 - $150 | Ryan R. Fox  | 40 hours weekly |
 | Core Developer           |             $125 - $200 | Peter Conrad | 10 hours weekly |
-| Core Developer           |             $125 - $200 | <Open>       | 30 hours weekly |
-| Core Developer           |             $125 - $200 | <Open>       | 40 hours weekly |
-| Core Developer           |             $125 - $200 | <Open>       | 40 hours weekly |
+| Core Developer           |             $125 - $200 | -            | -               |
+| Core Developer           |             $125 - $200 | -            | -               |
+| Core Developer           |             $125 - $200 | -            | -               |
 | Business Analyst         |             $ 75 - $125 | Taconator    | 40 hours weekly |
-| Business Analyst         |             $ 75 - $125 | <Open>       | 20 hours weekly |
-| QA/Tester                |             $ 75 - $125 | <Open>       | 30 hours weekly |
-| Documentation Specialist |             $ 60 - $ 90 | <Open>       | 30 hours weekly |
-| UI/UX Liaison            |                    $125 | <Open>       | 10 hours weekly |
+| Business Analyst         |             $ 75 - $125 | -            | -               |
+| QA/Tester                |             $ 75 - $125 | -            | -               |
+| Documentation Specialist |             $ 60 - $ 90 | -            | -               |
+| UI/UX Liaison            |                    $125 | Bill Butler  | 2 hours weekly  |
 
 * Development Cycles*:
   * Feature Release (non-hard fork):
@@ -182,7 +182,7 @@ Documentation Specialist Key Performance Indicators
 
 The BitShares Core Team use various collaboration tools to organize their work, convey ideas and aid development efforts. All tools provide read/reviewer access for the community to observe progress and provide feedback. Write/contributor access may be limited to a specific Core Team role(s). Team Members are encouraged to office within a co-working space to expose the BitShares platform therein and form collaboration opportunities. A stipend is provided for full time equivalent (FTE) effort. The FTE Core Team will meet prior to each of the scheduled DevCon events for team building and in person collaboration. The Core Team will then participate in conference events in constructive ways. The tables below describe the budget for collaboration tools:
 
-* Collaboration Tools (Monthly)
+* Collaboration Tools (Monthly):
 
 | Licenses  | Description                         | Vendor                             | Monthly (USD) |
 | ---------:|:----------------------------------- |:---------------------------------- | -------------:|
@@ -194,7 +194,7 @@ The BitShares Core Team use various collaboration tools to organize their work, 
 | 2         | Process Models ($53)                | Blueworks Live (blueworkslive.com) |          $106 |
 | 5         | Co-working Space for FTE ($350)     | WeWork - or similar (wework.com)   |        $1,750 |
 
-* Conference Budget
+* Conference Budget:
 
 | Accommodations | Description                          | Amount (USD) |
 |:-------------- |:------------------------------------ | ------------:|
@@ -210,7 +210,7 @@ The BitShares Core Team use various collaboration tools to organize their work, 
 Budget
 ======
 
-* Weekly Budget Items
+* Weekly Budget Items:
 
 | Role (hours @ rate)                      | Amount (USD) |
 |:---------------------------------------- | ------------:|
@@ -223,7 +223,7 @@ Budget
 | SUM WEEKLY BUDGET ITEMS                  |      $45,200 |
 | CONVERTED TO DAILY BUDGET (sum / 7 days) |       $6,457 |
 
-* Monthly Budget Items
+* Monthly Budget Items:
 
 | Licenses  | Description (rate)                  | Amount (USD) |
 | ---------:|:----------------------------------- | ------------:|
@@ -237,7 +237,7 @@ Budget
 |       SUM | WEEKLY MONTHLY ITEMS                |       $2,304 |
 | CONVERTED | TO DAILY BUDGET (sum / 30 days)     |          $77 |
 
-* One-Time Budget Items
+* One-Time Budget Items:
 
 | Accommodations | Description                          | Amount (USD) |
 |:------------   |:------------------------------------ | ------------:|
@@ -252,7 +252,7 @@ Budget
 | SUM            | ONE-TIME BUDGET ITEMS                |      $32,250 |
 | CONVERTED      | TO DAILY BUDGET (sum / 11mo / 30d)   |          $98 |
 
-* Sum Daily Budget Items
+* Sum Daily Budget Items:
 
 | Description            | Amount (USD) |
 |:-----------------------| ------------:|
