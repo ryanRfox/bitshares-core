@@ -1,4 +1,4 @@
-DRAFT 2.0
+DRAFT 2.1
 
 BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
 ====================================================
@@ -32,8 +32,8 @@ This is a Budget Worker Proposal (`"1.14.XX"`) which provides funding for (1) ne
 
 The BitShares Core Team is a self-organizing agile-principled team focused on delivering regularly scheduled releases and ad hoc bug fixes for the BitShares Core software using GitFlow principles [7]. The table below describes the target composition of the team at full utilization for budget purposes only. The actual number of contributors and roles may vary within each development cycle (described below). The team has discretion in allocating resources to meet the needs of each development cycle.
 
-| BitShares Core Team Budget                                                          |
-|:----------------------------------------------------------------------------------- |
+* BitShares Core Team Budget:
+
 | Roles (described below)  | Rate Range (Hourly USD) | Team Members | Estimated Hours |
 |:------------------------ | -----------------------:|:------------ |:--------------- |
 | Coordinator              |             $125 - $150 | <Open>       | 40 hours weekly |
@@ -46,8 +46,8 @@ The BitShares Core Team is a self-organizing agile-principled team focused on de
 | Documentation Specialist |             $ 60 - $ 90 | <Open>       | 30 hours weekly |
 | UI/UX Liaison            |                    $125 | <Open>       | 10 hours weekly |
 
-| Initial BitShares Core Team                                                         |
-|:----------------------------------------------------------------------------------- |
+* Initial BitShares Core Team
+
 | Roles (described below)  | Rate Range (Hourly USD) | Team Members | Estimated Hours |
 |:------------------------ | -----------------------:|:------------ |:--------------- |
 | Coordinator              |             $125 - $150 | Ryan R. Fox  | 40 hours weekly |
@@ -61,12 +61,12 @@ The BitShares Core Team is a self-organizing agile-principled team focused on de
 | Documentation Specialist |             $ 60 - $ 90 | <Open>       | 30 hours weekly |
 | UI/UX Liaison            |                    $125 | <Open>       | 10 hours weekly |
 
-Development Cycles*:
-Feature Release (non-hard fork):
-* Three-week sprints
+* Development Cycles*:
+  * Feature Release (non-hard fork):
+  * Three-week sprints
 
-Core Release (Hard Fork):
-* Twice annually: first Thursday of June & December
+* Core Release (Hard Fork):
+  * Twice annually: first Thursday of June & December
 
 *Subject to change upon consensus of Core Team Members
 
@@ -90,9 +90,9 @@ Delivery
 
 Coordinator (Full Time - 40 hours per week)
 ===========================================
-Onsite Office Hours (WeWork Boston, MA, US)
-* 14:30 - 22:30 UTC Monday - Thursday
-* 14:00 - 20:00 UTC Friday
+Onsite Office 
+* WeWork Boston, MA, US
+* Monday – Friday with additional meetings as necessary
 
 Collaboration Sessions
 * 02:00 - 04:00 UTC Tuesday
@@ -182,8 +182,8 @@ Documentation Specialist Key Performance Indicators
 
 The BitShares Core Team use various collaboration tools to organize their work, convey ideas and aid development efforts. All tools provide read/reviewer access for the community to observe progress and provide feedback. Write/contributor access may be limited to a specific Core Team role(s). Team Members are encouraged to office within a co-working space to expose the BitShares platform therein and form collaboration opportunities. A stipend is provided for full time equivalent (FTE) effort. The FTE Core Team will meet prior to each of the scheduled DevCon events for team building and in person collaboration. The Core Team will then participate in conference events in constructive ways. The tables below describe the budget for collaboration tools:
 
-| Collaboration Tools (Monthly)                                                                        |
-|:---------------------------------------------------------------------------------------------------- |
+* Collaboration Tools (Monthly)
+
 | Licenses  | Description                         | Vendor                             | Monthly (USD) |
 | ---------:|:----------------------------------- |:---------------------------------- | -------------:|
 | 1         | Code Repository ($0)                | GitHub (github.com)                |            $0 |
@@ -194,8 +194,8 @@ The BitShares Core Team use various collaboration tools to organize their work, 
 | 2         | Process Models ($53)                | Blueworks Live (blueworkslive.com) |          $106 |
 | 5         | Co-working Space for FTE ($350)     | WeWork - or similar (wework.com)   |        $1,750 |
 
-| Conference Budget                                                    |
-|:-------------------------------------------------------------------- |
+* Conference Budget
+
 | Accommodations | Description                          | Amount (USD) |
 |:-------------- |:------------------------------------ | ------------:|
 |                | DevCon Spring 2018 - Shanghai, China |              |
@@ -210,8 +210,8 @@ The BitShares Core Team use various collaboration tools to organize their work, 
 Budget
 ======
 
-| Weekly Budget Items                                     |
-|:------------------------------------------------------- |
+* Weekly Budget Items
+
 | Role (hours @ rate)                      | Amount (USD) |
 |:---------------------------------------- | ------------:|
 | Coordinator (40 @ $150)                  |       $6,000 |
@@ -223,8 +223,8 @@ Budget
 | SUM WEEKLY BUDGET ITEMS                  |      $45,200 |
 | CONVERTED TO DAILY BUDGET (sum / 7 days) |       $6,457 |
 
-| Monthly Budget Items                                           |
-|:-------------------------------------------------------------- |
+* Monthly Budget Items
+
 | Licenses  | Description (rate)                  | Amount (USD) |
 | ---------:|:----------------------------------- | ------------:|
 | 1         | Code Repository ($0)                |           $0 |
@@ -237,8 +237,8 @@ Budget
 |       SUM | WEEKLY MONTHLY ITEMS                |       $2,304 |
 | CONVERTED | TO DAILY BUDGET (sum / 30 days)     |          $77 |
 
-| One-Time Budget Items                                                |
-|:-------------------------------------------------------------------- |
+* One-Time Budget Items
+
 | Accommodations | Description                          | Amount (USD) |
 |:------------   |:------------------------------------ | ------------:|
 |                | DevCon Spring 2018 - Shanghai, China |              |
@@ -252,8 +252,8 @@ Budget
 | SUM            | ONE-TIME BUDGET ITEMS                |      $32,250 |
 | CONVERTED      | TO DAILY BUDGET (sum / 11mo / 30d)   |          $98 |
 
-| Sum Daily Budget Items                |
-|:------------------------------------- |
+* Sum Daily Budget Items
+
 | Description            | Amount (USD) |
 |:-----------------------| ------------:|
 | Weekly Budget Items    |       $6,457 |
