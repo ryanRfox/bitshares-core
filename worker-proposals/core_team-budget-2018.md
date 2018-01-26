@@ -1,9 +1,10 @@
-DRAFT 3.1.1
+DRAFT 3.2
 ===========
 
-* Fix: Change section header to 'Backlog' from 'Roadmap' as I intend develop a Roadmap based on Team feedback
-* Add: BSIPs and features to Backlog, prioritize
-* Fix: Backlog format
+* Add: 'Exempt Worker' no overtime 
+* Add: 'Bonus Pay' per of 40 hours after 1000 hours worked
+* Add: some example issues to Backlog Parking Lot, not prioritized
+* Fix: absolute path to BSIPs
 
 BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
 ====================================================
@@ -22,21 +23,21 @@ Backlog
 
 | In Progress                  | Complete                     | Parking Lot: BSIP            | Parking Lot: Issue/Feature |
 | ---------------------------- | ---------------------------- | ---------------------------- | -------------------------- |
-| Percentage-based transfer fee solution based on CER ([BSIP 10](bsip-0010.md)) | Optimization to Force Settlement Parameters of BitCNY ([16](bsip-0016.md)) | Worker Proposal Improvements ([BSIP 28](bsip-0028.md) | Issue TBD |
-| | Revive BitAsset through buying Settlement Pool ([18](bsip-0018.md)) | Distribute Market Fees on Core Asset to Referral Program (BSIP 4](bsip-0004.md)) | Issue TBD |
-| | | Market Maker Incentivization ([BSIP 6](bsip-0006.md))                            | Issue TBD |
-| | | Asset Issuer Reclaim Fee Pool Funds ([BSIP 27](bsip-0027.md))                    | Issue TBD |
-| | | Refund Order Creation Fee in Originally Paid Asset on Cancel ([BSIP 26](bsip-0026.md)) | Feature TBD |
-| | | Benefit Society ([BSIP 9](bsip-0009.md))                                         | Integration with EOS.IO |
-| | | Introducing the 'Coin-Age' statistic to Bitshares assets ([BSIP 21](bsip-0021.md)) | Feature TBD |
-| | | Introducing expiring votes for Witnesses, Committie members & Proxies within the Bitshares network ([BSIP 22](bsip-0022.md)) | Atomic Cross Chain Transactions (ACCT) |
-| | | Sharedropping an UIA against an external cryptocurrency distribution snapshot ([BSIP 23](bsip-0023.md)) | Integration with Trezor hardware wallet |
-| | | Locking Bitshares away as 'Bitshares Influence' for voting privileges on the BTS DEX ([BSIP 24](bsip-0024.md)) | Market operations |
-| | | Expiring Votes for Witnesses ([BSIP 5](bsip-0005.md))                            | Privacy features |
-| | | Transaction Flat-Rates with Weighted Rate-Limitation ([BSIP 25](bsip-0025.md))   | Expand available API calls |
-| | | Introducing profit sharing/dividends to Bitshares (MPA only) ([BSIP 19](bsip-0019.md))   | In memory data management |
-| | | Introducing profit sharing/dividends to Bitshares (UIA only) ([BSIP 20](bsip-0020.md))   | On disk data management |
-| | | Maker / Taker Market Fees Flag ([BSIP 3](bsip-0003.md))                          | Authentication - OAuth, 2FA, FIDO, etc. |
+| Percentage-based transfer fee solution based on CER ([BSIP 10](https://github.com/bitshares/bsips/blob/master/bsip-0010.md)) | Optimization to Force Settlement Parameters of BitCNY ([16](bsip-0016.md)) | Worker Proposal Improvements ([BSIP 28](https://github.com/bitshares/bsips/blob/master/bsip-0028.md) | fc::time_point_sec::to_iso_string is broken ([Issue 597](https://github.com/bitshares/bitshares-core/issues/597)) |
+| | Revive BitAsset through buying Settlement Pool ([BSIP 18](https://github.com/bitshares/bsips/blob/master/bsip-0018.md)) | Distribute Market Fees on Core Asset to Referral Program (BSIP 4](bsip-0004.md)) | Virtual operations should be excluded from transactions ([Issue 588](https://github.com/bitshares/bitshares-core/issues/588)) |
+| | | Market Maker Incentivization ([BSIP 6](https://github.com/bitshares/bsips/blob/master/bsip-0006.md))                            | Operation_history_id mismatch among nodes ([Issue 585](https://github.com/bitshares/bitshares-core/issues/585)) |
+| | | Asset Issuer Reclaim Fee Pool Funds ([BSIP 27](https://github.com/bitshares/bsips/blob/master/bsip-0027.md))                    | Always allow updating a call order to higher collateral ratio ([Issue 583](https://github.com/bitshares/bitshares-core/issues/583)) |
+| | | Refund Order Creation Fee in Originally Paid Asset on Cancel ([BSIP 26](https://github.com/bitshares/bsips/blob/master/bsip-0026.md)) | `assert()` in db_market.cpp and other source code? ([Issue 511](https://github.com/bitshares/bitshares-core/issues/511)) |
+| | | Benefit Society ([BSIP 9](https://github.com/bitshares/bsips/blob/master/bsip-0009.md))                                         | Integration with EOS.IO |
+| | | Introducing the 'Coin-Age' statistic to Bitshares assets ([BSIP 21](https://github.com/bitshares/bsips/blob/master/bsip-0021.md)) | Witness nodes sometimes accept transactions with unnecessary signatures ([Issue 580](https://github.com/bitshares/bitshares-core/issues/580)) |
+| | | Introducing expiring votes for Witnesses, Committie members & Proxies within the Bitshares network ([BSIP 22]https://github.com/bitshares/bsips/blob/master/(bsip-0022.md)) | Atomic Cross Chain Transactions (ACCT) |
+| | | Sharedropping an UIA against an external cryptocurrency distribution snapshot ([BSIP 23](https://github.com/bitshares/bsips/blob/master/bsip-0023.md)) | Integration with Trezor hardware wallet |
+| | | Locking Bitshares away as 'Bitshares Influence' for voting privileges on the BTS DEX ([BSIP 24](https://github.com/bitshares/bsips/blob/master/bsip-0024.md)) | Market operations |
+| | | Expiring Votes for Witnesses ([BSIP 5](https://github.com/bitshares/bsips/blob/master/bsip-0005.md))                            | Privacy features |
+| | | Transaction Flat-Rates with Weighted Rate-Limitation ([BSIP 25](https://github.com/bitshares/bsips/blob/master/bsip-0025.md))   | Expand available API calls |
+| | | Introducing profit sharing/dividends to Bitshares (MPA only) ([BSIP 19](https://github.com/bitshares/bsips/blob/master/bsip-0019.md))   | In memory data management |
+| | | Introducing profit sharing/dividends to Bitshares (UIA only) ([BSIP 20](https://github.com/bitshares/bsips/blob/master/bsip-0020.md))   | On disk data management |
+| | | Maker / Taker Market Fees Flag ([BSIP 3](https://github.com/bitshares/bsips/blob/master/bsip-0003.md))                          | Authentication - OAuth, 2FA, FIDO, etc. |
 
 Background
 ==========
@@ -116,9 +117,11 @@ Delivery
 BitShares Core Team Member 'Contract Work' Guidance:
 ====================================================
 
-This section is to be considered guidance, not a legal statement. The BitShares Decentralized Autonomous Community (BitShares DAC) 'owns' the funds collected by this Budget Worker and are made available as compensation to individuals performing 'contract worker' as described elsewhere in this document. Effort contributed by individuals is considered 'at-will' as no formal 'employment contract' is able to be formed between BitShares DAC and the 'contract worker' at this time. Neither the BitShares Blockchain Foundation nor the BitShares Committee or any individuals serving those entities are considered 'employers' of any 'contract worker'. The Coordinator, nor any other BitShares Core Team Member or Role is considered the 'boss' nor an 'employer' of any individual. All effort performed is a contribution to the BitShares DAC adhering to the MIT license.
+This section is to be considered guidance, not a legal statement. The BitShares Decentralized Autonomous Community (BitShares DAC) 'owns' the funds collected by this Budget Worker and are made available as compensation to individuals performing 'contract worker' as described elsewhere in this document. Effort contributed by individuals is considered 'at-will' as no formal 'employment contract' is able to be formed between BitShares DAC and the 'contract worker' at this time. Neither the BitShares Blockchain Foundation nor the BitShares Committee or any individuals serving those entities are considered 'employers' of any 'contract worker'. The Coordinator, nor any other BitShares Core Team Member or Role is considered the 'boss' nor an 'employer' of any individual. All effort performed is a contribution to the BitShares DAC adhering to its MIT license.
 
-Each BitShares Core Team Member performing effort for the BitShares DAC acknowledges no recourse nor remedy is available from the BitShares DAC, BitShares Core Team Members nor author. 
+The BitShares DAC values a healthy work/life balance. Each Team Member is encouraged not to contribute more hours than is customary in their jurisdiction for 'full time equivalent' work, as the role is considered 'exempt' from overtime compensation. The budget accommodates 'bonus pay' of 40 hours upon accumulating 1000 hours within a rolling 12-month period, payable at the average rate during that period, thus resetting both counters. This facilitates 40 hours per week for 25 weeks to be compensated as 26 weeks, or the equivalent of an annual salaried position with two weeks holiday. National and religious observances are also important to a healthy work/life balance. The budget accommodates up to 10 'observance day' compensations per calendar year at the rate prorated to the rate and average working days in the week before and after the week containing the observance day.
+
+Each BitShares Core Team Member performing effort for the BitShares DAC acknowledges no recourse nor remedy is available from the BitShares DAC, any other BitShares Core Team Member nor author. 
 
 Coordinator (Full Time - 40 hours per week)
 ===========================================
