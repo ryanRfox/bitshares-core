@@ -1,12 +1,8 @@
-DRAFT 3.0
+DRAFT 3.1
 =========
 
-* Add: Roadmap
-* Add: Translation Services to Collaboration Tools
-* Add: BitShares Core Team Member 'Contract Work' Guidance
-* Fix: Remove Code Reviewer, add tasks to Code Dev KPIs
-* Fix: BitShares Core Team Framework to be less 'prescriptive' and more 'framework'
-* Fix: Budget calculations resulting from additional tools and market value
+* Fix: Change section header to 'Backlog' from 'Roadmap' as I intend develop a Roadmap based on Team feedback
+* Add: BSIPs and features to Backlog, prioritize
 
 BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
 ====================================================
@@ -20,20 +16,26 @@ Intent
 * Define a framework for the Core Team to collaborate within
 * Deliver transparent communication of BitShares development efforts to the community
 
-Roadmap
+Backlog
 =======
-* Integration with EOS.IO
-* Atomic Cross Chain Transactions (ACCT)
-* Integration with Trezor hardware wallet
-* Market operations
-* Privacy features
-* Expand available API calls
-* Memory management
-  * In memory data storage
-  * On disk data storage
-* Authentication
-  * Implement OAuth
-  * Implement Multi-factor authentication (2FA / FIDO, etc.)
+
+In Progress                 | Complete                   | Parking Lot: BSIP          | Parking Lot: Issue/Feature
+----------------------------|----------------------------|----------------------------|---------------------------
+Percentage-based transfer fee solution based on CER ([BSIP 10](bsip-0010.md)) | Optimization to Force Settlement Parameters of BitCNY ([16](bsip-0016.md)) | Worker Proposal Improvements ([BSIP 28](bsip-0028.md) | Issue TBD
+ | Revive BitAsset through buying Settlement Pool ([18](bsip-0018.md)) | Distribute Market Fees on Core Asset to Referral Program (BSIP 4](bsip-0004.md)) | Issue TBD
+ | | Market Maker Incentivization ([BSIP 6](bsip-0006.md))                            | Issue TBD
+ | | Asset Issuer Reclaim Fee Pool Funds ([BSIP 27](bsip-0027.md))                    | Issue TBD
+ | | Refund Order Creation Fee in Originally Paid Asset on Cancel ([BSIP 26](bsip-0026.md)) | Feature TBD
+ | | Benefit Society ([BSIP 9](bsip-0009.md))                                         | Integration with EOS.IO
+ | | Introducing the 'Coin-Age' statistic to Bitshares assets ([BSIP 21](bsip-0021.md)) | Feature TBD
+ | | Introducing expiring votes for Witnesses, Committie members & Proxies within the Bitshares network ([BSIP 22](bsip-0022.md)) | Atomic Cross Chain Transactions (ACCT)
+ | | Sharedropping an UIA against an external cryptocurrency distribution snapshot ([BSIP 23](bsip-0023.md)) | Integration with Trezor hardware wallet
+ | | Locking Bitshares away as 'Bitshares Influence' for voting privileges on the BTS DEX ([BSIP 24](bsip-0024.md)) | Market operations
+ | | Expiring Votes for Witnesses ([BSIP 5](bsip-0005.md))                            | Privacy features
+ | | Transaction Flat-Rates with Weighted Rate-Limitation ([BSIP 25](bsip-0025.md))   | Expand available API calls
+ | | Introducing profit sharing/dividends to Bitshares (MPA only) ([BSIP 19](bsip-0019.md))   | In memory data management
+ | | Introducing profit sharing/dividends to Bitshares (UIA only) ([BSIP 20](bsip-0020.md))   | On disk data management
+ | | Maker / Taker Market Fees Flag ([BSIP 3](bsip-0003.md))                          | Authentication - OAuth, 2FA, FIDO, etc.
 
 Background
 ==========
