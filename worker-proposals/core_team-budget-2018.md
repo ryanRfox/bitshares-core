@@ -1,4 +1,12 @@
-DRAFT 2.2
+DRAFT 3.0
+=========
+
+* Add: Roadmap
+* Add: Translation Services to Collaboration Tools
+* Add: BitShares Core Team Member 'Contract Work' Guidance
+* Fix: Remove Code Reviewer, add tasks to Code Dev KPIs
+* Fix: BitShares Core Team Framework to be less 'prescriptive' and more 'framework'
+* Fix: Budget calculations resulting from additional tools and market value
 
 BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
 ====================================================
@@ -12,6 +20,21 @@ Intent
 * Define a framework for the Core Team to collaborate within
 * Deliver transparent communication of BitShares development efforts to the community
 
+Roadmap
+=======
+* Integration with EOS.IO
+* Atomic Cross Chain Transactions (ACCT)
+* Integration with Trezor hardware wallet
+* Market operations
+* Privacy features
+* Expand available API calls
+* Memory management
+  * In memory data storage
+  * On disk data storage
+* Authentication
+  * Implement OAuth
+  * Implement Multi-factor authentication (2FA / FIDO, etc.)
+
 Background
 ==========
 
@@ -20,7 +43,7 @@ I have actively contributed to BitShares from its inception. You will find my ac
 Worker
 ======
 
-This is a Budget Worker Proposal (`"1.14.XX"`) which provides funding for (1) net new Core Team roles and (2) collaboration tools through calendar year 2018. It intends to work in concert with the existing development resources including Abit, Alfredo Garcia, and the UI Team, led by Bill Butler. Funds are collected into the `"bitsharesdev"` account (`"1.2.2386"`) which is a multi-sig account controlled by `"BitShares Blockchain Foundation"` and the `"committee-account"` using the Budget Worker Model [5]:
+This is a Budget Worker Proposal (`"1.14.XX"`) which provides funding for (1) net new BitShares Core Team Roles and (2) collaboration tools through calendar year 2018. It intends to work in concert with the existing development resources including Abit, Alfredo Garcia, and the UI Team, led by Bill Butler. Funds are collected into the `"bitsharesdev"` account (`"1.2.2386"`) which is a multi-sig account controlled by `"BitShares Blockchain Foundation"` and the `"committee-account"` using the Budget Worker Model [5]:
 
 * Transparent accounting provided by the BitShares Blockchain Foundation [6]
 * Submitted invoices reviewed, approved and remitted within 5 business days
@@ -30,7 +53,7 @@ This is a Budget Worker Proposal (`"1.14.XX"`) which provides funding for (1) ne
 (1) Core Team Roles
 ===================
 
-The BitShares Core Team is a self-organizing agile-principled team focused on delivering regularly scheduled releases and ad hoc bug fixes for the BitShares Core software using GitFlow principles [7]. The table below describes the target composition of the team at full utilization for budget purposes only. The actual number of contributors and roles may vary within each development cycle (described below). The team has discretion in allocating resources to meet the needs of each development cycle.
+The BitShares Core Team is a self-organizing agile-principled team focused on delivering regularly scheduled releases and ad hoc bug fixes for the BitShares Core software. The table below describes the target composition of the team at full utilization for budget purposes only. The actual number of contributors and roles may vary within each development cycle (described below). The team has discretion in allocating resources to meet the needs of each development cycle.
 
 * BitShares Core Team Budget:
 
@@ -74,19 +97,25 @@ BitShares Core Team Framework:
 ===============================
 Collegiality
 * Maintain timely collaborative communications with each BitShares Core Team Member
-* Participate in at least two of three weekly Collaboration Sessions (see Coordinator description)
-* Work at least 75% of your weekly hours between Tuesday - Thursday
+* Target a majority of your weekly hours between Tuesday - Thursday
   * Facilitates ad hoc collaboration
   * Facilitates healthy work/life balance
 
 Transparency
 * Maintain working increments within Community facing collaboration tools
-* Submit invoices on time and with proper references to effort performed
+* Participate in at least two of three weekly Collaboration Sessions (see Coordinator description)
 
 Delivery
 * Deliver the highest value work first
-* Deliver working increments with invoice
+* Deliver working increments with invoice submission
 * Favor release schedule over feature completeness
+
+BitShares Core Team Member 'Contract Work' Guidance:
+====================================================
+
+This section is to be considered guidance, not a legal statement. The BitShares Decentralized Autonomous Community (BitShares DAC) 'owns' the funds collected by this Budget Worker and are made available as compensation to individuals performing 'contract worker' as described elsewhere in this document. Effort contributed by individuals is considered 'at-will' as no formal 'employment contract' is able to be formed between BitShares DAC and the 'contract worker' at this time. Neither the BitShares Blockchain Foundation nor the BitShares Committee or any individuals serving those entities are considered 'employers' of any 'contract worker'. The Coordinator, nor any other BitShares Core Team Member or Role is considered the 'boss' nor an 'employer' of any individual. All effort performed is a contribution to the BitShares DAC adhering to the MIT license.
+
+Each BitShares Core Team Member performing effort for the BitShares DAC acknowledges no recourse nor remedy is available from the BitShares DAC, BitShares Core Team Members nor author. 
 
 Coordinator (Full Time - 40 hours per week)
 ===========================================
@@ -122,13 +151,12 @@ Core Developer (Full Time - 40 hours per week)
 The Core Developer is a seasoned C++ developer primarily tasked with writing and documenting the source code. Secondarily, the Core Developer is tasked with refining user stories, requirements and process models prior to development as well as resolving bugs during testing.
 
 Core Developer Key Performance Indicators
-* Maintain code repositories within GitHub
-  * Create local branch for each numbered issue/feature
-  * Push functioning increments to numbered issue/feature branch
-  * Create pull request to Develop branch
 * Collaborate with Business Analyst to refine user stories, requirements and process models
 * Collaborate with QA/Tester on bug identification and resolution
-* Document your code for the benefit of future development efforts
+* Collaborate with the Documentation Specialist to review documentation and ensure it matches the source code intent and implementation
+* Maintain code repositories within GitHub using GitFlow principles [7]
+* Contribute to Code Review of peers and provide approval for Release
+* Document code for the benefit of future development efforts
 
 Business Analyst (Full Time - 40 hours per week)
 ================================================
@@ -158,16 +186,6 @@ QA/Tester Key Performance Indicators
 * Collaborate with Core Developers to identify and document bugs in GitHub
 * Collaborate with Documentation Specialist to revise developer documentation, ensuring it matches the intended workflow
 
-Code Reviewer (Part Time - 10 hours per week)
-=============================================
-The Code Reviewer is an expert C++ developer able to identify potential breaches in security or best practices within the source code. Primarily, the Code Reviewer will examine finished increments prior to pushing them into the staging branch. Secondarily, the Code Reviewer will assist Core Developers with implementing solutions adhering to security and best practices.
-
-Code Reviewer Key Performance Indicators
-* Review all pull request to the staging branch
-* Maintain staging and master branches within GitHub
-* Collaborate with Core Developers to remedy breaches in security or best practices, discretionary use of GitHub
-* Collaborate with Documentation Specialist to revise developer documentation, ensuring it matches the implementation and intent of the source code.
-
 Documentation Specialist (Part Time - 30 hours per week)
 ========================================================
 The Documentation Specialist is technical writer able to interrupt test cases, user stories, requirements, process models and C++ source code. Primarily the Documentation Specialist will write documentation for the development community on the docs.bitshares.org website. Secondarily, the Documentation Specialist will work with Core Developers to revise developer documentation based on the intent of the user stories, requirements and process models to ensure they match the intent and function of the source code.
@@ -193,6 +211,7 @@ The BitShares Core Team use various collaboration tools to organize their work, 
 | 2         | Product Roadmap ($124)              | Aha! (aha.io)                      |          $248 |
 | 2         | Process Models ($53)                | Blueworks Live (blueworkslive.com) |          $106 |
 | 5         | Co-working Space for FTE ($350)     | WeWork - or similar (wework.com)   |        $1,750 |
+| 1         | Translations Services ($1000)       | TBD                                |        $1,000 |
 
 * Conference Budget:
 
@@ -234,8 +253,9 @@ Budget
 | 2         | Process Models ($53)                |         $106 |
 | 1         | Infrastructure Environment ($200)   |         $200 |
 | 1         | Co-working Space ($350)             |       $1,750 |
-|       SUM | WEEKLY MONTHLY ITEMS                |       $2,304 |
-| CONVERTED | TO DAILY BUDGET (sum / 30 days)     |          $77 |
+| 1         | Translation Services ($350)         |       $1,750 |
+|       SUM | WEEKLY MONTHLY ITEMS                |       $3,304 |
+| CONVERTED | TO DAILY BUDGET (sum / 30 days)     |         $110 |
 
 * One-Time Budget Items:
 
@@ -257,9 +277,9 @@ Budget
 | Description            | Amount (USD) |
 |:-----------------------| ------------:|
 | Weekly Budget Items    |       $6,457 |
-| Monthly Budget Items   |       $   77 |
+| Monthly Budget Items   |       $  110 |
 | One-Time Budget Items  |       $   98 |
-| SUM DAILY BUDGET ITEMS |       $6,632 |
+| SUM DAILY BUDGET ITEMS |       $6,665 |
 
 Duration and Pay
 ================
@@ -272,9 +292,9 @@ Payments:
 * Coordinator will review and approve vendor invoices, then forward to BitShares Blockchain Foundation for direct payment to vendor
 
 Calculation:
-* 2.53 BTS/bitUSD = settlement price of bitUSD at the moment of writing (2018-01-24)
-* 2.5 = multiplier to cover market fluctuations and borrow at 2.5x collateral if needed
-* $6,632 usd/day * 2.53 bts/usd * 2.5 = 41,947.4 BTS/day
+* 2.33 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-01-26)
+* 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
+* $6,665 USD/day * 2.33 BTS/USD * 2.5 collateral multiplier= 38,824 BTS/day
 
 USD payment will be in bitUSD with method developed by @xeroc [8]. CNY payment may be requested and fulfilled with bitCNY using 6.37 USD/CNY. A Core Team Member must declare their payment method with their first invoice and may not change it during calendar year 2018. Contingency: should world events disrupt the USD/CNY rate by +/- 10%, the invoice will be remitted in bitUSD to honor the budget.
 
