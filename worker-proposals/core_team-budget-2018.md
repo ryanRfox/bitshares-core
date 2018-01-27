@@ -1,10 +1,11 @@
-DRAFT 3.3
-=========
-Fix: Replace table Backlog with screenshot from Aha!
-Remove: 'net new' BitShares Core Team Roles
-Fix: Highlight the two functions the budget provides funding for
-Fix: Worker duration: 46 weeks from 12 Feb - 31 Dev
-Fix: Update calulations
+DRAFT 3.3.1
+===========
+
+* Fix: Replace table Backlog with screenshot from Aha!
+* Remove: 'net new' BitShares Core Team Roles
+* Fix: Highlight the two functions the budget provides funding for
+* Fix: Worker duration: 46 weeks from 12 Feb - 31 Dev
+* Fix: Update calulations
 
 BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
 ===============================================================
