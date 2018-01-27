@@ -1,13 +1,13 @@
-DRAFT 3.2
-===========
-
-* Add: 'Exempt Worker' no overtime 
-* Add: 'Bonus Pay' per of 40 hours after 1000 hours worked
-* Add: some example issues to Backlog Parking Lot, not prioritized
-* Fix: absolute path to BSIPs
+DRAFT 3.3
+=========
+Fix: Replace table Backlog with screenshot from Aha!
+Remove: 'net new' BitShares Core Team Roles
+Fix: Highlight the two functions the budget provides funding for
+Fix: Worker duration: 46 weeks from 12 Feb - 31 Dev
+Fix: Update calulations
 
 BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
-====================================================
+===============================================================
 
 Author: Ryan R. Fox (`"fox"`) [1-4]
 
@@ -21,23 +21,7 @@ Intent
 Backlog
 =======
 
-| In Progress                  | Complete                     | Parking Lot: BSIP            | Parking Lot: Issue/Feature |
-| ---------------------------- | ---------------------------- | ---------------------------- | -------------------------- |
-| Percentage-based transfer fee solution based on CER ([BSIP 10](https://github.com/bitshares/bsips/blob/master/bsip-0010.md)) | Optimization to Force Settlement Parameters of BitCNY ([16](bsip-0016.md)) | Worker Proposal Improvements ([BSIP 28](https://github.com/bitshares/bsips/blob/master/bsip-0028.md) | fc::time_point_sec::to_iso_string is broken ([Issue 597](https://github.com/bitshares/bitshares-core/issues/597)) |
-| | Revive BitAsset through buying Settlement Pool ([BSIP 18](https://github.com/bitshares/bsips/blob/master/bsip-0018.md)) | Distribute Market Fees on Core Asset to Referral Program (BSIP 4](bsip-0004.md)) | Virtual operations should be excluded from transactions ([Issue 588](https://github.com/bitshares/bitshares-core/issues/588)) |
-| | | Market Maker Incentivization ([BSIP 6](https://github.com/bitshares/bsips/blob/master/bsip-0006.md))                            | Operation_history_id mismatch among nodes ([Issue 585](https://github.com/bitshares/bitshares-core/issues/585)) |
-| | | Asset Issuer Reclaim Fee Pool Funds ([BSIP 27](https://github.com/bitshares/bsips/blob/master/bsip-0027.md))                    | Always allow updating a call order to higher collateral ratio ([Issue 583](https://github.com/bitshares/bitshares-core/issues/583)) |
-| | | Refund Order Creation Fee in Originally Paid Asset on Cancel ([BSIP 26](https://github.com/bitshares/bsips/blob/master/bsip-0026.md)) | `assert()` in db_market.cpp and other source code? ([Issue 511](https://github.com/bitshares/bitshares-core/issues/511)) |
-| | | Benefit Society ([BSIP 9](https://github.com/bitshares/bsips/blob/master/bsip-0009.md))                                         | Integration with EOS.IO |
-| | | Introducing the 'Coin-Age' statistic to Bitshares assets ([BSIP 21](https://github.com/bitshares/bsips/blob/master/bsip-0021.md)) | Witness nodes sometimes accept transactions with unnecessary signatures ([Issue 580](https://github.com/bitshares/bitshares-core/issues/580)) |
-| | | Introducing expiring votes for Witnesses, Committie members & Proxies within the Bitshares network ([BSIP 22]https://github.com/bitshares/bsips/blob/master/(bsip-0022.md)) | Atomic Cross Chain Transactions (ACCT) |
-| | | Sharedropping an UIA against an external cryptocurrency distribution snapshot ([BSIP 23](https://github.com/bitshares/bsips/blob/master/bsip-0023.md)) | Integration with Trezor hardware wallet |
-| | | Locking Bitshares away as 'Bitshares Influence' for voting privileges on the BTS DEX ([BSIP 24](https://github.com/bitshares/bsips/blob/master/bsip-0024.md)) | Market operations |
-| | | Expiring Votes for Witnesses ([BSIP 5](https://github.com/bitshares/bsips/blob/master/bsip-0005.md))                            | Privacy features |
-| | | Transaction Flat-Rates with Weighted Rate-Limitation ([BSIP 25](https://github.com/bitshares/bsips/blob/master/bsip-0025.md))   | Expand available API calls |
-| | | Introducing profit sharing/dividends to Bitshares (MPA only) ([BSIP 19](https://github.com/bitshares/bsips/blob/master/bsip-0019.md))   | In memory data management |
-| | | Introducing profit sharing/dividends to Bitshares (UIA only) ([BSIP 20](https://github.com/bitshares/bsips/blob/master/bsip-0020.md))   | On disk data management |
-| | | Maker / Taker Market Fees Flag ([BSIP 3](https://github.com/bitshares/bsips/blob/master/bsip-0003.md))                          | Authentication - OAuth, 2FA, FIDO, etc. |
+![alt text](backlog.png "Example Backlog using Aha!")
 
 Background
 ==========
@@ -47,15 +31,19 @@ I have actively contributed to BitShares from its inception. You will find my ac
 Worker
 ======
 
-This is a Budget Worker Proposal (`"1.14.XX"`) which provides funding for (1) net new BitShares Core Team Roles and (2) collaboration tools through calendar year 2018. It intends to work in concert with the existing development resources including Abit, Alfredo Garcia, and the UI Team, led by Bill Butler. Funds are collected into the `"bitsharesdev"` account (`"1.2.2386"`) which is a multi-sig account controlled by `"BitShares Blockchain Foundation"` and the `"committee-account"` using the Budget Worker Model [5]:
+This is a Budget Worker Proposal (`"1.14.XX"`) which provides funding through calendar year 2018 for:
+* BitShares Core Team Roles
+* Collaboration Tools
+
+It intends to work in concert with the existing development resources including Abit, Alfredo Garcia, and the UI Team, led by Bill Butler. Funds are collected into the `"bitsharesdev"` account (`"1.2.2386"`) which is a multi-sig account controlled by `"BitShares Blockchain Foundation"` and the `"committee-account"` using the Budget Worker Model [5]:
 
 * Transparent accounting provided by the BitShares Blockchain Foundation [6]
 * Submitted invoices reviewed, approved and remitted within 5 business days
 * Compensation paid in bitUSD (default) or bitCNY (Team Member may define upon first invoice)
 * All unused accumulated BTS returned to the Reserve Pool at the conclusion of the Worker
 
-(1) Core Team Roles
-===================
+Core Team Roles
+===============
 
 The BitShares Core Team is a self-organizing agile-principled team focused on delivering regularly scheduled releases and ad hoc bug fixes for the BitShares Core software. The table below describes the target composition of the team at full utilization for budget purposes only. The actual number of contributors and roles may vary within each development cycle (described below). The team has discretion in allocating resources to meet the needs of each development cycle.
 
@@ -98,7 +86,7 @@ The BitShares Core Team is a self-organizing agile-principled team focused on de
 *Subject to change upon consensus of Core Team Members
 
 BitShares Core Team Framework:
-===============================
+==============================
 Collegiality
 * Maintain timely collaborative communications with each BitShares Core Team Member
 * Target a majority of your weekly hours between Tuesday - Thursday
@@ -126,7 +114,7 @@ Each BitShares Core Team Member performing effort for the BitShares DAC acknowle
 Coordinator (Full Time - 40 hours per week)
 ===========================================
 Onsite Office 
-* WeWork Boston, MA, US
+* Co-working space Boston, MA, US
 * Monday – Friday with additional meetings as necessary
 
 Collaboration Sessions
@@ -201,8 +189,8 @@ Documentation Specialist Key Performance Indicators
 * Collaborate with the Core Developers to review documentation and ensure it matches the source code intent and implementation
 * Collaborate with the QA/Tester and Business Analyst to enhance documentation including user stories, requirements, process models and test cases
 
-(2) Collaboration Tools
-=======================
+Collaboration Tools
+===================
 
 The BitShares Core Team use various collaboration tools to organize their work, convey ideas and aid development efforts. All tools provide read/reviewer access for the community to observe progress and provide feedback. Write/contributor access may be limited to a specific Core Team role(s). Team Members are encouraged to office within a co-working space to expose the BitShares platform therein and form collaboration opportunities. A stipend is provided for full time equivalent (FTE) effort. The FTE Core Team will meet prior to each of the scheduled DevCon events for team building and in person collaboration. The Core Team will then participate in conference events in constructive ways. The tables below describe the budget for collaboration tools:
 
@@ -276,21 +264,21 @@ Budget
 | 5 nights       | Lodging (up to $200)                 |       $5,000 |
 | 5 days         | Meals (up to $80)                    |       $2,000 |
 | SUM            | ONE-TIME BUDGET ITEMS                |      $32,250 |
-| CONVERTED      | TO DAILY BUDGET (sum / 11mo / 30d)   |          $98 |
+| CONVERTED      | TO DAILY BUDGET (sum / 46w / 7d)     |         $100 |
 
 * Sum Daily Budget Items:
 
 | Description            | Amount (USD) |
 |:-----------------------| ------------:|
 | Weekly Budget Items    |       $6,457 |
-| Monthly Budget Items   |       $  110 |
-| One-Time Budget Items  |       $   98 |
-| SUM DAILY BUDGET ITEMS |       $6,665 |
+| Monthly Budget Items   |         $110 |
+| One-Time Budget Items  |         $100 |
+| SUM DAILY BUDGET ITEMS |       $6,667 |
 
 Duration and Pay
 ================
 
-This proposal will last for 11 months, starting from 1st February 2018.
+This proposal will last for roughly 46 weeks, starting from 12th February 2018.
 
 Payments:
 * Invoices from Core Team Members will be submitted to the Coordinator by Monday 12:00 UTC for work performed thru Sunday 23:59 UTC of the previous period
@@ -298,9 +286,9 @@ Payments:
 * Coordinator will review and approve vendor invoices, then forward to BitShares Blockchain Foundation for direct payment to vendor
 
 Calculation:
-* 2.33 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-01-26)
+* 1.84 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-01-27)
 * 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
-* $6,665 USD/day * 2.33 BTS/USD * 2.5 collateral multiplier= 38,824 BTS/day
+* $6,667 USD/day * 1.84 BTS/USD * 2.5 collateral multiplier= 30,668 BTS/day
 
 USD payment will be in bitUSD with method developed by @xeroc [8]. CNY payment may be requested and fulfilled with bitCNY using 6.37 USD/CNY. A Core Team Member must declare their payment method with their first invoice and may not change it during calendar year 2018. Contingency: should world events disrupt the USD/CNY rate by +/- 10%, the invoice will be remitted in bitUSD to honor the budget.
 
