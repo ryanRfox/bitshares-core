@@ -1,12 +1,12 @@
-DRAFT 4.0
+DRAFT 4.1
 =========
 
-* Change: messaging to focus on professional, dedicated development team, 'salaried' compensation
-* Fix: UX/UI Liaison rate to range
-* Add: Section for Initial Team Members
-  * Move: Ryan R. Fox - Coordinator into this section
-  * Add: Header for Peter and Taconator (they need to supply a bio blurb)
-  * Add: Header for Bill (I modified his blurb from the recent UI proposal)
+* Fix: Refine Background
+* Fix: Refine Core Team Roles
+* Fix: Format Development Cycles
+* Fix: Move Bios after Role Descriptions
+* Fix: Calculations
+* Add: Table headings
 
 BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
 ===============================================================
@@ -23,7 +23,7 @@ Intent
 Background
 ==========
 
-Currently the BitShares Core software is maintained by a few gracious individuals either volunteering their time or receiving funding through distinct short-term worker proposals. The BitShares Community has expressed interest securing a long term, dedicated and professional development team capable of more rapidly delivering high value features in a transparent way. BitShares is global platform and so too is the desired development team composition. A large volume of feature enhancements, bug fixes and BSIPs exist for the team to work from.
+BitShares Core software is currently maintained by individuals either volunteering their time or receiving funding through distinct short-term worker proposals. The BitShares Community has recognized the need for organized development efforts to increase the utility of our platform. There is a large backlog of ideas and requirements lacking prioritization, including feature enhancements, bug fixes, and BSIPs. Therefore, proposed is the establishment of a long-term, professional, global team dedicated to cohesive and comprehensive development efforts delivered transparently.
 
 Backlog (Sample Screenshot)
 ===========================
@@ -37,7 +37,7 @@ This is a Budget Worker Proposal (`"1.14.XX"`) which provides funding through ca
 * BitShares Core Team Roles
 * Collaboration Tools
 
-It intends to work in concert with the existing development resources including Abit, Alfredo Garcia, and the UI Team, led by Bill Butler. BTS are collected into the `"bitsharesdev"` account (`"1.2.2386"`) which is a multi-sig account controlled by `"BitShares Blockchain Foundation"` and the `"committee-account"` using the Budget Worker Model [5]:
+It intends to work in concert with the existing development resources including Abit, Alfredo Garcia, and the UI Team, led by Bill Butler. BTS are collected into the `"bitsharesdev"` account (`"1.2.2386"`) which is a multi-sig account controlled by `"BitShares Blockchain Foundation"` and `"committee-account"` using the Budget Worker Model [5]:
 
 * Transparent accounting provided by the BitShares Blockchain Foundation [6]
 * Submitted invoices reviewed, approved and remitted within 5 business days
@@ -47,9 +47,9 @@ It intends to work in concert with the existing development resources including 
 Core Team Roles
 ===============
 
-The BitShares Core Team is a self-organizing agile-principled team focused on delivering regularly scheduled releases and ad hoc bug fixes for the BitShares Core software. The table below describes the target composition of the team at full utilization for budget purposes only. The actual number of contributors and roles may vary within each development cycle (described below). The team has discretion in allocating resources to meet the needs of each development cycle. A goal is to rapidly grow into and sustain a dedicated team approximating the composition below.
+The BitShares Core Team is a self-organizing agile-principled team focused on delivering regularly scheduled releases and ad hoc bug fixes for the BitShares Core software. The plan is to rapidly grow into and sustain a dedicated team approximating the composition in Table 1. The actual number of contributors and roles may vary within each development cycle (described below). The team has discretion in allocating resources to meet the resource needs of each development cycle.
 
-* BitShares Core Team Budget:
+* Table 1. BitShares Core Team Budget
 
 | Roles (described below)  | Rate Range (Hourly USD) | Estimated Hours |
 |:------------------------ | -----------------------:|:--------------- |
@@ -65,43 +65,39 @@ The BitShares Core Team is a self-organizing agile-principled team focused on de
 
 * Development Cycles*:
   * Feature Release (non-hard fork):
-  * Three-week sprints
-
-* Core Release (Hard Fork):
-  * Twice annually: first Thursday of June & December
+    * Three-week sprints
+  * Core Release (Hard Fork):
+    * Twice annually: first Thursday of June & December
 
 *Subject to change upon consensus of Core Team Members
 
 BitShares Core Team Framework:
 ==============================
-Collegiality
+Accountability
 * Maintain timely collaborative communications with each BitShares Core Team Member
+* Participate in at least two of three weekly Collaboration Sessions (see Coordinator description)
 * Target a majority of your weekly hours between Tuesday - Thursday
   * Facilitates ad hoc collaboration
   * Facilitates healthy work/life balance
 
 Transparency
 * Maintain working increments within Community facing collaboration tools
-* Participate in at least two of three weekly Collaboration Sessions (see Coordinator description)
+* Maintain timely updates within Community facing collaboration tools of work in progress and development priorities
 
 Delivery
 * Deliver the highest value work first
-* Deliver working increments with invoice submission
-* Favor release schedule over feature completeness
+* Favor release schedule over feature completeness (see Development Cycles)
 
 BitShares Core Team Member 'Contract Work' Guidance:
 ====================================================
 
-This section is to be considered guidance, not a legal statement. The BitShares Decentralized Autonomous Community (BitShares DAC) 'owns' the funds collected by this Budget Worker and are made available as compensation to individuals performing 'contract worker' as described elsewhere in this document. Effort contributed by individuals is considered 'at-will' as no formal 'employment contract' is able to be formed between BitShares DAC and the 'contract worker' at this time. Neither the BitShares Blockchain Foundation (BBF) nor the BitShares Committee or any individuals serving those entities are considered 'employers' of any 'contract worker'. The Coordinator, nor any other BitShares Core Team Member or Role is considered the 'boss' nor an 'employer' of any individual. Any compensation received from the BitShares DEX is likely considered 'earned income' and may be subject to tax reporting by the recipient. The BitShares DAC, BBF, BitShares Committee, Coordinator, nor any Core Team Member will not prepare nor issue 'tax documents' to any entitiy. All effort performed is a 'work for hire' contribution to the BitShares DAC adhering to its MIT license.
+This section is to be considered guidance, not a legal statement. The BitShares Decentralized Autonomous Community (BitShares DAC) 'owns' the funds collected by this Budget Worker and are made available as compensation to individuals performing 'contract worker' as described elsewhere in this document. Effort contributed by individuals is considered 'at-will' as no formal 'employment contract' is able to be formed between BitShares DAC and the 'contract worker' at this time. Neither the BitShares Blockchain Foundation (BBF) nor the BitShares Committee or any individuals serving those entities are considered 'employers' of any 'contract worker'. No BitShares Core Team Member or Role is considered the 'boss' or an 'employer' of any individual. Any compensation received from the BitShares DEX is likely considered 'earned income' and may be subject to tax reporting by the recipient. The BitShares DAC, BBF, BitShares Committee, Coordinator, nor any Core Team Member will not prepare nor issue tax documents to any entity. All effort performed is a 'work for hire' contribution to the BitShares DAC adhering to its MIT license.
 
-The BitShares Core Team value a healthy work/life balance and sustainable compensation. Each Core Team Member is encouraged to contribute no more hours than is customary in their jurisdiction for 'full time equivalent' work, as the role is considered 'exempt' from overtime compensation. A goal is to provide the equivalent of an annual 'salaried position' with two weeks holiday. To accommodate this, the equivalent of 40 hours of 'base pay' will be remitted to the Core Team Member upon accumulating 1000 hours within a rolling 12-month period, thus resetting both counters. National and religious observances are also important to a healthy work/life balance. Up to ten 8-hour 'observance days' are paid per calendar year, prorated to the rate and average working days in the week before and after the week containing the observance day.
+Each Core Team Member is encouraged to contribute no more hours than is customary in their jurisdiction for 'full time equivalent' work, as the role is considered 'exempt' from overtime compensation. A goal is to provide the equivalent of an annual salaried position with two weeks holiday. To accommodate this, the equivalent of 40 hours of base pay will be remitted to the Core Team Member upon accumulating 1000 hours within a rolling 12-month period, thus resetting both counters. National and religious observances are also important to a healthy work/life balance. Up to ten 8-hour observance days are paid per calendar year, prorated to the rate and average working days in the week before and after the week containing the observance day.
 
 Each BitShares Core Team Member performing effort for the BitShares DAC acknowledges no recourse nor remedy is available from the BitShares DAC, any other BitShares Core Team Member nor author.
 
-Initial BitShares Core Team
-===========================
-
-* Initial BitShares Core Team:
+* Table 2. Initial BitShares Core Team
 
 | Roles (described below)  | Rate Range (Hourly USD) | Team Members | Estimated Hours |
 |:------------------------ | -----------------------:|:------------ |:--------------- |
@@ -116,33 +112,9 @@ Initial BitShares Core Team
 | Documentation Specialist |             $ 60 - $ 90 | -            | -               |
 | UI/UX Liaison            |                    $125 | Bill Butler  | 2 hours weekly  |
 
-Ryan R. Fox - Coordinator
-=========================
-
-I have actively contributed to BitShares from its inception. You will find my account (`"1.2.167"`) within the genesis block and many bitsharestalk.org threads from 2014 detailing my testing feedback as we iterated toward launching the BitShares blockchain [1-4]. I have extensive professional background in project management with software development teams and am a professional scrum master (PSM-1) with extensive multi-national experience in financial services, mortgage banking and manufacturing. I now propose to use my industry knowledge, professionalism and deep BitShares expertise in an expanded role to meet the emerging needs of the community. 
-
-Peter Conrad - Core Developer
-=============================
-Draft: I am awaiting a blurb to include here. It will include both crypto and industry experience. I may want to include a reference to my GitHub, LinkedIn or other platforms [#].
-
-Taconator - Business Analyst
-============================
-Draft: I am awaiting a blurb to include here. It will include both crypto and industry experience. I may want to include a reference to my GitHub, LinkedIn or other platforms [#].
-
-Bill Butler - UX/UI Liaison
-===========================
-Draft: I have extensive industry experience: Founded an ISP in 1993. NodeJS, Angular, PHP, CouchDB, SQL. UX/UI Experience. I am currently VP Engineering for a healthcare software development firm and have eight years experience managing development teams. I may want to include a reference to my GitHub, LinkedIn or other platforms [#].
-
 Coordinator (Full Time - 40 hours per week)
 ===========================================
-Onsite Office 
-* Co-working space Boston, MA, US
-* Monday – Friday with additional meetings as necessary
-
-Collaboration Sessions
-* 02:00 - 04:00 UTC Tuesday
-* 19:00 - 21:00 UTC Wednesday
-* 11:00 - 13:00 UTC Thursday
+The Coordinator is an experienced agile project manager or scrum master with deep knowledge of distributed ledger technology. Primarily, the Coordinator is tasked with general facilitation, organization and prioritization of development efforts. 
 
 Coordinator Key Performance Indicators
 * Maintain transparent communications with BitShares Community
@@ -158,9 +130,12 @@ Coordinator Key Performance Indicators
   * Contingency: If both a backlog of effort and an empty candidate pool for an open role exist, the accumulated budget funds may be allocated to a recruitment effort to fill the open role
 * Onboard and mentor Core Team Members
 * Facilitate standing collaboration sessions (Thrice weekly 2-hour blocks dispersed for international participation)
+  * 02:00 - 04:00 UTC Tuesday
+  * 19:00 - 21:00 UTC Wednesday
+  * 11:00 - 13:00 UTC Thursday
 * Approve invoices submitted by Core Team Members, forward to BitShares Blockchain Foundation for remittance
 * Maintain vendor relationships for collaboration tools
-* Arrange accommodations for Developer Conference attendees
+* Facilitate Developer Conference attendance
 
 Core Developer (Full Time - 40 hours per week)
 ==============================================
@@ -211,12 +186,32 @@ Documentation Specialist Key Performance Indicators
 * Collaborate with the Core Developers to review documentation and ensure it matches the source code intent and implementation
 * Collaborate with the QA/Tester and Business Analyst to enhance documentation including user stories, requirements, process models and test cases
 
+Initial Core Team Member Bios
+=============================
+
+Ryan R. Fox - Coordinator - Boston, MA, US
+==========================================
+
+I have actively contributed to BitShares from its inception. You will find my account (`"1.2.167"`) within the genesis block and many bitsharestalk.org threads from 2014 detailing my testing feedback as we iterated toward launching the BitShares blockchain [1-4]. I have extensive professional background in project management with software development teams and am a professional scrum master (PSM-1) with extensive multi-national experience in financial services, mortgage banking and manufacturing. I will maintain a physical presence within a co-working space in Boston, MA, US.
+
+Peter Conrad - Core Developer
+=============================
+Draft: I am drafting a bio to include here. It will include both crypto and industry experience. I may want to include a reference to my GitHub, LinkedIn or other platforms [#].
+
+Taconator - Business Analyst
+============================
+I began participating in the BitShares Hangout in early 2017 after submitting a patch and associated unit tests related to the recurring withdrawals capability that already existed in BitShares Core. I also began publishing monthly reports on the fees collected by the BitShares blockchain in April 2017. I have experience within various industries identifying problems of non-technical end-users, designing technical products for solving those problems, and leading teams to successfully build those technical products. (Just because one might have a "hammer" does not mean that every problem is a "nail".) These solutions span from augmented reality applications on mobile devices to global distributed software systems.
+
+Bill Butler - UX/UI Liaison
+===========================
+Draft: I have extensive industry experience: Founded an ISP in 1993. NodeJS, Angular, PHP, CouchDB, SQL. UX/UI Experience. I am currently VP Engineering for a healthcare software development firm and have eight years’ experience managing development teams. I may want to include a reference to my GitHub, LinkedIn or other platforms [#].
+
 Collaboration Tools
 ===================
 
 The BitShares Core Team use various collaboration tools to organize their work, convey ideas and aid development efforts. All tools provide read/reviewer access for the community to observe progress and provide feedback. Write/contributor access may be limited to a specific Core Team role(s). Team Members are encouraged to office within a co-working space to expose the BitShares platform therein and form collaboration opportunities. A stipend is provided for full time equivalent (FTE) effort. The FTE Core Team will meet prior to each of the scheduled DevCon events for team building and in person collaboration. The Core Team will then participate in conference events in constructive ways. The tables below describe the budget for collaboration tools:
 
-* Collaboration Tools (Monthly):
+* Table 3. Collaboration Tools (Monthly)
 
 | Licenses  | Description                         | Vendor                             | Monthly (USD) |
 | ---------:|:----------------------------------- |:---------------------------------- | -------------:|
@@ -229,7 +224,7 @@ The BitShares Core Team use various collaboration tools to organize their work, 
 | 5         | Co-working Space for FTE ($350)     | WeWork - or similar (wework.com)   |        $1,750 |
 | 1         | Translations Services ($1000)       | TBD                                |        $1,000 |
 
-* Conference Budget:
+* Conference Budget
 
 | Accommodations | Description                          | Amount (USD) |
 |:-------------- |:------------------------------------ | ------------:|
@@ -245,7 +240,7 @@ The BitShares Core Team use various collaboration tools to organize their work, 
 Budget
 ======
 
-* Weekly Budget Items:
+* Table 4. Weekly Budget Items
 
 | Role (hours @ rate)                      | Amount (USD) |
 |:---------------------------------------- | ------------:|
@@ -258,7 +253,7 @@ Budget
 | SUM WEEKLY BUDGET ITEMS                  |      $45,200 |
 | CONVERTED TO DAILY BUDGET (sum / 7 days) |       $6,457 |
 
-* Monthly Budget Items:
+* Table 5. Monthly Budget Items
 
 | Licenses  | Description (rate)                  | Amount (USD) |
 | ---------:|:----------------------------------- | ------------:|
@@ -273,7 +268,7 @@ Budget
 |       SUM | WEEKLY MONTHLY ITEMS                |       $3,304 |
 | CONVERTED | TO DAILY BUDGET (sum / 30 days)     |         $110 |
 
-* One-Time Budget Items:
+* Table 6. One-Time Budget Items
 
 | Accommodations | Description                          | Amount (USD) |
 |:------------   |:------------------------------------ | ------------:|
@@ -288,7 +283,7 @@ Budget
 | SUM            | ONE-TIME BUDGET ITEMS                |      $32,250 |
 | CONVERTED      | TO DAILY BUDGET (sum / 46w / 7d)     |         $100 |
 
-* Sum Daily Budget Items:
+* Table 7. Sum Daily Budget Items
 
 | Description            | Amount (USD) |
 |:-----------------------| ------------:|
@@ -308,9 +303,9 @@ Payments:
 * Coordinator will review and approve vendor invoices, then forward to BitShares Blockchain Foundation for direct payment to vendor
 
 Calculation:
-* 1.84 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-01-27)
+* 2.09 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-01-29)
 * 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
-* $6,667 USD/day * 1.84 BTS/USD * 2.5 collateral multiplier= 30,668 BTS/day
+* $6,667 USD/day * 2.09 BTS/USD * 2.5 collateral multiplier= 34,835 BTS/day
 
 USD payment will be in bitUSD with method developed by @xeroc [8]. CNY payment may be requested and fulfilled with bitCNY using 6.37 USD/CNY. A Core Team Member must declare their payment method with their first invoice and may not change it during calendar year 2018. Contingency: should world events disrupt the USD/CNY rate by +/- 10%, the invoice will be remitted in bitUSD to honor the budget.
 
@@ -325,4 +320,3 @@ References
 * [6] BBF [Transparent Accounting](http://www.bitshares.foundation/accounting)
 * [7] BitShares [GitFlow](https://github.com/bitshares/bitshares-core/wiki/Git-Flow)
 * [8] Xeroc's [Worker Payment Template](https://github.com/xeroc/worker-proposals/blob/master/2017-02.md#worker)
-
