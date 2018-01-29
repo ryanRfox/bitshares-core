@@ -1,12 +1,7 @@
-DRAFT 4.1
-=========
+DRAFT 4.2.1
+===========
 
-* Fix: Refine Background
-* Fix: Refine Core Team Roles
-* Fix: Format Development Cycles
-* Fix: Move Bios after Role Descriptions
-* Fix: Calculations
-* Add: Table headings
+* Fix 'interpret' not 'interrupt' test cases :) 
 
 BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
 ===============================================================
@@ -179,7 +174,7 @@ QA/Tester Key Performance Indicators
 
 Documentation Specialist (Part Time - 30 hours per week)
 ========================================================
-The Documentation Specialist is technical writer able to interrupt test cases, user stories, requirements, process models and C++ source code. Primarily the Documentation Specialist will write documentation for the development community on the docs.bitshares.org website. Secondarily, the Documentation Specialist will work with Core Developers to revise developer documentation based on the intent of the user stories, requirements and process models to ensure they match the intent and function of the source code.
+The Documentation Specialist is technical writer able to interpret test cases, user stories, requirements, process models and C++ source code. Primarily the Documentation Specialist will write documentation for the development community on the docs.bitshares.org website. Secondarily, the Documentation Specialist will work with Core Developers to revise developer documentation based on the intent of the user stories, requirements and process models to ensure they match the intent and function of the source code.
 
 Documentation Specialist Key Performance Indicators
 * Collaborate with the development community to ensure documentation supports their efforts
