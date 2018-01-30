@@ -1,4 +1,4 @@
-DRAFT 5.1
+DRAFT 5.1.1
 ===========
 
 * Fix: Table headings and numbering
@@ -272,7 +272,8 @@ The items listed in the tables below represent and upper bound on expenditures. 
 | SUM ONE-TIME COLLABORATION TOOLS         |      $32,250 |
 | CONVERTED TO DAILY BUDGET                |         $175 |
 
-Table 8. Total Budget
+* Table 8. Total Budget
+
 | Description                              | Amount (USD) |
 |:-----------------------------------------| ------------:|
 | SUM DAILY BUDGET                         |       $6,632 |
