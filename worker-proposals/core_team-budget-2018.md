@@ -1,7 +1,14 @@
-DRAFT 4.2.1
+DRAFT 5.0
 ===========
 
-* Fix 'interpret' not 'interrupt' test cases :) 
+* Change: Business Analyst role description to be more detailed
+* Change: workers.bitshares.foundation will be the budget collection account (from bitsharesdev)
+* Change: bitsharesdev will become the payment account
+* Remove: bitCNY as payment option
+  * Unfortunately, BBF are not able to accommodate remittances in multi-currency at this time
+  * BBF are willing to explore multi-currency remittances for inclusion at a future date
+* Add: overview description of the team
+* Note: BBF will prepare the calculations upon publishing
 
 BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
 ===============================================================
@@ -32,17 +39,19 @@ This is a Budget Worker Proposal (`"1.14.XX"`) which provides funding through ca
 * BitShares Core Team Roles
 * Collaboration Tools
 
-It intends to work in concert with the existing development resources including Abit, Alfredo Garcia, and the UI Team, led by Bill Butler. BTS are collected into the `"bitsharesdev"` account (`"1.2.2386"`) which is a multi-sig account controlled by `"BitShares Blockchain Foundation"` and `"committee-account"` using the Budget Worker Model [5]:
+It intends to work in concert with the existing development resources including Abit, Alfredo Garcia, and the UI Team, led by Bill Butler. BTS are collected into the `"workers.bitshares.foundation"` account which is a multi-sig account controlled by `"BitShares Blockchain Foundation"` and `"committee-account"` using the Budget Worker Model [5]:
 
 * Transparent accounting provided by the BitShares Blockchain Foundation [6]
 * Submitted invoices reviewed, approved and remitted within 5 business days
-* Compensation paid in bitUSD (default) or bitCNY (Team Member may define upon first invoice)
+* Compensation paid in bitUSD
 * All unused accumulated BTS returned to the Reserve Pool at the conclusion of the Worker
 
 Core Team Roles
 ===============
 
-The BitShares Core Team is a self-organizing agile-principled team focused on delivering regularly scheduled releases and ad hoc bug fixes for the BitShares Core software. The plan is to rapidly grow into and sustain a dedicated team approximating the composition in Table 1. The actual number of contributors and roles may vary within each development cycle (described below). The team has discretion in allocating resources to meet the resource needs of each development cycle.
+The BitShares Core Team is a self-organizing agile-principled team focused on delivering regularly scheduled releases and ad hoc bug fixes for the BitShares Core software. The plan is to rapidly grow into and sustain a dedicated team approximating the composition in Table 1. The actual number of contributors and roles may vary within each development cycle (described below). The team has discretion in allocating resources to meet the resource needs of each development cycle. 
+
+Producing reliable and secure software at scale requires ideation, organization, definition, prioritization, development, testing and documentation. The ideal team composition includes roles specializing in each of these functions and capable of contributing many. The goal of a highly functioning team is to fully utilize each individual's effort and together maximize their collective output. 
 
 * Table 1. BitShares Core Team Budget
 
@@ -146,7 +155,8 @@ Core Developer Key Performance Indicators
 
 Business Analyst (Full Time - 40 hours per week)
 ================================================
-The Business Analyst is primarily tasked with writing user stories, requirements and process models. Secondarily, the Business Analyst is tasked with revising test cases with the QA/Tester.
+
+The Business Analyst is a key role in a highly functioning team. They review the prioritized list of ideas and refine them into requirements prior to the Developer beginning their effort. Creating requirements documents often include user stories which narrate how the end user and/or system behave. Process models are another tool for conveying the requirements in a visual flow diagram. Attention to detail and the ability to research and document are desired characteristics. During development the Developer will often collaborate with the Business Analyst to clarify and refine requirements to ensure the implementation meets the desired behavior. The Business Analyst will assist the QA/Tester with writing test cases as well as executing and documenting results thereof. The Business Analyst will review and refine documentation produced by the Documentation Specialist to ensure it accurately reflects the requirements.
 
 Business Analyst Key Performance Indicators
 * Maintain user stories, requirements and process models
@@ -235,6 +245,8 @@ The BitShares Core Team use various collaboration tools to organize their work, 
 Budget
 ======
 
+The items listed in the tables below represent and upper bound on expenditures. All funds collected and unused at the conclusion of this Worker Proposal will be returned to the Reserve Pool.
+
 * Table 4. Weekly Budget Items
 
 | Role (hours @ rate)                      | Amount (USD) |
@@ -302,7 +314,7 @@ Calculation:
 * 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
 * $6,667 USD/day * 2.09 BTS/USD * 2.5 collateral multiplier= 34,835 BTS/day
 
-USD payment will be in bitUSD with method developed by @xeroc [8]. CNY payment may be requested and fulfilled with bitCNY using 6.37 USD/CNY. A Core Team Member must declare their payment method with their first invoice and may not change it during calendar year 2018. Contingency: should world events disrupt the USD/CNY rate by +/- 10%, the invoice will be remitted in bitUSD to honor the budget.
+USD payment will be in bitUSD with method developed by @xeroc [8]. A Core Team Member must declare their payment method with their first invoice and may not change it during calendar year 2018. Contingency: should world events disrupt the USD/CNY rate by +/- 10%, the invoice will be remitted in bitUSD to honor the budget.
 
 References
 ==========
