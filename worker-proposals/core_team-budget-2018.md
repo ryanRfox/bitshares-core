@@ -1,14 +1,12 @@
-DRAFT 5.0
+DRAFT 5.1
 ===========
 
-* Change: Business Analyst role description to be more detailed
-* Change: workers.bitshares.foundation will be the budget collection account (from bitsharesdev)
-* Change: bitsharesdev will become the payment account
-* Remove: bitCNY as payment option
-  * Unfortunately, BBF are not able to accommodate remittances in multi-currency at this time
-  * BBF are willing to explore multi-currency remittances for inclusion at a future date
-* Add: overview description of the team
-* Note: BBF will prepare the calculations upon publishing
+* Fix: Table headings and numbering
+* Remove: Translation Services, as another Worker currently fulfils this need
+* Change: Collaboration Tools are now a flat monthly budget, rather than naming the vendors and license quantities
+  * Suggested by BBF
+* Add: Sum of budget spanning 46 weeks: $2,135,504
+  * Request: BBF to check all math and organize tables for clarity.
 
 BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
 ===============================================================
@@ -214,40 +212,46 @@ Draft: I have extensive industry experience: Founded an ISP in 1993. NodeJS, Ang
 Collaboration Tools
 ===================
 
-The BitShares Core Team use various collaboration tools to organize their work, convey ideas and aid development efforts. All tools provide read/reviewer access for the community to observe progress and provide feedback. Write/contributor access may be limited to a specific Core Team role(s). Team Members are encouraged to office within a co-working space to expose the BitShares platform therein and form collaboration opportunities. A stipend is provided for full time equivalent (FTE) effort. The FTE Core Team will meet prior to each of the scheduled DevCon events for team building and in person collaboration. The Core Team will then participate in conference events in constructive ways. The tables below describe the budget for collaboration tools:
+The BitShares Core Team use various collaboration tools to organize their work, convey ideas and aid development efforts. Tools selected by the team generally provide read/reviewer access for the community to observe progress and provide feedback. Write/contributor access may be limited to a specific Core Team role(s). License quantities and types will vary monthly, therefore $2,250 is budgeted for tools. A non-exhaustive list is provided in Table 3 below. 
+
+Team Members are encouraged to office within a co-working space to expose the BitShares platform therein and form collaboration opportunities. A stipend of $350 monthly is offered for full time equivalent (FTE) effort. 
+
+The FTE Core Team will meet prior to each of the scheduled DevCon events for team building and in person collaboration, presentation preparation. The Core Team will participate in conference events in constructive ways. A budget for Conference events is provided in Table 4. below.
 
 * Table 3. Collaboration Tools (Monthly)
 
-| Licenses  | Description                         | Vendor                             | Monthly (USD) |
-| ---------:|:----------------------------------- |:---------------------------------- | -------------:|
-| 1         | Code Repository ($0)                | GitHub (github.com)                |            $0 |
-| 1         | Continuous Integration ($0)         | Travis CI (travis-ci.com)          |            $0 |
-| 1         | Continuous Code Quality ($0)        | SonarCloud (sonarcloud.io)         |            $0 |
-| 1         | Infrastructure Environment ($200)   | TBD                                |          $200 |
-| 2         | Product Roadmap ($124)              | Aha! (aha.io)                      |          $248 |
-| 2         | Process Models ($53)                | Blueworks Live (blueworkslive.com) |          $106 |
-| 5         | Co-working Space for FTE ($350)     | WeWork - or similar (wework.com)   |        $1,750 |
-| 1         | Translations Services ($1000)       | TBD                                |        $1,000 |
+| Description                |
+|:---------------------------|
+| Code Repository            |
+| Continuous Integration     |
+| Continuous Code Quality    |
+| Product Roadmap            |
+| Process Models             |
+| Infrastructure Environment |
+| Co-working Space for FTE   |
+| SUM MONTHLY BUDGET: $2,250 |
 
-* Conference Budget
 
-| Accommodations | Description                          | Amount (USD) |
-|:-------------- |:------------------------------------ | ------------:|
-|                | DevCon Spring 2018 - Shanghai, China |              |
-| 5 FTE          | Travel round trip (up to $2000)      |      $10,000 |
-| 5 nights       | Lodging (up to $150)                 |       $3,750 |
-| 5 days         | Meals (up to $60)                    |       $1,500 |
-|                | DevCon Autumn 2018 - TBD, Europe     |              |
-| 5 FTE          | Travel round trip (up to $2000)      |      $10,000 |
-| 5 nights       | Lodging (up to $200)                 |       $5,000 |
-| 5 days         | Meals (up to $80)                    |       $2,000 |
+* Table 4. Conference Budget (One-Time)
+
+| Description                          | Accommodations | Amount (USD) |
+|:------------------------------------ |:-------------- | ------------:|
+| DevCon Spring 2018 - Shanghai, China |                |              |
+|   Travel round trip (up to $2000)    | 5 FTE          |      $10,000 |
+|   Lodging (up to $150)               | 5 nights       |       $3,750 |
+|   Meals (up to $60)                  | 5 days         |       $1,500 |
+| DevCon Autumn 2018 - TBD, Europe     |                |              |
+|   Travel round trip (up to $2000)    | 5 FTE          |      $10,000 |
+|   Lodging (up to $200)               | 5 nights       |       $5,000 |
+|   Meals (up to $80)                  | 5 days         |       $2,000 |
+| SUM ONE-TIME BUDGET:                 |                |      $32,250 |
 
 Budget
 ======
 
 The items listed in the tables below represent and upper bound on expenditures. All funds collected and unused at the conclusion of this Worker Proposal will be returned to the Reserve Pool.
 
-* Table 4. Weekly Budget Items
+* Table 5. Core Team Member Budget
 
 | Role (hours @ rate)                      | Amount (USD) |
 |:---------------------------------------- | ------------:|
@@ -258,46 +262,22 @@ The items listed in the tables below represent and upper bound on expenditures. 
 | Documentation Specialist (30 @ $90)      |       $2,700 |
 | UI/UX Liaison (10 @ $125)                |       $1,250 |
 | SUM WEEKLY BUDGET ITEMS                  |      $45,200 |
-| CONVERTED TO DAILY BUDGET (sum / 7 days) |       $6,457 |
+| CONVERTED TO DAILY BUDGET                |       $6,457 |
 
-* Table 5. Monthly Budget Items
+* Table 6. Collaboration Tools Budget
 
-| Licenses  | Description (rate)                  | Amount (USD) |
-| ---------:|:----------------------------------- | ------------:|
-| 1         | Code Repository ($0)                |           $0 |
-| 1         | Continuous Integration ($0)         |           $0 |
-| 1         | Continuous Code Quality ($0)        |           $0 |
-| 2         | Product Roadmap ($124)              |         $248 |
-| 2         | Process Models ($53)                |         $106 |
-| 1         | Infrastructure Environment ($200)   |         $200 |
-| 1         | Co-working Space ($350)             |       $1,750 |
-| 1         | Translation Services ($350)         |       $1,750 |
-|       SUM | WEEKLY MONTHLY ITEMS                |       $3,304 |
-| CONVERTED | TO DAILY BUDGET (sum / 30 days)     |         $110 |
+| Description                              | Amount (USD) |
+|:-----------------------------------------| ------------:|
+| SUM MONTHLY COLLABORATION TOOLS          |       $2,250 |
+| SUM ONE-TIME COLLABORATION TOOLS         |      $32,250 |
+| CONVERTED TO DAILY BUDGET                |         $175 |
 
-* Table 6. One-Time Budget Items
+Table 8. Total Budget
+| Description                              | Amount (USD) |
+|:-----------------------------------------| ------------:|
+| SUM DAILY BUDGET                         |       $6,632 |
+| SUM 46 WEEK BUDGET                       |   $2,135,504 |
 
-| Accommodations | Description                          | Amount (USD) |
-|:------------   |:------------------------------------ | ------------:|
-|                | DevCon Spring 2018 - Shanghai, China |              |
-| 5 FTE          | Travel round trip (up to $2000)      |      $10,000 |
-| 5 nights       | Lodging (up to $150)                 |       $3,750 |
-| 5 days         | Meals (up to $60)                    |       $1,500 |
-|                | DevCon Autumn 2018 - TBD, Europe     |              |
-| 5 FTE          | Travel round trip (up to $2000)      |      $10,000 |
-| 5 nights       | Lodging (up to $200)                 |       $5,000 |
-| 5 days         | Meals (up to $80)                    |       $2,000 |
-| SUM            | ONE-TIME BUDGET ITEMS                |      $32,250 |
-| CONVERTED      | TO DAILY BUDGET (sum / 46w / 7d)     |         $100 |
-
-* Table 7. Sum Daily Budget Items
-
-| Description            | Amount (USD) |
-|:-----------------------| ------------:|
-| Weekly Budget Items    |       $6,457 |
-| Monthly Budget Items   |         $110 |
-| One-Time Budget Items  |         $100 |
-| SUM DAILY BUDGET ITEMS |       $6,667 |
 
 Duration and Pay
 ================
