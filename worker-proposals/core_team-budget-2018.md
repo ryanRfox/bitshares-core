@@ -1,12 +1,11 @@
-DRAFT 5.1.1
+DRAFT 5.2
 ===========
 
-* Fix: Table headings and numbering
-* Remove: Translation Services, as another Worker currently fulfils this need
-* Change: Collaboration Tools are now a flat monthly budget, rather than naming the vendors and license quantities
-  * Suggested by BBF
-* Add: Sum of budget spanning 46 weeks: $2,135,504
-  * Request: BBF to check all math and organize tables for clarity.
+* Add: Abit and Alfredo as Core Developers
+  * Abit intends to contribute 5 hours weekly until his existing worker expires, then join this full time
+  * Alfredo intends to join one 2-hour collaberation session weekly until his existing worker expires, then join this full time
+* Add: Tamami Sugimoto as Documentation Specialist
+* Add: Management Fee of $4,000 monthly for BBF to provide their escrow and accounting services
 
 BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
 ===============================================================
@@ -101,18 +100,22 @@ Each BitShares Core Team Member performing effort for the BitShares DAC acknowle
 
 * Table 2. Initial BitShares Core Team
 
-| Roles (described below)  | Rate Range (Hourly USD) | Team Members | Estimated Hours |
-|:------------------------ | -----------------------:|:------------ |:--------------- |
-| Coordinator              |             $125 - $150 | Ryan R. Fox  | 40 hours weekly |
-| Core Developer           |             $125 - $200 | Peter Conrad | 10 hours weekly |
-| Core Developer           |             $125 - $200 | -            | -               |
-| Core Developer           |             $125 - $200 | -            | -               |
-| Core Developer           |             $125 - $200 | -            | -               |
-| Business Analyst         |             $ 75 - $125 | Taconator    | 40 hours weekly |
-| Business Analyst         |             $ 75 - $125 | -            | -               |
-| QA/Tester                |             $ 75 - $125 | -            | -               |
-| Documentation Specialist |             $ 60 - $ 90 | -            | -               |
-| UI/UX Liaison            |                    $125 | Bill Butler  | 2 hours weekly  |
+| Roles (described below)  | Rate Range (Hourly USD) | Team Members    | Estimated Hours  |
+|:------------------------ | -----------------------:|:--------------- |:---------------- |
+| Coordinator              |             $125 - $150 | Ryan R. Fox     | 40 hours weekly  |
+| Core Developer           |             $125 - $200 | Peter Conrad    | 10 hours weekly  |
+| Core Developer           |             $125 - $200 | Abit            | 5 hours weekly*  |
+| Core Developer           |             $125 - $200 | Alfredo Garcia  | 2 hours weekly*  |
+| Core Developer**         |             $125 - $200 | -               | -                |
+| Business Analyst         |             $ 75 - $125 | Taconator       | 40 hours weekly  |
+| Business Analyst         |             $ 75 - $125 | -               | -                |
+| QA/Tester                |             $ 75 - $125 | -               | -                |
+| Documentation Specialist |             $ 60 - $ 90 | Tamami Sugimoto | TBD hours weekly |
+| UI/UX Liaison            |                    $125 | Bill Butler     | 2 hours weekly   |
+
+*Abit and Alfredo intend to join the Core Team full time at the conclusion of their existing Workers. Initailly they will collaborate with the Core Team on reduced budget hours.
+
+**Aditional hours for a Core Developer(s) remain available at this time.
 
 Coordinator (Full Time - 40 hours per week)
 ===========================================
@@ -192,22 +195,38 @@ Documentation Specialist Key Performance Indicators
 Initial Core Team Member Bios
 =============================
 
+Abit - Core Developer
+=====================
+Draft: I have contributed to the BitShares the code base for many years [11].
+
+Alfredo Garcia - Core Developer
+===============================
+Draft: I recenty began my second 6-month Worker as a BitShares Core Developer [12]. I created the block explorer BitShares-Explorer.io and added the plug-in for Elasticsearch [13].
+
+Bill Butler - UX/UI Liaison
+===========================
+
+I lead the BitShares UI team and have extensive industry experience: Founded an ISP in 1993, NodeJS, Angular, PHP, CouchDB, SQL. UX/UI Experience [14]. I am currently VP Engineering for a healthcare software development firm and have eight years’ experience managing development teams.
+
+Peter Conrad - Core Developer
+=============================
+
+I am a knowledgable and long-standing member of the BitShares community (@pc) and an active developer for many years [9-10].
+
 Ryan R. Fox - Coordinator - Boston, MA, US
 ==========================================
 
 I have actively contributed to BitShares from its inception. You will find my account (`"1.2.167"`) within the genesis block and many bitsharestalk.org threads from 2014 detailing my testing feedback as we iterated toward launching the BitShares blockchain [1-4]. I have extensive professional background in project management with software development teams and am a professional scrum master (PSM-1) with extensive multi-national experience in financial services, mortgage banking and manufacturing. I will maintain a physical presence within a co-working space in Boston, MA, US.
 
-Peter Conrad - Core Developer
-=============================
-Draft: I am drafting a bio to include here. It will include both crypto and industry experience. I may want to include a reference to my GitHub, LinkedIn or other platforms [#].
-
 Taconator - Business Analyst
 ============================
+
 I began participating in the BitShares Hangout in early 2017 after submitting a patch and associated unit tests related to the recurring withdrawals capability that already existed in BitShares Core. I also began publishing monthly reports on the fees collected by the BitShares blockchain in April 2017. I have experience within various industries identifying problems of non-technical end-users, designing technical products for solving those problems, and leading teams to successfully build those technical products. (Just because one might have a "hammer" does not mean that every problem is a "nail".) These solutions span from augmented reality applications on mobile devices to global distributed software systems.
 
-Bill Butler - UX/UI Liaison
-===========================
-Draft: I have extensive industry experience: Founded an ISP in 1993. NodeJS, Angular, PHP, CouchDB, SQL. UX/UI Experience. I am currently VP Engineering for a healthcare software development firm and have eight years’ experience managing development teams. I may want to include a reference to my GitHub, LinkedIn or other platforms [#].
+Tamami Sugimoto - Documentation Specialist
+==========================================
+
+I have created and revised documentation for BitShares over the past year [15]. I hold a Masters in MIS and have held professional titles including Systems Analyst & Programmer, Web Designer and Database Administrator. 
 
 Collaboration Tools
 ===================
@@ -229,7 +248,8 @@ The FTE Core Team will meet prior to each of the scheduled DevCon events for tea
 | Process Models             |
 | Infrastructure Environment |
 | Co-working Space for FTE   |
-| SUM MONTHLY BUDGET: $2,250 |
+| Management Fee (BBF)       |
+| SUM MONTHLY BUDGET: $6,250 |
 
 
 * Table 4. Conference Budget (One-Time)
@@ -249,9 +269,9 @@ The FTE Core Team will meet prior to each of the scheduled DevCon events for tea
 Budget
 ======
 
-The items listed in the tables below represent and upper bound on expenditures. All funds collected and unused at the conclusion of this Worker Proposal will be returned to the Reserve Pool.
+The items listed in the tables below represent an upper bound on expenditures. All funds collected and unused at the conclusion of this Worker Proposal will be returned to the Reserve Pool.
 
-* Table 5. Core Team Member Budget
+* Table 5. Core Team Members Budget
 
 | Role (hours @ rate)                      | Amount (USD) |
 |:---------------------------------------- | ------------:|
@@ -268,22 +288,22 @@ The items listed in the tables below represent and upper bound on expenditures. 
 
 | Description                              | Amount (USD) |
 |:-----------------------------------------| ------------:|
-| SUM MONTHLY COLLABORATION TOOLS          |       $2,250 |
+| SUM MONTHLY COLLABORATION TOOLS          |       $6,250 |
 | SUM ONE-TIME COLLABORATION TOOLS         |      $32,250 |
-| CONVERTED TO DAILY BUDGET                |         $175 |
+| CONVERTED TO DAILY BUDGET                |         $183 |
 
 * Table 8. Total Budget
 
 | Description                              | Amount (USD) |
 |:-----------------------------------------| ------------:|
-| SUM DAILY BUDGET                         |       $6,632 |
-| SUM 46 WEEK BUDGET                       |   $2,135,504 |
+| SUM DAILY BUDGET (TEAM MEMBERS & TOOLS)  |       $6,640 |
+| SUM 46 WEEK BUDGET                       |   $2,138,080 |
 
 
 Duration and Pay
 ================
 
-This proposal will last for roughly 46 weeks, starting from 12th February 2018.
+This proposal will last for roughly 46 weeks, starting from 15th February 2018.
 
 Payments:
 * Invoices from Core Team Members will be submitted to the Coordinator by Monday 12:00 UTC for work performed thru Sunday 23:59 UTC of the previous period
@@ -308,3 +328,10 @@ References
 * [6] BBF [Transparent Accounting](http://www.bitshares.foundation/accounting)
 * [7] BitShares [GitFlow](https://github.com/bitshares/bitshares-core/wiki/Git-Flow)
 * [8] Xeroc's [Worker Payment Template](https://github.com/xeroc/worker-proposals/blob/master/2017-02.md#worker)
+* [9] Implementation of BSIP-18: [pc](http://www.bitshares.foundation/worker/escrow/2017-07-peter-conrad)
+* [10] Professional Backgroud [Peter Conrad](http://bts.quisquis.de/delegate/about.html)
+* [11] Core Dev Worker [Abit](https://github.com/abitmore/bts-worker-proposals/blob/master/abit-worker-201712-201803.md)
+* [12] Core Dev Worker [Alfredo Garcia](https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2018_1.md)
+* [13] BitShares-Explorer.io [Alfredo Garcia](http://bitshares-explorer.io)
+* [14] BitShares GUI Worker [Bill Butler](https://steemit.com/bitshares/@billbutler/bitshares-gui-worker-proposal-renewal)
+* [15] BitShares Documentation [Tamami Sugimoto]()
