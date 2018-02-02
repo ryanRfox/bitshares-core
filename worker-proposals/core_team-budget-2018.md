@@ -1,10 +1,7 @@
-DRAFT 5.3
+DRAFT 5.4
 ===========
 
-* Fix: Abit's contribution
-  * Initially contribute 5 hours weekly until his existing worker expires
-  * Contribute 5-10 hours weekly thereafter, not full time
-* Fix: Tamami Sugimoto's bio
+* Fix: Alfredo's bio
 
 BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
 ===============================================================
@@ -200,12 +197,12 @@ Draft: I have contributed to the BitShares the code base for many years [11].
 Alfredo Garcia - Core Developer
 ===============================
 
-Draft: I recenty began my second 6-month Worker as a BitShares Core Developer [12]. I created the block explorer BitShares-Explorer.io and added the plug-in for Elasticsearch [13].
+I recently began my second 6-month Worker as a BitShares Core Developer [12]. Mainly I focus on the bitshares-core software by implementing features, fixing bugs, testing, maintenance, etc. [13]. I also develop outside the core tools for other developers and final applications for the BitShares community. [14]
 
 Bill Butler - UX/UI Liaison
 ===========================
 
-I lead the BitShares UI team and have extensive industry experience: Founded an ISP in 1993, NodeJS, Angular, PHP, CouchDB, SQL. UX/UI Experience [14]. I am currently VP Engineering for a healthcare software development firm and have eight years’ experience managing development teams.
+I lead the BitShares UI team and have extensive industry experience: Founded an ISP in 1993, NodeJS, Angular, PHP, CouchDB, SQL. UX/UI Experience [16]. I am currently VP Engineering for a healthcare software development firm and have eight years’ experience managing development teams.
 
 Peter Conrad - Core Developer
 =============================
@@ -331,6 +328,7 @@ References
 * [10] Professional Backgroud [Peter Conrad](http://bts.quisquis.de/delegate/about.html)
 * [11] Core Dev Worker [Abit](https://github.com/abitmore/bts-worker-proposals/blob/master/abit-worker-201712-201803.md)
 * [12] Core Dev Worker [Alfredo Garcia](https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2018_1.md)
-* [13] BitShares-Explorer.io [Alfredo Garcia](http://bitshares-explorer.io)
-* [14] BitShares GUI Worker [Bill Butler](https://steemit.com/bitshares/@billbutler/bitshares-gui-worker-proposal-renewal)
+* [13] Bitshares Core Contributions [Alfredo Garcia](https://github.com/bitshares/bitshares-core/commits?author=oxarbitrage)
+* [14] GitHub Repo [Alfredo Garcia](https://github.com/oxarbitrage)
 * [15] BitShares Documentation [Tamami Sugimoto]()
+* [16] BitShares GUI Worker [Bill Butler](https://steemit.com/bitshares/@billbutler/bitshares-gui-worker-proposal-renewal)
