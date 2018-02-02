@@ -1,11 +1,10 @@
-DRAFT 5.2
+DRAFT 5.3
 ===========
 
-* Add: Abit and Alfredo as Core Developers
-  * Abit intends to contribute 5 hours weekly until his existing worker expires, then join this full time
-  * Alfredo intends to join one 2-hour collaberation session weekly until his existing worker expires, then join this full time
-* Add: Tamami Sugimoto as Documentation Specialist
-* Add: Management Fee of $4,000 monthly for BBF to provide their escrow and accounting services
+* Fix: Abit's contribution
+  * Initially contribute 5 hours weekly until his existing worker expires
+  * Contribute 5-10 hours weekly thereafter, not full time
+* Fix: Tamami Sugimoto's bio
 
 BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
 ===============================================================
@@ -92,7 +91,7 @@ Delivery
 BitShares Core Team Member 'Contract Work' Guidance:
 ====================================================
 
-This section is to be considered guidance, not a legal statement. The BitShares Decentralized Autonomous Community (BitShares DAC) 'owns' the funds collected by this Budget Worker and are made available as compensation to individuals performing 'contract worker' as described elsewhere in this document. Effort contributed by individuals is considered 'at-will' as no formal 'employment contract' is able to be formed between BitShares DAC and the 'contract worker' at this time. Neither the BitShares Blockchain Foundation (BBF) nor the BitShares Committee or any individuals serving those entities are considered 'employers' of any 'contract worker'. No BitShares Core Team Member or Role is considered the 'boss' or an 'employer' of any individual. Any compensation received from the BitShares DEX is likely considered 'earned income' and may be subject to tax reporting by the recipient. The BitShares DAC, BBF, BitShares Committee, Coordinator, nor any Core Team Member will not prepare nor issue tax documents to any entity. All effort performed is a 'work for hire' contribution to the BitShares DAC adhering to its MIT license.
+This section is to be considered guidance, not a legal statement. The BitShares Decentralized Autonomous Community (BitShares DAC) 'owns' the funds collected by this Budget Worker and are issued as compensation to individuals performing 'contract work' as described elsewhere in this document. Effort contributed by individuals is considered 'at-will' as no formal 'employment contract' is able to be formed between BitShares DAC and the 'contract worker' at this time. Neither the BitShares Blockchain Foundation (BBF) nor the BitShares Committee or any individuals serving those entities are considered 'employers' of any 'contract worker'. No BitShares Core Team Member or Role is considered the 'manager' or an 'employer' of any individual. Any compensation received from the BitShares DEX is likely considered 'earned income' and may be subject to tax reporting by the recipient. The BitShares DAC, BBF, BitShares Committee, Coordinator, or any Core Team Member will neither prepare nor issue tax documents to any entity. All effort performed is a 'work for hire' contribution to the BitShares DAC adhering to its MIT license.
 
 Each Core Team Member is encouraged to contribute no more hours than is customary in their jurisdiction for 'full time equivalent' work, as the role is considered 'exempt' from overtime compensation. A goal is to provide the equivalent of an annual salaried position with two weeks holiday. To accommodate this, the equivalent of 40 hours of base pay will be remitted to the Core Team Member upon accumulating 1000 hours within a rolling 12-month period, thus resetting both counters. National and religious observances are also important to a healthy work/life balance. Up to ten 8-hour observance days are paid per calendar year, prorated to the rate and average working days in the week before and after the week containing the observance day.
 
@@ -113,8 +112,7 @@ Each BitShares Core Team Member performing effort for the BitShares DAC acknowle
 | Documentation Specialist |             $ 60 - $ 90 | Tamami Sugimoto | TBD hours weekly |
 | UI/UX Liaison            |                    $125 | Bill Butler     | 2 hours weekly   |
 
-*Abit and Alfredo intend to join the Core Team full time at the conclusion of their existing Workers. Initailly they will collaborate with the Core Team on reduced budget hours.
-
+*Abit and Alfredo intend to complete their existing Workers. Their contributions as part of the Core Team will initially be at the reduced hours above, then expected to increase.
 **Aditional hours for a Core Developer(s) remain available at this time.
 
 Coordinator (Full Time - 40 hours per week)
@@ -201,6 +199,7 @@ Draft: I have contributed to the BitShares the code base for many years [11].
 
 Alfredo Garcia - Core Developer
 ===============================
+
 Draft: I recenty began my second 6-month Worker as a BitShares Core Developer [12]. I created the block explorer BitShares-Explorer.io and added the plug-in for Elasticsearch [13].
 
 Bill Butler - UX/UI Liaison
@@ -216,7 +215,7 @@ I am a knowledgable and long-standing member of the BitShares community (@pc) an
 Ryan R. Fox - Coordinator - Boston, MA, US
 ==========================================
 
-I have actively contributed to BitShares from its inception. You will find my account (`"1.2.167"`) within the genesis block and many bitsharestalk.org threads from 2014 detailing my testing feedback as we iterated toward launching the BitShares blockchain [1-4]. I have extensive professional background in project management with software development teams and am a professional scrum master (PSM-1) with extensive multi-national experience in financial services, mortgage banking and manufacturing. I will maintain a physical presence within a co-working space in Boston, MA, US.
+I have actively contributed to BitShares development from its inception [1-4]. I have extensive professional background in project management with software development teams and am a professional scrum master (PSM-1) with multi-national experience in financial services, mortgage banking and manufacturing. I will maintain a physical presence within a co-working space in Boston, MA, US.
 
 Taconator - Business Analyst
 ============================
@@ -226,7 +225,7 @@ I began participating in the BitShares Hangout in early 2017 after submitting a 
 Tamami Sugimoto - Documentation Specialist
 ==========================================
 
-I have created and revised documentation for BitShares over the past year [15]. I hold a Masters in MIS and have held professional titles including Systems Analyst & Programmer, Web Designer and Database Administrator. 
+I have created and revised documentation for BitShares over the past year [15]. I hold a Masters in MIS and have held professional titles including Systems Analyst & Programmer, Web Designer and Database Administrator. I have experience using Content Management Systems to re-organize multiple websites. I am proficient analysing system code in many programming languages and have created many web applications and websites.
 
 Collaboration Tools
 ===================
@@ -235,7 +234,7 @@ The BitShares Core Team use various collaboration tools to organize their work, 
 
 Team Members are encouraged to office within a co-working space to expose the BitShares platform therein and form collaboration opportunities. A stipend of $350 monthly is offered for full time equivalent (FTE) effort. 
 
-The FTE Core Team will meet prior to each of the scheduled DevCon events for team building and in person collaboration, presentation preparation. The Core Team will participate in conference events in constructive ways. A budget for Conference events is provided in Table 4. below.
+The FTE Core Team will meet prior to each of the scheduled DevCon events for team building, in person collaboration and presentation preparation. The Core Team will participate in conference events in constructive ways. A budget for Conference participation is provided in Table 4. below.
 
 * Table 3. Collaboration Tools (Monthly)
 
