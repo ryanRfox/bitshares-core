@@ -2,6 +2,7 @@ BitShares Core Team Budget Worker Proposal - 2018
 =================================================
 
 Author: Ryan R. Fox (`"fox"`)
+Mandarin Translation [国语翻译](mandarin_translation.md): 招木 (`"Zhaomu"`)
 
 Intent
 ======
@@ -326,10 +327,10 @@ USD payment will be in bitUSD with method developed by the BitShares Blockchain 
 References
 ==========
 
-* [1] BitShares Talk Profile: [fox](https://bitsharestalk.org/index.php?action=profile;u=5333)
-* [2] GitHub Repo: [ryanRfox](https://github.com/ryanRfox)
-* [3] LinkedIn Profile: [ryanRfox](https://linkedin.com/in/ryanRfox)
-* [4] Twitter Profile: [ryanRfox](https://twitter.com/ryanRfox)
+* [1] BitShares Talk Profile: [Ryan R. Fox](https://bitsharestalk.org/index.php?action=profile;u=5333)
+* [2] GitHub Repo: [Ryan R. Fox](https://github.com/ryanRfox)
+* [3] LinkedIn Profile: [Ryan R. Fox](https://linkedin.com/in/ryanRfox)
+* [4] Twitter Profile: [Ryan R. Fox](https://twitter.com/ryanRfox)
 * [5] BBF [Budget Worker Template](http://www.bitshares.foundation/worker/)
 * [6] BBF [Transparent Accounting](http://www.bitshares.foundation/accounting)
 * [7] BitShares [GitFlow](https://github.com/bitshares/bitshares-core/wiki/Git-Flow)
