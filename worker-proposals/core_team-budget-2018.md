@@ -1,10 +1,5 @@
-DRAFT 5.4
-===========
-
-* Fix: Alfredo's bio
-
-BitShares Core Team Budget Worker Proposal - 2018 (`"1.14.XX"`)
-===============================================================
+BitShares Core Team Budget Worker Proposal - 2018
+=================================================
 
 Author: Ryan R. Fox (`"fox"`)
 
@@ -28,16 +23,16 @@ Backlog (Sample Screenshot)
 Worker
 ======
 
-This is a Budget Worker Proposal (`"1.14.XX"`) which provides funding through calendar year 2018 for:
+This is a Budget Worker Proposal which provides funding through calendar year 2018 for:
 * BitShares Core Team Roles
 * Collaboration Tools
 
-It intends to work in concert with the existing development resources including Abit, Alfredo Garcia, and the UI Team, led by Bill Butler. BTS are collected into the `"workers.bitshares.foundation"` account which is a multi-sig account controlled by `"BitShares Blockchain Foundation"` and `"committee-account"` using the Budget Worker Model [5]:
+It intends to work in concert with the existing development resources including Abit, Alfredo Garcia, and the UI Team, led by Bill Butler. BTS are collected into the `"workers.bitshares.foundation"` account which is a multi-sig account controlled by `"BitShares Blockchain Foundation"` and owned by `"committee-account"` using the Budget Worker Model [5]:
 
 * Transparent accounting provided by the BitShares Blockchain Foundation [6]
 * Submitted invoices reviewed, approved and remitted within 5 business days
-* Compensation paid in bitUSD
-* All unused accumulated BTS returned to the Reserve Pool at the conclusion of the Worker
+* Compensation paid in bitUSD (according to the rules set forth in [5])
+* All unused accumulated BTS returned to the Reserve Pool at the conclusion of the Worker [5]
 
 Core Team Roles
 ===============
@@ -92,25 +87,30 @@ This section is to be considered guidance, not a legal statement. The BitShares 
 
 Each Core Team Member is encouraged to contribute no more hours than is customary in their jurisdiction for 'full time equivalent' work, as the role is considered 'exempt' from overtime compensation. A goal is to provide the equivalent of an annual salaried position with two weeks holiday. To accommodate this, the equivalent of 40 hours of base pay will be remitted to the Core Team Member upon accumulating 1000 hours within a rolling 12-month period, thus resetting both counters. National and religious observances are also important to a healthy work/life balance. Up to ten 8-hour observance days are paid per calendar year, prorated to the rate and average working days in the week before and after the week containing the observance day.
 
-Each BitShares Core Team Member performing effort for the BitShares DAC acknowledges no recourse nor remedy is available from the BitShares DAC, any other BitShares Core Team Member nor author.
+Each BitShares Core Team Member performing effort for the BitShares DAC acknowledges neither recourse nor remedy is available from the BitShares DAC, any other BitShares Core Team Member nor author.
 
 * Table 2. Initial BitShares Core Team
 
-| Roles (described below)  | Rate Range (Hourly USD) | Team Members    | Estimated Hours  |
-|:------------------------ | -----------------------:|:--------------- |:---------------- |
-| Coordinator              |             $125 - $150 | Ryan R. Fox     | 40 hours weekly  |
-| Core Developer           |             $125 - $200 | Peter Conrad    | 10 hours weekly  |
-| Core Developer           |             $125 - $200 | Abit            | 5 hours weekly*  |
-| Core Developer           |             $125 - $200 | Alfredo Garcia  | 2 hours weekly*  |
-| Core Developer**         |             $125 - $200 | -               | -                |
-| Business Analyst         |             $ 75 - $125 | Taconator       | 40 hours weekly  |
-| Business Analyst         |             $ 75 - $125 | -               | -                |
-| QA/Tester                |             $ 75 - $125 | -               | -                |
-| Documentation Specialist |             $ 60 - $ 90 | Tamami Sugimoto | TBD hours weekly |
-| UI/UX Liaison            |                    $125 | Bill Butler     | 2 hours weekly   |
+| Roles (described below)  | Rate Range (Hourly USD) | Team Members    | Estimated Hours     |
+|:------------------------ | -----------------------:|:--------------- |:------------------- |
+| Coordinator              |                    $125 | Ryan R. Fox     | 40 hours weekly     |
+| Core Developer           |                    $125 | Peter Conrad    | 10 hours weekly     |
+| Core Developer           |                    $125 | Abit            | 5 hours weekly*     |
+| Core Developer           |                    $125 | Alfredo Garcia  | 2 hours weekly*     |
+| Core Developer           |                    $125 | John M. Jones   | 20 hours weekly**   |
+| Core Developer           |                    $125 | Marcial Vieira  | 20 hours weekly**   |
+| Core Developer***        |             $125 - $200 | -open-          | -                   |
+| Business Analyst (BA)    |                    $125 | Taconator       | 10 hours weekly**   |
+| Business Analyst***      |             $ 75 - $125 | -open-          | -                   |
+| BA & Doc. Specialist     |                    $125 | Tamami Sugimoto | 10 hours weekly**   |
+| QA/Tester***             |             $ 75 - $125 | -open-          | -                   |
+| UI/UX Liaison            |                    $125 | Bill Butler     | 2 hours weekly      |
+| SUM INITIAL CORE TEAM    |                    $125 | -all-           | 119 hours weekly*** |
+| $14,875 WEEKLY (EST.)    |                         |                 |                     |
 
 *Abit and Alfredo intend to complete their existing Workers. Their contributions as part of the Core Team will initially be at the reduced hours above, then expected to increase.
-**Aditional hours for a Core Developer(s) remain available at this time.
+**John, Marcial, Taconator and Tumami intend to begin with 10 hours weekly and increase over time.
+***Aditional hours for nearly all roles remain available at this time. Please contact fox@bitshares.boston for additional information.
 
 Coordinator (Full Time - 40 hours per week)
 ===========================================
@@ -192,7 +192,7 @@ Initial Core Team Member Bios
 
 Abit - Core Developer
 =====================
-Draft: I have contributed to the BitShares the code base for many years [11].
+Draft: I have contributed to the BitShares code base for many years [11].
 
 Alfredo Garcia - Core Developer
 ===============================
@@ -203,6 +203,15 @@ Bill Butler - UX/UI Liaison
 ===========================
 
 I lead the BitShares UI team and have extensive industry experience: Founded an ISP in 1993, NodeJS, Angular, PHP, CouchDB, SQL. UX/UI Experience [16]. I am currently VP Engineering for a healthcare software development firm and have eight years’ experience managing development teams.
+
+John M. Jones - Core Developer
+==============================
+
+I have been writing software since I received my first computer (Timex-Sinclair 1500) at age 11 [17-18]. I have worked on many projects, normally around the finance/banking/insurance industries. My engineering experience includes many languages, but C/C++ has always been my favorite.
+
+Marcial Vieira - Core Developer
+===============================
+Drafting...[19]
 
 Peter Conrad - Core Developer
 =============================
@@ -229,23 +238,24 @@ Collaboration Tools
 
 The BitShares Core Team use various collaboration tools to organize their work, convey ideas and aid development efforts. Tools selected by the team generally provide read/reviewer access for the community to observe progress and provide feedback. Write/contributor access may be limited to a specific Core Team role(s). License quantities and types will vary monthly, therefore $2,250 is budgeted for tools. A non-exhaustive list is provided in Table 3 below. 
 
-Team Members are encouraged to office within a co-working space to expose the BitShares platform therein and form collaboration opportunities. A stipend of $350 monthly is offered for full time equivalent (FTE) effort. 
+Team Members are encouraged to office within a co-working space to expose the BitShares platform therein and form external collaboration opportunities. A stipend of $350 monthly is offered for full time equivalent (FTE) effort. 
 
 The FTE Core Team will meet prior to each of the scheduled DevCon events for team building, in person collaboration and presentation preparation. The Core Team will participate in conference events in constructive ways. A budget for Conference participation is provided in Table 4. below.
 
 * Table 3. Collaboration Tools (Monthly)
 
-| Description                |
-|:---------------------------|
-| Code Repository            |
-| Continuous Integration     |
-| Continuous Code Quality    |
-| Product Roadmap            |
-| Process Models             |
-| Infrastructure Environment |
-| Co-working Space for FTE   |
-| Management Fee (BBF)       |
-| SUM MONTHLY BUDGET: $6,250 |
+| Description                  | Amount (USD) |
+|:-----------------------------| ------------:|
+| Software Tools               |       $2,250 |
+| --Code Repository            |           -- |
+| --Continuous Integration     |           -- |
+| --Continuous Code Quality    |           -- |
+| --Product Roadmap            |           -- |
+| --Process Models             |           -- |
+| --Infrastructure Environment |           -- |
+| Co-working Space for FTE     |       $1,750 |
+| Management Fee (BBF)         |       $4,000 |
+| SUM MONTHLY BUDGET:          |       $8,000 |
 
 
 * Table 4. Conference Budget (One-Time)
@@ -284,22 +294,22 @@ The items listed in the tables below represent an upper bound on expenditures. A
 
 | Description                              | Amount (USD) |
 |:-----------------------------------------| ------------:|
-| SUM MONTHLY COLLABORATION TOOLS          |       $6,250 |
+| SUM MONTHLY COLLABORATION TOOLS          |       $8,000 |
 | SUM ONE-TIME COLLABORATION TOOLS         |      $32,250 |
-| CONVERTED TO DAILY BUDGET                |         $183 |
+| CONVERTED TO DAILY BUDGET                |         $369 |
 
-* Table 8. Total Budget
+* Table 8. Total Budget for Calendar Year 2018
 
 | Description                              | Amount (USD) |
 |:-----------------------------------------| ------------:|
-| SUM DAILY BUDGET (TEAM MEMBERS & TOOLS)  |       $6,640 |
-| SUM 46 WEEK BUDGET                       |   $2,138,080 |
+| SUM DAILY BUDGET (TEAM MEMBERS & TOOLS)  |       $6,826 |
+| SUM 45 WEEK BUDGET                       |   $2,150,190 |
 
 
 Duration and Pay
 ================
 
-This proposal will last for roughly 46 weeks, starting from 15th February 2018.
+This proposal will last for roughly 45 weeks, starting from 20th February 2018.
 
 Payments:
 * Invoices from Core Team Members will be submitted to the Coordinator by Monday 12:00 UTC for work performed thru Sunday 23:59 UTC of the previous period
@@ -307,11 +317,11 @@ Payments:
 * Coordinator will review and approve vendor invoices, then forward to BitShares Blockchain Foundation for direct payment to vendor
 
 Calculation:
-* 2.09 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-01-29)
+* 4.7132 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-02-06)
 * 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
-* $6,667 USD/day * 2.09 BTS/USD * 2.5 collateral multiplier= 34,835 BTS/day
+* $6,826 USD/day * 4.7132 BTS/USD * 2.5 collateral multiplier = 80,431 BTS/day
 
-USD payment will be in bitUSD with method developed by @xeroc [8]. A Core Team Member must declare their payment method with their first invoice and may not change it during calendar year 2018. Contingency: should world events disrupt the USD/CNY rate by +/- 10%, the invoice will be remitted in bitUSD to honor the budget.
+USD payment will be in bitUSD with method developed by the BitShares Blockchain Foundation [5].
 
 References
 ==========
@@ -324,11 +334,14 @@ References
 * [6] BBF [Transparent Accounting](http://www.bitshares.foundation/accounting)
 * [7] BitShares [GitFlow](https://github.com/bitshares/bitshares-core/wiki/Git-Flow)
 * [8] Xeroc's [Worker Payment Template](https://github.com/xeroc/worker-proposals/blob/master/2017-02.md#worker)
-* [9] Implementation of BSIP-18: [pc](http://www.bitshares.foundation/worker/escrow/2017-07-peter-conrad)
-* [10] Professional Backgroud [Peter Conrad](http://bts.quisquis.de/delegate/about.html)
-* [11] Core Dev Worker [Abit](https://github.com/abitmore/bts-worker-proposals/blob/master/abit-worker-201712-201803.md)
-* [12] Core Dev Worker [Alfredo Garcia](https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2018_1.md)
-* [13] Bitshares Core Contributions [Alfredo Garcia](https://github.com/bitshares/bitshares-core/commits?author=oxarbitrage)
-* [14] GitHub Repo [Alfredo Garcia](https://github.com/oxarbitrage)
-* [15] BitShares Documentation [Tamami Sugimoto]()
-* [16] BitShares GUI Worker [Bill Butler](https://steemit.com/bitshares/@billbutler/bitshares-gui-worker-proposal-renewal)
+* [9] Professional Backgroud: [Peter Conrad](http://bts.quisquis.de/delegate/about.html)
+* [10] Implementation of BSIP-18: [Peter Conrad](http://www.bitshares.foundation/worker/escrow/2017-07-peter-conrad)
+* [11] Core Dev Worker: [Abit](https://github.com/abitmore/bts-worker-proposals/blob/master/abit-worker-201712-201803.md)
+* [12] Core Dev Worker: [Alfredo Garcia](https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2018_1.md)
+* [13] Bitshares Core Contributions: [Alfredo Garcia](https://github.com/bitshares/bitshares-core/commits?author=oxarbitrage)
+* [14] GitHub Repo: [Alfredo Garcia](https://github.com/oxarbitrage)
+* [15] BitShares Documentation: [Tamami Sugimoto]()
+* [16] BitShares GUI Worker: [Bill Butler](https://steemit.com/bitshares/@billbutler/bitshares-gui-worker-proposal-renewal)
+* [17] LinkedIn Profile: [John M. Jones](https://www.linkedin.com/in/jmjatlanta/)
+* [18] GitHub Repo: [John M. Jones](https://github.com/jmjatlanta)
+* [19] GitHub repo: [Marcial Veiria](https://github.com/marcialvieira)
