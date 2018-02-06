@@ -1,7 +1,8 @@
 BitShares Core团队预算工作提案-2018
 ==================================
 
-制作人：Ryan R. Fox (`"fox"`)
+* 制作人：Ryan R. Fox (`"fox"`)
+* [Source Text (English)](core_team-budget.md)
 
 目的
 ====
@@ -94,24 +95,30 @@ BitShares Core团队成员“合同工”指南：
 
 * 表格2.初始BitShares Core团队
 
-| 角色（如下描述）          | 工资范畴（时薪美元） | 团队成员     | 预计工作时间 |
-| ----------------------- | ------------------:| ------------ | ------------|
-| 协调员                   | $125 - $150        | Ryan R. Fox  |每周40小时   |
-| 核心开发人员             | $125 - $200        | Peter Conrad |每周10小时    |
-| 核心开发人员             | $125 - $200        | -            |             |
-| 核心开发人员             | $125 - $200        | -            |             |
-| 核心开发人员             | $125 - $200        | -            |             |
-| 业务分析人员             | $75 - $125         | Taconator    | 每周40小时   |
-| 业务分析人员             | $75 - $125         | -            |             |
-| 质量检测人员             | $75 - $125         | -            |             |
-| 文案专员                 | $60 - $90          | -            |             |
-| 用户界面/用户体验联络人员  | $125              | Bill Butler  | 每周2小时    |
+| 角色（如下描述）          | 工资范畴（时薪美元） | 团队成员        | 预计工作时间 |
+| ----------------------- | ------------------:| --------------- | ------------|
+| 协调员                   |               $125 | Ryan R. Fox     |每周40小时    |
+| 核心开发人员             |               $125 | Peter Conrad    |每周10小时    |
+| 核心开发人员             |               $125 | Abit            |每周5小时*    |
+| 核心开发人员             |               $125 | Alfredo Garcia  |每周2小时*    |
+| 核心开发人员             |               $125 | John M. Jones   |每周20小时**  |
+| 核心开发人员             |               $125 | Marcial Vieira  |每周20小时**  |
+| 核心开发人员***          |        $125 - $200 | -open-          | -           |
+| 业务分析人员             |               $125 | Taconator       | 每周40小时   |
+| 业务分析人员***          |         $75 - $125 | -open-          |             |
+| 质量检测人员***          |         $75 - $125 | -open-          |             |
+| 文案专员                 |               $125 | Tamami Sugimoto |             |
+| 用户界面/用户体验联络人员 |               $125 | Bill Butler     | 每周2小时    |
+| SUM INITIAL CORE TEAM    |              $125 | -all-           | 119 hours weekly*** |
+| $14,875 WEEKLY (estimate) |                  |                 |             |
 
 协调员（全职-每周40小时）
 ======================
 
 协调员是一名富有经验的灵活的项目经理或者拥有深度分布式账本技术知识的项目经理。首要的，协调员的任务包括大致促进、组织、优先发展努力。
+
 协调员关键业绩指标
+
 * 保持与BitShares社区的透明沟通
 * 保持与BitSHares用户界面项目经理的透明沟通
 * 保持与中国代言人的透明沟通
@@ -132,52 +139,101 @@ BitShares Core团队成员“合同工”指南：
 * 维护合作工具的服务商关系
 * 促进开发人员会议出席率
 
-
-
 核心开发员（全职——每周40小时）
+===========================
+
 核心开发员是一个经验丰富的C ++开发人员，主要负责编写和记录源代码。 其次，核心开发员负责在开发之前完善用户故事、需求和过程模型以及并在测试过程中解决错误。
+
 核心开发者关键绩效指标
-•与业务分析师协作以改进用户故事、需求和流程模型
-•与QA /测试员协作以找出错误并解决
-•与文档专员协作来以检查文档，并确保它与源代码意图和执行相吻合
-•使用GitFlow原则以维护GitHub中的代码库[7]
-•协助代码同行审查以及提供发表审批
-•为利于将来的发展而记录代码
+
+* 与业务分析师协作以改进用户故事、需求和流程模型
+* 与QA /测试员协作以找出错误并解决
+* 与文档专员协作来以检查文档，并确保它与源代码意图和执行相吻合
+* 使用GitFlow原则以维护GitHub中的代码库[7]
+* 协助代码同行审查以及提供发表审批
+* 为利于将来的发展而记录代码
+
 业务分析师（全职——每周40小时）
+===========================
+
 业务分析师主要负责编写用户故事、需求和流程模型。 其次，业务分析师负责与QA / 测试员一起修订测试用例。
+
 业务分析师关键绩效指标
-•维护用户故事、需求和流程模型
-o使用Aha! 维护 用户故事和需求
-o使用Blueworks Live维护流程模型
-•与核心开发员协作以改进用户故事、需求和流程模型
-•与文档专员协作以修订开发员文档使之与用户故事、需求和流程模型的意图相吻合
+
+* 维护用户故事、需求和流程模型
+  * 使用Aha! 维护 用户故事和需求
+* 使用Blueworks Live维护流程模型
+* 与核心开发员协作以改进用户故事、需求和流程模型
+* 与文档专员协作以修订开发员文档使之与用户故事、需求和流程模型的意图相吻合
+
 UI/UX联络员（兼职——每周10小时）
+=============================
+
 UI / UX联络员是计划、排序、定义和测试受核心软件执行影响的UI / UX元素的主要联络人。 用户界面团队独立于核心团队，但他们的共同的努力是相互依赖的。 因此，UI / UX联络员是交付我们的功能丰富的核心平台所不可或缺的。
+
 UI / UX联络员关键绩效指标
-•维护与UI / UX相关的功能请求
-•与业务分析师和核心开发员协作以改进用户故事、需求和流程模型
+
+* 维护与UI / UX相关的功能请求
+* 与业务分析师和核心开发员协作以改进用户故事、需求和流程模型
+
 QA/测试员（兼职——每周30小时）
+==========================
+
 QA /测试员主要负责基于用户故事、需求和流程模型编写测试用例，然后执行测试并记录结果。 其次，QA / 测试员负责与文档专员一起修订开发员文档。
+
 QA/测试员关键绩效指标
-•维护Aha!内的测试用例
-•与核心开发员协作以找出并记录GitHub中的错误
-•与文档专员协作以修订开发员文档，从而确保其符合预期的工作流程
+
+* 维护Aha!内的测试用例
+* 与核心开发员协作以找出并记录GitHub中的错误
+* 与文档专员协作以修订开发员文档，从而确保其符合预期的工作流程
+
 文档专员（兼职——每周30小时）
+=========================
+
 文档专员是能够解释测试用例、用户故事、需求、流程模型和C ++源代码的技术写作者。 文档专员将主要负责在docs.bitshares.org网站上为开发社区编写文档。 其次，文档专员将与核心开发员合作以根据用户故事、需求和流程模型的意图来修订开发员文档，从而确保它们符合源代码的意图和功能。
+
 文档专员关键绩效指标
-•与开发社区协作以确保文档支持其工作
-•与核心开发员协作以审查文档并确保其与源代码意图和执行相吻合
-•与QA / 测试员和业务分析师协作以加强文档，包括用户故事、需求、流程模型和测试用例
+
+* 与开发社区协作以确保文档支持其工作
+* 与核心开发员协作以审查文档并确保其与源代码意图和执行相吻合
+* 与QA / 测试员和业务分析师协作以加强文档，包括用户故事、需求、流程模型和测试用例
+
 初始核心团队成员个人简历
+======================
+
+Abit——核心开发员
+=======================
+
+Alfredo Garcia——核心开发员
+=======================
+
+Bill Butler——UX/UI联络员
+=======================
+草稿：我有丰富的行业经验：1993年创建了一个ISP。拥有NodeJS，Angular，PHP，CouchDB，SQL. UX / UI经验。 我目前是一家医疗软件开发公司的技术副总，拥有八年的开发团队管理经验。 我可能希望将我的GitHub、LinkedIn或其他平台[16]的介绍包含在内。
+
+John M. Jones——核心开发员
+=======================
+
+Marcial Veiria——核心开发员
+=======================
+
+Peter Conrad——核心开发员
+=======================
+草稿：我正在起草一个放在这里的简历。 它将包括加密和行业经验。 我可能希望将我的GitHub、LinkedIn或其他平台[9-10]的介绍包含在内。
+
 Ryan R. Fox——协调员——美国麻萨诸塞州波士顿
 我从一开始就积极地为BitShares做出贡献。 您能在2014年以来的genesis block和许多bitsharestalk.org的信息中找到我的帐户（“1.2.167”），它详细介绍了我们在准备运行BitShares区块链[1-4]时反复做的测试反馈。我在软件开发团队拥有丰富的项目管理专业背景，同时我是有着在金融服务、抵押贷款和制造业方面具有丰富的多国经验的专业产品负责人（PSM-1）。 我将在美国马萨诸塞州波士顿的一个共用工作空间内工作。
-Peter Conrad——核心开发员
-草稿：我正在起草一个放在这里的简历。 它将包括加密和行业经验。 我可能希望将我的GitHub、LinkedIn或其他平台[＃]的介绍包含在内。
+
 Taconator——业务分析师
-我在提交了与BitShares Core中已有的重复提款功能相关的补丁和相关单元测试后于2017年初开始参与BitShares Hangout。 我也就BitShares区块链2017年4月收取的费用发布月度报告。我在各行业都有过识别非技术终端用户问题、设计解决这些问题的技术产品以及领导团队成功构建这些技术产品的经验。 （只是因为可能有一个“锤子”并不意味着每个问题都是“钉子”）。这些解决方案从移动设备上的增强现实应用到全球分布式软件系统。
-Bill Butler——UX/UI联络员
-草稿：我有丰富的行业经验：1993年创建了一个ISP。拥有NodeJS，Angular，PHP，CouchDB，SQL. UX / UI经验。 我目前是一家医疗软件开发公司的技术副总，拥有八年的开发团队管理经验。 我可能希望将我的GitHub、LinkedIn或其他平台[＃]的介绍包含在内。
+====================
+我在提交了与BitShares Core中已有的重复提款功能相关的补丁和相关单元测试后于2017年初开始参与BitShares Hangout [8]。 我也就BitShares区块链2017年4月收取的费用发布月度报告。我在各行业都有过识别非技术终端用户问题、设计解决这些问题的技术产品以及领导团队成功构建这些技术产品的经验。 （只是因为可能有一个“锤子”并不意味着每个问题都是“钉子”）。这些解决方案从移动设备上的增强现实应用到全球分布式软件系统。
+
+文案专员——Tamami Sugimoto
+========================
+
 协作工具
+=======
+
 BitShares核心团队使用各种协作工具来组织工作、传达想法和协助开发工作。 所有工具都为提供社区阅读/审阅访问权限以观察进度并提供反馈。 编辑/投稿访问权限可能限于特定的核心团队角色。 我们鼓励团队成员在共用工作空间内进行工作以在那里曝光BitShares平台并形成合作机会。 我们为等同全职人员（FTE）提供津贴。 FTE核心团队将在每个计划的DevCon活动之前开会以进行团队建设和互相合作。 核心小组将以建设性的方式参加会议活动。 下表介绍了协作工具的预算：
 表格3 协作工具（每月）
 许可	描述	供应商	每月（美元）
@@ -377,14 +433,27 @@ UI/UX联络员（10@125美元）	1,250
 •2.5 =抵押品乘数以避免市场波动和根据需要以2.5倍抵押品借款
 •$ 6,667美元/日* 2.09 BTS / 美元 * 2.5抵押乘数= 34,835 BTS /日
 美元支付将通过@xeroc [8]开发的方法在bitUSD中进行。可能需要人民币支付，这以6.37美元/人民币在bitCNY中进行。核心团队成员必须在其第一张发票中申报付款方式，并在2018年日历年内不得更改。应急措施：如果由于世界事件致使美元/人民币汇率变化幅度大于10％，发票将以美元汇率付款来兑现预算金额。
-参考文献
-•	[1] BitShares Talk Profile: fox
-•	[2] GitHub Repo: ryanRfox
-•	[3] LinkedIn Profile: ryanRfox
-•	[4] Twitter Profile: ryanRfox
-•	[5] BBF Budget Worker Template
-•	[6] BBF Transparent Accounting
-•	[7] BitShares GitFlow
-•	[8] Xeroc's Worker Payment Template
 
+参考文献
+========
+
+* [1] BitShares Talk Profile: [Ryan R. Fox](https://bitsharestalk.org/index.php?action=profile;u=5333)
+* [2] GitHub Repo: [Ryan R. Fox](https://github.com/ryanRfox)
+* [3] LinkedIn Profile: [Ryan R. Fox](https://linkedin.com/in/ryanRfox)
+* [4] Twitter Profile: [Ryan R. Fox](https://twitter.com/ryanRfox)
+* [5] BBF [Budget Worker Template](http://www.bitshares.foundation/worker/)
+* [6] BBF [Transparent Accounting](http://www.bitshares.foundation/accounting)
+* [7] BitShares [GitFlow](https://github.com/bitshares/bitshares-core/wiki/Git-Flow)
+* [8] GitHub Repo [Taconator](https://github.com/TheTaconator)
+* [9] Professional Backgroud: [Peter Conrad](http://bts.quisquis.de/delegate/about.html)
+* [10] Implementation of BSIP-18: [Peter Conrad](http://www.bitshares.foundation/worker/escrow/2017-07-peter-conrad)
+* [11] Core Dev Worker: [Abit](https://github.com/abitmore/bts-worker-proposals/blob/master/abit-worker-201712-201803.md)
+* [12] Core Dev Worker: [Alfredo Garcia](https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2018_1.md)
+* [13] Bitshares Core Contributions: [Alfredo Garcia](https://github.com/bitshares/bitshares-core/commits?author=oxarbitrage)
+* [14] GitHub Repo: [Alfredo Garcia](https://github.com/oxarbitrage)
+* [15] BitShares Documentation: [Tamami Sugimoto]()
+* [16] BitShares GUI Worker: [Bill Butler](https://steemit.com/bitshares/@billbutler/bitshares-gui-worker-proposal-renewal)
+* [17] LinkedIn Profile: [John M. Jones](https://www.linkedin.com/in/jmjatlanta/)
+* [18] GitHub Repo: [John M. Jones](https://github.com/jmjatlanta)
+* [19] GitHub repo: [Marcial Veiria](https://github.com/marcialvieira)
 

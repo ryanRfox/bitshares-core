@@ -227,7 +227,7 @@ I have actively contributed to BitShares development from its inception [1-4]. I
 Taconator - Business Analyst
 ============================
 
-I began participating in the BitShares Hangout in early 2017 after submitting a patch and associated unit tests related to the recurring withdrawals capability that already existed in BitShares Core. I also began publishing monthly reports on the fees collected by the BitShares blockchain in April 2017. I have experience within various industries identifying problems of non-technical end-users, designing technical products for solving those problems, and leading teams to successfully build those technical products. (Just because one might have a "hammer" does not mean that every problem is a "nail".) These solutions span from augmented reality applications on mobile devices to global distributed software systems.
+I began participating in the BitShares Hangout in early 2017 after submitting a patch and associated unit tests related to the recurring withdrawals capability that already existed in BitShares Core [8]. I also began publishing monthly reports on the fees collected by the BitShares blockchain in April 2017. I have experience within various industries identifying problems of non-technical end-users, designing technical products for solving those problems, and leading teams to successfully build those technical products. (Just because one might have a "hammer" does not mean that every problem is a "nail".) These solutions span from augmented reality applications on mobile devices to global distributed software systems.
 
 Tamami Sugimoto - Documentation Specialist
 ==========================================
@@ -327,22 +327,22 @@ USD payment will be in bitUSD with method developed by the BitShares Blockchain 
 References
 ==========
 
-* [1] BitShares Talk Profile: [Ryan R. Fox](https://bitsharestalk.org/index.php?action=profile;u=5333)
-* [2] GitHub Repo: [Ryan R. Fox](https://github.com/ryanRfox)
-* [3] LinkedIn Profile: [Ryan R. Fox](https://linkedin.com/in/ryanRfox)
-* [4] Twitter Profile: [Ryan R. Fox](https://twitter.com/ryanRfox)
-* [5] BBF [Budget Worker Template](http://www.bitshares.foundation/worker/)
-* [6] BBF [Transparent Accounting](http://www.bitshares.foundation/accounting)
-* [7] BitShares [GitFlow](https://github.com/bitshares/bitshares-core/wiki/Git-Flow)
-* [8] Xeroc's [Worker Payment Template](https://github.com/xeroc/worker-proposals/blob/master/2017-02.md#worker)
-* [9] Professional Backgroud: [Peter Conrad](http://bts.quisquis.de/delegate/about.html)
-* [10] Implementation of BSIP-18: [Peter Conrad](http://www.bitshares.foundation/worker/escrow/2017-07-peter-conrad)
-* [11] Core Dev Worker: [Abit](https://github.com/abitmore/bts-worker-proposals/blob/master/abit-worker-201712-201803.md)
-* [12] Core Dev Worker: [Alfredo Garcia](https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2018_1.md)
-* [13] Bitshares Core Contributions: [Alfredo Garcia](https://github.com/bitshares/bitshares-core/commits?author=oxarbitrage)
-* [14] GitHub Repo: [Alfredo Garcia](https://github.com/oxarbitrage)
-* [15] BitShares Documentation: [Tamami Sugimoto]()
-* [16] BitShares GUI Worker: [Bill Butler](https://steemit.com/bitshares/@billbutler/bitshares-gui-worker-proposal-renewal)
-* [17] LinkedIn Profile: [John M. Jones](https://www.linkedin.com/in/jmjatlanta/)
-* [18] GitHub Repo: [John M. Jones](https://github.com/jmjatlanta)
-* [19] GitHub repo: [Marcial Veiria](https://github.com/marcialvieira)
+* [1] [BitShares Talk Profile](https://bitsharestalk.org/index.php?action=profile;u=5333), Ryan R. Fox
+* [2] [GitHub Repo](https://github.com/ryanRfox), Ryan R. Fox
+* [3] [LinkedIn Profile](https://linkedin.com/in/ryanRfox), Ryan R. Fox
+* [4] [Twitter Profile](https://twitter.com/ryanRfox), Ryan R. Fox
+* [5] [Budget Worker Template](http://www.bitshares.foundation/worker/), BitShares Blockchain Foundation
+* [6] [Transparent Accounting](http://www.bitshares.foundation/accounting), BitShares Blockchain Foundation
+* [7] [GitFlow](https://github.com/bitshares/bitshares-core/wiki/Git-Flow), BitShares
+* [8] [GitHub Repo](https://github.com/TheTaconator), Taconator
+* [9] [Professional Backgroud](http://bts.quisquis.de/delegate/about.html), Peter Conrad
+* [10] [Implementation of BSIP-18](http://www.bitshares.foundation/worker/escrow/2017-07-peter-conrad), Peter Conrad
+* [11] [Core Dev Worker](https://github.com/abitmore/bts-worker-proposals/blob/master/abit-worker-201712-201803.md), Abit
+* [12] [Core Dev Worker](https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2018_1.md), Alfredo Garcia
+* [13] [Bitshares Core Contributions](https://github.com/bitshares/bitshares-core/commits?author=oxarbitrage), Alfredo Garcia
+* [14] [GitHub Repo](https://github.com/oxarbitrage), Alfredo Garcia
+* [15] [BitShares Documentation](), Tamami Sugimoto
+* [16] [BitShares GUI Worker](https://steemit.com/bitshares/@billbutler/bitshares-gui-worker-proposal-renewal), Bill Butler
+* [17] [LinkedIn Profile](https://www.linkedin.com/in/jmjatlanta/), John M. Jones
+* [18] [GitHub Repo](https://github.com/jmjatlanta), John M. Jones
+* [19] [GitHub repo](https://github.com/marcialvieira), Marcial Veiria
