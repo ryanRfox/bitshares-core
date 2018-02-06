@@ -1,8 +1,8 @@
 BitShares Core Team Budget Worker Proposal - 2018
 =================================================
 
-Author: Ryan R. Fox (`"fox"`)
-Mandarin Translation [国语翻译](mandarin_translation.md): 招木 (`"Zhaomu"`)
+* Author: Ryan R. Fox (`"fox"`)
+* [国语翻译](mandarin_translation.md) Mandarin Translation: 招木 (`"Zhaomu"`)
 
 Intent
 ======
