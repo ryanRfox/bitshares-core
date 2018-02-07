@@ -49,17 +49,17 @@ Producing reliable and secure software at scale requires ideation, organization,
 | Coordinator                     |                    $150 | 40 hours weekly  |      $6,000 |
 | Lead Core Developer             |                    $200 | 40 hours weekly  |      $8,000 |
 | Senior Core Developer           |                    $175 | 80 hours weekly  |     $14,000 |
-| Core Developer                  |                    $150 | *                |           - |
-| Junior Core Developer           |                    $125 | *                |           - |
+| Core Developer                  |                    $150 | ^                |           - |
+| Junior Core Developer           |                    $125 | ^                |           - |
 | Lead Business Analyst           |                    $125 | 40 hours weekly  |      $5,000 |
 | Senior Business Analyst         |                    $100 | 20 hours weekly  |      $2,000 |
-| Junior Business Analyst         |                     $75 | *                |           - |
+| Junior Business Analyst         |                     $75 | ^                |           - |
 | Lead QA/Tester                  |                    $125 | 30 hours weekly  |      $3,750 |
-| Senior QA/Tester                |                    $100 | *                |           - |
-| Junior QA/Tester                |                     $75 | *                |           - |
+| Senior QA/Tester                |                    $100 | ^                |           - |
+| Junior QA/Tester                |                     $75 | ^                |           - |
 | Lead Documentation Specialist   |                     $90 | 30 hours weekly  |      $2,700 |
-| Senior Documentation Specialist |                     $75 | *                |           - |
-| Junior Documentation Specialist |                     $60 | *                |           - |
+| Senior Documentation Specialist |                     $75 | ^                |           - |
+| Junior Documentation Specialist |                     $60 | ^                |           - |
 | UI/UX Liaison                   |                    $125 | 10 hours weekly  |      $1,250 |
 | TOTAL ROLES BUDGET (WEEKLY)     |               $90 - $200| 290 hours weekly |     $42,700 |
 
@@ -91,35 +91,50 @@ Delivery
 BitShares Core Team Member 'Contract Work' Guidance:
 ====================================================
 
-This section is to be considered guidance, not a legal statement. The BitShares Decentralized Autonomous Community (BitShares DAC) 'owns' the funds collected by this Budget Worker and are issued as compensation to individuals performing 'contract work' as described elsewhere in this document. Effort contributed by individuals is considered 'at-will' as no formal 'employment contract' is able to be formed between BitShares DAC and the 'contract worker' at this time. Neither the BitShares Blockchain Foundation (BBF) nor the BitShares Committee or any individuals serving those entities are considered 'employers' of any 'contract worker'. No BitShares Core Team Member or Role is considered the 'manager' or an 'employer' of any individual. Any compensation received from the BitShares DEX is likely considered 'earned income' and may be subject to tax reporting by the recipient. The BitShares DAC, BBF, BitShares Committee, Coordinator, or any Core Team Member will neither prepare nor issue tax documents to any entity. All effort performed is a 'work for hire' contribution to the BitShares DAC adhering to its MIT license.
+This section is to be considered guidance, not a legal statement. The BitShares
+Decentralized Autonomous Community (BitShares DAC) controls the funds collected
+by this Budget Worker and are issued as compensation to individuals performing
+agreed work as described elsewhere in this document. Effort contributed by
+individuals is considered by personal commitment as no formal employment
+contract is intended or able to be formed between BitShares DAC and the
+individual worker. Neither the BitShares Blockchain Foundation (BBF) nor the
+BitShares Committee or any individual serving those entities are to be
+considered employers of any agreed contribution. No BitShares Core Team Member
+or Role is considered the manager or the employer of any individual person. Any
+compensation received from the BitShares DAC might be considered earned income
+for individual persons involved in their individual situation and may be
+subject to tax reporting by the recipient. Neither BitShares DAC, nor the
+BitShares Blockchain Foundation, nor BitShares Committee, nor the Coordinator,
+or any Core Team Member will neither carry responsibility, nor command, nor
+issue, nor prepare any document, including tax documents, to any entity or
+natural person. All effort performed is a contribution to the BitShares DAC
+adhering to its MIT license.
 
-Each Core Team Member is encouraged to contribute no more hours than is customary in their jurisdiction for 'full time equivalent' work, as the role is considered 'exempt' from overtime compensation. A goal is to provide the equivalent of an annual salaried position with two weeks holiday. To accommodate this, the equivalent of 40 hours of base pay will be remitted to the Core Team Member upon accumulating 1000 hours within a rolling 12-month period, thus resetting both counters. National and religious observances are also important to a healthy work/life balance. Up to ten 8-hour observance days are paid per calendar year, prorated to the rate and average working days in the week before and after the week containing the observance day.
-
-Each BitShares Core Team Member performing effort for the BitShares DAC acknowledges neither recourse nor remedy is available from the BitShares DAC, any other BitShares Core Team Member nor author.
+Each Core Team Member is encouraged to contribute in a responsible way with
+respect to a work/life balance and legal employee engagements he or she might
+have entered into, or enter, with an employer. 
 
 * Table 2. Initial BitShares Core Team
 
-| Roles (described below)   | Rate Range (Hourly USD) | Team Members    | Estimated Hours    |
-|:------------------------- | -----------------------:|:--------------- |:------------------ |
-| Coordinator               |                   $125* | Ryan R. Fox     | 40 hours weekly    |
-| Core Developer            |                    $150 | Peter Conrad    | 10 hours weekly    |
-| Core Developer            |                    $150 | Abit            | 5 hours weekly**   |
-| Core Developer            |                    $150 | Alfredo Garcia  | 2 hours weekly**   |
-| Junior Core Developer     |                    $125 | John M. Jones   | 20 hours weekly    |
-| Junior Core Developer     |                    $125 | Marcial Vieira  | 20 hours weekly    |
-| Core Developers***        |             $125 - $200 | -open-          | -                  |
-| Senior Business Analyst   |                    $100 | Taconator       | 10 hours weekly    |
-| Business Analyst***       |             $ 75 - $125 | -open-          | -                  |
-| BA & Doc. Specialist      |                    $125 | Tamami Sugimoto | 10 hours weekly    |
-| QA/Tester***              |             $ 75 - $125 | -open-          | -                  |
-| UI/UX Liaison             |                    $125 | Bill Butler     | 2 hours weekly     |
-| TOTALS INITIAL CORE TEAM^ |             $100 - $150 | -all-           | 119 hours weekly^^ |
-| $14,800 WEEKLY (EST.)     |                         |                 |                    |
+| Roles (described below)   | Rate Range (Hourly USD) | Team Members    | Estimated Hours   |
+|:------------------------- | -----------------------:|:--------------- |:----------------- |
+| Coordinator               |                    $150 | Ryan R. Fox     | 10 hours weekly   |
+| Senior Core Developer     |                    $175 | Peter Conrad    | 10 hours weekly   |
+| Core Developer            |                    $150 | Abit            | 5 hours weekly**  |
+| Core Developer            |                    $150 | Alfredo Garcia  | 2 hours weekly**  |
+| Core Developers           |             $125 - $200 | -open-          | -                 |
+| Lead Business Analyst     |                    $125 | Taconator       | 10 hours weekly   |
+| Senior Business Analyst   |                    $100 | Ryan R. Fox     | 15 hours weekly   |
+| Business Analysts         |             $ 75 - $125 | -open-          | -                 |
+| BA & Doc. Specialist      |                    $100 | Tamami Sugimoto | 10 hours weekly   |
+| Documentation Specialists |             $ 60 - $ 90 | -open-          | -                 |
+| QA/Testers                |             $ 75 - $125 | -open-          | -                 |
+| UI/UX Liaison             |                    $125 | Bill Butler     | 2 hours weekly    |
+| TOTALS INITIAL CORE TEAM  |             $100 - $150 | -all-           | 64 hours weekly** |
+| $8,050 WEEKLY (EST.)      |                         |                 |                   |
 
-*Ryan R. Fox intends to serve as Coordinator initailly at a reduced rate and work with the Core Team to establish criteria to achieve full rate.
-**Abit and Alfredo intend to complete their existing Workers. Their contributions as part of the Core Team will initially be at the reduced hours above, then expected to increase.
-^Peter, John, Marcial, Taconator and Tumami intend to begin with reduced hours weekly and increase over time.
-^^Aditional hours for nearly all roles remain available at this time. Please contact fox@bitshares.boston for additional information.
+*Abit and Alfredo intend to complete their existing Workers. Their contributions as part of the Core Team will initially be at the reduced hours above, then expected to increase.
+**Aditional hours for all roles remain available at this time. Please contact fox@bitshares.boston for additional information.
 
 Coordinator (Full Time - 40 hours per week)
 ===========================================
@@ -213,24 +228,15 @@ Bill Butler - UX/UI Liaison
 
 I lead the BitShares UI team and have extensive industry experience: Founded an ISP in 1993, NodeJS, Angular, PHP, CouchDB, SQL. UX/UI Experience [16]. I am currently VP Engineering for a healthcare software development firm and have eight years’ experience managing development teams.
 
-John M. Jones - Core Developer
-==============================
-
-I have been writing software since I received my first computer (Timex-Sinclair 1500) at age 11 [17-18]. I have worked on many projects, normally around the finance/banking/insurance industries. My engineering experience includes many languages, but C/C++ has always been my favorite.
-
-Marcial Vieira - Core Developer
-===============================
-I have already developed in many languages but in most projects using C/C++ [19-21]. Many projects I contribted to were closed source. In public projects I participated in a minimalist solution of VPN called vpnbox that runs on ucspi-tcp or using a fork tsi-ucspi-udp that I also participated in the development. Both projects were published by Tempest Security Intelligence. I also participated in the development of the forks for c-ipfs and c-libp2p at Agorise.
-
 Peter Conrad - Core Developer
 =============================
 
 I am a knowledgable and long-standing member of the BitShares community (@pc) and an active developer for many years [9-10].
 
-Ryan R. Fox - Coordinator - Boston, MA, US
-==========================================
+Ryan R. Fox - Coordinator
+=========================
 
-I have actively contributed to BitShares development from its inception [1-4]. I have extensive professional background in project management with software development teams and am a professional scrum master (PSM-1) with multi-national experience in financial services, mortgage banking and manufacturing. I will maintain a physical presence within a co-working space in Boston, MA, US.
+I have actively contributed to BitShares development from its inception [1-4]. I have extensive professional background in project management with software development teams and am a professional scrum master (PSM-1) with multi-national experience in financial services, mortgage banking and manufacturing.
 
 Taconator - Business Analyst
 ============================
@@ -247,8 +253,6 @@ Collaboration Tools
 
 The BitShares Core Team use various collaboration tools to organize their work, convey ideas and aid development efforts. Tools selected by the team generally provide read/reviewer access for the community to observe progress and provide feedback. Write/contributor access may be limited to a specific Core Team role(s). License quantities and types will vary monthly, therefore $2,250 is budgeted for tools. A non-exhaustive list is provided in Table 3 below. 
 
-Team Members are encouraged to office within a co-working space to expose the BitShares platform therein and form external collaboration opportunities. A stipend of $350 monthly is offered for full time equivalent (FTE) effort. 
-
 The FTE Core Team will meet prior to each of the scheduled DevCon events for team building, in person collaboration and presentation preparation. The Core Team will participate in conference events in constructive ways. A budget for Conference participation is provided in Table 4. below.
 
 * Table 3. Collaboration Tools (Monthly)
@@ -262,9 +266,8 @@ The FTE Core Team will meet prior to each of the scheduled DevCon events for tea
 | --Product Roadmap            |           -- |
 | --Process Models             |           -- |
 | --Infrastructure Environment |           -- |
-| Co-working Space for FTE     |       $1,750 |
 | Management Fee (BBF)         |       $4,000 |
-| TOTAL TOOLS BUDGET (MONTHLY) |       $8,000 |
+| TOTAL TOOLS BUDGET (MONTHLY) |       $6,250 |
 
 
 * Table 4. Conference Budget (One-Time)
@@ -292,12 +295,12 @@ The items listed in the tables below represent an upper bound on expenditures. A
 |:--------------------------------------- | ------------:| ---------:| ------------:|
 | Total Core Team Roles (Table 1)         |      $42,700 |           |              |
 | ++ Convert to daily (/7 days)           |              |    $6,100 |              |
-| Total Collaberation Tools (Table 3)     |       $8,000 |           |              |
-| ++ Convert to daily (/30 days)          |              |      $267 |              |
+| Total Collaberation Tools (Table 3)     |       $6,250 |           |              |
+| ++ Convert to daily (/30 days)          |              |      $208 |              |
 | Total Conference Budget (Table 4)       |      $32,250 |           |              |
 | ++ Convert to daily (/45 weeks /7 days) |              |      $102 |              |
-| == TOTAL DAILY BUDGET ITEMS             |              |    $6,469 |              |
-| == == TOTAL 45 WEEK BUDGET              |              |           |   $2,037,735 |
+| == TOTAL DAILY BUDGET ITEMS             |              |    $6,410 |              |
+| == == TOTAL 45 WEEK BUDGET              |              |           |   $2,019,150 |
 
 Duration and Pay
 ================
@@ -310,9 +313,9 @@ Payments:
 * Coordinator will review and approve vendor invoices, then forward to BitShares Blockchain Foundation for direct payment to vendor
 
 Calculation:
-* 4.8600 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-02-07)
+* 4.7524 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-02-07)
 * 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
-* $6,469 USD/day * 4.8600 BTS/USD * 2.5 collateral multiplier ≈ 78,598 BTS/day
+* $6,410 USD/day * 4.7524 BTS/USD * 2.5 collateral multiplier ≈ 76,157 BTS/day
 
 USD payment will be in bitUSD with method developed by the BitShares Blockchain Foundation [5].
 
