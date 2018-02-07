@@ -228,94 +228,122 @@ Taconator——业务分析师
 ====================
 我在提交了与BitShares Core中已有的重复提款功能相关的补丁和相关单元测试后于2017年初开始参与BitShares Hangout [8]。 我也就BitShares区块链2017年4月收取的费用发布月度报告。我在各行业都有过识别非技术终端用户问题、设计解决这些问题的技术产品以及领导团队成功构建这些技术产品的经验。 （只是因为可能有一个“锤子”并不意味着每个问题都是“钉子”）。这些解决方案从移动设备上的增强现实应用到全球分布式软件系统。
 
-文案专员——Tamami Sugimoto
+Tamami Sugimoto——文案专员
 ========================
 
 协作工具
 =======
 
 BitShares核心团队使用各种协作工具来组织工作、传达想法和协助开发工作。 所有工具都为提供社区阅读/审阅访问权限以观察进度并提供反馈。 编辑/投稿访问权限可能限于特定的核心团队角色。 我们鼓励团队成员在共用工作空间内进行工作以在那里曝光BitShares平台并形成合作机会。 我们为等同全职人员（FTE）提供津贴。 FTE核心团队将在每个计划的DevCon活动之前开会以进行团队建设和互相合作。 核心小组将以建设性的方式参加会议活动。 下表介绍了协作工具的预算：
-表格3 协作工具（每月）
-许可	描述	供应商	每月（美元）
-1	代码库（0美元）	GitHub (github.com)	0
-1	持续集成（0美元）	Travis CI (travis-ci.com)	0
-1	持续代码质量（0美元）	SonarCloud (sonarcloud.io)	0
-1	基础设施环境（200美元）	TBD	200
-2	产品路线图（124美元）	Aha! (aha.io)	248
-2	过程模型（53美元）	Blueworks Live (blueworkslive.com)	106
-5	FTE共用工作空间（350美元）	WeWork - or similar (wework.com)	1750
-1	翻译服务（1000美元）	TBD	1000
-会议预算
-食宿	描述	金额（美元）
-	DevCon Spring 2018 – 中国上海	
-5 FTE	差旅费（至多2000美元）	10,000 
-5晚	住宿（至多150美元）	3,750 
-5天	饮食（至多60美元）	1,500 
-	DevCon Autumn 2018 - TBD,欧洲	
-5 FTE	差旅费（至多2000美元）	10,000 
-5晚	住宿（至多200美元）	5,000 
-5天	饮食（至多80美元）	2,000 
+
+* 表格3 协作工具（每月）
+
+| 描述                  | 每月（美元） |
+|:---------------------| ------------:|
+| Software Tools       |       $2,250 |
+| --代码库              |           -- |
+| --持续集成            |           -- |
+| --持续代码质量        |           -- |
+| --产品路线图          |           -- |
+| --过程模型            |           -- |
+| --基础设施环境        |           -- |
+| FTE共用工作空间       |       $1,750 |
+| Management Fee (BBF) |       $4,000 |
+| SUM MONTHLY BUDGET:  |       $8,000 |
+
+* 会议预算
+
+* 表格4. 会议预算 (One-Time)
+
+| 描述                                  | 食宿       | 金额（美元） |
+|:------------------------------------ |:---------- | ------------:|
+| DevCon Spring 2018 – 中国上海         |            |              |
+|   差旅费（至多2000美元）               | 5 FTE      |      $10,000 |
+|   住宿（至多150美元）                  | 5 nights   |       $3,750 |
+|   饮食（至多60美元）                   | 5 days     |       $1,500 |
+| DevCon Autumn 2018 - TBD, Europe     |            |              |
+|   差旅费（至多2000美元）               | 5 FTE      |      $10,000 |
+|   住宿（至多200美元）                 | 5 nights    |       $5,000 |
+|   饮食（至多80美元）                  | 5 days      |       $2,000 |
+| SUM ONE-TIME BUDGET:                 |            |      $32,250 |
+
+
 预算
-表格4. 每周预算项目
-角色（时间@费率）	金额（美元）
-协调员（40@150美元）	6,000
-核心开发员（120@200美元）	24,000
-业务分析师（60@125美元）	7,500
-QA/测试员（30@125美元）	3,750
-文档专员（30@90美元）	2,700
-UI/UX联络员（10@125美元）	1,250
-每周预算项目总额	45,200
-转换为每日预算（总额/7日）	6,457
-表格5. 每月预算项目
-许可	描述（费率）	每月（美元）
-1	代码库（0美元）	0
-1	持续集成（0美元）	0 
-1	持续代码质量（0美元）	0 
-2	产品路线图（124美元）	248 
-2	过程模型（53美元）	106 
-1	基础设施环境（200美元）	200 
-1	共用工作空间（350美元）	1,750
-1	翻译服务（350美元）	1,750
-总额	每周每月项目	3,304
-转换	为每日预算（总额/30日）	110
-表格6. 一次性预算项目
-食宿	描述	金额（美元）
-	DevCon Spring 2018 – 中国上海	
-5 FTE	差旅费（至多2000美元）	10,000 
-5晚	住宿（至多150美元）	3,750 
-5天	饮食（至多60美元）	1,500 
-	DevCon Autumn 2018 - TBD,欧洲	
-5 FTE	差旅费（至多2000美元）	10,000 
-5晚	住宿（至多200美元）	5,000 
-5天	饮食（至多80美元）	2,000 
-总额	一次性预算项目	32,250
-转换	为每日预算（总额/46w/7d）	100
-表格7. 每日预算项目总额
-描述	金额（美元）
-每周预算项目	6,457
-每月预算项目	110
-一次性预算项目	100
-每日预算项目总额	6,667
+====
+
+* 表格5. Core Team Members Budget
+
+
+| 角色（时间@费率）          | 金额（美元）  |
+|:------------------------- | ------------:|
+| 协调员（40@150美元）       |       $6,000 |
+| 核心开发员（120@200美元）  |      $24,000 |
+| 业务分析师（60@125美元）   |       $7,500 |
+| QA/测试员（30@125美元）    |       $3,750 |
+| 文档专员（30@90美元）      |       $2,700 |
+| UI/UX联络员（10@125美元）  |       $1,250 |
+| 每周预算项目总额           |      $45,200 |
+| 转换为每日预算（总额/7日）  |       $6,457 |
+
+* Table 6. Collaboration Tools Budget
+
+| Description                              | Amount (USD) |
+|:-----------------------------------------| ------------:|
+| SUM MONTHLY COLLABORATION TOOLS          |       $8,000 |
+| SUM ONE-TIME COLLABORATION TOOLS         |      $32,250 |
+| CONVERTED TO DAILY BUDGET                |         $369 |
+
+* Table 7. Total Budget for Calendar Year 2018
+
+| Description                              | Amount (USD) |
+|:-----------------------------------------| ------------:|
+| SUM DAILY BUDGET (TEAM MEMBERS & TOOLS)  |       $6,826 |
+| SUM 45 WEEK BUDGET                       |   $2,150,190 |
+
 期限和支付
-本提案将从2018年2月12日开始大致持续46周
+=========
+
+本提案将从2018年2月20日开始大致持续45周
+
 支付：
-•核心团队成员的发票将在星期一上午12:00UTC前交给协调员以支付星期日23:59 UTC前所做的工作
-•协调员将审核并批准提交的发票，然后转交给BitShares 区块链基金会以直接支付给核心团队成员
-•协调员将审核和批准供应商发票，然后转交给BitShares 区块链基金会以直接支付给供应商
+
+* 核心团队成员的发票将在星期一上午12:00UTC前交给协调员以支付星期日23:59 UTC前所做的工作
+* 协调员将审核并批准提交的发票，然后转交给BitShares 区块链基金会以直接支付给核心团队成员
+* 协调员将审核和批准供应商发票，然后转交给BitShares 区块链基金会以直接支付给供应商
+
 计算：
-•2.09 BTS / bitUSD =编写时（2018-01-29）bitUSD的结算价格
-•2.5 =抵押品乘数以避免市场波动和根据需要以2.5倍抵押品借款
-•$ 6,667美元/日* 2.09 BTS / 美元 * 2.5抵押乘数= 34,835 BTS /日
+
+* 2.09 BTS / bitUSD =编写时（2018-01-29）bitUSD的结算价格
+* 2.5 =抵押品乘数以避免市场波动和根据需要以2.5倍抵押品借款
+* $ 6,667美元/日* 2.09 BTS / 美元 * 2.5抵押乘数= 34,835 BTS /日
+
 美元支付将通过@xeroc [8]开发的方法在bitUSD中进行。可能需要人民币支付，这以6.37美元/人民币在bitCNY中进行。核心团队成员必须在其第一张发票中申报付款方式，并在2018年日历年内不得更改。应急措施：如果由于世界事件致使美元/人民币汇率变化幅度大于10％，发票将以美元汇率付款来兑现预算金额。
+
 参考文献
-•	[1] BitShares Talk Profile: fox
-•	[2] GitHub Repo: ryanRfox
-•	[3] LinkedIn Profile: ryanRfox
-•	[4] Twitter Profile: ryanRfox
-•	[5] BBF Budget Worker Template
-•	[6] BBF Transparent Accounting
-•	[7] BitShares GitFlow
-•	[8] Xeroc's Worker Payment Template
+=======
+
+* [1] [BitShares Talk Profile](https://bitsharestalk.org/index.php?action=profile;u=5333), Ryan R. Fox
+* [2] [GitHub Repository](https://github.com/ryanRfox), Ryan R. Fox
+* [3] [LinkedIn Profile](https://linkedin.com/in/ryanRfox), Ryan R. Fox
+* [4] [Twitter Profile](https://twitter.com/ryanRfox), Ryan R. Fox
+* [5] [Budget Worker Template](http://www.bitshares.foundation/worker/), BitShares Blockchain Foundation
+* [6] [Transparent Accounting](http://www.bitshares.foundation/accounting), BitShares Blockchain Foundation
+* [7] [GitFlow](https://github.com/bitshares/bitshares-core/wiki/Git-Flow), BitShares
+* [8] [GitHub Repository](https://github.com/TheTaconator), Taconator
+* [9] [Professional Backgroud](http://bts.quisquis.de/delegate/about.html), Peter Conrad
+* [10] [Implementation of BSIP-18](http://www.bitshares.foundation/worker/escrow/2017-07-peter-conrad), Peter Conrad
+* [11] [Core Dev Worker](https://github.com/abitmore/bts-worker-proposals/blob/master/abit-worker-201712-201803.md), Abit
+* [12] [Core Dev Worker](https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2018_1.md), Alfredo Garcia
+* [13] [Bitshares Core Contributions](https://github.com/bitshares/bitshares-core/commits?author=oxarbitrage), Alfredo Garcia
+* [14] [GitHub Repo](https://github.com/oxarbitrage), Alfredo Garcia
+* [15] [BitShares Documentation](), Tamami Sugimoto
+* [16] [BitShares GUI Worker](https://steemit.com/bitshares/@billbutler/bitshares-gui-worker-proposal-renewal), Bill Butler
+* [17] [LinkedIn Profile](https://www.linkedin.com/in/jmjatlanta/), John M. Jones
+* [18] [GitHub Repository](https://github.com/jmjatlanta), John M. Jones
+* [19] [GitHub Repository](https://github.com/marcialvieira), Marcial Veiria
+* [20] [GitHub Repository](https://github.com/tempestsecurity/), Tempest Security
+* [21] [GitHub Repository](https://github.com/Agorise/), Agorise
+
 核心开发员（全职——每周40小时）
 核心开发员是一个经验丰富的C ++开发人员，主要负责编写和记录源代码。 其次，核心开发员负责在开发之前完善用户故事、需求和过程模型以及并在测试过程中解决错误。
 核心开发者关键绩效指标

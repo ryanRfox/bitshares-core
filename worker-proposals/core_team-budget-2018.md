@@ -212,7 +212,7 @@ I have been writing software since I received my first computer (Timex-Sinclair 
 
 Marcial Vieira - Core Developer
 ===============================
-Drafting...[19]
+I have already developed in many languages but in most projects using C/C++ [19-21]. Many projects I contribted to were closed source. In public projects I participated in a minimalist solution of VPN called vpnbox that runs on ucspi-tcp or using a fork tsi-ucspi-udp that I also participated in the development. Both projects were published by Tempest Security Intelligence. I also participated in the development of the forks for c-ipfs and c-libp2p at Agorise.
 
 Peter Conrad - Core Developer
 =============================
@@ -299,13 +299,12 @@ The items listed in the tables below represent an upper bound on expenditures. A
 | SUM ONE-TIME COLLABORATION TOOLS         |      $32,250 |
 | CONVERTED TO DAILY BUDGET                |         $369 |
 
-* Table 8. Total Budget for Calendar Year 2018
+* Table 7. Total Budget for Calendar Year 2018
 
 | Description                              | Amount (USD) |
 |:-----------------------------------------| ------------:|
 | SUM DAILY BUDGET (TEAM MEMBERS & TOOLS)  |       $6,826 |
 | SUM 45 WEEK BUDGET                       |   $2,150,190 |
-
 
 Duration and Pay
 ================
@@ -318,9 +317,9 @@ Payments:
 * Coordinator will review and approve vendor invoices, then forward to BitShares Blockchain Foundation for direct payment to vendor
 
 Calculation:
-* 4.7132 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-02-06)
+* 4.6815 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-02-07)
 * 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
-* $6,826 USD/day * 4.7132 BTS/USD * 2.5 collateral multiplier = 80,431 BTS/day
+* $6,826 USD/day * 4.6815 BTS/USD * 2.5 collateral multiplier ≈ 79,890 BTS/day
 
 USD payment will be in bitUSD with method developed by the BitShares Blockchain Foundation [5].
 
@@ -328,13 +327,13 @@ References
 ==========
 
 * [1] [BitShares Talk Profile](https://bitsharestalk.org/index.php?action=profile;u=5333), Ryan R. Fox
-* [2] [GitHub Repo](https://github.com/ryanRfox), Ryan R. Fox
+* [2] [GitHub Repository](https://github.com/ryanRfox), Ryan R. Fox
 * [3] [LinkedIn Profile](https://linkedin.com/in/ryanRfox), Ryan R. Fox
 * [4] [Twitter Profile](https://twitter.com/ryanRfox), Ryan R. Fox
 * [5] [Budget Worker Template](http://www.bitshares.foundation/worker/), BitShares Blockchain Foundation
 * [6] [Transparent Accounting](http://www.bitshares.foundation/accounting), BitShares Blockchain Foundation
 * [7] [GitFlow](https://github.com/bitshares/bitshares-core/wiki/Git-Flow), BitShares
-* [8] [GitHub Repo](https://github.com/TheTaconator), Taconator
+* [8] [GitHub Repository](https://github.com/TheTaconator), Taconator
 * [9] [Professional Backgroud](http://bts.quisquis.de/delegate/about.html), Peter Conrad
 * [10] [Implementation of BSIP-18](http://www.bitshares.foundation/worker/escrow/2017-07-peter-conrad), Peter Conrad
 * [11] [Core Dev Worker](https://github.com/abitmore/bts-worker-proposals/blob/master/abit-worker-201712-201803.md), Abit
@@ -344,5 +343,7 @@ References
 * [15] [BitShares Documentation](), Tamami Sugimoto
 * [16] [BitShares GUI Worker](https://steemit.com/bitshares/@billbutler/bitshares-gui-worker-proposal-renewal), Bill Butler
 * [17] [LinkedIn Profile](https://www.linkedin.com/in/jmjatlanta/), John M. Jones
-* [18] [GitHub Repo](https://github.com/jmjatlanta), John M. Jones
-* [19] [GitHub repo](https://github.com/marcialvieira), Marcial Veiria
+* [18] [GitHub Repository](https://github.com/jmjatlanta), John M. Jones
+* [19] [GitHub Repository](https://github.com/marcialvieira), Marcial Veiria
+* [20] [GitHub Repository](https://github.com/tempestsecurity/), Tempest Security
+* [21] [GitHub Repository](https://github.com/Agorise/), Agorise
