@@ -288,31 +288,16 @@ The items listed in the tables below represent an upper bound on expenditures. A
 
 * Table 5. Core Team Budget
 
-| Description                         | Amount (USD) | Daily     | TOTAL      |
-|:------------------------------------| ------------:| ---------:| ----------:|
-| Total Core Team Roles (Table 1)     |      $42,700 |           |            |
-| --CONVERTED TO DAILY BUDGET         |              |    $6,457 |            |
-| Total Collaberation Tools (Table 3) |       $8,000 |           |            |
-| --CONVERTED TO DAILY BUDGET         |              |      $369 |            |
-| Total Conference Budget (Table 4)   |      $32,250 |           |            |
-| --CONVERTED TO DAILY BUDGET         |              |      $369 |            |
-| TOTAL DAILY BUDGET ITEMS            |              |    $6,826 |            |
-| TOTAL 45 WEEK BUDGET                |              |           | $2,150,190 |
-
-* Table 6. Collaboration Tools Budget
-
-| Description                              | Amount (USD) |
-|:-----------------------------------------| ------------:|
-| SUM MONTHLY COLLABORATION TOOLS          |       $8,000 |
-| SUM ONE-TIME COLLABORATION TOOLS |      $32,250 |
-| CONVERTED TO DAILY BUDGET        |         $369 |
-
-* Table 7. Total Budget for Calendar Year 2018
-
-| Description                      | Amount (USD) |
-|:---------------------------------| ------------:|
-| SUM DAILY BUDGET (ROLES & TOOLS) |       $6,826 |
-| SUM 45 WEEK BUDGET               |   $2,150,190 |
+| Description                             | Amount (USD) | Daily     | TOTAL BUDGET |
+|:--------------------------------------- | ------------:| ---------:| ------------:|
+| Total Core Team Roles (Table 1)         |      $42,700 |           |              |
+| ++ Convert to daily (/7 days)           |              |    $6,457 |              |
+| Total Collaberation Tools (Table 3)     |       $8,000 |           |              |
+| ++ Convert to daily (/30 days)          |              |      $267 |              |
+| Total Conference Budget (Table 4)       |      $32,250 |           |              |
+| ++ Convert to daily (/45 weeks /7 days) |              |      $102 |              |
+| == TOTAL DAILY BUDGET ITEMS             |              |    $6,826 |              |
+| == == TOTAL 45 WEEK BUDGET              |              |           |   $2,150,190 |
 
 Duration and Pay
 ================
