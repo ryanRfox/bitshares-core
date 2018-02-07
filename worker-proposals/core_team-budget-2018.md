@@ -42,19 +42,26 @@ The BitShares Core Team is a self-organizing agile-principled team focused on de
 
 Producing reliable and secure software at scale requires ideation, organization, definition, prioritization, development, testing and documentation. The ideal team composition includes roles specializing in each of these functions and capable of contributing many. The goal of a highly functioning team is to fully utilize each individual's effort and together maximize their collective output. 
 
-* Table 1. BitShares Core Team Budget
+* Table 1. BitShares Core Team Roles Budget
 
-| Roles (described below)  | Rate Range (Hourly USD) | Estimated Hours |
-|:------------------------ | -----------------------:|:--------------- |
-| Coordinator              |             $125 - $150 | 40 hours weekly |
-| Core Developer           |             $125 - $200 | 40 hours weekly |
-| Core Developer           |             $125 - $200 | 40 hours weekly |
-| Core Developer           |             $125 - $200 | 40 hours weekly |
-| Business Analyst         |              $75 - $125 | 40 hours weekly |
-| Business Analyst         |              $75 - $125 | 20 hours weekly |
-| QA/Tester                |              $75 - $125 | 30 hours weekly |
-| Documentation Specialist |              $60 - $ 90 | 30 hours weekly |
-| UI/UX Liaison            |              $75 - $125 | 10 hours weekly |
+| Roles (described below)         | Hourly Rate (USD)       | Budgeted Hours   | Total (USD) |
+|:------------------------------- | -----------------------:|:---------------- | -----------:|
+| Coordinator                     |                    $150 | 40 hours weekly  |      $6,000 |
+| Lead Core Developer             |                    $200 | 40 hours weekly  |      $8,000 |
+| Senior Core Developer           |                    $175 | 80 hours weekly  |     $14,000 |
+| Core Developer                  |                    $150 | *                |           - |
+| Junior Core Developer           |                    $125 | *                |           - |
+| Lead Business Analyst           |                    $125 | 40 hours weekly  |      $5,000 |
+| Senior Business Analyst         |                    $100 | 20 hours weekly  |      $2,000 |
+| Junior Business Analyst         |                     $75 | *                |           - |
+| Lead QA/Tester                  |                    $125 | 30 hours weekly  |      $3,750 |
+| Senior QA/Tester                |                    $100 | *                |           - |
+| Junior QA/Tester                |                     $75 | *                |           - |
+| Lead Documentation Specialist   |                     $90 | 30 hours weekly  |      $2,700 |
+| Senior Documentation Specialist |                     $75 | *                |           - |
+| Junior Documentation Specialist |                     $60 | *                |           - |
+| UI/UX Liaison                   |                    $125 | 10 hours weekly  |      $1,250 |
+| TOTAL ROLES BUDGET (WEEKLY)     |               $90 - $200| 290 hours weekly |     $42,700 |
 
 * Development Cycles*:
   * Feature Release (non-hard fork):
@@ -92,26 +99,27 @@ Each BitShares Core Team Member performing effort for the BitShares DAC acknowle
 
 * Table 2. Initial BitShares Core Team
 
-| Roles (described below)  | Rate Range (Hourly USD) | Team Members    | Estimated Hours     |
-|:------------------------ | -----------------------:|:--------------- |:------------------- |
-| Coordinator              |                    $125 | Ryan R. Fox     | 40 hours weekly     |
-| Core Developer           |                    $125 | Peter Conrad    | 10 hours weekly     |
-| Core Developer           |                    $125 | Abit            | 5 hours weekly*     |
-| Core Developer           |                    $125 | Alfredo Garcia  | 2 hours weekly*     |
-| Core Developer           |                    $125 | John M. Jones   | 20 hours weekly**   |
-| Core Developer           |                    $125 | Marcial Vieira  | 20 hours weekly**   |
-| Core Developer***        |             $125 - $200 | -open-          | -                   |
-| Business Analyst (BA)    |                    $125 | Taconator       | 10 hours weekly**   |
-| Business Analyst***      |             $ 75 - $125 | -open-          | -                   |
-| BA & Doc. Specialist     |                    $125 | Tamami Sugimoto | 10 hours weekly**   |
-| QA/Tester***             |             $ 75 - $125 | -open-          | -                   |
-| UI/UX Liaison            |                    $125 | Bill Butler     | 2 hours weekly      |
-| SUM INITIAL CORE TEAM    |                    $125 | -all-           | 119 hours weekly*** |
-| $14,875 WEEKLY (EST.)    |                         |                 |                     |
+| Roles (described below)   | Rate Range (Hourly USD) | Team Members    | Estimated Hours    |
+|:------------------------- | -----------------------:|:--------------- |:------------------ |
+| Coordinator               |                   $125* | Ryan R. Fox     | 40 hours weekly    |
+| Core Developer            |                    $150 | Peter Conrad    | 10 hours weekly    |
+| Core Developer            |                    $150 | Abit            | 5 hours weekly**   |
+| Core Developer            |                    $150 | Alfredo Garcia  | 2 hours weekly**   |
+| Junior Core Developer     |                    $125 | John M. Jones   | 20 hours weekly    |
+| Junior Core Developer     |                    $125 | Marcial Vieira  | 20 hours weekly    |
+| Core Developers***        |             $125 - $200 | -open-          | -                  |
+| Senior Business Analyst   |                    $100 | Taconator       | 10 hours weekly    |
+| Business Analyst***       |             $ 75 - $125 | -open-          | -                  |
+| BA & Doc. Specialist      |                    $125 | Tamami Sugimoto | 10 hours weekly    |
+| QA/Tester***              |             $ 75 - $125 | -open-          | -                  |
+| UI/UX Liaison             |                    $125 | Bill Butler     | 2 hours weekly     |
+| TOTALS INITIAL CORE TEAM^ |             $100 - $150 | -all-           | 119 hours weekly^^ |
+| $14,800 WEEKLY (EST.)     |                         |                 |                    |
 
-*Abit and Alfredo intend to complete their existing Workers. Their contributions as part of the Core Team will initially be at the reduced hours above, then expected to increase.
-**John, Marcial, Taconator and Tumami intend to begin with 10 hours weekly and increase over time.
-***Aditional hours for nearly all roles remain available at this time. Please contact fox@bitshares.boston for additional information.
+*Ryan R. Fox intends to serve as Coordinator initailly at a reduced rate and work with the Core Team to establish criteria to achieve full rate.
+**Abit and Alfredo intend to complete their existing Workers. Their contributions as part of the Core Team will initially be at the reduced hours above, then expected to increase.
+^Peter, John, Marcial, Taconator and Tumami intend to begin with reduced hours weekly and increase over time.
+^^Aditional hours for nearly all roles remain available at this time. Please contact fox@bitshares.boston for additional information.
 
 Coordinator (Full Time - 40 hours per week)
 ===========================================
@@ -256,7 +264,7 @@ The FTE Core Team will meet prior to each of the scheduled DevCon events for tea
 | --Infrastructure Environment |           -- |
 | Co-working Space for FTE     |       $1,750 |
 | Management Fee (BBF)         |       $4,000 |
-| SUM MONTHLY BUDGET:          |       $8,000 |
+| TOTAL TOOLS BUDGET (MONTHLY) |       $8,000 |
 
 
 * Table 4. Conference Budget (One-Time)
@@ -271,40 +279,40 @@ The FTE Core Team will meet prior to each of the scheduled DevCon events for tea
 |   Travel round trip (up to $2000)    | 5 FTE          |      $10,000 |
 |   Lodging (up to $200)               | 5 nights       |       $5,000 |
 |   Meals (up to $80)                  | 5 days         |       $2,000 |
-| SUM ONE-TIME BUDGET:                 |                |      $32,250 |
+| TOTAL TOOLS BUDGET (ONE-TIME)        |                |      $32,250 |
 
 Budget
 ======
 
 The items listed in the tables below represent an upper bound on expenditures. All funds collected and unused at the conclusion of this Worker Proposal will be returned to the Reserve Pool.
 
-* Table 5. Core Team Members Budget
+* Table 5. Core Team Budget
 
-| Role (hours @ rate)                      | Amount (USD) |
-|:---------------------------------------- | ------------:|
-| Coordinator (40 @ $150)                  |       $6,000 |
-| Core Developer (120 @ $200)              |      $24,000 |
-| Business Analyst (60 @ $125)             |       $7,500 |
-| QA/Tester (30 @ $125)                    |       $3,750 |
-| Documentation Specialist (30 @ $90)      |       $2,700 |
-| UI/UX Liaison (10 @ $125)                |       $1,250 |
-| SUM WEEKLY BUDGET ITEMS                  |      $45,200 |
-| CONVERTED TO DAILY BUDGET                |       $6,457 |
+| Description                         | Amount (USD) | Daily     | TOTAL      |
+|:------------------------------------| ------------:| ---------:| ----------:|
+| Total Core Team Roles (Table 1)     |      $42,700 |           |            |
+| --CONVERTED TO DAILY BUDGET         |              |    $6,457 |            |
+| Total Collaberation Tools (Table 3) |       $8,000 |           |            |
+| --CONVERTED TO DAILY BUDGET         |              |      $369 |            |
+| Total Conference Budget (Table 4)   |      $32,250 |           |            |
+| --CONVERTED TO DAILY BUDGET         |              |      $369 |            |
+| TOTAL DAILY BUDGET ITEMS            |              |    $6,826 |            |
+| TOTAL 45 WEEK BUDGET                |              |           | $2,150,190 |
 
 * Table 6. Collaboration Tools Budget
 
 | Description                              | Amount (USD) |
 |:-----------------------------------------| ------------:|
 | SUM MONTHLY COLLABORATION TOOLS          |       $8,000 |
-| SUM ONE-TIME COLLABORATION TOOLS         |      $32,250 |
-| CONVERTED TO DAILY BUDGET                |         $369 |
+| SUM ONE-TIME COLLABORATION TOOLS |      $32,250 |
+| CONVERTED TO DAILY BUDGET        |         $369 |
 
 * Table 7. Total Budget for Calendar Year 2018
 
-| Description                              | Amount (USD) |
-|:-----------------------------------------| ------------:|
-| SUM DAILY BUDGET (TEAM MEMBERS & TOOLS)  |       $6,826 |
-| SUM 45 WEEK BUDGET                       |   $2,150,190 |
+| Description                      | Amount (USD) |
+|:---------------------------------| ------------:|
+| SUM DAILY BUDGET (ROLES & TOOLS) |       $6,826 |
+| SUM 45 WEEK BUDGET               |   $2,150,190 |
 
 Duration and Pay
 ================
