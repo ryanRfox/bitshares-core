@@ -291,13 +291,13 @@ The items listed in the tables below represent an upper bound on expenditures. A
 | Description                             | Amount (USD) | Daily     | TOTAL BUDGET |
 |:--------------------------------------- | ------------:| ---------:| ------------:|
 | Total Core Team Roles (Table 1)         |      $42,700 |           |              |
-| ++ Convert to daily (/7 days)           |              |    $6,457 |              |
+| ++ Convert to daily (/7 days)           |              |    $6,100 |              |
 | Total Collaberation Tools (Table 3)     |       $8,000 |           |              |
 | ++ Convert to daily (/30 days)          |              |      $267 |              |
 | Total Conference Budget (Table 4)       |      $32,250 |           |              |
 | ++ Convert to daily (/45 weeks /7 days) |              |      $102 |              |
-| == TOTAL DAILY BUDGET ITEMS             |              |    $6,826 |              |
-| == == TOTAL 45 WEEK BUDGET              |              |           |   $2,150,190 |
+| == TOTAL DAILY BUDGET ITEMS             |              |    $6,469 |              |
+| == == TOTAL 45 WEEK BUDGET              |              |           |   $2,037,735 |
 
 Duration and Pay
 ================
@@ -310,9 +310,9 @@ Payments:
 * Coordinator will review and approve vendor invoices, then forward to BitShares Blockchain Foundation for direct payment to vendor
 
 Calculation:
-* 4.6815 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-02-07)
+* 4.8600 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-02-07)
 * 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
-* $6,826 USD/day * 4.6815 BTS/USD * 2.5 collateral multiplier ≈ 79,890 BTS/day
+* $6,469 USD/day * 4.8600 BTS/USD * 2.5 collateral multiplier ≈ 78,598 BTS/day
 
 USD payment will be in bitUSD with method developed by the BitShares Blockchain Foundation [5].
 
