@@ -22,6 +22,11 @@ enhancements, bug fixes, and BSIPs. Therefore, proposed is the establishment of 
 professional, global team dedicated to cohesive and comprehensive development efforts delivered
 transparently.
 
+Make no mistake, this proposal is ambitious. It is a departure from historic norms in scope, duration
+and budget: a dedicated development **team**, for the **calendar year** and a budget near
+**$2M bitUSD**. Contributors to this proposal and participants on the initial Core Team are
+demonstrated leaders within this community and ready now to move BitShares development forward.
+
 Backlog (Sample Screenshot)
 ===========================
 
@@ -63,29 +68,30 @@ functioning team is to fully utilize each individual's effort and together maxim
 
 * Table 1. BitShares Core Team Roles Budget
 
-| Roles (described below)         | Hourly Rate (USD)       | Budgeted Hours   |   Total (USD) |
-|:------------------------------- | -----------------------:|:---------------- | -------------:|
-| Coordinator                     |                    $150 | 40 hours weekly  |        $6,000 |
-| Lead Core Developer             |                    $200 | 40 hours weekly  |        $8,000 |
-| Senior Core Developer           |                    $175 | 80 hours weekly  |       $14,000 |
-| Core Developer                  |                    $150 | ^                |             - |
-| Junior Core Developer           |                    $125 | ^                |             - |
-| Lead Business Analyst           |                    $125 | 40 hours weekly  |        $5,000 |
-| Senior Business Analyst         |                    $100 | 20 hours weekly  |        $2,000 |
-| Junior Business Analyst         |                     $75 | ^                |             - |
-| Lead QA/Tester                  |                    $125 | 30 hours weekly  |        $3,750 |
-| Senior QA/Tester                |                    $100 | ^                |             - |
-| Junior QA/Tester                |                     $75 | ^                |             - |
-| Lead Documentation Specialist   |                     $90 | 30 hours weekly  |        $2,700 |
-| Senior Documentation Specialist |                     $75 | ^                |             - |
-| Junior Documentation Specialist |                     $60 | ^                |             - |
-| UI/UX Liaison                   |                    $125 | 10 hours weekly  |        $1,250 |
-| **TOTAL ROLES BUDGET (WEEKLY)   |               $90 - $200| 290 hours weekly |     $42,700** |
+| Roles (described below)         | Hourly Rate (USD) | Budgeted Hours       | Total (USD) |
+|:------------------------------- | -----------------:|:-------------------- | -----------:|
+| Coordinator                     |              $150 | 40 hours weekly      |      $6,000 |
+| Lead Core Developer             |              $200 | 40 hours weekly      |      $8,000 |
+| Senior Core Developer           |              $175 | 80 hours weekly      |     $14,000 |
+| Core Developer                  |              $150 | ^                    |           - |
+| Junior Core Developer           |              $125 | ^                    |           - |
+| Lead Business Analyst           |              $125 | 40 hours weekly      |      $5,000 |
+| Senior Business Analyst         |              $100 | 20 hours weekly      |      $2,000 |
+| Junior Business Analyst         |               $75 | ^                    |           - |
+| Lead QA/Tester                  |              $125 | 30 hours weekly      |      $3,750 |
+| Senior QA/Tester                |              $100 | ^                    |           - |
+| Junior QA/Tester                |               $75 | ^                    |           - |
+| Lead Documentation Specialist   |               $90 | 30 hours weekly      |      $2,700 |
+| Senior Documentation Specialist |               $75 | ^                    |           - |
+| Junior Documentation Specialist |               $60 | ^                    |           - |
+| UI/UX Liaison                   |              $125 | 10 hours weekly      |      $1,250 |
+| **TOTAL ROLES BUDGET (WEEKLY)** |    **$90 - $200** | **290 hours weekly** | **$42,700** |
 
 _^Hours for some roles are rolled up into a higher rate tier for budget purposes only. The result
 may be more hours performed at lower rates._
 
-* Development Cycles*:
+Development Cycles*
+===================
   * Feature Release (non-hard fork):
     * Three-week sprints
   * Core Release (Hard Fork):
@@ -93,14 +99,60 @@ may be more hours performed at lower rates._
 
 _*Subject to change upon consensus of Core Team Members_
 
+A typical Feature Release will likely span three weeks from planning thru tested and delivered
+software, called a sprint. Many agile principals will be adopted by the Core Team, but do not
+expect a strict scrum practice. This is a global team, so a formal daily standup is unlikely. One
+should expect asynchronous communication within various collaboration tools keeping the team
+informed of progress, plans and problems. The community are our stakeholders; we look to them for
+ideas, enhancements and identifying bugs, then organize these into a backlog for future
+development. The Coordinator facilitates the prioritization of the backlog items based on feedback
+from the stakeholders and the Core Team. The team will keep the stakeholders informed of
+development progress throughout the sprint.
+
+At the beginning of a sprint cycle the Core Team meet to review the prioritized backlog and
+identify the highest value items that each can contribute to, within the established time block.
+Many features have dependencies and cannot be implemented within a single sprint. Therefore, the
+team will create tasks, a subset of the feature, that can be delivered on time. A task may be
+researching and defining requirements to be implemented later. A task may be writing a test case,
+or perhaps implementing only a subset of a given requirement, or even documenting how existing code
+functions. The team will maintain a sprint backlog comprised of the tasks selected from the project 
+backlog. Completing each of these tasks results in incremental value added to the project. Testing 
+is performed throughout the sprint to ensure functioning code from each increment. 
+
+As the sprint nears completion, the Core Team will begin release planning. They will select which
+tested increments are ready to be included in a release candidate. This will be deployed to a
+staging network for final validation. A release will be tagged within the bitshares-core GitHub
+repo along with release notes. The team also produce stakeholder documentation detailing resource
+allocations and budget consumption.
+
+The final steps of the sprint include a retrospective look at how the team performed. Here we
+reflect on our original estimates, the delivered increments and what contributed to our successes
+and shortcomings. We will use insights gained from the retrospective to improve in the next sprint.
+The following day we immediately begin our next sprint cycle.
+
 Bounty Process (Implicit Budget)
 ================================
 
-The BitShares Core Team will prioritize and estimate ad hoc enhancements into a _bounty_ for any
-community member to _claim_. Compensation for the successful merging of code for a given _bounty_ is
-drawn from the excess _implicit_ budget capacity within Table 1. when any Core Team Role is not
-fully allocated. The specifics for the bounty process are still being revised (note: they are
-largely based on those in use by the UI Team).
+The BitShares Core Team maintain a prioritized project backlog of ideas, enhancements, bugs and
+BSIPs which they select from for their development sprint. The community is encouraged to comment
+on the items to aid in refining requirements and guide prioritization. Effort estimates are first
+assigned to the highest value backlog items. Unassigned **and estimated** project backlog items are
+available for ad hoc _bounty_ development. Successfully completing ad hoc bounty items is a primary
+consideration for an invitation to join the Core Team on a future sprint.
+
+The Core Team encourages ad hoc code contributions of estimated project backlog items from
+community members and will compensate successfully merged code based on those estimates. The
+Coordinator will facilitate onboarding new community contributors to _claim_ a backlog item and
+implement a solution that fits within the broader architecture design defined by the Lead
+Developer. Care must be taken to ensure effort is not duplicated and can easily be merged within a
+future sprint. Claimed items that become a dependency of a sprint may be recalled by the Core Team
+to facilitate feature delivery. Compensation for a partially completed increment will be evaluated
+by the Lead Developer.
+
+Compensation for a successfully merged _bounty_ item is drawn from the excess _implicit_ budget
+capacity within Table 1. when any Core Team Role is not fully allocated. The specifics for the
+bounty process are still being revised (note: they are largely based on process in use by the UI
+Team).
 
 BitShares Core Team Framework:
 ==============================
@@ -144,6 +196,16 @@ adhering to its MIT license.
 Each Core Team Member is encouraged to contribute in a responsible way with
 respect to a work/life balance and legal employee engagements he or she might
 have entered into, or enter, with an employer. 
+
+_Initial_ BitShares Core Team
+=============================
+
+The initial Core Team is comprised of community members who have demonstrated their ability to work
+with Graphene-based code, contribute to this community with thoughtful leadership and share a
+dedication to the BitShares ethos. Initially, the team is a skeleton, with many contributing to
+multiple roles and at far less than capacity. Each is focused on returning more value to BitShares
+than that drawn from the reserve pool as a budget. The total compensation for the roles of initial 
+team is less than 19% of the budgeted capacity.
 
 * Table 2. **Initial** BitShares Core Team
 
@@ -218,7 +280,7 @@ Business Analyst (Full Time - 40 hours per week)
 ================================================
 
 The Business Analyst is a key role in a highly functioning team. They review the prioritized list
-of enhancements and refine them into requirements prior to the Developer beginning their effort.
+of enhancements and refine them into requirements prior to the Developer beginning their design.
 Creating requirements documents often include user stories which narrate how the end user and/or
 system behaves. Process models are another tool for conveying the requirements in a visual flow
 diagram. Attention to detail and the ability to research and document are desired characteristics
