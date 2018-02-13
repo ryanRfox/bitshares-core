@@ -63,29 +63,24 @@ results will warrant subsequent Worker(s) to budget for additional team members 
 
 * Table 1. **Initial** BitShares Core Team
 
-| Roles (described below)       | Rate Range (Hourly USD) | Team Members    | Estimated Hours   |
-|:----------------------------- | -----------------------:|:--------------- |:----------------- |
-| Senior Core Developer         |                    $175 | Peter Conrad    | 10 hours weekly   |
-| Core Developer                |                    $150 | Abit            | 5 hours weekly*   |
-| Core Developer                |                    $150 | Alfredo Garcia  | 2 hours weekly*  |
-| Junior Core Developer         |                    $125 | Taconator       | 5 hours weekly   |
-| Lead Business Analyst         |                    $125 | Ryan R. Fox     | 10 hours weekly   |
-| Senior Business Analyst       |                    $100 | Taconator       | 5 hours weekly    |
-| Senior Business Analyst       |                    $100 | Tamami Sugimoto | 3 hours weekly    |
-| Lead Documentation Specialist |                    $ 90 | Tamami Sugimoto | 5 hours weekly    |
-| QA/Tester                     |                    $100 | Tamami Sugimoto | 2 hours weekly    |
-| QA/Tester                     |                    $100 | Ryan R. Fox     | 1 hours weekly    |
-| UI/UX Liaison                 |                    $125 | Bill Butler     | 2 hours weekly    |
-| Coordinator                   |                    $150 | Ryan R. Fox     | 4 hours weekly    |
-| Core Developers               |             $125 - $200 | -open-          | -                 |
-| Business Analysts             |             $ 75 - $125 | -open-          | -                 |
-| Documentation Specialists     |             $ 60 - $ 90 | -open-          | -                 |
-| QA/Testers                    |             $ 75 - $125 | -open-          | -                 |
-| TOTALS **INITIAL** CORE TEAM  |             $ 90 - $150 | -all-           | 54 hours weekly** |
-| **$6,845 WEEKLY (EST.)**      |                         |                 |                   |
-| -                             |                         |                 |                   |
-| **BUDGET FOR THIS WORKER**    |                         |                 |                   |
-| **$15,000**                   |                         |                 | ≈100 hours weekly |
+| Roles (described below)           | Rate Range (Hourly USD) | Team Members    | Estimated Hours   |
+|:--------------------------------- | -----------------------:|:--------------- |:----------------- |
+| Senior Core Developer             |                    $175 | Peter Conrad    | 10 hours weekly   |
+| Core Developer                    |                    $150 | Abit            | 5 hours weekly*   |
+| Core Developer                    |                    $150 | Alfredo Garcia  | 2 hours weekly*   |
+| Junior Core Developer, BA         |                    $125 | Taconator       | 10 hours weekly   |
+| Business Analyst, Coordinator, QA |                    $125 | Ryan R. Fox     | 15 hours weekly   |
+| Lead Documentation Specialist, QA |                    $ 90 | Tamami Sugimoto | 8 hours weekly    |
+| UI/UX Liaison                     |                    $125 | Bill Butler     | 2 hours weekly    |
+| Core Developers                   |             $125 - $200 | -open-          | -                 |
+| Business Analysts                 |             $ 75 - $125 | -open-          | -                 |
+| Documentation Specialists         |             $ 60 - $ 90 | -open-          | -                 |
+| QA/Testers                        |             $ 75 - $125 | -open-          | -                 |
+| TOTALS **INITIAL** CORE TEAM      |             $ 90 - $150 | -all-           | 54 hours weekly** |
+| **$6,825 WEEKLY (EST.)**          |                         |                 |                   |
+| -                                 |                         |                 |                   |
+| **BUDGET FOR THIS WORKER**        |                         |                 |                   |
+| **$15,000**                       |                         |                 | ≈100 hours weekly |
 
 _*Abit and Alfredo intend to complete their existing Workers. Their contributions as part of the
 Core Team will initially be at the reduced hours above, then expected to increase similar to their
@@ -277,10 +272,10 @@ Documentation Specialist
 ========================
 The Documentation Specialist is technical writer able to interpret test cases, user stories,
 requirements, process models and C++ source code. Primarily the Documentation Specialist will
-write documentation for the development community on the docs.bitshares.org website. Secondarily,
-the Documentation Specialist will work with Core Developers to revise developer documentation based
-on the intent of the user stories, requirements and process models to ensure they match the intent
-and function of the source code.
+write documentation for the development community on the GitHub Wiki and docs.bitshares.org
+website. Secondarily, the Documentation Specialist will work with Core Developers to revise
+developer documentation based on the intent of the user stories, requirements and process models
+to ensure they match the intent and function of the source code.
 
 Documentation Specialist Key Performance Indicators
 * Collaborate with the development community to ensure documentation supports their efforts
@@ -391,7 +386,7 @@ to successfully build those technical products. (Just because one might have a "
 mean that every problem is a "nail".) These solutions span from augmented reality applications on
 mobile devices to global distributed software systems.
 
-Tamami Sugimoto - Documentation Specialist, Business Analyst, QA/Tester
+Tamami Sugimoto - Documentation Specialist, QA/Tester
 =======================================================================
 
 I have created and revised documentation for BitShares over the past year [15]. I hold a Masters in
