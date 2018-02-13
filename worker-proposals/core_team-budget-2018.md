@@ -48,9 +48,6 @@ Budget Worker Model [5]:
 * Compensation paid in bitUSD (according to the rules set forth in [5])
 * All unused accumulated BTS returned to the Reserve Pool at the conclusion of the Worker [5]
 
-Core Team Roles
-===============
-
 _Initial_ BitShares Core Team
 =============================
 
@@ -60,80 +57,56 @@ dedication to the BitShares ethos. Initially, the team is a skeleton, with many 
 multiple roles and at reduced weekly hours as represented in Table 1. Each team member is focused
 on returning more value to the BitShares platform than is drawn from the reserve pool.
 
-The initial team is estimating 64 hours of weekly effort. This Worker proposes to **budget $16,000**
-for a team delivering aproximately 120 weekly hours to support conservative growth. Demonstrated
-results will warrant subsequent Worker(s) to fund toward the targets outlined in Table 2 below.
+The initial team is estimating 54 hours of weekly effort. This Worker proposes to **budget $15,000**
+for a team delivering approximately 100 hours weekly to support conservative growth. Demonstrated
+results will warrant subsequent Worker(s) to budget for additional team members and weekly hours.
 
 * Table 1. **Initial** BitShares Core Team
 
-| Roles (described below)      | Rate Range (Hourly USD) | Team Members    | Estimated Hours   |
-|:---------------------------- | -----------------------:|:--------------- |:----------------- |
-| Coordinator                  |                    $150 | Ryan R. Fox     | 10 hours weekly   |
-| Senior Core Developer        |                    $175 | Peter Conrad    | 10 hours weekly   |
-| Core Developer               |                    $150 | Abit            | 5 hours weekly**  |
-| Core Developer               |                    $150 | Alfredo Garcia  | 2 hours weekly**  |
-| Core Developers              |             $125 - $200 | -open-          | -                 |
-| Lead Business Analyst        |                    $125 | Taconator       | 10 hours weekly   |
-| Senior Business Analyst      |                    $100 | Ryan R. Fox     | 15 hours weekly   |
-| Business Analysts (BA)       |             $ 75 - $125 | -open-          | -                 |
-| Documentation Specialists    |             $ 60 - $ 90 | -open-          | -                 |
-| Senior BA & Doc. Specialist  |                    $100 | Tamami Sugimoto | 10 hours weekly   |
-| QA/Testers                   |             $ 75 - $125 | -open-          | -                 |
-| UI/UX Liaison                |                    $125 | Bill Butler     | 2 hours weekly    |
-| TOTALS **INITIAL** CORE TEAM |             $100 - $150 | -all-           | 64 hours weekly** |
-| **$8,050 WEEKLY (EST.)**     |                         |                 |                   |
-| -                            |                         |                 |                   |
-| **BUDGET FOR THIS WORKER**   |                         |                 |                   |
-| **$16,000**                  |                         |                 | ≈120 hours weekly |
+| Roles (described below)       | Rate Range (Hourly USD) | Team Members    | Estimated Hours   |
+|:----------------------------- | -----------------------:|:--------------- |:----------------- |
+| Senior Core Developer         |                    $175 | Peter Conrad    | 10 hours weekly   |
+| Core Developer                |                    $150 | Abit            | 5 hours weekly*   |
+| Core Developer                |                    $150 | Alfredo Garcia  | 2 hours weekly*  |
+| Junior Core Developer         |                    $125 | Taconator       | 5 hours weekly   |
+| Lead Business Analyst         |                    $125 | Ryan R. Fox     | 10 hours weekly   |
+| Senior Business Analyst       |                    $100 | Taconator       | 5 hours weekly    |
+| Senior Business Analyst       |                    $100 | Tamami Sugimoto | 3 hours weekly    |
+| Lead Documentation Specialist |                    $ 90 | Tamami Sugimoto | 5 hours weekly    |
+| QA/Tester                     |                    $100 | Tamami Sugimoto | 2 hours weekly    |
+| QA/Tester                     |                    $100 | Ryan R. Fox     | 1 hours weekly    |
+| UI/UX Liaison                 |                    $125 | Bill Butler     | 2 hours weekly    |
+| Coordinator                   |                    $150 | Ryan R. Fox     | 4 hours weekly    |
+| Core Developers               |             $125 - $200 | -open-          | -                 |
+| Business Analysts             |             $ 75 - $125 | -open-          | -                 |
+| Documentation Specialists     |             $ 60 - $ 90 | -open-          | -                 |
+| QA/Testers                    |             $ 75 - $125 | -open-          | -                 |
+| TOTALS **INITIAL** CORE TEAM  |             $ 90 - $150 | -all-           | 54 hours weekly** |
+| **$6,845 WEEKLY (EST.)**      |                         |                 |                   |
+| -                             |                         |                 |                   |
+| **BUDGET FOR THIS WORKER**    |                         |                 |                   |
+| **$15,000**                   |                         |                 | ≈100 hours weekly |
 
 _*Abit and Alfredo intend to complete their existing Workers. Their contributions as part of the
-Core Team will initially be at the reduced hours above, then expected to increase.
+Core Team will initially be at the reduced hours above, then expected to increase similar to their
+existing Worker.
 **Additional hours for all roles remain available at this time. Please contact
 fox@bitshares.boston for additional information._
 
-BitShares Core Team (Target Vision)
-===================================
+BitShares Core Team
+===================
 
 The BitShares Core Team is a self-organizing agile-principled team focused on delivering regularly
-scheduled releases and ad hoc bug fixes for the BitShares Core software. The plan is to rapidly
-grow into and sustain a dedicated team approximating the composition in Table 2. which represents
-an **upper bound** on expenditures for a **fully utilized** team. Note: this Worker does **not**
-provide funding at this level, rather is presented for the purpose of demonstrating the target
-vision.
-
-The actual number of contributors and roles **may vary** within each development cycle (described
-below), leading to variations in weekly compensation per contributor. The team has discretion in
-allocating resources to meet the needs of each development cycle. 
+scheduled releases and ad hoc bug fixes for the BitShares Core software. The actual number of
+contributors and roles **may vary** within each development cycle (described below), leading to
+variations in weekly compensation per contributor. The team has discretion in allocating resources
+to meet the needs of each development cycle. 
 
 Producing reliable and secure software at scale requires ideation, organization, definition,
 prioritization, development, testing and documentation. The ideal team composition includes roles
-specializing in each of these functions and capable of contributing many. The goal of a highly
+specializing in each of these functions and capable of contributing to many. The goal of a highly
 functioning team is to fully utilize each individual's effort and together maximize their
 collective output. 
-
-* Table 2. BitShares Core Team (Target Vision)
-
-| Roles (described below)         | Hourly Rate (USD) | Budgeted Hours       | Total (USD) |
-|:------------------------------- | -----------------:|:-------------------- | -----------:|
-| Coordinator                     |              $150 | 40 hours weekly      |      $6,000 |
-| Lead Core Developer             |              $200 | 40 hours weekly      |      $8,000 |
-| Senior Core Developer           |              $175 | 80 hours weekly      |     $14,000 |
-| Core Developer                  |              $150 | ^                    |           - |
-| Junior Core Developer           |              $125 | ^                    |           - |
-| Lead Business Analyst           |              $125 | 40 hours weekly      |      $5,000 |
-| Senior Business Analyst         |              $100 | 20 hours weekly      |      $2,000 |
-| Junior Business Analyst         |               $75 | ^                    |           - |
-| Lead QA/Tester                  |              $125 | 30 hours weekly      |      $3,750 |
-| Senior QA/Tester                |              $100 | ^                    |           - |
-| Junior QA/Tester                |               $75 | ^                    |           - |
-| Lead Documentation Specialist   |               $90 | 30 hours weekly      |      $2,700 |
-| Senior Documentation Specialist |               $75 | ^                    |           - |
-| Junior Documentation Specialist |               $60 | ^                    |           - |
-| UI/UX Liaison                   |              $125 | 10 hours weekly      |      $1,250 |
-| **TOTALS (WEEKLY)**             |    **$90 - $200** | **290 hours weekly** | **$42,700** |
-
-_^Hours for some roles are rolled up into a higher rate tier for budget purposes only. The result
-may be more hours performed at lower rates._
 
 Development Cycles*
 ===================
@@ -154,7 +127,7 @@ development. The Coordinator facilitates the prioritization of the backlog items
 from the stakeholders and the Core Team. The team will keep the stakeholders informed of
 development progress throughout the sprint.
 
-At the beginning of a sprint cycle the Core Team meet to review the prioritized backlog and
+At the beginning of a sprint cycle the Core Team meets to review the prioritized backlog and
 identify the highest value items that each can contribute to, within the established time block.
 Many features have dependencies and cannot be implemented within a single sprint. Therefore, the
 team will create tasks, a subset of the feature, that can be delivered on time. A task may be
@@ -242,8 +215,106 @@ Each Core Team Member is encouraged to contribute in a responsible way with
 respect to a work/life balance and legal employee engagements he or she might
 have entered into, or enter, with an employer. 
 
-Coordinator (Full Time - 40 hours per week)
-===========================================
+Core Team Roles
+===============
+
+| Roles (described below)         | Hourly Rate (USD) |
+|:------------------------------- | -----------------:|
+| Lead Core Developer             |              $200 |
+| Senior Core Developer           |              $175 |
+| Core Developer                  |              $150 |
+| Junior Core Developer           |              $125 |
+| Lead Business Analyst           |              $125 |
+| Senior Business Analyst         |              $100 |
+| Junior Business Analyst         |               $75 |
+| Lead QA/Tester                  |              $125 |
+| Senior QA/Tester                |              $100 |
+| Junior QA/Tester                |               $75 |
+| Lead Documentation Specialist   |               $90 |
+| Senior Documentation Specialist |               $75 |
+| Junior Documentation Specialist |               $60 |
+| UI/UX Liaison                   |              $125 |
+| Coordinator                     |              $150 |
+
+Core Developer
+==============
+The Core Developer is a seasoned C++ developer primarily tasked with writing and documenting the
+source code. Secondarily, the Core Developer is tasked with refining user stories, requirements
+and process models prior to development as well as resolving bugs during testing.
+
+Core Developer Key Performance Indicators
+* Collaborate with Business Analyst to refine user stories, requirements and process models
+* Collaborate with QA/Tester on bug identification and resolution
+* Collaborate with the Documentation Specialist to review documentation and ensure it matches
+the source code intent and implementation
+* Maintain code repositories within GitHub using GitFlow principles [7]
+* Contribute to Code Review of peers and provide approval for Release
+* Document code for the benefit of future development efforts
+
+Business Analyst
+================
+
+The Business Analyst is a key role in a highly functioning team. They review the prioritized list
+of enhancements and refine them into requirements prior to the Developer beginning their design.
+Creating requirements documents often include user stories which narrate how the end user and/or
+system behaves. Process models are another tool for conveying the requirements in a visual flow
+diagram. Attention to detail and the ability to research and document are desired characteristics
+During development the Developer will often collaborate with the Business Analyst to clarify and
+refine requirements to ensure the implementation meets the desired behavior. The Business Analyst
+will assist the QA/Tester with writing test cases as well as executing and documenting results
+thereof. The Business Analyst will review and refine documentation produced by the Documentation
+Specialist to ensure it accurately reflects the requirements.
+
+Business Analyst Key Performance Indicators
+* Maintain user stories, requirements and process models
+  * Use Aha! for user stories and requirements
+  * Use Blueworks Live for process models
+* Collaborate with Core Developers to refine user stories, requirements and process models
+* Collaborate with Documentation Specialist to revise developer documentation matches the intent
+of the user stories, requirements and process models.
+
+Documentation Specialist
+========================
+The Documentation Specialist is technical writer able to interpret test cases, user stories,
+requirements, process models and C++ source code. Primarily the Documentation Specialist will
+write documentation for the development community on the docs.bitshares.org website. Secondarily,
+the Documentation Specialist will work with Core Developers to revise developer documentation based
+on the intent of the user stories, requirements and process models to ensure they match the intent
+and function of the source code.
+
+Documentation Specialist Key Performance Indicators
+* Collaborate with the development community to ensure documentation supports their efforts
+* Collaborate with the Core Developers to review documentation and ensure it matches the source
+code intent and implementation
+* Collaborate with the QA/Tester and Business Analyst to enhance documentation including user
+stories, requirements, process models and test cases
+
+QA/Tester
+=========
+The QA/Tester is primarily tasked with writing test cases based on user stories, requirements and
+process models, then executing the tests and documenting the results. Secondarily, the QA/Tester is
+tasked with revising developer documentation with the Documentation Specialist.
+
+QA/Tester Key Performance Indicators
+* Maintain test cases within Aha!
+* Collaborate with Core Developers to identify and document bugs in GitHub
+* Collaborate with Documentation Specialist to revise developer documentation, ensuring it matches
+the intended workflow
+
+UI/UX Liaison
+=============
+The UI/UX Liaison is the primary point of contact for planning, prioritizing, defining and testing
+UI/UX elements impacted by the implementation of the Core software. The UI Team function
+independently of the Core Team, but their combined efforts are interdependent. Therefore, the UI/UX
+Liaison is integral to delivering our feature rich Core platform.
+
+UI/UX Liaison Key Performance Indicators
+* Maintain Feature Requests related to UI/UX
+* Collaborate with Business Analyst and Core Developers to refine user stories, requirements and
+process models
+
+Coordinator
+===========
 The Coordinator is an experienced agile project manager or scrum master with deep knowledge of
 distributed ledger technology. Primarily, the Coordinator is tasked with general facilitation,
 organization and prioritization of development efforts. 
@@ -271,83 +342,6 @@ international participation)
 for remittance
 * Maintain vendor relationships for collaboration tools
 * Facilitate Developer Conference attendance
-
-Core Developer (Full Time - 40 hours per week)
-==============================================
-The Core Developer is a seasoned C++ developer primarily tasked with writing and documenting the
-source code. Secondarily, the Core Developer is tasked with refining user stories, requirements
-and process models prior to development as well as resolving bugs during testing.
-
-Core Developer Key Performance Indicators
-* Collaborate with Business Analyst to refine user stories, requirements and process models
-* Collaborate with QA/Tester on bug identification and resolution
-* Collaborate with the Documentation Specialist to review documentation and ensure it matches
-the source code intent and implementation
-* Maintain code repositories within GitHub using GitFlow principles [7]
-* Contribute to Code Review of peers and provide approval for Release
-* Document code for the benefit of future development efforts
-
-Business Analyst (Full Time - 40 hours per week)
-================================================
-
-The Business Analyst is a key role in a highly functioning team. They review the prioritized list
-of enhancements and refine them into requirements prior to the Developer beginning their design.
-Creating requirements documents often include user stories which narrate how the end user and/or
-system behaves. Process models are another tool for conveying the requirements in a visual flow
-diagram. Attention to detail and the ability to research and document are desired characteristics
-During development the Developer will often collaborate with the Business Analyst to clarify and
-refine requirements to ensure the implementation meets the desired behavior. The Business Analyst
-will assist the QA/Tester with writing test cases as well as executing and documenting results
-thereof. The Business Analyst will review and refine documentation produced by the Documentation
-Specialist to ensure it accurately reflects the requirements.
-
-Business Analyst Key Performance Indicators
-* Maintain user stories, requirements and process models
-  * Use Aha! for user stories and requirements
-  * Use Blueworks Live for process models
-* Collaborate with Core Developers to refine user stories, requirements and process models
-* Collaborate with Documentation Specialist to revise developer documentation matches the intent
-of the user stories, requirements and process models.
-
-UI/UX Liaison (Part Time - 10 hours per week)
-=============================================
-The UI/UX Liaison is the primary point of contact for planning, prioritizing, defining and testing
-UI/UX elements impacted by the implementation of the Core software. The UI Team function
-independently of the Core Team, but their combined efforts are interdependent. Therefore, the UI/UX
-Liaison is integral to delivering our feature rich Core platform.
-
-UI/UX Liaison Key Performance Indicators
-* Maintain Feature Requests related to UI/UX
-* Collaborate with Business Analyst and Core Developers to refine user stories, requirements and
-process models
-
-QA/Tester (Part Time - 30 hours per week)
-=========================================
-The QA/Tester is primarily tasked with writing test cases based on user stories, requirements and
-process models, then executing the tests and documenting the results. Secondarily, the QA/Tester is
-tasked with revising developer documentation with the Documentation Specialist.
-
-QA/Tester Key Performance Indicators
-* Maintain test cases within Aha!
-* Collaborate with Core Developers to identify and document bugs in GitHub
-* Collaborate with Documentation Specialist to revise developer documentation, ensuring it matches
-the intended workflow
-
-Documentation Specialist (Part Time - 30 hours per week)
-========================================================
-The Documentation Specialist is technical writer able to interpret test cases, user stories,
-requirements, process models and C++ source code. Primarily the Documentation Specialist will
-write documentation for the development community on the docs.bitshares.org website. Secondarily,
-the Documentation Specialist will work with Core Developers to revise developer documentation based
-on the intent of the user stories, requirements and process models to ensure they match the intent
-and function of the source code.
-
-Documentation Specialist Key Performance Indicators
-* Collaborate with the development community to ensure documentation supports their efforts
-* Collaborate with the Core Developers to review documentation and ensure it matches the source
-code intent and implementation
-* Collaborate with the QA/Tester and Business Analyst to enhance documentation including user
-stories, requirements, process models and test cases
 
 Initial Core Team Member Introductions
 ======================================
@@ -377,16 +371,16 @@ Peter Conrad - Core Developer
 I am a knowledgeable and long-standing member of the BitShares community (@pc) and an active
 developer for many years [9-10].
 
-Ryan R. Fox - Coordinator, Business Analyst
-===========================================
+Ryan R. Fox - Coordinator, Business Analyst, QA/Tester
+======================================================
 
 I have actively contributed to BitShares development from its inception [1-4]. I have extensive
 professional background in project management with software development teams and am a professional
 scrum master (PSM-1) with multi-national experience in financial services, mortgage banking and
 manufacturing.
 
-Taconator - Business Analyst
-============================
+Taconator - Core Developer, Business Analyst
+============================================
 
 I began participating in the BitShares Hangout in early 2017 after submitting a patch and
 associated unit tests related to the recurring withdrawals capability that already existed in
@@ -397,8 +391,8 @@ to successfully build those technical products. (Just because one might have a "
 mean that every problem is a "nail".) These solutions span from augmented reality applications on
 mobile devices to global distributed software systems.
 
-Tamami Sugimoto - Documentation Specialist, Business Analyst
-============================================================
+Tamami Sugimoto - Documentation Specialist, Business Analyst, QA/Tester
+=======================================================================
 
 I have created and revised documentation for BitShares over the past year [15]. I hold a Masters in
 MIS and have held professional titles including Systems Analyst & Programmer, Web Designer and
@@ -414,9 +408,9 @@ aid development efforts. Transparency of development efforts to the community is
 Tools selected by the team generally provide read/reviewer access for the community to observe
 progress, track our time and provide feedback. Write/contributor access may be limited to a
 specific Core Team role(s). License quantities and types will vary monthly, therefore $2,000 is
-budgeted for tools. A non-exhaustive list is provided in Table 3 below. 
+budgeted for tools. A non-exhaustive list is provided in Table 2 below. 
 
-* Table 3. Collaboration Tools (Monthly)
+* Table 2. Collaboration Tools (Monthly)
 
 | Description                  | Amount (USD) |
 |:-----------------------------| ------------:|
@@ -431,12 +425,11 @@ budgeted for tools. A non-exhaustive list is provided in Table 3 below.
 | Management Fee (BBF)         |       $2,000 |
 | TOTAL TOOLS BUDGET (MONTHLY) |       $4,000 |
 
-The Full Time Equivalent (FTE) Core Team will meet prior to each of the scheduled DevCon events
-for team building, innperson collaboration and presentation preparation. The Core Team will
-participate in conference events in constructive ways. A budget for Conference participation is
-provided in Table 4. below.
+Select Core Team will meet prior to each of the scheduled DevCon events for team building,
+In person collaboration and presentation preparation. The Core Team will participate in conference
+events in constructive ways. A budget for Conference participation is provided in Table 3. below.
 
-* Table 4. Conference Budget (One-Time)
+* Table 3. Conference Budget (One-Time)
 
 | Description                          | Accommodations | Amount (USD) |
 |:------------------------------------ |:-------------- | ------------:|
@@ -456,23 +449,23 @@ Budget
 The items listed in the tables below represent an upper bound on expenditures. All funds collected
 and unused at the conclusion of this Worker Proposal will be returned to the Reserve Pool.
 
-* Table 5. Core Team Budget
+* Table 4. Core Team Budget
 
 | Description                             | Amount (USD) | Daily     | TOTAL BUDGET |
 |:--------------------------------------- | ------------:| ---------:| ------------:|
-| Total Core Team Roles (Table 1)         |      $16,000 |           |              |
-| ++ Convert to daily (/7 days)           |              |    $2,286 |              |
+| Total Core Team Roles (Table 1)         |      $15,000 |           |              |
+| ++ Convert to daily (/7 days)           |              |    $2,143 |              |
 | Total Collaboration Tools (Table 3)     |       $4,000 |           |              |
 | ++ Convert to daily (/30 days)          |              |      $133 |              |
 | Total Conference Budget (Table 4)       |      $32,250 |           |              |
-| ++ Convert to daily (/45 weeks /7 days) |              |      $102 |              |
-| == TOTAL DAILY BUDGET ITEMS             |              |    $2,521 |              |
-| == == TOTAL 45 WEEK BUDGET              |              |           |     $794,115 |
+| ++ Convert to daily (/44 weeks /7 days) |              |      $105 |              |
+| ≈≈ TOTAL DAILY BUDGET ITEMS             |              |    $2,381 |              |
+| ≈≈ ≈≈ **TOTAL 44 WEEK BUDGET**          |              |           | **$733,317** |
 
 Duration and Pay
 ================
 
-This proposal will last for roughly 45 weeks, starting from 20th February 2018.
+This proposal will last for roughly 44 weeks, starting from 28th February 2018.
 
 Payments:
 * Invoices from Core Team Members will be submitted to the Coordinator by Monday 12:00 UTC for work
@@ -483,9 +476,9 @@ Foundation for direct payment to Core Team Members
 Foundation for direct payment to vendor
 
 Calculation:
-* 4.3345 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-02-07)
+* 4.2117 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-02-13)
 * 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
-* $2,521 USD/day * 4.3345 BTS/USD * 2.5 collateral multiplier ≈ 27,318 BTS/day
+* $2,381 USD/day * 4.2117 BTS/USD * 2.5 collateral multiplier ≈ 25,069 BTS/day
 
 USD payment will be in bitUSD with method developed by the BitShares Blockchain Foundation [5].
 
