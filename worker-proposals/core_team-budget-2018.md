@@ -70,7 +70,7 @@ results will warrant subsequent Worker(s) to budget for additional team members 
 | Core Developer                    |                    $150 | Alfredo Garcia  | 2 hours weekly*   |
 | Junior Core Developer, BA         |                    $125 | Taconator       | 10 hours weekly   |
 | Business Analyst, Coordinator, QA |                    $125 | Ryan R. Fox     | 15 hours weekly   |
-| Lead Documentation Specialist, QA |                    $ 90 | Tamami Sugimoto | 8 hours weekly    |
+| Lead Documentation Specialist, QA |                    $ 90 | Tamami Sugimoto | 10 hours weekly    |
 | UI/UX Liaison                     |                    $125 | Bill Butler     | 2 hours weekly    |
 | Core Developers                   |             $125 - $200 | -open-          | -                 |
 | Business Analysts                 |             $ 75 - $125 | -open-          | -                 |
