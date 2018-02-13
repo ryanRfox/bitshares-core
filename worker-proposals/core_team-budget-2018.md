@@ -65,12 +65,12 @@ results will warrant subsequent Worker(s) to budget for additional team members 
 
 | Roles (described below)           | Rate Range (Hourly USD) | Team Members    | Estimated Hours   |
 |:--------------------------------- | -----------------------:|:--------------- |:----------------- |
-| Senior Core Developer             |                    $175 | Peter Conrad    | 10 hours weekly   |
+| Core Developer                    |                    $150 | Peter Conrad    | 10 hours weekly   |
 | Core Developer                    |                    $150 | Abit            | 5 hours weekly*   |
 | Core Developer                    |                    $150 | Alfredo Garcia  | 2 hours weekly*   |
 | Junior Core Developer, BA         |                    $125 | Taconator       | 10 hours weekly   |
 | Business Analyst, Coordinator, QA |                    $125 | Ryan R. Fox     | 15 hours weekly   |
-| Lead Documentation Specialist, QA |                    $ 90 | Tamami Sugimoto | 10 hours weekly    |
+| Lead Documentation Specialist, QA |                    $ 90 | Tamami Sugimoto | 10 hours weekly   |
 | UI/UX Liaison                     |                    $125 | Bill Butler     | 2 hours weekly    |
 | Core Developers                   |             $125 - $200 | -open-          | -                 |
 | Business Analysts                 |             $ 75 - $125 | -open-          | -                 |
