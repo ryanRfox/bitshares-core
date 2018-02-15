@@ -461,6 +461,8 @@ the Roadmap.
   * Vote Decay
   * Fee Schedule based on Market Pegged Assets
 
+* Chart 1. Initiatives - 2018
+
 ![BitShares Core Initiatives - 2018](initiatives.png "BitShares Core Initiatives - 2018")
 
 Budget
