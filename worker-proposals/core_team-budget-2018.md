@@ -28,7 +28,7 @@ Worker
 This is a Budget Worker Proposal which provides **partial** funding through calendar year 2018 for:
 * BitShares Core Team Roles
 * Collaboration Tools
-* Development Roadmap
+* Development Initiatives
 
 This Worker funds an _initial_ Core Team at **reduced hours** to mitigate draw on the reserve pool
 and support **bootstrapping** efforts. Subsequent Worker(s) will be offered to fund the team as it
@@ -434,20 +434,19 @@ events in constructive ways. A budget for Conference participation is provided i
 |   Meals (up to $80)                  | 5 days         |       $2,000 |
 | TOTAL TOOLS BUDGET (ONE-TIME)        |                |      $32,250 |
 
-Development Roadmap
-===================
+Development Initiatives
+=======================
 
 The Initial Core Team has identified the following Initiatives to research, define and develop
 as part of their 2018 Roadmap. A detailed Roadmap will be a deliverable of this Worker for
-Community review. An 'Ideas Portal' will be provided to encorporate Community priorities into the
-Roadmap.
-
-![BitShares Core Initiatives - 2018](initiatives.png "BitShares Core Initiatives - 2018")
+Community review. An 'Ideas Portal' will also be provided to encorporate Community priorities into
+the Roadmap.
 
 * Refine/Prioritize Existing BSIPs
 * Node & CLI Wallet Enhancements
   * API Functionality
   * Database Storage Options
+  * Installation scripts / environments
 * Interchain Communication
   * Atomic Cross Chain Transactions (ACCT)
   * EOS.IO Integration Report
@@ -455,10 +454,14 @@ Roadmap.
 * Hardware Wallet Integrations
 * Confidential Transactions / Confidential Assets
 * Market Mechanics
+  * Market Engine Improvements
   * Maker/Taker Model
+  * Bancor Protocol
 * Community Engagement
   * Vote Decay
   * Fee Schedule based on Market Pegged Assets
+
+![BitShares Core Initiatives - 2018](initiatives.png "BitShares Core Initiatives - 2018")
 
 Budget
 ======
