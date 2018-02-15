@@ -57,7 +57,7 @@ The initial team is estimating 54 hours of weekly effort. This Worker proposes t
 for a team delivering approximately 100 hours weekly to support conservative growth. Demonstrated
 results will warrant subsequent Worker(s) to budget for additional team members and weekly hours.
 
-* Table 1. **Initial** BitShares Core Team
+**Table 1. Initial BitShares Core Team**
 
 | Roles (described below)           | Rate Range (Hourly USD) | Team Members    | Estimated Hours   |
 |:--------------------------------- | -----------------------:|:--------------- |:----------------- |
@@ -206,8 +206,7 @@ Each Core Team Member is encouraged to contribute in a responsible way with
 respect to a work/life balance and legal employee engagements he or she might
 have entered into, or enter, with an employer. 
 
-Core Team Roles and Rates
-=========================
+**Table 2. Core Team Roles and Rates**
 
 | Roles (described below)         | Hourly Rate (USD) |
 |:------------------------------- | -----------------:|
@@ -399,9 +398,9 @@ aid development efforts. Transparency of development efforts to the community is
 Tools selected by the team generally provide read/reviewer access for the community to observe
 progress, track our time and provide feedback. Write/contributor access may be limited to a
 specific Core Team role(s). License quantities and types will vary monthly, therefore $2,000 is
-budgeted for tools. A non-exhaustive list is provided in Table 2 below. 
+budgeted for tools. A non-exhaustive list is provided in Table 3 below. 
 
-* Table 2. Collaboration Tools (Monthly)
+**Table 3. Collaboration Tools (Monthly)**
 
 | Description                  | Amount (USD) |
 |:-----------------------------| ------------:|
@@ -418,9 +417,9 @@ budgeted for tools. A non-exhaustive list is provided in Table 2 below.
 
 Select Core Team will meet prior to each of the scheduled DevCon events for team building,
 In person collaboration and presentation preparation. The Core Team will participate in conference
-events in constructive ways. A budget for Conference participation is provided in Table 3. below.
+events in constructive ways. A budget for Conference participation is provided in Table 4. below.
 
-* Table 3. Conference Budget (One-Time)
+**Table 4. Conference Budget (One-Time)**
 
 | Description                          | Accommodations | Amount (USD) |
 |:------------------------------------ |:-------------- | ------------:|
@@ -465,7 +464,7 @@ Team continuously evaluates and prioritizes new issues ongoing.
   * Vote Decay
   * Fee Schedule based on Market Pegged Assets
 
-* Chart 1. Initiatives - 2018
+**Chart 1. Initiatives - 2018**
 
 ![BitShares Core Initiatives - 2018](initiatives.png "BitShares Core Initiatives - 2018")
 
@@ -475,7 +474,7 @@ Budget
 The items listed in the tables below represent an upper bound on expenditures. All funds collected
 and unused at the conclusion of this Worker Proposal will be returned to the Reserve Pool.
 
-* Table 4. Core Team Budget
+**Table 5. Core Team Budget**
 
 | Description                             | Amount (USD) | Daily     | TOTAL BUDGET |
 |:--------------------------------------- | ------------:| ---------:| ------------:|
