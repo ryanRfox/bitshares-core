@@ -383,7 +383,7 @@ mean that every problem is a "nail".) These solutions span from augmented realit
 mobile devices to global distributed software systems.
 
 Tamami Sugimoto - Documentation Specialist, QA/Tester
-=======================================================================
+=====================================================
 
 I have created and revised documentation for BitShares over the past year [15]. I hold a Masters in
 MIS and have held professional titles including Systems Analyst & Programmer, Web Designer and
@@ -438,9 +438,11 @@ Development Roadmap
 ===================
 
 The Initial Core Team has identified the following Initiatives to research, define and develop
-as part of their 2018 Roadmap.
+as part of their 2018 Roadmap. A detailed Roadmap will be a deliverable of this Worker for
+Community review. An 'Ideas Portal' will be provided to encorporate Community priorities into the
+Roadmap.
 
-![alt text](initiatives.png "BitShares Core Initiatives - 2018")
+![BitShares Core Initiatives - 2018](initiatives.png "BitShares Core Initiatives - 2018")
 
 * Refine/Prioritize Existing BSIPs
 * Node & CLI Wallet Enhancements
