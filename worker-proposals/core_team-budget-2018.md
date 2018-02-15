@@ -447,8 +447,8 @@ identified Initiatives. The intent here is to provide guidance at the outset, re
 Team continuously evaluates and prioritizes new issues ongoing.
 
 * Refine/Prioritize Existing BSIPs
-* Node & CLI Wallet Enhancements
-  * API Functionality
+* API & cli_wallet Enhancements
+* Consensus & witness_node Enhancements
   * Database Storage Options
   * Installation scripts / environments
 * Interchain Communication
