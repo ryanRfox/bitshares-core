@@ -22,17 +22,13 @@ enhancements, bug fixes, and BSIPs. Therefore, proposed is the establishment of 
 professional, global team dedicated to cohesive and comprehensive development efforts delivered
 transparently.
 
-Backlog (Sample Screenshot)
-===========================
-
-![alt text](backlog.png "Sample Backlog using Aha!")
-
 Worker
 ======
 
 This is a Budget Worker Proposal which provides **partial** funding through calendar year 2018 for:
 * BitShares Core Team Roles
 * Collaboration Tools
+* Development Roadmap
 
 This Worker funds an _initial_ Core Team at **reduced hours** to mitigate draw on the reserve pool
 and support **bootstrapping** efforts. Subsequent Worker(s) will be offered to fund the team as it
@@ -76,7 +72,7 @@ results will warrant subsequent Worker(s) to budget for additional team members 
 | Business Analysts                 |             $ 75 - $125 | -open-          | -                 |
 | Documentation Specialists         |             $ 60 - $ 90 | -open-          | -                 |
 | QA/Testers                        |             $ 75 - $125 | -open-          | -                 |
-| TOTALS **INITIAL** CORE TEAM      |             $ 90 - $150 | -all-           | 54 hours weekly** |
+| **TOTALS INITIAL CORE TEAM**      |             $ 90 - $150 | -all-           | 54 hours weekly** |
 | **$6,825 WEEKLY (EST.)**          |                         |                 |                   |
 | -                                 |                         |                 |                   |
 | **BUDGET FOR THIS WORKER**        |                         |                 |                   |
@@ -210,8 +206,8 @@ Each Core Team Member is encouraged to contribute in a responsible way with
 respect to a work/life balance and legal employee engagements he or she might
 have entered into, or enter, with an employer. 
 
-Core Team Roles
-===============
+Core Team Roles and Rates
+=========================
 
 | Roles (described below)         | Hourly Rate (USD) |
 |:------------------------------- | -----------------:|
@@ -438,6 +434,30 @@ events in constructive ways. A budget for Conference participation is provided i
 |   Meals (up to $80)                  | 5 days         |       $2,000 |
 | TOTAL TOOLS BUDGET (ONE-TIME)        |                |      $32,250 |
 
+Development Roadmap
+===================
+
+The Initial Core Team has identified the following Initiatives to research, define and develop
+as part of their 2018 Roadmap.
+
+![alt text](initiatives.png "BitShares Core Initiatives - 2018")
+
+* Refine/Prioritize Existing BSIPs
+* Node & CLI Wallet Enhancements
+  * API Functionality
+  * Database Storage Options
+* Interchain Communication
+  * Atomic Cross Chain Transactions (ACCT)
+  * EOS.IO Integration Report
+  * Trustless Gateway
+* Hardware Wallet Integrations
+* Confidential Transactions / Confidential Assets
+* Market Mechanics
+  * Maker/Taker Model
+* Community Engagement
+  * Vote Decay
+  * Fee Schedule based on Market Pegged Assets
+
 Budget
 ======
 
@@ -465,15 +485,16 @@ This proposal will last for roughly 44 weeks, starting from 28th February 2018.
 Payments:
 * Invoices from Core Team Members will be submitted to the Coordinator by Monday 12:00 UTC for work
 performed thru Sunday 23:59 UTC of the previous period
-* Coordinator will review and approve submitted invoices, then forward to BitShares Blockchain
-Foundation for direct payment to Core Team Members
+* Coordinator will review and approve submitted time sheets, then forward an invoice to BitShares
+Blockchain Foundation for release of funds from escrow to `"bitsharesdev"` account for remittance to
+contributors
 * Coordinator will review and approve vendor invoices, then forward to BitShares Blockchain
 Foundation for direct payment to vendor
 
 Calculation:
-* 4.2117 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-02-13)
+* 3.9873 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-02-15)
 * 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
-* $2,381 USD/day * 4.2117 BTS/USD * 2.5 collateral multiplier ≈ 25,069 BTS/day
+* $2,381 USD/day * 3.9873 BTS/USD * 2.5 collateral multiplier ≈ 23,733 BTS/day
 
 USD payment will be in bitUSD with method developed by the BitShares Blockchain Foundation [5].
 
