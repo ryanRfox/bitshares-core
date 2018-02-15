@@ -442,6 +442,10 @@ as part of their 2018 Roadmap. A detailed Roadmap will be a deliverable of this 
 Community review. An 'Ideas Portal' will also be provided to encorporate Community priorities into
 the Roadmap.
 
+**Caveat**: The Core Team cannot commit to deliver fully implemented solutions for all of the
+identified Initiatives. The intent here is to provide guidance at the outset, realizing the Core
+Team continuously evaluates and prioritizes new issues ongoing.
+
 * Refine/Prioritize Existing BSIPs
 * Node & CLI Wallet Enhancements
   * API Functionality
