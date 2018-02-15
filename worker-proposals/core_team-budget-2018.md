@@ -413,8 +413,8 @@ budgeted for tools. A non-exhaustive list is provided in Table 2 below.
 | --Process Models             |           -- |
 | --Time Tracking/Auditing     |           -- |
 | --Infrastructure Environment |           -- |
-| Management Fee (BBF)         |       $2,000 |
-| TOTAL TOOLS BUDGET (MONTHLY) |       $4,000 |
+| Escrow and Remittance (BBF)  |       $3,000 |
+| TOTAL TOOLS BUDGET (MONTHLY) |       $5,000 |
 
 Select Core Team will meet prior to each of the scheduled DevCon events for team building,
 In person collaboration and presentation preparation. The Core Team will participate in conference
@@ -477,12 +477,12 @@ and unused at the conclusion of this Worker Proposal will be returned to the Res
 |:--------------------------------------- | ------------:| ---------:| ------------:|
 | Total Core Team Roles (Table 1)         |      $15,000 |           |              |
 | ++ Convert to daily (/7 days)           |              |    $2,143 |              |
-| Total Collaboration Tools (Table 3)     |       $4,000 |           |              |
+| Total Collaboration Tools (Table 3)     |       $5,000 |           |              |
 | ++ Convert to daily (/30 days)          |              |      $133 |              |
 | Total Conference Budget (Table 4)       |      $32,250 |           |              |
 | ++ Convert to daily (/44 weeks /7 days) |              |      $105 |              |
-| ≈≈ TOTAL DAILY BUDGET ITEMS             |              |    $2,381 |              |
-| ≈≈ ≈≈ **TOTAL 44 WEEK BUDGET**          |              |           | **$733,317** |
+| ≈≈ TOTAL DAILY BUDGET ITEMS             |              |    $2,415 |              |
+| ≈≈ ≈≈ **TOTAL 44 WEEK BUDGET**          |              |           | **$743,776** |
 
 Duration and Pay
 ================
@@ -501,7 +501,7 @@ Foundation for direct payment to vendor
 Calculation:
 * 3.9873 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-02-15)
 * 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
-* $2,381 USD/day * 3.9873 BTS/USD * 2.5 collateral multiplier ≈ 23,733 BTS/day
+* $2,415 USD/day * 3.9873 BTS/USD * 2.5 collateral multiplier ≈ 24,072 BTS/day
 
 USD payment will be in bitUSD with method developed by the BitShares Blockchain Foundation [5].
 
