@@ -464,7 +464,7 @@ continuously evaluates and prioritizes new issues ongoing.
 
 **Chart 1. Initiatives - 2018**
 
-![BitShares Core Initiatives - 2018](initiatives.png "BitShares Core Initiatives - 2018")
+![BitShares Core Initiatives - 2018](https://github.com/ryanRfox/bitshares-core/blob/fox-worker-proposals/worker-proposals/initiatives.png "BitShares Core Initiatives - 2018")
 
 Budget
 ======
@@ -480,11 +480,11 @@ Pool [5-6].
 | Total Core Team Roles (Table 1)         |      $15,000 |           |              |
 | ++ Convert to daily (/7 days)           |              |    $2,143 |              |
 | Total Collaboration Tools (Table 3)     |       $5,000 |           |              |
-| ++ Convert to daily (/30 days)          |              |      $133 |              |
+| ++ Convert to daily (/30 days)          |              |      $167 |              |
 | Total Conference Budget (Table 4)       |      $32,250 |           |              |
-| ++ Convert to daily (/44 weeks /7 days) |              |      $105 |              |
-| ≈≈ TOTAL DAILY BUDGET ITEMS             |              |    $2,415 |              |
-| **≈≈ ≈≈ TOTAL 44 WEEK BUDGET**          |              |           | **$743,776** |
+| ++ Convert to daily (/44 weeks /7 days) |              |      $106 |              |
+| ≈≈ TOTAL DAILY BUDGET ITEMS             |              |    $2,416 |              |
+| **≈≈ ≈≈ TOTAL 44 WEEK BUDGET**          |              |           | **$744,128** |
 
 Duration and Pay
 ================
@@ -501,9 +501,9 @@ contributors
 Foundation for direct payment to vendor
 
 Calculation:
-* 3.9873 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-02-15)
+* 3.9761 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-02-16)
 * 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
-* $2,415 USD/day * 3.9873 BTS/USD * 2.5 collateral multiplier ≈ 24,072 BTS/day
+* $2,416 USD/day * 3.9761 BTS/USD * 2.5 collateral multiplier ≈24,016 BTS/day
 
 USD payment will be in bitUSD with method developed by the BitShares Blockchain Foundation [5].
 
