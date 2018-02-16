@@ -50,7 +50,7 @@ _Initial_ BitShares Core Team
 The initial Core Team is comprised of community members who have demonstrated their ability to work
 with Graphene-based code, contribute to this community with thoughtful leadership and share a
 dedication to the BitShares ethos. Initially, the team is a skeleton, with many contributing to
-multiple roles and at reduced weekly hours as represented in Table 1. Each team member is focused
+multiple roles and at reduced weekly hours as represented in _Table 1_ Each team member is focused
 on returning more value to the BitShares platform than is drawn from the reserve pool.
 
 The initial team is estimating 54 hours of weekly effort. This Worker proposes to **budget $15,000**
@@ -159,8 +159,8 @@ to facilitate feature delivery. Compensation for a partially completed increment
 by the Lead Developer.
 
 Compensation for a successfully merged _bounty_ item is drawn from the excess _implicit_ budget
-capacity within Table 1. when any Core Team Role is not fully allocated. The specifics for the
-bounty process are still being revised (note: they are largely based on process in use by the UI
+capacity within _Table 1_ when any Core Team Role is not fully allocated. The specifics for the
+bounty process is still being revised (note: it is largely based on the process in use by the UI
 Team).
 
 BitShares Core Team Framework:
@@ -257,8 +257,6 @@ Specialist to ensure it accurately reflects the requirements.
 
 Business Analyst Key Performance Indicators
 * Maintain user stories, requirements and process models
-  * Use Aha! for user stories and requirements
-  * Use Blueworks Live for process models
 * Collaborate with Core Developers to refine user stories, requirements and process models
 * Collaborate with Documentation Specialist to revise developer documentation matches the intent
 of the user stories, requirements and process models.
@@ -398,26 +396,26 @@ aid development efforts. Transparency of development efforts to the community is
 Tools selected by the team generally provide read/reviewer access for the community to observe
 progress, track our time and provide feedback. Write/contributor access may be limited to a
 specific Core Team role(s). License quantities and types will vary monthly, therefore $2,000 is
-budgeted for tools. A non-exhaustive list is provided in Table 3 below. 
+budgeted for tools. A non-exhaustive list is provided in _Table 3_ below. 
 
 **Table 3. Collaboration Tools (Monthly)**
 
-| Description                  | Amount (USD) |
-|:-----------------------------| ------------:|
-| Software Tools               |       $2,000 |
-| --Code Repository            |           -- |
-| --Continuous Integration     |           -- |
-| --Continuous Code Quality    |           -- |
-| --Product Roadmap            |           -- |
-| --Process Models             |           -- |
-| --Time Tracking/Auditing     |           -- |
-| --Infrastructure Environment |           -- |
-| Escrow and Remittance (BBF)  |       $3,000 |
-| TOTAL TOOLS BUDGET (MONTHLY) |       $5,000 |
+| Description                      | Amount (USD) |
+|:---------------------------------| ------------:|
+| Software Tools                   |       $2,000 |
+| --Code Repository                |           -- |
+| --Continuous Integration         |           -- |
+| --Continuous Code Quality        |           -- |
+| --Product Roadmap                |           -- |
+| --Process Models                 |           -- |
+| --Time Tracking/Auditing         |           -- |
+| --Infrastructure Environment     |           -- |
+| Escrow and Remittance (BBF)      |       $3,000 |
+| **TOTAL TOOLS BUDGET (MONTHLY)** |   **$5,000** |
 
 Select Core Team will meet prior to each of the scheduled DevCon events for team building,
-In person collaboration and presentation preparation. The Core Team will participate in conference
-events in constructive ways. A budget for Conference participation is provided in Table 4. below.
+in person collaboration and presentation preparation. The Core Team will participate in conference
+events in constructive ways. A budget for Conference participation is provided in _Table 4_ below.
 
 **Table 4. Conference Budget (One-Time)**
 
@@ -431,38 +429,38 @@ events in constructive ways. A budget for Conference participation is provided i
 |   Travel round trip (up to $2000)    | 5 FTE          |      $10,000 |
 |   Lodging (up to $200)               | 5 nights       |       $5,000 |
 |   Meals (up to $80)                  | 5 days         |       $2,000 |
-| TOTAL TOOLS BUDGET (ONE-TIME)        |                |      $32,250 |
+| **TOTAL TOOLS BUDGET (ONE-TIME)**    |                |  **$32,250** |
 
 Development Initiatives
 =======================
 
-The Initial Core Team has identified the following Initiatives to research, define and develop
-as part of their 2018 Roadmap. A detailed Roadmap will be a deliverable of this Worker for
-Community review. An 'Ideas Portal' will also be provided to encorporate Community priorities into
-the Roadmap.
+The Initial Core Team has identified in _Chart 1_ a set of Initiatives to research, define and
+develop as part of their 2018 Roadmap. A detailed Roadmap will be a deliverable of this Worker for
+Community review. An 'Ideas Portal' will also be maintained to incorporate Community priorities
+into the Roadmap.
 
-**Caveat**: The Core Team cannot commit to deliver fully implemented solutions for all of the
-identified Initiatives. The intent here is to provide guidance at the outset, realizing the Core
-Team continuously evaluates and prioritizes new issues ongoing.
+**Caveat**: The Core Team cannot commit to deliver fully implemented solutions for all identified
+Initiatives. The intent here is to provide guidance at the outset, realizing the Core Team
+continuously evaluates and prioritizes new issues ongoing.
 
-* Refine/Prioritize Existing BSIPs
-* API & cli_wallet Enhancements
-* Consensus & witness_node Enhancements
-  * Database Storage Options
-  * Installation scripts / environments
 * Interchain Communication
   * Atomic Cross Chain Transactions (ACCT)
   * EOS.IO Integration Report
   * Trustless Gateway
-* Hardware Wallet Integrations
-* Confidential Transactions / Confidential Assets
 * Market Mechanics
   * Market Engine Improvements
   * Maker/Taker Model
   * Bancor Protocol
+* Consensus & witness_node Enhancements
+  * Database Storage Options
+  * Installation scripts / environments
+* Confidential Transactions / Confidential Assets
+* Hardware Wallet Integrations
+* API & cli_wallet Enhancements
 * Community Engagement
   * Vote Decay
   * Fee Schedule based on Market Pegged Assets
+* Refine/Prioritize Existing BSIPs
 
 **Chart 1. Initiatives - 2018**
 
@@ -471,8 +469,9 @@ Team continuously evaluates and prioritizes new issues ongoing.
 Budget
 ======
 
-The items listed in the tables below represent an upper bound on expenditures. All funds collected
-and unused at the conclusion of this Worker Proposal will be returned to the Reserve Pool.
+The items listed in the tables below represent an **upper bound** on expenditures. All funds
+collected and unused at the conclusion of this Worker Proposal will be returned to the Reserve
+Pool [5-6].
 
 **Table 5. Core Team Budget**
 
@@ -485,12 +484,12 @@ and unused at the conclusion of this Worker Proposal will be returned to the Res
 | Total Conference Budget (Table 4)       |      $32,250 |           |              |
 | ++ Convert to daily (/44 weeks /7 days) |              |      $105 |              |
 | ≈≈ TOTAL DAILY BUDGET ITEMS             |              |    $2,415 |              |
-| ≈≈ ≈≈ **TOTAL 44 WEEK BUDGET**          |              |           | **$743,776** |
+| **≈≈ ≈≈ TOTAL 44 WEEK BUDGET**          |              |           | **$743,776** |
 
 Duration and Pay
 ================
 
-This proposal will last for roughly 44 weeks, starting from 28th February 2018.
+This proposal will last for roughly 44 weeks, starting from 1st March 2018.
 
 Payments:
 * Invoices from Core Team Members will be submitted to the Coordinator by Monday 12:00 UTC for work
