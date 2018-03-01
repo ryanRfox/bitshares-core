@@ -68,11 +68,11 @@ results will warrant subsequent Worker(s) to budget for additional team members 
 | Business Analyst, Coordinator, QA |                    $125 | Ryan R. Fox     | 15 hours weekly   |
 | Lead Documentation Specialist, QA |                    $ 90 | Tamami Sugimoto | 10 hours weekly   |
 | UI/UX Liaison                     |                    $125 | Bill Butler     | 2 hours weekly    |
-| Core Developers                   |             $125 - $200 | -open-          | -                 |
-| Business Analysts                 |             $ 75 - $125 | -open-          | -                 |
-| Documentation Specialists         |             $ 60 - $ 90 | -open-          | -                 |
-| QA/Testers                        |             $ 75 - $125 | -open-          | -                 |
-| **TOTALS INITIAL CORE TEAM**      |             $ 90 - $150 | -all-           | 54 hours weekly** |
+| Core Developers                   |                    $125 | -open-          | -                 |
+| Business Analysts                 |                    $ 75 | -open-          | -                 |
+| Documentation Specialists         |                    $ 60 | -open-          | -                 |
+| QA/Testers                        |                    $ 75 | -open-          | -                 |
+| **TOTALS INITIAL CORE TEAM**      |                         |                 | 54 hours weekly** |
 | **$6,825 WEEKLY (EST.)**          |                         |                 |                   |
 | -                                 |                         |                 |                   |
 | **BUDGET FOR THIS WORKER**        |                         |                 |                   |
@@ -210,8 +210,6 @@ have entered into, or enter, with an employer.
 
 | Roles (described below)         | Hourly Rate (USD) |
 |:------------------------------- | -----------------:|
-| Lead Core Developer             |              $200 |
-| Senior Core Developer           |              $175 |
 | Core Developer                  |              $150 |
 | Junior Core Developer           |              $125 |
 | Lead Business Analyst           |              $125 |
@@ -413,9 +411,10 @@ budgeted for tools. A non-exhaustive list is provided in _Table 3_ below.
 | Escrow and Remittance (BBF)      |       $3,000 |
 | **TOTAL TOOLS BUDGET (MONTHLY)** |   **$5,000** |
 
-Select Core Team will meet prior to each of the scheduled DevCon events for team building,
-in person collaboration and presentation preparation. The Core Team will participate in conference
-events in constructive ways. A budget for Conference participation is provided in _Table 4_ below.
+Select Core Team members intend to meet prior to each of the scheduled DevCon events for team 
+building, in person collaboration and presentation preparation. The Core Team intend to participate
+in conference sessions toward a better understanding of the BitShares Core functionality. A not-to-
+exceed budget for Conference participation is provided in _Table 4_ below.
 
 **Table 4. Conference Budget (One-Time)**
 
@@ -482,14 +481,14 @@ Pool [5-6].
 | Total Collaboration Tools (Table 3)     |       $5,000 |           |              |
 | ++ Convert to daily (/30 days)          |              |      $167 |              |
 | Total Conference Budget (Table 4)       |      $32,250 |           |              |
-| ++ Convert to daily (/44 weeks /7 days) |              |      $106 |              |
-| ≈≈ TOTAL DAILY BUDGET ITEMS             |              |    $2,416 |              |
-| **≈≈ ≈≈ TOTAL 44 WEEK BUDGET**          |              |           | **$744,128** |
+| ++ Convert to daily (/44 weeks /7 days) |              |      $111 |              |
+| ≈≈ TOTAL DAILY BUDGET ITEMS             |              |    $2,421 |              |
+| **≈≈ ≈≈ TOTAL 42 WEEK BUDGET**          |              |           | **$711,774** |
 
 Duration and Pay
 ================
 
-This proposal will last for roughly 44 weeks, starting from 1st March 2018.
+This proposal will last for approximately 42 weeks, starting from 15th March 2018.
 
 Payments:
 * Invoices from Core Team Members will be submitted to the Coordinator by Monday 12:00 UTC for work
@@ -501,9 +500,9 @@ contributors
 Foundation for direct payment to vendor
 
 Calculation:
-* 3.9761 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-02-16)
+* 4.4934 BTS/bitUSD = Settlement price of bitUSD at the moment of writing (2018-03-01)
 * 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
-* $2,416 USD/day * 3.9761 BTS/USD * 2.5 collateral multiplier ≈24,016 BTS/day
+* $2,421 USD/day * 4.4934 BTS/USD * 2.5 collateral multiplier ≈ 27,196 BTS/day
 
 USD payment will be in bitUSD with method developed by the BitShares Blockchain Foundation [5].
 
