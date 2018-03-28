@@ -16,3 +16,16 @@ script:
  - cmake -DCMAKE_BUILD_TYPE=Debug -DBoost_USE_STATIC_LIBS=OFF .
  - make -j 2
  
+ deploy:
+     provider: releases
+     api_key:
+         secure: <your key>
+     file: 
+         - cli-wallet
+         - delayed_node
+         - witness_node
+     skip_cleanup: true
+     draft: true
+     on:
+         repo: ryanrfox/bitshares-core
+         tags: true
