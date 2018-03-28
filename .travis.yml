@@ -22,4 +22,4 @@ deploy:
   draft: true
   on:
     repo: ryanRfox/bitshares-core
-    branch: travis-cd
+    tags: true
