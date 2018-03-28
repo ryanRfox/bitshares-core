@@ -11,6 +11,12 @@ script:
   - cmake -DCMAKE_BUILD_TYPE=Debug -DBoost_USE_STATIC_LIBS=OFF .
   - make -j 2
   - echo "TRAVIS_BUILD_DIR :"$TRAVIS_BUILD_DIR
+  - echo "ls -l $TRAVIS_BUILD_DIR :"
+  - ls -l $TRAVIS_BUILD_DIR
+  - ls -l $TRAVIS_BUILD_DIR/programs/cli-wallet/cli-wallet
+  - ls -l $TRAVIS_BUILD_DIR/programs/delayed_node/delayed_node
+  - ls -l $TRAVIS_BUILD_DIR/programs/witness_node/witness_node
+  - echo "done."
 deploy:
   provider: releases
   api_key:
