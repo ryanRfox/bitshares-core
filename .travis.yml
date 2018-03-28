@@ -27,5 +27,5 @@ script:
      skip_cleanup: true
      draft: true
      on:
-         repo: ryanrfox/bitshares-core
+         repo: ryanRfox/bitshares-core
          tags: true
