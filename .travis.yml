@@ -1,31 +1,25 @@
 language: c++
-
 git:
   depth: 1
-
 dist: trusty
-
 sudo: true
-
 install:
- - echo "deb http://de.archive.ubuntu.com/ubuntu xenial main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list
- - sudo apt-get update
- - sudo apt-get install --allow-unauthenticated g++ libboost-all-dev cmake libreadline-dev libssl-dev autoconf
-
+  - echo "deb http://de.archive.ubuntu.com/ubuntu xenial main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list
+  - sudo apt-get update
+  - sudo apt-get install --allow-unauthenticated g++ libboost-all-dev cmake libreadline-dev libssl-dev autoconf
 script:
- - cmake -DCMAKE_BUILD_TYPE=Debug -DBoost_USE_STATIC_LIBS=OFF .
- - make -j 2
- 
+  - cmake -DCMAKE_BUILD_TYPE=Debug -DBoost_USE_STATIC_LIBS=OFF .
+  - make -j 2
 deploy:
-    provider: releases
-    api_key:
-        secure: <your key>
-    file: 
-        - cli-wallet
-        - delayed_node
-        - witness_node
-    skip_cleanup: true
-    draft: true
-    on:
-        repo: ryanRfox/bitshares-core
-        tags: true
+  provider: releases
+  api_key:
+    secure: NNYONHLOsM9blW98ofALf6/8+g6GAgRpF+5Wg7HlnJeF1YbJerXwU6d8kIE1cOejNNG/BXSqfBiQDo+TZWZxcWKQUL817Qv/HNLom86Q2fDhaJS+PIKmZdQogPv6NLKPYKZnfGQyUUy4DQYzpVZ8iLeXpYycjLd6S7uiG7Bt7kH8/nKVFsFJ7UdWEI843xdwg1hjHSGoUayCkyH/ugkYlEZvnJLytQdazh1nbe16gRux59TLAXKDhFhe18ggUhxkxAHlsVD8WRb/1BnDINPBs/VM+Bls10m/il0prUdrR7G4SWz03msK2C01uZZOVCXHq6O3g0X+IPPOoP0bcyYinaS7EHZ9xopLsRZxQ6ahyprnSufV0msxObNrm6doCZprKy189q3a33vW8+EOCwOHr7LM0pblNpNI4dgk7bMldRRAkGmVEONh1YH7bNfY7tthcv/uZb0Y+iIeGxW4/W65ctNdFZLU/Ef6bRtpinltfKEBIiFZN6UPuKY3l3hLcvGYUV685A7WNLN6C4i88wliY1qJUi+93a1N5rw59WnJs+DwqittyId521su4LoTMVPhrRpTvj3Jf0w8z90zgc8WQZo310LGWlH5SSLb2MIymI7AR0ZGMqdHyucppEphuErxbqD+cVIWl7khhxvfvkl8wlrCmr+RmFYH245w2wuUIz8=
+  file:
+    - cli-wallet
+    - delayed_node
+    - witness_node
+  skip_cleanup: true
+  draft: true
+  on:
+    repo: ryanRfox/bitshares-core
+    branch: travis-cd
