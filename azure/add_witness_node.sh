@@ -38,18 +38,16 @@ echo "PUBLIC_BLOCKCHAIN_SERVER: $PUBLIC_BLOCKCHAIN_SERVER"
 echo "TRUSTED_BLOCKCHAIN_DATA: $TRUSTED_BLOCKCHAIN_DATA"
 
 ##################################################################################################
-# Update Ubuntu, configure a 2GiB swap file and install prerequisites for running BitShares      #
+# Update Ubuntu, configure swap file and install prerequisites for running BitShares             #
 ##################################################################################################
 sudo apt-get -y update || exit 1;
-sleep 5;
-fallocate -l 2g /mnt/2GiB.swap
-chmod 600 /mnt/2GiB.swap
-mkswap /mnt/2GiB.swap
-swapon /mnt/2GiB.swap
-echo '/mnt/2GiB.swap swap swap defaults 0 0' | tee -a /etc/fstab
-time apt-get -y install ntp g++ git make cmake libbz2-dev libdb++-dev libdb-dev libssl-dev \
-                        openssl libreadline-dev autoconf libtool libcurl4-openssl-dev \
-                        libboost-all-dev
+SWAP_SIZE=6
+fallocate -l $SWAP_SIZE'g' /mnt/$SWAP_SIZE'GiB.swap'
+chmod 600 /mnt/$SWAP_SIZE'GiB.swap'
+mkswap /mnt/$SWAP_SIZE'GiB.swap'
+swapon /mnt/$SWAP_SIZE'GiB.swap'
+echo '/mnt/'$SWAP_SIZE'GiB.swap swap swap defaults 0 0' | tee -a /etc/fstab
+time apt-get -y install g++ libboost-all-dev cmake libreadline-dev libssl-dev autoconf
 
 ##################################################################################################
 # Build BitShares from source                                                                    #
