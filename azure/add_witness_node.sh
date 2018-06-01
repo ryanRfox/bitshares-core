@@ -9,19 +9,14 @@ USER_NAME=$1
 FQDN=$2
 WITNESS_NAMES=$3
 NPROC=$(nproc)
-UBUNTU_VERSION=$4
-if [ $UBUNTU_VERSION = "17.10" ]; then
-    LOCAL_IP=`ifconfig|xargs|awk '{print $6}'|sed -e 's/[a-z]*:/''/'`
-else
-    LOCAL_IP=`ifconfig|xargs|awk '{print $7}'|sed -e 's/[a-z]*:/''/'`
-fi
+LOCAL_IP=(ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
 RPC_PORT=8090
 P2P_PORT=1776
 GITHUB_REPOSITORY=https://github.com/bitshares/bitshares-core.git
 PROJECT=bitshares-core
-BRANCH=$5
+BRANCH=$4
 BUILD_TYPE=Release
-WITNESS_NODE=bts-witness
+WITNESS_NODE=bts-witness_node
 CLI_WALLET=bts-cli_wallet
 PUBLIC_BLOCKCHAIN_SERVER=wss://bitshares.openledger.info/ws
 TRUSTED_BLOCKCHAIN_DATA=https://rfxblobstorageforpublic.blob.core.windows.net/rfxcontainerforpublic/bitshares-blockchain.tar.gz
@@ -41,7 +36,6 @@ echo "WITNESS_NODE: $WITNESS_NODE"
 echo "CLI_WALLET: $CLI_WALLET"
 echo "PUBLIC_BLOCKCHAIN_SERVER: $PUBLIC_BLOCKCHAIN_SERVER"
 echo "TRUSTED_BLOCKCHAIN_DATA: $TRUSTED_BLOCKCHAIN_DATA"
-echo "UBUNTU_VERSION: $UBUNTU_VERSION"
 
 ##################################################################################################
 # Update Ubuntu, configure a 2GiB swap file and install prerequisites for running BitShares      #
@@ -65,22 +59,6 @@ time git clone $GITHUB_REPOSITORY
 cd $PROJECT
 time git checkout $BRANCH
 time git submodule update --init --recursive
-
-if [ "$BRANCH" = "master" ]; then
-    ##################################################################################################
-    # APPLY NEW FC BUILD HERE (already included in develop branch)                                   #
-    ##################################################################################################
-    sed -i 's%bitshares/bitshares-fc%aautushka/bitshares-fc%g' /usr/local/src/$PROJECT/.gitmodules
-    time git submodule update --remote libraries/fc
-
-    ##################################################################################################
-    # APPLY UPDATE FOR GCC 7.2 BUILD ERRORS HERE (already included in the develop branch)            #
-    ##################################################################################################
-    sed -i 's%template<typename T> class get_typename{};%template<typename... T> struct get_typename;%g' libraries/fc/include/fc/reflect/typename.hpp
-    sed -i 's%template<typename... T> struct get_typename<T...>  { static const char* name()   { return typeid(static_variant<T...>).name();   } };%template<typename... T> struct get_typename  { static const char* name()   { return typeid(static_variant<T...>).name();   } };%g' libraries/fc/include/fc/static_variant.hpp
-    ##################################################################################################
-fi
-
 time cmake -DCMAKE_BUILD_TYPE=$BUILD_TYPE .
 time make -j$NPROC
 

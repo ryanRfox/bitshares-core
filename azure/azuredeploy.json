@@ -28,16 +28,15 @@
       },
       "vmSize": {
         "type": "string",
-        "defaultValue": "Standard_DS2_V2",
+        "defaultValue": "Standard_D2S_V3",
         "allowedValues": [
           "Standard_B2s",
           "Standard_B2ms",
           "Standard_B4ms",
-          "Standard_DS1_V2",
-          "Standard_DS2_V2",
-          "Standard_DS3_V2",
-          "Standard_DS4_V2",
-          "Standard_H8"
+          "Standard_D2S_V3",
+          "Standard_D4S_V3",
+          "Standard_E2s_v3",
+          "Standard_E4-2s_v3"
         ],
         "metadata": {
           "description": "Size of VM"
@@ -45,10 +44,10 @@
       },
       "ubuntuSKU": {
         "type": "string",
-        "defaultValue": "16.04 LTS",
+        "defaultValue": "18.04 LTS",
         "allowedValues": [
           "16.04 LTS",
-          "17.10"
+          "18.04 LTS"
         ],
         "metadata": {
           "description": "The Ubuntu OS version to build upon"
@@ -296,7 +295,7 @@
             "fileUris": [
               "https://raw.githubusercontent.com/ryanRfox/bitshares-core/azure-ubuntu-vm/azure/add_witness_node.sh"
             ],
-            "commandToExecute": "[concat('sh add_witness_node.sh ', parameters('adminUsername'), ' ', reference(resourceId('Microsoft.Network/publicIPAddresses', variables('publicIPAddressName'))).dnsSettings.fqdn, ' ', parameters('accountNamesCommaDelimited'), ' ', parameters('ubuntuSKU'), ' ', parameters('gitBranch'))]"
+            "commandToExecute": "[concat('sh add_witness_node.sh ', parameters('adminUsername'), ' ', reference(resourceId('Microsoft.Network/publicIPAddresses', variables('publicIPAddressName'))).dnsSettings.fqdn, ' ', parameters('accountNamesCommaDelimited'), ' ', parameters('gitBranch'))]"
           }
         }
       }

@@ -6,10 +6,10 @@
         "value": "GEN-UNIQUE-11"
       },
       "vmSize": {
-        "value": "Standard_B2MS"
+        "value": "Standard_D2S_V3"
       },
       "ubuntuSKU": {
-        "value": "16.04 LTS"
+        "value": "18.04 LTS"
       },
       "adminUsername": {
         "value": "azureuser"
