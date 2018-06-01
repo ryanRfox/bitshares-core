@@ -47,7 +47,8 @@ chmod 600 /mnt/$SWAP_SIZE'GiB.swap'
 mkswap /mnt/$SWAP_SIZE'GiB.swap'
 swapon /mnt/$SWAP_SIZE'GiB.swap'
 echo '/mnt/'$SWAP_SIZE'GiB.swap swap swap defaults 0 0' | tee -a /etc/fstab
-time apt-get -y install g++ libboost-all-dev cmake libreadline-dev libssl-dev autoconf
+time apt-get -y install g++ libboost-all-dev cmake libreadline-dev libssl-dev autoconf \
+                        libcurl4-openssl-dev
 
 ##################################################################################################
 # Build BitShares from source                                                                    #
