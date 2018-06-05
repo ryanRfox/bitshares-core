@@ -21,13 +21,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-#include <graphene/chain/asset_evaluator.hpp>
 #include <graphene/chain/proposal_evaluator.hpp>
 #include <graphene/chain/proposal_object.hpp>
 #include <graphene/chain/account_object.hpp>
 #include <graphene/chain/protocol/fee_schedule.hpp>
 #include <graphene/chain/exceptions.hpp>
-#include <graphene/chain/hardfork.hpp>
 
 #include <fc/smart_ref_impl.hpp>
 
@@ -77,12 +75,6 @@ void_result proposal_create_evaluator::do_evaluate(const proposal_create_operati
       _proposed_trx.operations.push_back(op.op);
    _proposed_trx.validate();
 
-   if( d.head_block_time() <= HARDFORK_CORE_429_TIME )
-   { // TODO: remove after HARDFORK_CORE_429_TIME has passed
-      graphene::chain::impl::hf_429_visitor hf_429;
-      hf_429( o );
-   }
-
    return void_result();
 } FC_CAPTURE_AND_RETHROW( (o) ) }
 
@@ -94,6 +86,7 @@ object_id_type proposal_create_evaluator::do_apply(const proposal_create_operati
       _proposed_trx.expiration = o.expiration_time;
       proposal.proposed_transaction = _proposed_trx;
       proposal.expiration_time = o.expiration_time;
+      proposal.proposer = o.fee_paying_account;
       if( o.review_period_seconds )
          proposal.review_period_time = o.expiration_time - *o.review_period_seconds;
 
@@ -160,7 +153,7 @@ void_result proposal_update_evaluator::do_apply(const proposal_update_operation&
    // Potential optimization: if _executed_proposal is true, we can skip the modify step and make push_proposal skip
    // signature checks. This isn't done now because I just wrote all the proposals code, and I'm not yet 100% sure the
    // required approvals are sufficient to authorize the transaction.
-   d.modify(*_proposal, [&o, &d](proposal_object& p) {
+   d.modify(*_proposal, [&o](proposal_object& p) {
       p.available_active_approvals.insert(o.active_approvals_to_add.begin(), o.active_approvals_to_add.end());
       p.available_owner_approvals.insert(o.owner_approvals_to_add.begin(), o.owner_approvals_to_add.end());
       for( account_id_type id : o.active_approvals_to_remove )

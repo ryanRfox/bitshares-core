@@ -33,8 +33,8 @@ using namespace std;
 
 namespace fc
 {
-   void to_variant(const account_multi_index_type& accts, variant& vo);
-   void from_variant(const variant &var, account_multi_index_type &vo);
+   void to_variant( const account_multi_index_type& accts, variant& vo, uint32_t max_depth );
+   void from_variant( const variant &var, account_multi_index_type &vo, uint32_t max_depth );
 }
 
 namespace graphene { namespace wallet {
@@ -282,6 +282,19 @@ struct operation_detail {
    operation_history_object op;
 };
 
+struct operation_detail_ex {
+    string                   memo;
+    string                   description;
+    operation_history_object op;
+    transaction_id_type      transaction_id;
+};
+
+struct account_history_operation_detail {
+   uint32_t                     total_count = 0;
+   uint32_t                     result_count = 0;
+   vector<operation_detail_ex>  details;
+};
+
 /**
  * This wallet assumes it is connected to the database server with a high-bandwidth, low-latency connection and
  * performs minimal caching. This API could be provided locally to be used by a web interface.
@@ -364,6 +377,16 @@ class wallet_api
        */
      vector<operation_detail>  get_relative_account_history(string name, uint32_t stop, int limit, uint32_t start)const;
 
+      /**
+       * @brief Fetch all objects relevant to the specified account
+       * @param name_or_id Must be the name or ID of an account to retrieve
+       * @return All info about the specified account
+       *
+       * This function fetches all relevant objects for the given account. If the string
+       * of @ref name_or_id cannot be tied to an account, that input will be ignored.
+       *
+       */
+      full_account                      get_full_account( const string& name_or_id);
       vector<bucket_object>             get_market_history(string symbol, string symbol2, uint32_t bucket, fc::time_point_sec start, fc::time_point_sec end)const;
       vector<limit_order_object>        get_limit_orders(string a, string b, uint32_t limit)const;
       vector<call_order_object>         get_call_orders(string a, uint32_t limit)const;
@@ -386,6 +409,17 @@ class wallet_api
        * @returns the global properties
        */
       global_property_object            get_global_properties() const;
+
+      /**
+       * Get operations relevant to the specified account filtering by operation type, with transaction id
+       *
+       * @param name the name or id of the account, whose history shoulde be queried
+       * @param operation_types The IDs of the operation we want to get operations in the account( 0 = transfer , 1 = limit order create, ...)
+       * @param start the sequence number where to start looping back throw the history
+       * @param limit the max number of entries to return (from start number)
+       * @returns account_history_operation_detail
+       */
+      account_history_operation_detail get_account_history_by_operations(string name, vector<uint16_t> operation_types, uint32_t start, int limit);
 
       /** Returns the block chain's rapidly-changing properties.
        * The returned object contains information that changes every block interval
@@ -483,6 +517,13 @@ class wallet_api
        * @ingroup Transaction Builder API
        */
       signed_transaction sign_builder_transaction(transaction_handle_type transaction_handle, bool broadcast = true);
+
+      /** Broadcast signed transaction
+       * @param tx signed transaction
+       * @returns the transaction ID along with the signed transaction.
+       */
+      pair<transaction_id_type,signed_transaction> broadcast_transaction(signed_transaction tx);
+
       /**
        * @ingroup Transaction Builder API
        */
@@ -636,8 +677,6 @@ class wallet_api
      bool is_public_key_registered(string public_key) const;
 
       /** Converts a signed_transaction in JSON form to its binary representation.
-       *
-       * TODO: I don't see a broadcast_transaction() function, do we need one?
        *
        * @param tx the transaction to serialize
        * @returns the binary form of the transaction.  It will not be hex encoded, 
@@ -924,51 +963,6 @@ class wallet_api
                                     uint32_t timeout_sec = 0,
                                     bool     fill_or_kill = false,
                                     bool     broadcast = false);
-                                    
-      /** Place a limit order attempting to sell one asset for another.
-       * 
-       * This API call abstracts away some of the details of the sell_asset call to be more
-       * user friendly. All orders placed with sell never timeout and will not be killed if they
-       * cannot be filled immediately. If you wish for one of these parameters to be different, 
-       * then sell_asset should be used instead.
-       *
-       * @param seller_account the account providing the asset being sold, and which will
-       *                       receive the processed of the sale.
-       * @param base The name or id of the asset to sell.
-       * @param quote The name or id of the asset to recieve.
-       * @param rate The rate in base:quote at which you want to sell.
-       * @param amount The amount of base you want to sell.
-       * @param broadcast true to broadcast the transaction on the network.
-       * @returns The signed transaction selling the funds.                 
-       */
-      signed_transaction sell( string seller_account,
-                               string base,
-                               string quote,
-                               double rate,
-                               double amount,
-                               bool broadcast );
-                               
-      /** Place a limit order attempting to buy one asset with another.
-       *
-       * This API call abstracts away some of the details of the sell_asset call to be more
-       * user friendly. All orders placed with buy never timeout and will not be killed if they
-       * cannot be filled immediately. If you wish for one of these parameters to be different,
-       * then sell_asset should be used instead.
-       *
-       * @param buyer_account The account buying the asset for another asset.
-       * @param base The name or id of the asset to buy.
-       * @param quote The name or id of the assest being offered as payment.
-       * @param rate The rate in base:quote at which you want to buy.
-       * @param amount the amount of base you want to buy.
-       * @param broadcast true to broadcast the transaction on the network.
-       * @param The signed transaction selling the funds.
-       */
-      signed_transaction buy( string buyer_account,
-                              string base,
-                              string quote,
-                              double rate,
-                              double amount,
-                              bool broadcast );
 
       /** Borrow an asset or update the debt/collateral ratio for the loan.
        *
@@ -1456,7 +1450,8 @@ class wallet_api
        * set, your preferences will be ignored.
        *
        * @param account_to_modify the name or id of the account to update
-       * @param number_of_committee_members the number 
+       * @param desired_number_of_witnesses desired number of active witnesses
+       * @param desired_number_of_committee_members desired number of active committee members
        *
        * @param broadcast true if you wish to broadcast the transaction
        * @return the signed transaction changing your vote proxy settings
@@ -1632,6 +1627,12 @@ FC_REFLECT_DERIVED( graphene::wallet::vesting_balance_object_with_info, (graphen
 FC_REFLECT( graphene::wallet::operation_detail, 
             (memo)(description)(op) )
 
+FC_REFLECT(graphene::wallet::operation_detail_ex,
+            (memo)(description)(op)(transaction_id))
+
+FC_REFLECT( graphene::wallet::account_history_operation_detail,
+        (total_count)(result_count)(details))
+
 FC_API( graphene::wallet::wallet_api,
         (help)
         (gethelp)
@@ -1643,6 +1644,7 @@ FC_API( graphene::wallet::wallet_api,
         (set_fees_on_builder_transaction)
         (preview_builder_transaction)
         (sign_builder_transaction)
+        (broadcast_transaction)
         (propose_builder_transaction)
         (propose_builder_transaction2)
         (remove_builder_transaction)
@@ -1664,8 +1666,6 @@ FC_API( graphene::wallet::wallet_api,
         (upgrade_account)
         (create_account_with_brain_key)
         (sell_asset)
-        (sell)
-        (buy)
         (borrow_asset)
         (cancel_order)
         (transfer)
@@ -1706,8 +1706,10 @@ FC_API( graphene::wallet::wallet_api,
         (get_account_count)
         (get_account_history)
         (get_relative_account_history)
+        (get_account_history_by_operations)
         (get_collateral_bids)
         (is_public_key_registered)
+        (get_full_account)
         (get_market_history)
         (get_global_properties)
         (get_dynamic_global_properties)

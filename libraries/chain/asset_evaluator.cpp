@@ -114,12 +114,6 @@ void_result asset_create_evaluator::do_evaluate( const asset_create_operation& o
       FC_ASSERT( op.precision == op.bitasset_opts->short_backing_asset(d).precision );
    }
 
-   if( d.head_block_time() <= HARDFORK_CORE_429_TIME )
-   { // TODO: remove after HARDFORK_CORE_429_TIME has passed
-      graphene::chain::impl::hf_429_visitor hf_429;
-      hf_429( op );
-   }
-
    return void_result();
 } FC_CAPTURE_AND_RETHROW( (op) ) }
 
@@ -439,6 +433,11 @@ void_result asset_global_settle_evaluator::do_evaluate(const asset_global_settle
    FC_ASSERT(asset_to_settle->can_global_settle());
    FC_ASSERT(asset_to_settle->issuer == op.issuer );
    FC_ASSERT(asset_to_settle->dynamic_data(d).current_supply > 0);
+
+   const asset_bitasset_data_object& _bitasset_data  = asset_to_settle->bitasset_data(d);
+   // if there is a settlement for this asset, then no further global settle may be taken
+   FC_ASSERT( !_bitasset_data.has_settlement(), "This asset has settlement, cannot global settle again" );
+
    const auto& idx = d.get_index_type<call_order_index>().indices().get<by_collateral>();
    assert( !idx.empty() );
    auto itr = idx.lower_bound(boost::make_tuple(price::min(asset_to_settle->bitasset_data(d).options.short_backing_asset,
