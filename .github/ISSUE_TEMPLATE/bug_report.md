@@ -5,25 +5,40 @@ about: Create a detailed report about a deficiency in the BitShares Core impleme
 ---
 
 **Instructions**
-Pleaae include a detailed Title above. Next, please complete the following sections below:
+Please include a detailed Title above. Next, please complete the following sections below:
 * Bug Description
+* Impacts
 * Steps To Reproduce
 * Expected Behavior
 * Screenshots (optional)
-* witness_node --version (optional)
-* Aditional Context (optional)
+* Host Environment (optional)
+* Additional Context (optional)
 
-Finally, press the 'submit issue' button. The Core Team will evaluate and prioritize your Bug Report for future development. 
+Finally, press the 'Submit new issue' button. The Core Team will evaluate and prioritize your Bug Report for future development. 
 
 **Bug Description**
 A clear and concise description of what the bug is.
 
+**Impacts**
+Describe which portion(s) of BitShares Core may be impacted by this bug. Please tick at least one box.
+- [ ] API (the application programming interface)
+- [ ] Build (the build process or something prior to compiled code)
+- [ ] CLI (the command line wallet)
+- [ ] Deployment (the deployment process after building such as Docker, Travis, etc.)
+- [ ] DEX (the Decentralized EXchange, market engine, etc.)
+- [ ] P2P (the peer-to-peer network for transaction/block propagation)
+- [ ] Performance (system or user efficiency, etc.)
+- [ ] Protocol (the blockchain logic, consensus, validation, etc.)
+- [ ] Security (the security of system or user data, etc.)
+- [ ] UX (the User Experience)
+- [ ] Other (please add below)
+
 **Steps To Reproduce**
-Steps to reproduce the behavior:
+Steps to reproduce the behavior (example outlined below):
 1. Execute API call '...'
 2. Using JSON payload '...'
 3. Received response '...'
-4. See error
+4. See error in screenshot
 
 **Expected Behavior**
 A clear and concise description of what you expected to happen.
@@ -31,19 +46,19 @@ A clear and concise description of what you expected to happen.
 **Screenshots (optional)**
 If applicable, add screenshots to help explain process flow and behavior.
 
-**witness_node --version (optional):**
- - Version: [e.g. 2.0.180425]
- - SHA: [e.g. bf263b1db47a91ea9748118df1abb5a22cafc40b]
- - SSL: [e.g. OpenSSL 1.0.2g  1 Mar 2016]
- - Boost: [e.g. 1.62]
- - Websocket++: [e.g. 0.7.0]
- - Host OS: [e.g. Ubuntu 17.10]
-
+**Host Environment**
+Please provide details about the host environment. Much of this information can be found running: `witness_node --version`. 
+ - Host OS:             [e.g. Ubuntu 18.04 LTS]
+ - Host Physical RAM    [e.g. 4GB]
+ - BitShares Version:   [e.g. 2.0.180425]
+ - OpenSSL Version:     [e.g. 1.1.0g]
+ - Boost Version:       [e.g. 1.65.1]
+ 
 **Additional Context (optional)**
 Add any other context about the problem here.
 
 ## CORE TEAM TASK LIST
-- [ ] Evaluate / Prioritize Bug Request
+- [ ] Evaluate / Prioritize Bug Report
 - [ ] Refine User Stories / Requirements
 - [ ] Define Test Cases
 - [ ] Design / Develop Solution
