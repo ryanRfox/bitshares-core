@@ -1,6 +1,6 @@
 ---
 name: Build Error
-about: Create a detailed report about an error during in the BitShares Core build process.
+about: Create a detailed report about an error encountered during the BitShares Core build process.
 
 ---
 
@@ -9,7 +9,7 @@ Please include a detailed Title above. Next, please complete the following secti
 * Build Error
 * Build Environment
 * Steps To Reproduce
-* Screenshots (optional)
+* Console Logs (optional)
 
 Finally, press the 'Submit new issue' button. The Core Team will evaluate and prioritize your Bug Report for future development. 
 
@@ -17,7 +17,7 @@ Finally, press the 'Submit new issue' button. The Core Team will evaluate and pr
 A clear and concise description of what the build error is.
 
 **Build Environment**
-Please provide details about the build environment, including the relevant required libraries. Much of this information can be found in the `CMakeFiles/CMakeOutput.log`. 
+Details about the build environment, including the relevant required libraries. Much of this information can be found in the `CMakeFiles/CMakeOutput.log`. 
  - Host OS:             [e.g. Ubuntu 18.04 LTS]
  - Host Physical RAM    [e.g. 4GB]
  - Source Branch/Tag:   [e.g. master or 2.0.180425]
@@ -29,12 +29,11 @@ Please provide details about the build environment, including the relevant requi
 Steps to reproduce the behavior (example outlined below):
 1. Using installation guide from this URL...
 2. This is my complete build script...
-3. It fails at this step...
-4. Here is the error output...
-5. See the error in the screenshot below...
+3. It fails at this step with the following output...
+4. See the error in the console log below...
 
-**Screenshots (optional)**
-If applicable, add screenshots to demonstrate the build process and error output.
+**Console Logs (optional)**
+Please provide the full console log, including all commands entered and their output. This will allow detailed troubleshooting.
 
 ## CORE TEAM TASK LIST
 - [ ] Evaluate `Build Error`
