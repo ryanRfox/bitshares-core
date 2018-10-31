@@ -209,9 +209,9 @@ service $PROJECT start
 # server to proxy RPC data over a TLS connection to the upstream web socket for the block        #
 # producing node. Request a TLS certificate from Let's Encrypt, then set a cronjob for renewals. # 
 ##################################################################################################
-apt-get -y install software-properties-common
-add-apt-repository -y ppa:certbot/certbot
-apt-get update
+#apt-get -y install software-properties-common
+#add-apt-repository -y ppa:certbot/certbot
+#apt-get update
 apt-get -y install nginx python-certbot-nginx 
 rm /etc/nginx/sites-enabled/default
 mkdir -p /var/www/$FQDN
