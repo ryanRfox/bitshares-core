@@ -12,7 +12,7 @@ __as a result.__
 __must use the BitShares CLI (command line wallet) to interact with HTLC directly. The UI Team is__
 __working with the Core Team to implement the required graphical interface prior to mainnet release.__
 
-##Introduction
+## Introduction
 
 An HTLC is a __conditional transfer__ of value from "depositor" to "recipient" where two distinct
 encumbrances prevent immediate execution. 1) The __hashlock__ requires presenting the proper "preimage"
