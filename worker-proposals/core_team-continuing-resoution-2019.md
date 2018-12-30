@@ -12,6 +12,7 @@ until a _full-year_ budget is negotiated
 * Continue **funding efforts** based on 
 [Core Team 2018 Budget](https://www.bitshares.foundation/workers/2018-03-bitshares-core) scope and 
 rate
+* Use **bitCNY for remittances** rather than bitUSD due to current market state
 
 Background
 ==========
@@ -33,6 +34,43 @@ Please refer to the
 [Core Team 2018 Budget](https://www.bitshares.foundation/workers/2018-03-bitshares-core) for details 
 thereof.
 
+The following table represents the CNY equivalent rates to replace the corresponding Table 2. in the 
+2018 Worker Proposal. _Note: 1 USD = 6.88 CNY_
+
+**Table 2. Core Team Roles and Rates**
+
+| Roles (described below)         | Hourly Rate (CNY) |
+|:------------------------------- | -----------------:|
+| Core Developer                  |              1032 |
+| Junior Core Developer           |               860 |
+| Lead Business Analyst           |               860 |
+| Senior Business Analyst         |               688 |
+| Junior Business Analyst         |               516 |
+| Lead QA/Tester                  |               860 |
+| Senior QA/Tester                |               688 |
+| Junior QA/Tester                |               516 |
+| Lead Documentation Specialist   |               619 |
+| Senior Documentation Specialist |               516 |
+| Junior Documentation Specialist |               413 |
+| UI/UX Liaison                   |               860 |
+| Coordinator                     |              1032 |
+
+The following table represents the CNY equivalent budget to replace the corresponding Table 5. in the
+2018 Worker Proposal. _Note: 1 USD = 6.88 CNY_
+
+**Table 5. Core Team Budget**
+
+| Description                             | Amount (CNY) | Daily     | TOTAL BUDGET    |
+|:--------------------------------------- | ------------:| ---------:| ---------------:|
+| Total Core Team Roles (Table 1)         |      103,200 |           |                 |
+| ++ Convert to daily (/7 days)           |              |    14,743 |                 |
+| Total Collaboration Tools (Table 3)     |       34,400 |           |                 |
+| ++ Convert to daily (/30 days)          |              |      1147 |                 |
+| Total Conference Budget (Table 4)       |      221,880 |           |                 |
+| ++ Convert to daily (/52 weeks /7 days) |              |       610 |                 |
+| ≈≈ TOTAL DAILY BUDGET ITEMS             |              |    16,500 |                 |
+| **≈≈ ≈≈ TOTAL 5 WEEK BUDGET**           |              |           | **577,500 CNY** |
+
 Duration and Pay
 ================
 
@@ -48,10 +86,8 @@ contributors
 Foundation for direct remittance
 
 Calculation:
-* Use bitCNY rather than bitUSD due to current market state
 * 3.596 BTS/bitCNY = Settlement price of bitCNY at the moment of writing (2018-12-30)
 * 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
-* 2018 budget daily budget was $2,421 USD/day ≈≈ 16,656 CNY/day 
-* 16,656 CNY * 3.596 BTS/CNY * 2.5 collateral multiplier ≈ 149,737 BTS/day
+* 16,500 CNY * 3.596 BTS/CNY * 2.5 collateral multiplier ≈ 148,335 BTS/day
 
 All remittances will be in bitCNY with method developed by the BitShares Blockchain Foundation [5].``
