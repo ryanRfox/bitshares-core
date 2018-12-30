@@ -74,7 +74,8 @@ The following table represents the CNY equivalent budget to replace the correspo
 Duration and Pay
 ================
 
-This proposal will last for approximately 31 days, starting from 1st January thru 31st January 2019.
+This proposal will last for 5 weeks, starting from 31st December 2018 thru 3rd February
+2019 (five weeks).
 
 Payments:
 * Invoices from Core Team Members will be submitted to the Coordinator by Monday 12:00 UTC for work
