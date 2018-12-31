@@ -10,8 +10,7 @@ Intent
 * Establish a _short-term_ **budget** to sustain the development efforts of the BitShares Core Team
 until a _full-year_ budget is negotiated
 * Continue **funding efforts** based on 
-[Core Team 2018 Budget](https://www.bitshares.foundation/workers/2018-03-bitshares-core) scope and 
-rate
+[Core Team 2018 Budget](https://www.bitshares.foundation/workers/2018-03-bitshares-core) rates
 * Use **bitCNY for remittances** rather than bitUSD due to current market state
 
 Background
@@ -64,12 +63,7 @@ The following table represents the CNY equivalent budget to replace the correspo
 |:--------------------------------------- | ------------:| ---------:| ---------------:|
 | Total Core Team Roles (Table 1)         |      103,200 |           |                 |
 | ++ Convert to daily (/7 days)           |              |    14,743 |                 |
-| Total Collaboration Tools (Table 3)     |       34,400 |           |                 |
-| ++ Convert to daily (/30 days)          |              |      1147 |                 |
-| Total Conference Budget (Table 4)       |      221,880 |           |                 |
-| ++ Convert to daily (/52 weeks /7 days) |              |       610 |                 |
-| ≈≈ TOTAL DAILY BUDGET ITEMS             |              |    16,500 |                 |
-| **≈≈ ≈≈ TOTAL 5 WEEK BUDGET**           |              |           | **577,500 CNY** |
+| **≈≈ ≈≈ TOTAL 5 WEEK BUDGET**           |              |           | **516,005 CNY** |
 
 Duration and Pay
 ================
@@ -89,6 +83,6 @@ Foundation for direct remittance
 Calculation:
 * 3.596 BTS/bitCNY = Settlement price of bitCNY at the moment of writing (2018-12-30)
 * 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
-* 16,500 CNY * 3.596 BTS/CNY * 2.5 collateral multiplier ≈ 148,335 BTS/day
+* 14,743 CNY * 3.596 BTS/CNY * 2.5 collateral multiplier ≈ 132,540 BTS/day
 
 All remittances will be in bitCNY with method developed by the BitShares Blockchain Foundation [5].``
