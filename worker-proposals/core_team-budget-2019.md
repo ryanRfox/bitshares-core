@@ -11,6 +11,8 @@ Intent
 * Operate as a multidiciplinary **collaberative team** to bennefit the decentralized autonomous 
 community (DAC) 
 * Incubate **innovative engagements** through social, marketing, community and technical research 
+* Establish **BitShare Development Legal Defense** funding
+* Engage the community, regulators and public as the authoritative source for development information
 
 Background
 ==========
@@ -24,12 +26,14 @@ priority of innovative features, and engage with the community toward increased 
 Worker
 ======
 
-This is a __Budget Worker Proposal__ which funds the following effort ares through calendar year 
+This is a _Budget Worker Proposal_ which funds the following effort ares through calendar year 
 2019:
 * BitShares Core Development
 * Collaboration Tools
-* Community Engagement
-* TODO:Bug Bounty (Hack the DEX)
+* Conference Participation and Community Engagement
+* Innovation Incubation
+* TODO: Bug Bounty (Hack the DEX)
+* TODO: Development Legal Defense Fund
 
 This Worker funds a **not to exceed** budget for incubation, collaboration and development of the
 ideas, engagements and implementations required to advance the BitShares project. Individuals 
@@ -38,13 +42,12 @@ rate valuations.
 
 BTS are collected into the `"workers.bitshares.foundation"` account which is a multi-sig account
 controlled by `"BitShares Blockchain Foundation"` and owned by `"committee-account"` using the
-Budget Worker Model [5]:
+Budget Worker Model [5] which provide:
 
 * Transparent accounting provided by the BitShares Blockchain Foundation [6]
-* Submitted invoices reviewed, approved and remitted within 5 business days
-* Compensation paid in a viable SmartCoin using USD valuations (according to the rules set forth in
- [5])
-* All unused accumulated BTS returned to the Reserve Pool at the conclusion of the Worker [5]
+* Invoice review, approval and remittance within 5 business days
+* Compensation remitted in a viable SmartCoin using CNY valuations (according rules set forth in [5])
+* All accumulated and unallocated BTS returned to the Reserve Pool at the conclusion of the Worker
 
 As the team size scales or BTS collateral valuations fluctuate, subsequent Worker(s) will be 
 offered to fully fund the Intent. 
@@ -52,24 +55,24 @@ offered to fully fund the Intent.
 Core Team Scope
 ===============
 
-The primary focus of the Core Team remains maintenace and development of the 
+The primary focus of the Core Team remains maintenance and development of the 
 [core protocol](https://github.com/bitshares.com/bitshares-core) and oversight of the 
 [BitShares Improvement Proposals](https://github.com/bitshares.com/bsips) (BSIP) process. The 
-Core Team will continue to liase with the 
+Core Team will continue to liaise with the 
 [BitShares UI Team](https://github.com/bitshares.com/bitshares-ui), led by Bill Butler, and other
 community lead efforts maintained within the [BitShares Organization](https://github.com/bitshares) 
 on GitHub. The Core Team guides community contributors toward promotion into open Core Team Roles 
 through the [Community Claims](TODO:) program. 
 
 Collaboration tools will continue to include software tools and server infrasturutre to support 
-development and testing, remote and in person team meetings and attendacne and speaking engagments 
+development and testing, remote and in person team meetings and attendance and speaking engagements 
 at relevant international conferences, hackathons and events.
 
 Expanded scope for 2019 will include:
 * Oversight and management of the bug bounty program [Hack the DEX](https://hackthedex.io)
 * Participation in one (1) additional international conference
 * Multilingual information gathering and dissemination (English and Mandarin)
-* Incubation funds for non-develoment focused innovative engagments including:
+* Incubation funds for non-development focused innovative engagements including:
   * Market research
   * Marketing
   * Social media
@@ -203,7 +206,7 @@ BitShares Core Team Framework:
 ==============================
 Accountability
 * Maintain timely collaborative communications with each BitShares Core Team Member
-* Maintian effort estimates and actual contributions within collabboration tools
+* Maintain effort estimates and actual contributions within collaboration tools
 * Acceptable effort is subject to the approval of the Core Team, Escrow Agent and ultimately
 the BTS Token Holders
 
@@ -238,6 +241,7 @@ Each Core Team Member is encouraged to contribute in a responsible way with resp
 balance and legal employee engagements he or she might have entered into, or enter, with an employer. 
 
 **Table 2. Core Team Roles and Rates**
+TODO: Convert to CNY
 
 | Roles (described below)         | Hourly Rate (USD) |
 |:------------------------------- | -----------------:|
@@ -360,7 +364,23 @@ for remittance
 
 Coordinator Assistant
 =====================
-The Coordinator Assistant (TODO:)
+
+This role acts as an assistant to the Coordinator, helping the Coordinator to better communicate with
+the Chinese community. The assistant will collect ideas and comments from Chinese forums, events and 
+platforms and report these to the Coordinator for reference on a regular basis. The assistant will 
+also help the Coordinator and the Core Team to better present the roadmap and development progress to
+the Chinese community. The Assistant should be bilingual, familiar with agile software development 
+process and able to collaborate with a geo-distributed software development team seamlessly.
+
+Coordinator Assistant Key Performance Indicators
+- Assist the Coordinator to communicate with BitShares Community, especially Chinese community.
+- Assist the Coordinator to communicate with Chinese Spokesperson and other Chinese teams.
+- Collect ideas and comments from Chinese community and assist the Coordinator to convert them to 
+issues/feature requests.
+- Assist the Coordinator to maintain an up-to-date Chinese version of roadmap and present Chinese 
+version of development progress reports regularly.
+- Assist the Coordinator to prioritize backlog based on community and market needs
+- Help with Chinese translations.
 
 Core Team Member Introductions
 ==============================
@@ -390,7 +410,7 @@ Peter Conrad - Core Developer
 I am a knowledgeable and long-standing member of the BitShares community (@pc) and an active
 developer for many years [9-10].
 
-ohn Jones - Core Developer
+John Jones - Core Developer
 ============================
 
 TODO:(draft) I have contributed to the BitShares code base for many years [00].
@@ -405,6 +425,7 @@ manufacturing.
 
 Michel Santos - Senior Business Analyst
 ================================================
+
 Trained as an aerospace engineer with extensive experience in modeling and simulating the dynamics 
 and control of different types of vehicles.  Background in analyzing business processes and finding 
 ways to improve them.  Has assisted firms with identifying how to use blockchain technologies as one 
@@ -460,30 +481,31 @@ budget for Conference participation is provided in _Table 4_ below.
 | Description                            | Accommodations | Amount (USD) |
 |:-------------------------------------- |:-------------- | ------------:|
 | DevCon Spring 2019 - Shanghai, China   |                |              |
+|   Event tickets                        | 8 Team Members |       $4,000 |
 |   Travel round trip (up to $2000)      | 8 Team Members |      $16,000 |
 |   Lodging (up to $180)                 | 5 Nights       |       $7,200 |
 |   Meals (up to $50)                    | 5 Days         |       $2,000 |
-| DevCon Autumn 2019 - TBD, Europe       |                |              |
+| BitFest Autumn 2019 - TBD, Europe      |                |              |
+|   Event tickets                        | 8 Team Members |       $3,000 |
 |   Travel round trip (up to $2000)      | 8 FTE          |      $16,000 |
 |   Lodging (up to $220)                 | 5 nights       |       $8,800 |
 |   Meals (up to $80)                    | 5 Days         |       $3,200 |
 | TBD Hackathon 2019 - TBD               |                |              |
+|   Event tickets                        | 4 Team Members |       $4,000 |
 |   Travel round trip (up to $2000)      | 4 Team Members |       $8,000 |
 |   Lodging (up to $200)                 | 4 Nights       |       $3,200 |
 |   Meals (up to $60)                    | 4 Days         |         $960 |
-| **TOTAL CONFERENCE BUDGET (ONE-TIME)** |                |  **$56,160** |
+| **TOTAL CONFERENCE BUDGET (ONE-TIME)** |                |  **$76,360** |
 
-Development Initiatives
+TODO: Development Initiatives
 =======================
 
-The Initial Core Team has identified in _Chart 1_ a set of Initiatives to research, define and
-develop as part of their 2018 Roadmap. A detailed Roadmap will be a deliverable of this Worker for
-Community review. An 'Ideas Portal' will also be maintained to incorporate Community priorities
-into the Roadmap.
+The Team has identified in _Chart 1_ a set of Initiatives to research, define and develop as part of 
+their 2019 Roadmap. 
 
 **Caveat**: The Core Team cannot commit to deliver fully implemented solutions for all identified
 Initiatives. The intent here is to provide guidance at the outset, realizing the Core Team
-continuously evaluates and prioritizes new issues ongoing.
+continuously evaluates and prioritizes new development tasks ongoing.
 
 * Interchain Communication
   * Atomic Cross Chain Swaps (ACCS)
@@ -504,9 +526,9 @@ continuously evaluates and prioritizes new issues ongoing.
 * Confidential Transactions / Confidential Assets
 * Refine/Prioritize Existing BSIPs
 
-**Chart 1. Initiatives - 2018**
+**TODO: Chart 1. Initiatives - 2019**
 
-![BitShares Core Initiatives - 2018](https://github.com/ryanRfox/bitshares-core/blob/fox-worker-proposals/worker-proposals/initiatives.png "BitShares Core Initiatives - 2018")
+![BitShares Core Initiatives - 2019](https://github.com/ryanRfox/bitshares-core/blob/fox-worker-proposals/worker-proposals/initiatives.png "BitShares Core Initiatives - 2019")
 
 Incubation Initiatives
 ======================
@@ -514,31 +536,68 @@ Incubation Initiatives
 Throughout 2018 the Core Team observed many novel and innovative ideas generated within the BitShares
 Community, yet few advanced beyond initial discussions for reasons including: an unproven proposing 
 team, lack of funding (willingness), and their scope being too large or lacking proper research, 
-planning and milestones to implement. Ideas are too often stimied at inception becuase, historically,
-our Community has mipoically focused on "software development" trusting a "build it and they will 
+planning and milestones to implement. Ideas are too often stymied at inception because, historically,
+our Community has myopically focused on "software development" trusting a "build it and they will 
 come" mentality.
 
 The Core Team proposes to expand their scope to include incubation of ideas and small projects 
 outside software development, including social media, marketing, community development and technical
-research. The concept is to bootstrap innovation by incubating individuals and teams in a varaity of
-disaplines. The result is expected to be increased value returned to the DAC by using existing, 
+research. The concept is to bootstrap innovation by incubating individuals and teams in a variety of
+disciplines. The result is expected to be increased value returned to the DAC by using existing, 
 trusted resources to manage risk, budget, project execution and ultimately support their continuation
 as distinct project specific Worker Proposals. 
 
 A process for submitting, evaluating and funding this initiative will be presented separately in 
 early 2019. 
 
-**Table 5. Incubation Budget (Monthly)**
+Hack the DEX - Bug Bounty Program
+=================================
 
-| Description                            | Individual/Team Name | Amount (USD) |
-|:-------------------------------------- |:-------------------- | ------------:|
-| **TOTAL INCUBATION BUDGET (MONTHLY)**  |                      |  **$15,000** |
-| Market Research                        |                      |              |
-| Public Relations/Marketing             |                      |              |
-| Social Media Coordination              |                      |              |
+TODO: A continuation of the bug bounty program launched in 2018 as the Hack the DEX worker proposal. 
+The Core Team provided much of the review and management of the program last year and now intends to
+support the program within this worker budget. Hack the DEX encourages _whitehat hackers_ to provide
+confidential disclosures of security issues within the BitShares project. Bounties of up to $25,000 
+USD equivalent per disclosure are available, based on impact and likelihood. Details of the scope and
+operation of Hack the DEX can be reviewed on the [website](https://hackthedex.io).
+
+**Table 5. Hack the DEX (Annual)**
+
+| Description                            | Amount (USD) |
+|:-------------------------------------- | ------------:|
+| **TOTAL HACK THE DEX BUDGET (ANNUAL)** | **$150,000** |
+| Website management                     |              |
+| Reviewers                              |              |
+| Bounties                               |              |
+
+**Table 6. Incubation Budget (Monthly)**
+TODO: 
+
+| Description                              | Amount (USD) |
+|:---------------------------------------- | ------------:|
+| **TOTAL INCUBATION BUDGET (MONTHLY)** |  **$15,000** |
+
+BitShares Development Legal Defense Fund
+========================================
+
+TODO: Currently the DAC lacks funding to support legal representation of Core Team members against
+potential legal action relating to the development of the BitShares protocol. This worker will 
+provide funding to use toward legal representation of Core Members in their local jurisdiction, for
+proactive research, opinions and guidance for the DAC and other related legal needs. 
+
+**Note:** Any _unused funds in this budget item_ will **not** be burned back to the reserve pool, 
+rather _rolled forward_ to be held in escrow within the BBF to provide the basis for future funding 
+of the BitShares Development Legal Defense Fund.
+
+**Table 7. Development Legal Defense (Annual)**
+
+| Description                             | Amount (USD) |
+|:--------------------------------------- | ------------:|
+| **TOTAL LEGAL DEFENSE BUDGET (ANNUAL)** |  **$15,000** |
 
 Worker Budget
 =============
+
+TODO: Convert to bitCNY
 
 The items listed in the tables below represent an **upper bound** on expenditures. All funds
 collected and unused at the conclusion of this Worker Proposal will be returned to the Reserve
@@ -546,27 +605,27 @@ Pool [5-6].
 
 **Table 5. Core Team Budget**
 
-| Description                             | Amount (Period)   | As Daily  | TOTAL BUDGET   |
-|:--------------------------------------- | -----------------:| ---------:| --------------:|
-| Total Core Team Roles (Table 1)         |  $25,000 (weekly) |           |                |
-| ++ Convert to daily (/7 days)           |                   |    $3,571 |                |
-| Total Collaboration Tools (Table 3)     |  $5,000 (monthly) |           |                |
-| ++ Convert to daily (/30 days)          |                   |      $167 |                |
-| Total Conference Budget (Table 4)       |  $56,160 (annual) |           |                |
-| ++ Convert to daily (/52 weeks /7 days) |                   |      $154 |                |
-| Total Hack the DEX Budget (Table 5)     | $150,000 (annual) |           |                |
-| ++ Convert to daily (/52 weeks /7 days) |                   |      $412 |                |
-| Total Incubation Budget (Table 6)       | $15,000 (monthly) |           |                |
-| ++ Convert to daily (/30 days)          |                   |      $500 |                |
-| Total Legal Defense Budget (Table 7)    | $150,000 (annual) |           |                |
-| ++ Convert to daily (/52 weeks /7 days) |                   |      $412 |                |
-| ≈≈ TOTAL DAILY BUDGET ITEMS             |                   |    $5,216 |                |
-| **≈≈ ≈≈ TOTAL 52 WEEK BUDGET**          |                   |           | **$1,898,624** |
+| Description                             | Amount (Period)    | As Daily  | TOTAL BUDGET   |
+|:--------------------------------------- | ------------------:| ---------:| --------------:|
+| Total Core Team Roles (Table 1)         |  $25,000 (weekly)  |           |                |
+| ++ Convert to daily (/7 days)           |                    |    $3,571 |                |
+| Total Collaboration Tools (Table 3)     |  $5,000 (monthly)  |           |                |
+| ++ Convert to daily (/30 days)          |                    |      $167 |                |
+| Total Conference Budget (Table 4)       | $76,360 (one-time) |           |                |
+| ++ Convert to daily (/47 weeks /7 days) |                    |      $232 |                |
+| Total Hack the DEX Budget (Table 5)     | $150,000 (annual)  |           |                |
+| ++ Convert to daily (/47 weeks /7 days) |                    |      $456 |                |
+| Total Incubation Budget (Table 6)       | $15,000 (monthly)  |           |                |
+| ++ Convert to daily (/30 days)          |                    |      $500 |                |
+| Total Legal Defense Budget (Table 7)    | $150,000 (annual)  |           |                |
+| ++ Convert to daily (/47 weeks /7 days) |                    |      $456 |                |
+| ≈≈ TOTAL DAILY BUDGET ITEMS             |                    |    $5,382 |                |
+| **≈≈ ≈≈ TOTAL 47 WEEK BUDGET**          |                    |           | **$1,770,693** |
 
 Duration and Pay
 ================
 
-This proposal will last for approximately 52 weeks, starting from 1st January 2019, ending on 31st
+This proposal will last for 47 weeks, starting from 4th February 2019, ending on 29th
 December 2019.
 
 Payments:
@@ -594,7 +653,7 @@ References
 * [5] [Budget Worker Template](http://www.bitshares.foundation/worker/), BitShares Blockchain Foundation
 * [6] [Transparent Accounting](http://www.bitshares.foundation/accounting), BitShares Blockchain Foundation
 * [7] [GitFlow](https://github.com/bitshares/bitshares-core/wiki/Git-Flow), BitShares
-* [8] [GitHub Repository](https://github.com/TheTaconator), Taconator
+* [8] [TODO:](*)
 * [9] [Professional Background](http://bts.quisquis.de/delegate/about.html), Peter Conrad
 * [10] [Implementation of BSIP-18](http://www.bitshares.foundation/worker/escrow/2017-07-peter-conrad), Peter Conrad
 * [11] [Core Dev Worker](https://github.com/abitmore/bts-worker-proposals/blob/master/abit-worker-201712-201803.md), Abit
