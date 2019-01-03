@@ -7,11 +7,11 @@ BitShares Core Team Budget Worker Proposal - 2019
 Intent
 ======
 
-* Provide **sustainalbe development** funding for the BitShares Core Team
-* Operate as a multidiciplinary **collaberative team** to bennefit the decentralized autonomous 
+* Provide **sustainable development** funding for the BitShares Core Team
+* Operate as a multidisciplinary **collaborative team** to benefit the decentralized autonomous 
 community (DAC) 
 * Incubate **innovative engagements** through social, marketing, community and technical research 
-* Establish **BitShare Development Legal Defense** funding
+* Establish **BitShares Development Legal Defense** funding
 * Engage the community, regulators and public as the authoritative source for development information
 
 Background
@@ -26,7 +26,7 @@ priority of innovative features, and engage with the community toward increased 
 Worker
 ======
 
-This is a _Budget Worker Proposal_ which funds the following effort ares through calendar year 
+This is a _Budget Worker Proposal_ which funds the following effort areas through calendar year 
 2019:
 * BitShares Core Development
 * Collaboration Tools
@@ -64,7 +64,7 @@ community lead efforts maintained within the [BitShares Organization](https://gi
 on GitHub. The Core Team guides community contributors toward promotion into open Core Team Roles 
 through the [Community Claims](TODO:) program. 
 
-Collaboration tools will continue to include software tools and server infrasturutre to support 
+Collaboration tools will continue to include software tools and server infrastructure to support 
 development and testing, remote and in person team meetings and attendance and speaking engagements 
 at relevant international conferences, hackathons and events.
 
@@ -413,7 +413,7 @@ developer for many years [9-10].
 John Jones - Core Developer
 ============================
 
-TODO:(draft) I have contributed to the BitShares code base for many years [00].
+I have been a professional software developer since 1991, and a "hacker" before then. Most of my work experience has been in finance/investments/insurance. I have been contributing to the BitShares codebase since the beginning of 2018. [TODO:00].
 
 Ryan R. Fox - Coordinator, Business Analyst, QA/Tester
 ======================================================
