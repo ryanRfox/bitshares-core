@@ -9,8 +9,7 @@ Intent
 
 * Establish a _short-term_ **budget** to sustain the development efforts of the BitShares Core Team
 until a _full-year_ budget is negotiated
-* Continue **funding efforts** based on 
-[Core Team 2018 Budget](https://www.bitshares.foundation/workers/2018-03-bitshares-core) rates
+* Continue **funding efforts** based on Core Team Budget (2018) rates [1]
 * Use **bitCNY for remittances** rather than bitUSD due to current market state
 
 Background
@@ -29,8 +28,7 @@ This is a Budget Worker Proposal which provides funding through January 2019 for
 * BitShares Core Team Roles
 * Collaboration Tools
 * Development Initiatives
-Please refer to the 
-[Core Team 2018 Budget](https://www.bitshares.foundation/workers/2018-03-bitshares-core) for details 
+Please refer to the Core Team 2018 Budget [1] for details 
 thereof.
 
 The following table represents the CNY equivalent rates to replace the corresponding Table 2. in the 
@@ -85,4 +83,12 @@ Calculation:
 * 2.5 = Collateral multiplier to cover market fluctuations and borrow with 2.5x collateral, as needed
 * 14,743 CNY * 3.596 BTS/CNY * 2.5 collateral multiplier ≈ 132,540 BTS/day
 
-All remittances will be in bitCNY with method developed by the BitShares Blockchain Foundation [5].``
+All remittances will be in bitCNY with method developed by the BitShares Blockchain Foundation [2-3].
+
+References
+==========
+
+* [1] [Core Team Budget (2018)](https://www.bitshares.foundation/workers/2018-03-bitshares-core)
+* [2] [Budget Worker Template](http://www.bitshares.foundation/worker/), BitShares Blockchain Foundation
+* [3] [Transparent Accounting](http://www.bitshares.foundation/accounting), BitShares Blockchain Foundation
+

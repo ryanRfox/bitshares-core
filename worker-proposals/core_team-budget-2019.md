@@ -560,6 +560,13 @@ confidential disclosures of security issues within the BitShares project. Bounti
 USD equivalent per disclosure are available, based on impact and likelihood. Details of the scope and
 operation of Hack the DEX can be reviewed on the [website](https://hackthedex.io).
 
+**Table 5. Incubation Budget (Monthly)**
+TODO: 
+
+| Description                              | Amount (USD) |
+|:---------------------------------------- | ------------:|
+| **TOTAL INCUBATION BUDGET (MONTHLY)** |  **$15,000** |
+
 **Table 5. Hack the DEX (Annual)**
 
 | Description                            | Amount (USD) |
@@ -568,13 +575,6 @@ operation of Hack the DEX can be reviewed on the [website](https://hackthedex.io
 | Website management                     |              |
 | Reviewers                              |              |
 | Bounties                               |              |
-
-**Table 6. Incubation Budget (Monthly)**
-TODO: 
-
-| Description                              | Amount (USD) |
-|:---------------------------------------- | ------------:|
-| **TOTAL INCUBATION BUDGET (MONTHLY)** |  **$15,000** |
 
 BitShares Development Legal Defense Fund
 ========================================
@@ -603,7 +603,7 @@ The items listed in the tables below represent an **upper bound** on expenditure
 collected and unused at the conclusion of this Worker Proposal will be returned to the Reserve
 Pool [5-6].
 
-**Table 5. Core Team Budget**
+**Table 8. Core Team Budget**
 
 | Description                             | Amount (Period)    | As Daily  | TOTAL BUDGET   |
 |:--------------------------------------- | ------------------:| ---------:| --------------:|
@@ -662,3 +662,4 @@ References
 * [14] [GitHub Repository](https://github.com/oxarbitrage), Alfredo Garcia
 * [15] [BitShares Documentation](), Tamami Sugimoto
 * [16] [BitShares GUI Worker](https://steemit.com/bitshares/@billbutler/bitshares-gui-worker-proposal-renewal), Bill Butler
+* [17] http://www.jmjatlanta.com/index.php/about/      https://www.linkedin.com/in/jmjatlanta/    https://github.com/jmjatlanta/, John Jones
