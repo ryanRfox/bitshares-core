@@ -260,6 +260,23 @@ TODO: Convert to CNY
 | Coordinator                     |              $125 |
 | Coordinator Assistant           |              $90  |
 
+| Roles (described below)         | Hourly Rate (USD) |
+|:------------------------------- | -----------------:|
+| Core Developer                  |              $150 |
+| Junior Core Developer           |              $125 |
+| Lead Business Analyst           |              $125 |
+| Senior Business Analyst         |              $100 |
+| Junior Business Analyst         |               $75 |
+| Lead QA/Tester                  |              $125 |
+| Senior QA/Tester                |              $100 |
+| Junior QA/Tester                |               $75 |
+| Lead Documentation Specialist   |              $100 |
+| Senior Documentation Specialist |               $75 |
+| Junior Documentation Specialist |               $60 |
+| UI/UX Liaison                   |              $125 |
+| Coordinator                     |              $150 |
+| Coordinator Assistant           |              $90  |
+
 Core Developer
 ==============
 The Core Developer is a seasoned C++ developer primarily tasked with writing and documenting the
