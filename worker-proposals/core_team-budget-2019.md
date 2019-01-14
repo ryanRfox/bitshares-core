@@ -35,7 +35,6 @@ This is a _Budget Worker Proposal_ which funds the following effort areas throug
 * Conference Participation and Community Engagement
 * Innovation Incubation
 * BitShares Development Legal Defense
-* TODO: Development Spokesperson
 
 This Worker funds a **not to exceed** budget for incubation, collaboration, development and defense 
 of the ideas, engagements and implementations required to advance the BitShares project. Individuals 
@@ -109,6 +108,7 @@ TODO: describe "quality effort hour"
 **Table 1. BitShares Core Team Quality Effort Budget (Weekly)**
 
 TODO: Convert to CNY
+
 | Roles (described below)           | Hourly Rate (CNY) | Team Member             | Estimated Hours   |
 |:--------------------------------- | -----------------:|:----------------------- |:----------------- |
 | **BUDGET FOR CORE TEAM EFFORT**   |                   |                         |                   |
