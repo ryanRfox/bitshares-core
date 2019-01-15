@@ -96,14 +96,11 @@ and business teams building on the protocol, and advance the pace of innovation 
 team member is focused on returning more value to the BitShares DAC than is drawn from the reserve 
 pool.
 
-TODO: Fix CNY valuations
-This Worker proposes to **budget $25,000 weekly** for funding development efforts of the Core Team 
-and Community Claims. Approximately XX,XXX CNY is consumed by the established Core Team members, leaving 
-XX,XXX CNY available for Community Claims or Core Team growth. Demonstrated results of these efforts may 
-warrant drafting subsequent Proposals to fund growth beyond this budget. Weekly quality effort hours 
-estimations are represented in _Table 1_ below. 
-
-TODO: describe "quality effort hour"
+This Worker proposes to **budget 166,750 CNY weekly** for funding development efforts of the Core 
+Team and Community Claims. Approximately 145,700 CNY is consumed by the established Core Team 
+members, leaving 21,050 CNY available for Community Claims or 13% Core Team growth. Demonstrated 
+results of these efforts may warrant drafting subsequent Proposals to fund growth beyond this budget.
+Weekly quality effort hours estimations are represented in _Table 1_ below. 
 
 **Table 1. BitShares Core Team Quality Effort Budget (Weekly)**
 
@@ -123,8 +120,8 @@ TODO: Convert to CNY
 | Lead Business Analyst             |              $125 | Michel Santos           | 20 hours weekly   |
 | Lead Documentation Specialist     |              $100 | T. Sugimoto             | 15 hours weekly   |
 | Coordinator                       |              $150 | Ryan R. Fox             | 30 hours weekly   |
-| Coordinator Assistant (US)        |              $100 | 沈瞳 Tong Shen          | 8 hours weekly   |
-| Coordinator Assistant (China)     |              $100 | 田蒙蒙 Linda Tian       | 7 hours weekly   |
+| Coordinator Assistant (US)        |              $100 | 沈瞳 Tong Shen          | 8 hours weekly    |
+| Coordinator Assistant (China)     |              $100 | 田蒙蒙 Linda Tian       | 7 hours weekly    |
 | **ONGOING CORE TEAM EFFORT**      |                   |                         | 160 hours weekly  |
 | **21,850 USD WEEKLY**             |                   |                         |                   |
 | **TODO: XX,XXX CNY WEEKLY**       |                   |                         |                   |
@@ -155,6 +152,10 @@ prioritization, development, testing and documentation. The ideal team compositi
 specializing in each of these functions and capable of contributing to many. The goal of a highly
 functioning team is to fully utilize each individual's effort and together maximize their
 collective output. 
+
+The Core Team records only "quality effort hours" for the role they are tracking time against. 
+Self-reporting is used, tracked within collaboration tools and peer-checked by Team Members to ensure
+the effort matches expected quality for the period. 
 
 Development Cycles*
 ===================
@@ -516,7 +517,7 @@ budget for Conference participation is provided in _Table 4_ below.
 |   Travel round trip (up to $2000)      | 4 Team Members |       $8,000 |
 |   Lodging (up to $200)                 | 4 Nights       |       $3,200 |
 |   Meals (up to $60)                    | 4 Days         |         $960 |
-| **TOTAL CONFERENCE BUDGET (ONE-TIME)** |                |  **$60,960** |
+| **TOTAL CONFERENCE BUDGET (ONE-TIME)** |                |  **$74,160** |
 
 TODO: Development Initiatives
 =======================
@@ -617,20 +618,20 @@ Pool [5-6].
 
 **Table 8. Core Team Budget**
 
-| Description                             | Amount (Period)    | As Daily  | TOTAL BUDGET   |
-|:--------------------------------------- | ------------------:| ---------:| --------------:|
-| Total Core Team Roles (Table 1)         |  $25,000 (weekly)  |           |                |
-| ++ Convert to daily (/7 days)           |                    |    $3,571 |                |
-| Total Collaboration Tools (Table 3)     |  $5,000 (monthly)  |           |                |
-| ++ Convert to daily (/30 days)          |                    |      $167 |                |
-| Total Conference Budget (Table 4)       | $60,960 (one-time) |           |                |
-| ++ Convert to daily (/47 weeks /7 days) |                    |      $185 |                |
-| Total Incubation Budget (Table 6)       | $10,000 (monthly)  |           |                |
-| ++ Convert to daily (/30 days)          |                    |      $333 |                |
-| Total Legal Defense Budget (Table 7)    | $150,000 (annual)  |           |                |
-| ++ Convert to daily (/47 weeks /7 days) |                    |      $456 |                |
-| ≈≈ TOTAL DAILY BUDGET ITEMS             |                    |    $4,713 |                |
-| **≈≈ ≈≈ TOTAL 47 WEEK BUDGET**          |                    |           | **$1,550,460** |
+| Description                             | Amount (Period)    | As Daily   | TOTAL BUDGET   |
+|:--------------------------------------- |:------------------ | ----------:| --------------:|
+| Total Core Team Roles (Table 1)         |  $25,000 (weekly)  |            |                |
+| ++ Convert to daily (/7 days)           |                    |     $3,571 |       75%      |
+| Total Collaboration Tools (Table 3)     |  $5,000 (monthly)  |            |                |
+| ++ Convert to daily (/30 days)          |                    |       $165 |        3%      |
+| Total Conference Budget (Table 4)       | $74,160 (one-time) |            |                |
+| ++ Convert to daily (/47 weeks /7 days) |                    |       $225 |        5%      |
+| Total Incubation Budget (Table 6)       | $10,000 (monthly)  |            |                |
+| ++ Convert to daily (/30 days)          |                    |       $330 |        7%      |
+| Total Legal Defense Budget (Table 7)    | $150,000 (annual)  |            |                |
+| ++ Convert to daily (/47 weeks /7 days) |                    |       $456 |       10%      |
+| ≈≈ TOTAL DAILY BUDGET ITEMS             |                    | **$4,747** |                |
+| **≈≈ ≈≈ TOTAL 47 WEEK BUDGET**          |                    |            | **$1,561,852** |
 
 Duration and Pay
 ================
