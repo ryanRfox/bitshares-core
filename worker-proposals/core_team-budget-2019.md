@@ -33,8 +33,8 @@ This is a _Budget Worker Proposal_ which funds the following effort areas throug
 * BitShares Core Development
 * Collaboration Tools
 * Conference Participation and Community Engagement
-* Innovation Incubation
 * BitShares Development Legal Defense
+* Innovation Incubation
 
 This Worker funds a **not to exceed** budget for incubation, collaboration, development and defense 
 of the ideas, engagements and implementations required to advance the BitShares project. Individuals 
@@ -78,7 +78,7 @@ in-person meetings prior to the conferences and hold remote meetings throughout 
 Expanded scope for 2019 will include:
 * Participation in one (1) additional international conference
 * Multilingual information gathering and dissemination (English and Mandarin)
-* Establishiment of BitShares Development Legal Defense Fund 
+* Establishment of BitShares Development Legal Defense Fund 
 * Incubation funds for non-development focused innovative engagements including:
   * Market research
   * Marketing
@@ -360,12 +360,12 @@ The Coordinator is an experienced agile project manager or scrum master with dee
 distributed ledger technology. Primarily, the Coordinator is tasked with general facilitation,
 organization and prioritization of development efforts. Secondarily, the Coordinator is the public
 spokesperson for protocol development efforts. The Coordinator works closely with the Assistance
-Corrdinator(s) to aquire and diseminate information throughout the Community.
+Coordinator(s) to acquire and disseminate information throughout the Community.
 
 Coordinator Key Performance Indicators
 * Maintain transparent communications with: 
   * BitShares Community, Committee, BBF and the public
-  * Elected BitShares Spokesperson, BitShares Leagal Representative and other elected representatives
+  * Elected BitShares Spokesperson, BitShares Legal Representative and other elected representatives
   * BitShares UI Project Manager and other BitShares project leads with the GitHub Organization
 * Maintain prioritized backlog of issues/feature requests
 * Maintain project roadmap TODO: add [link]()
@@ -552,6 +552,27 @@ continuously evaluates and prioritizes new development tasks ongoing.
 
 ![TODO: BitShares Core Initiatives - 2019](https://github.com/ryanRfox/bitshares-core/blob/fox-worker-proposals/worker-proposals/initiatives.png "BitShares Core Initiatives - 2019")
 
+BitShares Development Legal Defense Fund
+========================================
+
+TODO: 
+Currently the DAC lacks funding to support legal research and representation for Core Team members 
+against potential legal action relating to their development of the BitShares protocol. This worker 
+will provide funding to use toward legal representation of Core Members in their local jurisdiction, 
+for proactive research, opinions and guidance and other related legal needs. The Coordinator will 
+work with the Committee and BBF to establish and maintain qualified legal representation, initially 
+in the US. 
+
+**Note:** Any _unused funds in this budget item_ will **not** be burned back to the reserve pool, 
+rather _rolled forward_ to remain held in escrow within the BBF to provide ongoing funding of the BitShares Development Legal Defense Fund in future periods.
+
+TODO: Convert to CNY
+**Table 5. Development Legal Defense (Annual)**
+
+| Description                             | Amount (USD)  |
+|:--------------------------------------- | -------------:|
+| **TOTAL LEGAL DEFENSE BUDGET (ANNUAL)** |  **$150,000** |
+
 Incubation Initiatives
 ======================
 
@@ -572,41 +593,12 @@ as distinct project specific Worker Proposals.
 A process for submitting, evaluating and funding this initiative will be presented separately in 
 early 2019. 
 
-**Table 5. Incubation Budget (Monthly)**
-TODO: 
+TODO: Convert to CNY
+**Table 6. Incubation Budget (Monthly)**
 
 | Description                              | Amount (USD) |
 |:---------------------------------------- | ------------:|
 | **TOTAL INCUBATION BUDGET (MONTHLY)**    |  **$10,000** |
-
-**Table 5. Hack the DEX (Annual)**
-
-| Description                            | Amount (USD) |
-|:-------------------------------------- | ------------:|
-| **TOTAL HACK THE DEX BUDGET (ANNUAL)** | **$150,000** |
-| Website management                     |              |
-| Reviewers                              |              |
-| Bounties                               |              |
-
-BitShares Development Legal Defense Fund
-========================================
-
-TODO: 
-Currently the DAC lacks funding to support legal research and representation for Core Team members 
-against potential legal action relating to their development of the BitShares protocol. This worker 
-will provide funding to use toward legal representation of Core Members in their local jurisdiction, 
-for proactive research, opinions and guidance and other related legal needs. The Coordinator will 
-work with the Committee and BBF to establish and maintain qualified legal representation, initially 
-in the US. 
-
-**Note:** Any _unused funds in this budget item_ will **not** be burned back to the reserve pool, 
-rather _rolled forward_ to remain held in escrow within the BBF to provide ongoing funding of the BitShares Development Legal Defense Fund in future periods.
-
-**Table 7. Development Legal Defense (Annual)**
-
-| Description                             | Amount (USD)  |
-|:--------------------------------------- | -------------:|
-| **TOTAL LEGAL DEFENSE BUDGET (ANNUAL)** |  **$150,000** |
 
 Worker Budget
 =============
@@ -626,33 +618,42 @@ Pool [5-6].
 | ++ Convert to daily (/30 days)          |                    |       $165 |        3%      |
 | Total Conference Budget (Table 4)       | $74,160 (one-time) |            |                |
 | ++ Convert to daily (/47 weeks /7 days) |                    |       $225 |        5%      |
+| Total Legal Defense Budget (Table 5)    | $150,000 (annual)  |            |                |
+| ++ Convert to daily (/47 weeks /7 days) |                    |       $456 |       10%      |
 | Total Incubation Budget (Table 6)       | $10,000 (monthly)  |            |                |
 | ++ Convert to daily (/30 days)          |                    |       $330 |        7%      |
-| Total Legal Defense Budget (Table 7)    | $150,000 (annual)  |            |                |
-| ++ Convert to daily (/47 weeks /7 days) |                    |       $456 |       10%      |
 | ≈≈ TOTAL DAILY BUDGET ITEMS             |                    | **$4,747** |                |
 | **≈≈ ≈≈ TOTAL 47 WEEK BUDGET**          |                    |            | **$1,561,852** |
 
 Duration and Pay
 ================
 
+**Duration:**
 This proposal will last for 47 weeks, starting from 4th February 2019, ending on 29th
 December 2019.
 
-Payments:
+**Transparent Accounting:**
 * Invoices from Core Team Members will be submitted to the Coordinator by Monday 12:00 UTC for work
 performed thru Sunday 23:59 UTC of the previous period
-* Coordinator will review and approve submitted time sheets, then forward an invoice to BitShares
+* Coordinator will review and approve submitted time sheets, then forward invoices to BitShares
 Blockchain Foundation for release of funds from escrow to contributor's account
 * Coordinator will review and approve vendor invoices, then forward to BitShares Blockchain
 Foundation for direct payment to vendor
 
-Calculation:
-* 3.66198 BTS/bitCNY = Settlement price of bitCNY at the moment of writing (2019-01-15)
-* 1.50 = Collateral multiplier to cover market fluctuations
-* 31,905 CNY/day * 3.66198 BTS/CNY * 1.50 collateral multiplier ≈ 175,251 BTS/day
+**Downside Multiplier:**
+This Worker introduces a _downside multiplier_ to mitigate the impacts of a depreciating BTS token 
+during the active period. The BBF will use accumulated BTS to purchase bitCNY from the market to fill 
+this _Budget Worker_. The current market cap of the BTS token is approximately $100M USD. We propose 
+to mitigate market devaluation of approximately one-third (-33%) by using a 1.50 
+_downside multiplier_ which allows sustained budget accumulation near $67M USD. 
 
-CNY payment will be in bitCNY with method developed by the BitShares Blockchain Foundation [5].
+**Calculation:**
+* 3.66198 BTS/bitCNY = Settlement price of bitCNY at the moment of writing (2019-01-15)
+* 1.50 = Downside multiplier to mitigate market fluctuations
+* 31,664 CNY/day * 3.66198 BTS/CNY * 1.50 downside multiplier ≈ **183,801 BTS/day**
+
+**Payments:**
+CNY payments are remitted in bitCNY with method developed by the BitShares Blockchain Foundation [5].
 
 References
 ==========
