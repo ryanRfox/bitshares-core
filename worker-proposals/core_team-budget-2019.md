@@ -663,7 +663,8 @@ Conrad
 * [6] [BitShares Core Contributions](https://github.com/bitshares/bitshares-core/commits?author=oxarbitrage), Alfredo Garcia
 * [7] [GitHub Repository](https://github.com/oxarbitrage), Alfredo Garcia
 * [8] [Professional Background](http://bts.quisquis.de/delegate/about.html), Peter Conrad
-* [9] [Implementation of BSIP-18](http://www.bitshares.foundation/worker/escrow/2017-07-peter-conrad), Peter * [10] [Professional Background](http://www.jmjatlanta.com/index.php/about/), John Jones
+* [9] [Implementation of BSIP-18](http://www.bitshares.foundation/worker/escrow/2017-07-peter-conrad), Peter 
+* [10] [Professional Background](http://www.jmjatlanta.com/index.php/about/), John Jones
 * [11] [GitHub Profile](https://www.github.com/jmjatlanta), John Jones
 * [12] [LinkedIn Profile](https://linkedin.com/in/jmjatlanta), John Jones
 * [13] [BitShares Talk Profile](https://bitsharestalk.org/index.php?action=profile;u=5333), Ryan R. Fox
@@ -675,7 +676,7 @@ Conrad
 * [19] [LinkedIn Profile](https://www.linkedin.com/in/tshenim), 沈瞳 Tong Shen
 * [20] [Stack Exchange Profile](https://stackexchange.com/users/3895601/tong-shen?tab=accounts), 沈瞳 Tong Shen
 * [21] [Liaoyuan US-China VC Conference](https://summit.liaoyuan.io/), 沈瞳 Tong Shen
-* [22] [Boston Blockchian Meetup](https://www.meetup.com/Boston-Blockchain-Entrepreneur/), 沈瞳 Tong Shen
+* [22] [Boston Blockchain Meetup](https://www.meetup.com/Boston-Blockchain-Entrepreneur/), 沈瞳 Tong Shen
 * [23] [BitShares Documentation](), 杉本 T. Sugimoto
 * [24] [Global Graphene Blockchain DevCon](https://www.bagevent.com/event/1297890), 田蒙蒙 Linda Tian
 * [25] [Graphene Blockchain Application Center (GBAC)](http://gbacenter.org/), 田蒙蒙 Linda Tian
