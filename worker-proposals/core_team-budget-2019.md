@@ -39,14 +39,14 @@ This is a _Budget Worker Proposal_ which funds the following effort areas throug
 
 This Worker funds a **not to exceed** budget for incubation, collaboration, development and defense 
 of the ideas, engagements and implementations required to advance the BitShares project. Individuals 
-supported by funds from the budget occupy a defined set of [Core Team Roles](TODO:) at specific 
-rate valuations. 
+supported by funds from the budget occupy a defined set of Core Team Roles at specific rate 
+valuations as found in _Table 2._ below.
 
 BTS are collected into the `"workers.bitshares.foundation"` account which is a multi-sig account
 controlled by `"BitShares Blockchain Foundation"` and owned by `"committee-account"` using the
-Budget Worker Model [5] which provide:
+Budget Worker Model [1] which provide:
 
-* Transparent accounting provided by the BitShares Blockchain Foundation [6]
+* Transparent accounting provided by the BitShares Blockchain Foundation [2]
 * Invoice review, approval and remittance within 5 business days
 * Compensation remitted in a viable SmartCoin (i.e. bitCNY), effort based in Chinese Renminbi
 * All accumulated and unallocated BTS returned to the Reserve Pool at the conclusion of the Worker
@@ -64,7 +64,7 @@ Core Team will continue to liaise with the
 [BitShares UI Team](https://github.com/bitshares.com/bitshares-ui), and other community lead efforts 
 maintained within the [BitShares Organization](https://github.com/bitshares) on GitHub. The Core Team
 continues to guide Community Contributors toward promotion into open Core Team Roles through the 
-[Community Claims](TODO:) program. 
+Community Claims program detailed below. 
 
 Collaboration tools will continue to include software tools and server infrastructure to support 
 development and testing efforts. The [bitshares-core](https://github.com/bitshares/bitshares-core) 
@@ -74,7 +74,7 @@ Team participates with the UI Team and BitShares Committee to manage access with
 
 Attendance and speaking engagements at relevant international conferences, hackathons and events
 remain an important component of the Core Team's dedication to community outreach. We gather for 
-in-person meetings prior to the conferences and hold remote meetings throughout the year.
+in-person meetings prior to each conference and hold remote meetings throughout the year.
 
 Expanded scope for 2019 will include:
 * Participation in one (1) additional international conference
@@ -86,7 +86,7 @@ Expanded scope for 2019 will include:
   * Social media
   * Business development
   * Community development
-* Designate the Development Spokesperson(s) for public engagements
+* [TODO] Designate the Development Spokesperson(s) for public engagements
 
 BitShares Core Team Members, Roles and Budgeted Effort
 ======================================================
@@ -98,8 +98,8 @@ team member is focused on returning more value to the BitShares DAC than is draw
 pool.
 
 This Worker proposes to **budget 166,750 CNY weekly** for funding development efforts of the Core 
-Team and Community Claims. Approximately 145,000 CNY are consumed by the established Core Team 
-members, leaving 21,750 CNY available for Community Claims or 13% Core Team growth. Demonstrated 
+Team and Community Claims. Approximately 144,330 CNY are consumed by the established Core Team 
+members, leaving 22,420 CNY available for Community Claims or 13% Core Team growth. Demonstrated 
 results of these efforts may warrant drafting subsequent Proposals to fund growth beyond this budget.
 Weekly quality effort hours estimations are represented in _Table 1_ below. 
 
@@ -108,7 +108,7 @@ Weekly quality effort hours estimations are represented in _Table 1_ below.
 | Roles (described below)           | Rate (CNY) | Team Member             | Estimated Hours   |
 |:--------------------------------- | ----------:|:----------------------- |:----------------- |
 | **BUDGET FOR CORE TEAM EFFORT**   |            |                         |                   |
-| **¥167,750 WEEKLY**               |            |                         |                   |
+| **¥166,750 WEEKLY**               |            |                         |                   |
 | -                                 |            |                         |                   |
 | Core Developer                    | ¥1000/hour | Abit More               | 10 hours weekly   |
 | Core Developer                    | ¥1000/hour | Alfredo Garcia          | 20 hours weekly   |
@@ -118,10 +118,10 @@ Weekly quality effort hours estimations are represented in _Table 1_ below.
 | Lead Business Analyst             |  ¥830/hour | Michel Santos           | 20 hours weekly   |
 | Lead Documentation Specialist     |  ¥670/hour | T. Sugimoto             | 15 hours weekly   |
 | Coordinator                       | ¥1000/hour | Ryan R. Fox             | 30 hours weekly   |
-| Coordinator Assistant (US)        |  ¥670/hour | 沈瞳 Tong Shen          | 8 hours weekly    |
+| Coordinator Assistant (US)        |  ¥670/hour | 沈瞳 Tong Shen          | 7 hours weekly    |
 | Coordinator Assistant (China)     |  ¥670/hour | 田蒙蒙 Linda Tian       | 7 hours weekly    |
-| **ONGOING CORE TEAM EFFORT**      |            |                         | 160 hours weekly  |
-| **¥145,000 WEEKLY**               |            |                         |                   |
+| **ONGOING CORE TEAM EFFORT**      |            |                         | 159 hours weekly  |
+| **¥144,330 WEEKLY**               |            |                         |                   |
 | -                                 |            |                         |                   |
 | Community Claims*:                |            |                         |                   |
 | -- Community Developers           |  ¥670/hour | -open-                  | -                 |
@@ -129,7 +129,7 @@ Weekly quality effort hours estimations are represented in _Table 1_ below.
 | -- QA/Testers                     |  ¥470/hour | -open-                  | -                 |
 | -- Documentation Specialists      |  ¥400/hour | -open-                  | -                 |
 | **BUDGET AVAILALBE FOR GROWTH**   |            |                         | at least 30 hours |
-| **¥21,750 WEEKLY**                |            |                         |                   |
+| **¥22,420 WEEKLY**                |            |                         |                   |
 
 *Additional hours for these roles remain available at this time. Please contact
 [fox@bitshares.org](mailto:fox@bitshares.org) for additional information.
@@ -285,7 +285,7 @@ Core Developer Key Performance Indicators
 * Collaborate with QA/Tester on bug identification and resolution
 * Collaborate with the Documentation Specialist to review documentation and ensure it matches
 the source code intent and implementation
-* Maintain code repositories within GitHub using GitFlow principles [7]
+* Maintain code repositories within GitHub using GitFlow principles [3]
 * Contribute to Code Review of peers and provide approval for Release
 * Document code for the benefit of future development efforts
 
@@ -337,18 +337,6 @@ QA/Tester Key Performance Indicators
 * Collaborate with Documentation Specialist to revise developer documentation, ensuring it matches
 the intended workflow
 
-UI/UX Liaison
-=============
-The UI/UX Liaison is the primary point of contact for planning, prioritizing, defining and testing
-UI/UX elements impacted by the implementation of the Core software. The UI Team function
-independently of the Core Team, but their combined efforts are interdependent. Therefore, the UI/UX
-Liaison is integral to delivering our feature rich Core platform.
-
-UI/UX Liaison Key Performance Indicators
-* Maintain Feature Requests related to UI/UX
-* Collaborate with Business Analyst and Core Developers to refine user stories, requirements and
-process models
-
 Coordinator
 ===========
 The Coordinator is an experienced agile project manager or scrum master with deep knowledge of
@@ -363,7 +351,7 @@ Coordinator Key Performance Indicators
   * Elected BitShares Spokesperson, BitShares Legal Representative and other elected representatives
   * BitShares UI Project Manager and other BitShares project leads with the GitHub Organization
 * Maintain prioritized backlog of issues/feature requests
-* Maintain project roadmap TODO: add [link]()
+* Maintain project roadmap
 * Facilitate release cycles
 * Maintain a pool of candidates to select from to fulfill open roles
   * Contingency: If both a backlog of effort and an empty candidate pool for an open role exist,
@@ -399,48 +387,45 @@ Core Team Member Introductions
 
 Abit More - Core Developer
 ==========================
-TODO:(draft) I have contributed to the BitShares code base for many years [11].
+
+I have contributed to the BitShares code base for many years [4].
 
 Alfredo Garcia - Core Developer
 ===============================
 
-I've been a BitShares Core Developer for over two years [12]. Mainly I focus on the
-bitshares-core software by implementing features, fixing bugs, testing, maintenance, etc. [13]. I
+I've been a BitShares Core Developer for over two years [5]. Mainly I focus on the
+bitshares-core software by implementing features, fixing bugs, testing, maintenance, etc. [6]. I
 also develop outside the core tools for other developers and final applications for the BitShares
-community. [14]
-
-Bill Butler - UX/UI Liaison
-===========================
-
-I lead the BitShares UI team and have extensive industry experience: Founded an ISP in 1993,
-NodeJS, Angular, PHP, CouchDB, SQL. UX/UI Experience [16]. I am currently VP Engineering for a
-healthcare software development firm and have nine years’ experience managing development teams.
+community. [7]
 
 Peter Conrad - Core Developer
 =============================
 
 I am a knowledgeable and long-standing member of the BitShares community (@pc) and an active
-developer for many years [9-10].
+developer for many years [8-9].
 
 John Jones - Core Developer
 ============================
 
 I have been a professional software developer since 1991, and a "hacker" before then. Most of my work
 experience has been in finance/investments/insurance. I have been contributing to the BitShares 
-codebase since the beginning of 2018. [TODO:00].
+codebase since the beginning of 2018. [10-12].
 
 Ryan R. Fox - Coordinator, Business Analyst, QA/Tester
 ======================================================
 
-I have actively contributed to BitShares development from its inception [1-4]. I have extensive
+I have actively contributed to BitShares development from its inception [13-16]. I have extensive
 professional background in project management with software development teams and am a professional
 scrum master (PSM-1) with multi-national experience in financial services, mortgage banking and
 manufacturing.
 
-Dr. Christopher Sanborn, PhD - Junior Developer
-===============================================
+Dr. Christopher J. Sanborn, PhD - Junior Developer
+==================================================
 
-TODO:(bio)
+I have more than a decade of experience in scientific computing and developing software for physical 
+simulations, and more than two decades in software development generally [17].  I have been passionate 
+about crypto since 2013, and have been contributing to the BitShares ecosystem since 2017.  I have a 
+particular interest in improving privacy preservation within blockchain technologies.
 
 Michel Santos - Senior Business Analyst
 =======================================
@@ -448,28 +433,21 @@ Michel Santos - Senior Business Analyst
 Trained as an aerospace engineer with extensive experience in modeling and simulating the dynamics 
 and control of different types of vehicles.  Background in analyzing business processes and finding 
 ways to improve them.  Has assisted firms with identifying how to use blockchain technologies as one 
-option in their toolchest.
+option in their toolchest [18].
 
 沈瞳 Tong Shen - Coordinator Assistant
 =================================
 
 I have over 10 years of experience in development of web apps, mobile apps, API servers, data 
 processing apps, smart contracts, and have served various roles as SDE, Project Manager, Product 
-Manager, IT Consultant, Agile Coach and CTO [1-2]. As Cofounder & CTO of Spark Blockchain and 
+Manager, IT Consultant, Agile Coach and CTO [19-21]. As Cofounder & CTO of Spark Blockchain and 
 Liaoyuan, I've built a strong connection with the blockchain and startup ecosystem through our 
-blockchain & startup summits and meetups in United States and China [3-6].
+blockchain & startup summits and meetups in United States and China [22].
 
-[1] https://www.linkedin.com/in/tshenim
-[2] https://stackexchange.com/users/3895601/tong-shen?tab=accounts
-[3] https://summit.liaoyuan.io/
-[4] https://www.eventbrite.com/e/2018-crypto-hedge-fund-summit-tickets-47929022998#
-[5] https://blockchain.liaoyuan.io/
-[6] https://www.meetup.com/Boston-Blockchain-Entrepreneur/
+杉本 T. Sugimoto - Documentation Specialist, QA/Tester
+======================================================
 
-Tamami Sugimoto - Documentation Specialist, QA/Tester
-=====================================================
-
-I have created and revised documentation for BitShares over the past two years [15]. I hold a Masters
+I have created and revised documentation for BitShares over the past two years [23]. I hold a Masters
 in MIS and have held professional titles including Systems Analyst & Programmer, Web Designer and
 Database Administrator. I have experience using Content Management Systems to re-organize multiple
 websites. I am proficient analyzing system code in many programming languages and have created many
@@ -478,7 +456,12 @@ web applications and websites.
 田蒙蒙 Linda Tian - Coordinator Assistant
 =================================
 
-TODO:(bio)
+I was fully engaged in the planning and organization of China Graphene Blockchain DevCon in January 
+and Global Graphene Blockchain DevCon in May, 2018 [24]. I have organized a series of activities like 
+translation, meetups, live events about BitShares. Now I work as Secretary General of Graphene 
+Blockchain Application Center(GBAC) [25], and regularly communicate with Graphene projects including 
+BitShares community in China. In short, I have extensive professional background in community 
+operation [26].
 
 Collaboration Tools
 ===================
@@ -666,26 +649,35 @@ market, up to the _Core Team Budget_ detailed above in _Table 8_.
 * ¥30,686 CNY/day * 4.01801 BTS/bitCNY * 1.50 devaluation multiplier ≈ **184,943 BTS/day**
 
 **Payments:**
-CNY payments are remitted in bitCNY with method developed by the BitShares Blockchain Foundation [5].
+CNY payments are remitted in bitCNY with method developed by the BitShares Blockchain Foundation [1].
 
 References
 ==========
 
-* [1] [BitShares Talk Profile](https://bitsharestalk.org/index.php?action=profile;u=5333), Ryan R. Fox
-* [2] [GitHub Repository](https://github.com/ryanRfox), Ryan R. Fox
-* [3] [LinkedIn Profile](https://linkedin.com/in/ryanRfox), Ryan R. Fox
-* [4] [Twitter Profile](https://twitter.com/ryanRfox), Ryan R. Fox
-* [5] [Budget Worker Template](http://www.bitshares.foundation/worker/), BitShares Blockchain Foundation
-* [6] [Transparent Accounting](http://www.bitshares.foundation/accounting), BitShares Blockchain Foundation
-* [7] [GitFlow](https://github.com/bitshares/bitshares-core/wiki/Git-Flow), BitShares
-* [8] [TODO:](*)
-* [9] [Professional Background](http://bts.quisquis.de/delegate/about.html), Peter Conrad
-* [10] [Implementation of BSIP-18](http://www.bitshares.foundation/worker/escrow/2017-07-peter-conrad), Peter Conrad
-* [11] [Core Dev Worker](https://github.com/abitmore/bts-worker-proposals/blob/master/abit-worker-201712-201803.md), Abit
-* [12] [Core Dev Worker](https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2018_1.md), Alfredo Garcia
-* [13] [BitShares Core Contributions](https://github.com/bitshares/bitshares-core/commits?author=oxarbitrage), Alfredo Garcia
-* [14] [GitHub Repository](https://github.com/oxarbitrage), Alfredo Garcia
-* [15] [BitShares Documentation](), Tamami Sugimoto
-* [16] [BitShares GUI Worker](https://steemit.com/bitshares/@billbutler/bitshares-gui-worker-proposal-renewal), Bill Butler
-* [17] http://www.jmjatlanta.com/index.php/about/
-      https://www.linkedin.com/in/jmjatlanta/    https://github.com/jmjatlanta/, John Jones
+* [1] [Budget Worker Template](http://www.bitshares.foundation/worker/), BitShares Blockchain Foundation
+* [2] [Transparent Accounting](http://www.bitshares.foundation/accounting), BitShares Blockchain Foundation
+* [3] [GitFlow](https://github.com/bitshares/bitshares-core/wiki/Git-Flow), BitShares
+Conrad
+* [4] [Core Dev Worker](https://github.com/abitmore/bts-worker-proposals/blob/master/abit-worker-201712-201803.md), Abit
+* [5] [Core Dev Worker](https://github.com/oxarbitrage/worker-proposals/blob/master/bitshares2018_1.md), Alfredo Garcia
+* [6] [BitShares Core Contributions](https://github.com/bitshares/bitshares-core/commits?author=oxarbitrage), Alfredo Garcia
+* [7] [GitHub Repository](https://github.com/oxarbitrage), Alfredo Garcia
+* [8] [Professional Background](http://bts.quisquis.de/delegate/about.html), Peter Conrad
+* [9] [Implementation of BSIP-18](http://www.bitshares.foundation/worker/escrow/2017-07-peter-conrad), Peter * [10] [Professional Background](http://www.jmjatlanta.com/index.php/about/), John Jones
+* [11] [GitHub Profile](https://www.github.com/jmjatlanta), John Jones
+* [12] [LinkedIn Profile](https://linkedin.com/in/jmjatlanta), John Jones
+* [13] [BitShares Talk Profile](https://bitsharestalk.org/index.php?action=profile;u=5333), Ryan R. Fox
+* [14] [GitHub Repository](https://github.com/ryanRfox), Ryan R. Fox
+* [15] [LinkedIn Profile](https://linkedin.com/in/ryanRfox), Ryan R. Fox
+* [16] [Twitter Profile](https://twitter.com/ryanRfox), Ryan R. Fox
+* [17] [GitHub Repository](https://github.com/christophersanborn), Dr. Christopher J. Sanborn, PhD
+* [18] [TBD](), Michel Santos
+* [19] [LinkedIn Profile](https://www.linkedin.com/in/tshenim), 沈瞳 Tong Shen
+* [20] [Stack Exchange Profile](https://stackexchange.com/users/3895601/tong-shen?tab=accounts), 沈瞳 Tong Shen
+* [21] [Liaoyuan US-China VC Conference](https://summit.liaoyuan.io/), 沈瞳 Tong Shen
+* [22] [Boston Blockchian Meetup](https://www.meetup.com/Boston-Blockchain-Entrepreneur/), 沈瞳 Tong Shen
+* [23] [BitShares Documentation](), 杉本 T. Sugimoto
+* [24] [Global Graphene Blockchain DevCon](https://www.bagevent.com/event/1297890), 田蒙蒙 Linda Tian
+* [25] [Graphene Blockchain Application Center (GBAC)](http://gbacenter.org/), 田蒙蒙 Linda Tian
+* [26] [田蒙蒙 Linda Tian - LinkedIn](https://www.linkedin.com/in/linda-gbac), 田蒙蒙 Linda Tian
+
