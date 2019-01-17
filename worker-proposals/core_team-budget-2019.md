@@ -23,7 +23,8 @@ This budget proposal represents a follow on to the efforts established and execu
 BitShares Core Team in 2018. It seeks to continue funding the development efforts related to the 
 core protocol and expand its scope within the DAC to deliver greater outreach throughout 2019. The 
 Core Team is responsible to our DAC to transparently deliver a secure protocol, collaborate on 
-research, prioritize innovative features, and engage our Community and the public toward increased protocol adoption.
+research, prioritize innovative features, and engage our Community and the public toward increased 
+protocol adoption.
 
 Worker
 ======
@@ -47,11 +48,11 @@ Budget Worker Model [5] which provide:
 
 * Transparent accounting provided by the BitShares Blockchain Foundation [6]
 * Invoice review, approval and remittance within 5 business days
-* Compensation remitted in a viable SmartCoin (i.e. bitCNY), effort based on Chinese Renminbi valuations
+* Compensation remitted in a viable SmartCoin (i.e. bitCNY), effort based in Chinese Renminbi
 * All accumulated and unallocated BTS returned to the Reserve Pool at the conclusion of the Worker
 
-As the team size scales or BTS collateral valuations fluctuate, subsequent Worker(s) will be 
-offered to fully fund the Intent. 
+As the team size scales or BTS token valuations fluctuate, subsequent Worker(s) will be offered to 
+fully fund the Intent. 
 
 Core Team Scope
 ===============
@@ -97,45 +98,40 @@ team member is focused on returning more value to the BitShares DAC than is draw
 pool.
 
 This Worker proposes to **budget 166,750 CNY weekly** for funding development efforts of the Core 
-Team and Community Claims. Approximately 145,700 CNY is consumed by the established Core Team 
-members, leaving 21,050 CNY available for Community Claims or 13% Core Team growth. Demonstrated 
+Team and Community Claims. Approximately 145,000 CNY are consumed by the established Core Team 
+members, leaving 21,750 CNY available for Community Claims or 13% Core Team growth. Demonstrated 
 results of these efforts may warrant drafting subsequent Proposals to fund growth beyond this budget.
 Weekly quality effort hours estimations are represented in _Table 1_ below. 
 
 **Table 1. BitShares Core Team Quality Effort Budget (Weekly)**
 
-TODO: Convert to CNY
+| Roles (described below)           | Rate (CNY) | Team Member             | Estimated Hours   |
+|:--------------------------------- | ----------:|:----------------------- |:----------------- |
+| **BUDGET FOR CORE TEAM EFFORT**   |            |                         |                   |
+| **¥167,750 WEEKLY**               |            |                         |                   |
+| -                                 |            |                         |                   |
+| Core Developer                    | ¥1000/hour | Abit More               | 10 hours weekly   |
+| Core Developer                    | ¥1000/hour | Alfredo Garcia          | 20 hours weekly   |
+| Core Developer                    | ¥1000/hour | John Jones              | 30 hours weekly   |
+| Core Developer, QA Lead           | ¥1000/hour | Peter Conrad            | 10 hours weekly   |
+| Junior Developer                  |  ¥830/hour | Dr. Christopher Sanborn | 10 hours weekly   |
+| Lead Business Analyst             |  ¥830/hour | Michel Santos           | 20 hours weekly   |
+| Lead Documentation Specialist     |  ¥670/hour | T. Sugimoto             | 15 hours weekly   |
+| Coordinator                       | ¥1000/hour | Ryan R. Fox             | 30 hours weekly   |
+| Coordinator Assistant (US)        |  ¥670/hour | 沈瞳 Tong Shen          | 8 hours weekly    |
+| Coordinator Assistant (China)     |  ¥670/hour | 田蒙蒙 Linda Tian       | 7 hours weekly    |
+| **ONGOING CORE TEAM EFFORT**      |            |                         | 160 hours weekly  |
+| **¥145,000 WEEKLY**               |            |                         |                   |
+| -                                 |            |                         |                   |
+| Community Claims*:                |            |                         |                   |
+| -- Community Developers           |  ¥670/hour | -open-                  | -                 |
+| -- Business Analysts              |  ¥500/hour | -open-                  | -                 |
+| -- QA/Testers                     |  ¥470/hour | -open-                  | -                 |
+| -- Documentation Specialists      |  ¥400/hour | -open-                  | -                 |
+| **BUDGET AVAILALBE FOR GROWTH**   |            |                         | at least 30 hours |
+| **¥21,750 WEEKLY**                |            |                         |                   |
 
-| Roles (described below)           | Hourly Rate (CNY) | Team Member             | Estimated Hours   |
-|:--------------------------------- | -----------------:|:----------------------- |:----------------- |
-| **BUDGET FOR CORE TEAM EFFORT**   |                   |                         |                   |
-| **25,000 USD WEEKLY**             |                   |                         |                   |
-| **TODO: XX,XXX CNY WEEKLY**       |                   |                         |                   |
-| -                                 |                   |                         |                   |
-| Core Developer                    |              $150 | Abit More               | 10 hours weekly   |
-| Core Developer                    |              $150 | Alfredo Garcia          | 20 hours weekly   |
-| Core Developer                    |              $150 | John Jones              | 30 hours weekly   |
-| Core Developer, QA Lead           |              $150 | Peter Conrad            | 10 hours weekly   |
-| Junior Developer                  |              $125 | Dr. Christopher Sanborn | 10 hours weekly   |
-| Lead Business Analyst             |              $125 | Michel Santos           | 20 hours weekly   |
-| Lead Documentation Specialist     |              $100 | T. Sugimoto             | 15 hours weekly   |
-| Coordinator                       |              $150 | Ryan R. Fox             | 30 hours weekly   |
-| Coordinator Assistant (US)        |              $100 | 沈瞳 Tong Shen          | 8 hours weekly    |
-| Coordinator Assistant (China)     |              $100 | 田蒙蒙 Linda Tian       | 7 hours weekly    |
-| **ONGOING CORE TEAM EFFORT**      |                   |                         | 160 hours weekly  |
-| **21,850 USD WEEKLY**             |                   |                         |                   |
-| **TODO: XX,XXX CNY WEEKLY**       |                   |                         |                   |
-| -                                 |                   |                         |                   |
-| Community Claims*:                |                   |                         |                   |
-| -- Community Developers           |              $100 | -open-                  | -                 |
-| -- Business Analysts              |              $ 75 | -open-                  | -                 |
-| -- QA/Testers                     |              $ 70 | -open-                  | -                 |
-| -- Documentation Specialists      |              $ 60 | -open-                  | -                 |
-| **BUDGET AVAILALBE FOR GROWTH**   |                   |                         | at least 30 hours |
-| **$3,150 WEEKLY**                 |                   |                         |                   |
-| **TODO: XX,XXX CNY WEEKLY**       |                   |                         |                   |
-
-*Additional hours for all roles remain available at this time. Please contact
+*Additional hours for these roles remain available at this time. Please contact
 [fox@bitshares.org](mailto:fox@bitshares.org) for additional information.
 
 BitShares Core Team
@@ -259,25 +255,24 @@ Each Core Team Member is encouraged to contribute in a responsible way with resp
 balance and legal employee engagements he or she might have entered into, or enter, with an employer. 
 
 **Table 2. Core Team Roles and Rates**
-TODO: Convert to CNY
 
-| Roles (described below)         | Hourly Rate (USD) |
-|:------------------------------- | -----------------:|
-| Core Developer                  |              $150 |
-| Junior Core Developer           |              $125 |
-| Community Developer             |              $100 |
-| Lead Business Analyst           |              $125 |
-| Senior Business Analyst         |              $100 |
-| Junior Business Analyst         |               $75 |
-| Lead QA/Tester                  |              $125 |
-| Senior QA/Tester                |              $100 |
-| Junior QA/Tester                |               $75 |
-| Lead Documentation Specialist   |              $100 |
-| Senior Documentation Specialist |               $80 |
-| Junior Documentation Specialist |               $60 |
-| UI/UX Liaison                   |              $125 |
-| Coordinator                     |              $150 |
-| Coordinator Assistant           |              $100 |
+| Roles (described below)         | Rate (CNY) |
+|:------------------------------- | ----------:|
+| Core Developer                  | ¥1000/hour |
+| Junior Core Developer           |  ¥830/hour |
+| Community Developer             |  ¥670/hour |
+| Lead Business Analyst           |  ¥830/hour |
+| Senior Business Analyst         |  ¥670/hour |
+| Junior Business Analyst         |  ¥500/hour |
+| Lead QA/Tester                  |  ¥830/hour |
+| Senior QA/Tester                |  ¥670/hour |
+| Junior QA/Tester                |  ¥500/hour |
+| Lead Documentation Specialist   |  ¥670/hour |
+| Senior Documentation Specialist |  ¥530/hour |
+| Junior Documentation Specialist |  ¥400/hour |
+| UI/UX Liaison                   |  ¥830/hour |
+| Coordinator                     | ¥1000/hour |
+| Coordinator Assistant           |  ¥670/hour |
 
 Core Developer
 ==============
@@ -430,7 +425,9 @@ developer for many years [9-10].
 John Jones - Core Developer
 ============================
 
-I have been a professional software developer since 1991, and a "hacker" before then. Most of my work experience has been in finance/investments/insurance. I have been contributing to the BitShares codebase since the beginning of 2018. [TODO:00].
+I have been a professional software developer since 1991, and a "hacker" before then. Most of my work
+experience has been in finance/investments/insurance. I have been contributing to the BitShares 
+codebase since the beginning of 2018. [TODO:00].
 
 Ryan R. Fox - Coordinator, Business Analyst, QA/Tester
 ======================================================
@@ -440,8 +437,13 @@ professional background in project management with software development teams an
 scrum master (PSM-1) with multi-national experience in financial services, mortgage banking and
 manufacturing.
 
+Dr. Christopher Sanborn, PhD - Junior Developer
+===============================================
+
+TODO:(bio)
+
 Michel Santos - Senior Business Analyst
-================================================
+=======================================
 
 Trained as an aerospace engineer with extensive experience in modeling and simulating the dynamics 
 and control of different types of vehicles.  Background in analyzing business processes and finding 
@@ -451,7 +453,18 @@ option in their toolchest.
 沈瞳 Tong Shen - Coordinator Assistant
 =================================
 
-TODO:(bio)
+I have over 10 years of experience in development of web apps, mobile apps, API servers, data 
+processing apps, smart contracts, and have served various roles as SDE, Project Manager, Product 
+Manager, IT Consultant, Agile Coach and CTO [1-2]. As Cofounder & CTO of Spark Blockchain and 
+Liaoyuan, I've built a strong connection with the blockchain and startup ecosystem through our 
+blockchain & startup summits and meetups in United States and China [3-6].
+
+[1] https://www.linkedin.com/in/tshenim
+[2] https://stackexchange.com/users/3895601/tong-shen?tab=accounts
+[3] https://summit.liaoyuan.io/
+[4] https://www.eventbrite.com/e/2018-crypto-hedge-fund-summit-tickets-47929022998#
+[5] https://blockchain.liaoyuan.io/
+[6] https://www.meetup.com/Boston-Blockchain-Entrepreneur/
 
 Tamami Sugimoto - Documentation Specialist, QA/Tester
 =====================================================
@@ -474,14 +487,14 @@ The BitShares Core Team use various collaboration tools to organize their work, 
 aid development efforts. Transparency of development efforts to the community is a key requirement.
 Tools selected by the team generally provide read/reviewer access for the community to observe
 progress, track our time and provide feedback. Write/contributor access may be limited to a
-specific Core Team role(s). License quantities and types will vary monthly, therefore $2,000 is
+specific Core Team role(s). License quantities and types will vary monthly, therefore ¥13,340 is
 budgeted for tools. A non-exhaustive list is provided in _Table 3_ below. 
 
 **Table 3. Collaboration Tools (Monthly)**
 
-| Description                      | Amount (USD) |
+| Description                      | Amount (CNY) |
 |:---------------------------------| ------------:|
-| Software Tools                   |       $2,000 |
+| Software Tools                   |      ¥13,340 |
 | --Code Repository                |           -- |
 | --Continuous Integration         |           -- |
 | --Continuous Code Quality        |           -- |
@@ -489,8 +502,8 @@ budgeted for tools. A non-exhaustive list is provided in _Table 3_ below.
 | --Process Models                 |           -- |
 | --Time Tracking/Auditing         |           -- |
 | --Infrastructure Environment     |           -- |
-| Escrow and Remittance (BBF)      |       $3,000 |
-| **TOTAL TOOLS BUDGET (MONTHLY)** |   **$5,000** |
+| Escrow and Remittance (BBF)      |      ¥20,010 |
+| **TOTAL TOOLS BUDGET (MONTHLY)** |  **¥33,350** |
 
 Select Core Team members will meet prior to each of the scheduled DevCon events for team building, in
 person collaboration and presentation preparation. The Core Team participate in conference sessions 
@@ -500,26 +513,26 @@ budget for Conference participation is provided in _Table 4_ below.
 
 **Table 4. Conference Budget (One-Time)**
 
-| Description                            | Accommodations | Amount (USD) |
+| Description                            | Accommodations | Amount (CNY) |
 |:-------------------------------------- |:-------------- | ------------:|
 | DevCon Spring 2019 - Shanghai, China   |                |              |
-|   Event tickets                        | 8 Team Members |       $4,000 |
-|   Travel round trip (up to $2000)      | 8 Team Members |      $16,000 |
-|   Lodging (up to $180)                 | 5 Nights       |       $7,200 |
-|   Meals (up to $50)                    | 5 Days         |       $2,000 |
+|   Event tickets (up to ¥3,340)         | 8 Team Members |      ¥26,720 |
+|   Travel round trip (up to ¥13,340)    | 8 Team Members |     ¥106,720 |
+|   Lodging (up to ¥1,200)               | 5 Nights       |      ¥48,000 |
+|   Meals (up to ¥330)                   | 5 Days         |      ¥13,200 |
 | BitFest Autumn 2019 - TBD, Europe      |                |              |
-|   Event tickets                        | 8 Team Members |       $2,800 |
-|   Travel round trip (up to $2000)      | 8 FTE          |      $16,000 |
-|   Lodging (up to $220)                 | 5 nights       |       $8,800 |
-|   Meals (up to $80)                    | 5 Days         |       $3,200 |
+|   Event tickets (up to ¥2,330)         | 8 Team Members |      ¥18,640 |
+|   Travel round trip (up to ¥13,340)    | 8 Team Members |     ¥106,720 |
+|   Lodging (up to ¥1,470)               | 5 nights       |      ¥58,800 |
+|   Meals (up to ¥530)                   | 5 Days         |      ¥21,200 |
 | TBD Hackathon 2019 - TBD               |                |              |
-|   Event tickets                        | 4 Team Members |       $2,000 |
-|   Travel round trip (up to $2000)      | 4 Team Members |       $8,000 |
-|   Lodging (up to $200)                 | 4 Nights       |       $3,200 |
-|   Meals (up to $60)                    | 4 Days         |         $960 |
-| **TOTAL CONFERENCE BUDGET (ONE-TIME)** |                |  **$74,160** |
+|   Event tickets  (up to ¥3,340)        | 4 Team Members |      ¥13,360 |
+|   Travel round trip (up to ¥13,340)    | 4 Team Members |      ¥53,360 |
+|   Lodging (up to ¥1,330)               | 4 Nights       |      ¥21,280 |
+|   Meals (up to ¥400)                   | 4 Days         |       ¥6,400 |
+| **TOTAL CONFERENCE BUDGET (ONE-TIME)** |                | **¥494,400** |
 
-TODO: Development Initiatives
+Development Initiatives
 =======================
 
 The Team has identified in _Chart 1_ a set of Initiatives to research, define and develop as part of 
@@ -528,6 +541,8 @@ their 2019 Roadmap.
 **Caveat**: The Core Team cannot commit to deliver fully implemented solutions for all identified
 Initiatives. The intent here is to provide guidance at the outset, realizing the Core Team
 continuously evaluates and prioritizes new development tasks ongoing.
+
+TODO: 
 
 * Interchain Communication
   * Atomic Cross Chain Swaps (ACCS)
@@ -555,23 +570,23 @@ continuously evaluates and prioritizes new development tasks ongoing.
 BitShares Development Legal Defense Fund
 ========================================
 
-TODO: 
-Currently the DAC lacks funding to support legal research and representation for Core Team members 
-against potential legal action relating to their development of the BitShares protocol. This worker 
-will provide funding to use toward legal representation of Core Members in their local jurisdiction, 
-for proactive research, opinions and guidance and other related legal needs. The Coordinator will 
-work with the Committee and BBF to establish and maintain qualified legal representation, initially 
-in the US. 
+Currently the DAC lacks funding and a mechanism to support legal research, opinions and 
+representation for Core Team Members against potential legal action relating to their development and maintenance of the BitShares protocol. This Worker established an annual budget to use toward legal 
+representation of Core Team Members in their local jurisdiction, for proactive research, opinions, 
+guidance and other legal needs related to their participation as a Core Team Member. The Coordinator 
+will liaise with the elected Committee and the elected BitShares Legal Representative to recommend, 
+establish and maintain qualified legal representation for Core Team Members. Funds will be remitted 
+by BBF to counsel for approved invoices.
 
-**Note:** Any _unused funds in this budget item_ will **not** be burned back to the reserve pool, 
-rather _rolled forward_ to remain held in escrow within the BBF to provide ongoing funding of the BitShares Development Legal Defense Fund in future periods.
+**Note:** Any _unused funds in this budget item_ will **not** be burned back to the Reserve Pool, 
+rather _rolled forward_ to retained and held in escrow within the BBF to sustain ongoing activities 
+of the BitShares Development Legal Defense Fund in future periods.
 
-TODO: Convert to CNY
 **Table 5. Development Legal Defense (Annual)**
 
-| Description                             | Amount (USD)  |
+| Description                             | Amount (CNY)  |
 |:--------------------------------------- | -------------:|
-| **TOTAL LEGAL DEFENSE BUDGET (ANNUAL)** |  **$150,000** |
+| **TOTAL LEGAL DEFENSE BUDGET (ANNUAL)** |  **¥667,000** |
 
 Incubation Initiatives
 ======================
@@ -587,43 +602,41 @@ The Core Team proposes to expand their scope to include incubation of ideas and 
 outside software development, including social media, marketing, community development and technical
 research. The concept is to bootstrap innovation by incubating individuals and teams in a variety of
 disciplines. The result is expected to be increased value returned to the DAC by using existing, 
-trusted resources to manage risk, budget, project execution and ultimately support their continuation
-as distinct project specific Worker Proposals. 
+trusted resources to manage risk, budget, project execution and ultimately support their launch as 
+independent Worker Proposals to fund their continued efforts. 
 
 A process for submitting, evaluating and funding this initiative will be presented separately in 
 early 2019. 
 
-TODO: Convert to CNY
 **Table 6. Incubation Budget (Monthly)**
 
-| Description                              | Amount (USD) |
+| Description                              | Amount (CNY) |
 |:---------------------------------------- | ------------:|
-| **TOTAL INCUBATION BUDGET (MONTHLY)**    |  **$10,000** |
+| **TOTAL INCUBATION BUDGET (MONTHLY)**    | **¥ 66,700** |
 
 Worker Budget
 =============
 
-TODO: Convert to bitCNY
 The items listed in the tables below represent an **upper bound** on expenditures. All funds
 collected and unused at the conclusion of this Worker Proposal will be returned to the Reserve
 Pool [5-6].
 
 **Table 8. Core Team Budget**
 
-| Description                             | Amount (Period)    | As Daily   | TOTAL BUDGET   |
-|:--------------------------------------- |:------------------ | ----------:| --------------:|
-| Total Core Team Roles (Table 1)         |  $25,000 (weekly)  |            |                |
-| ++ Convert to daily (/7 days)           |                    |     $3,571 |       75%      |
-| Total Collaboration Tools (Table 3)     |  $5,000 (monthly)  |            |                |
-| ++ Convert to daily (/30 days)          |                    |       $165 |        3%      |
-| Total Conference Budget (Table 4)       | $74,160 (one-time) |            |                |
-| ++ Convert to daily (/47 weeks /7 days) |                    |       $225 |        5%      |
-| Total Legal Defense Budget (Table 5)    | $150,000 (annual)  |            |                |
-| ++ Convert to daily (/47 weeks /7 days) |                    |       $456 |       10%      |
-| Total Incubation Budget (Table 6)       | $10,000 (monthly)  |            |                |
-| ++ Convert to daily (/30 days)          |                    |       $330 |        7%      |
-| ≈≈ TOTAL DAILY BUDGET ITEMS             |                    | **$4,747** |                |
-| **≈≈ ≈≈ TOTAL 47 WEEK BUDGET**          |                    |            | **$1,561,852** |
+| Description                             | Amount (Period)     | As Daily    | TOTAL BUDGET    |
+|:--------------------------------------- |:------------------- | -----------:| :---------------|
+| Total Core Team Roles (Table 1)         | ¥166,750 (weekly)   |             |                 |
+| ++ Convert to daily (/7 days)           |                     |     ¥23,821 |       78%       |
+| Total Collaboration Tools (Table 3)     | ¥33,350 (monthly)   |             |                 |
+| ++ Convert to daily (/30 days)          |                     |      ¥1,112 |        4%       |
+| Total Conference Budget (Table 4)       | ¥494,400 (one-time) |             |                 |
+| ++ Convert to daily (/47 weeks /7 days) |                     |      ¥1,503 |        5%       |
+| Total Legal Defense Budget (Table 5)    | ¥667,000 (annual)   |             |                 |
+| ++ Convert to daily (/47 weeks /7 days) |                     |      ¥2,027 |        7%       |
+| Total Incubation Budget (Table 6)       | ¥66,700 (monthly)   |             |                 |
+| ++ Convert to daily (/30 days)          |                     |      ¥2,223 |        7%       |
+| ≈≈ TOTAL DAILY BUDGET ITEMS             |                     | **¥30,686** |                 |
+| **≈≈ ≈≈ TOTAL 47 WEEK BUDGET**          |                     |             | **¥10,091,736** |
 
 Duration and Pay
 ================
@@ -640,17 +653,17 @@ Blockchain Foundation for release of funds from escrow to contributor's account
 * Coordinator will review and approve vendor invoices, then forward to BitShares Blockchain
 Foundation for direct payment to vendor
 
-**Downside Multiplier:**
-This Worker introduces a _downside multiplier_ to mitigate the impacts of a depreciating BTS token 
-during the active period. The BBF will use accumulated BTS to purchase bitCNY from the market to fill 
-this _Budget Worker_. The current market cap of the BTS token is approximately $100M USD. We propose 
-to mitigate market devaluation of approximately one-third (-33%) by using a 1.50 
-_downside multiplier_ which allows sustained budget accumulation near $67M USD. 
+**Devaluation Multiplier:**
+This Worker introduces a _devaluation multiplier_ to mitigate the impacts of a depreciating BTS token 
+during the active period. We propose to protect against prolonged BTS devaluation of approximately 
+one-third (-33%) by using a 1.50 _devaluation multiplier_. Initially, BTS will be accumulated at rate
+150% of the required daily budget. The BBF will use the accumulated BTS to purchase bitCNY from the 
+market, up to the _Core Team Budget_ detailed above in _Table 8_. 
 
 **Calculation:**
-* 3.66198 BTS/bitCNY = Settlement price of bitCNY at the moment of writing (2019-01-15)
-* 1.50 = Downside multiplier to mitigate market fluctuations
-* 31,664 CNY/day * 3.66198 BTS/CNY * 1.50 downside multiplier ≈ **183,801 BTS/day**
+* 4.01801 BTS/bitCNY = Ask price at depth 10,000 bitCNY at the moment of writing (2019-01-16)
+* 1.50 = Devaluation multiplier to mitigate market fluctuations
+* ¥30,686 CNY/day * 4.01801 BTS/bitCNY * 1.50 devaluation multiplier ≈ **184,943 BTS/day**
 
 **Payments:**
 CNY payments are remitted in bitCNY with method developed by the BitShares Blockchain Foundation [5].
@@ -674,4 +687,5 @@ References
 * [14] [GitHub Repository](https://github.com/oxarbitrage), Alfredo Garcia
 * [15] [BitShares Documentation](), Tamami Sugimoto
 * [16] [BitShares GUI Worker](https://steemit.com/bitshares/@billbutler/bitshares-gui-worker-proposal-renewal), Bill Butler
-* [17] http://www.jmjatlanta.com/index.php/about/      https://www.linkedin.com/in/jmjatlanta/    https://github.com/jmjatlanta/, John Jones
+* [17] http://www.jmjatlanta.com/index.php/about/
+      https://www.linkedin.com/in/jmjatlanta/    https://github.com/jmjatlanta/, John Jones
