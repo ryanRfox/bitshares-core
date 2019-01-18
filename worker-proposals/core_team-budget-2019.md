@@ -20,11 +20,11 @@ Background
 ==========
 
 This budget proposal represents a follow on to the efforts established and executed by the 
-BitShares Core Team in 2018. It seeks to continue funding the development efforts related to the 
-core protocol and expand its scope within the DAC to deliver greater outreach throughout 2019. The 
-Core Team is responsible to our DAC to transparently deliver a secure protocol, collaborate on 
-research, prioritize innovative features, and engage our Community and the public toward increased 
-protocol adoption.
+[BitShares Core Team in 2018](https://www.bitshares.foundation/workers/2018-03-bitshares-core). It 
+seeks to continue funding the development efforts related to the core protocol and expand its scope 
+within the DAC to deliver greater outreach throughout 2019. The Core Team is responsible to our DAC 
+to transparently deliver a secure protocol, collaborate on research, prioritize innovative features, 
+and engage our Community and the public toward increased protocol adoption.
 
 Worker
 ======
@@ -40,7 +40,7 @@ This is a _Budget Worker Proposal_ which funds the following effort areas throug
 This Worker funds a **not to exceed** budget for incubation, collaboration, development and defense 
 of the ideas, engagements and implementations required to advance the BitShares project. Individuals 
 supported by funds from the budget occupy a defined set of Core Team Roles at specific rate 
-valuations as found in _Table 2._ below.
+valuations detailed in _Table 2._ below.
 
 BTS are collected into the `"workers.bitshares.foundation"` account which is a multi-sig account
 controlled by `"BitShares Blockchain Foundation"` and owned by `"committee-account"` using the
@@ -74,9 +74,9 @@ Team participates with the UI Team and BitShares Committee to manage access with
 
 Attendance and speaking engagements at relevant international conferences, hackathons and events
 remain an important component of the Core Team's dedication to community outreach. We gather for 
-in-person meetings prior to each conference and hold remote meetings throughout the year.
+in-person meetings prior to each conference and hold remote planning meetings throughout the year.
 
-Expanded scope for 2019 will include:
+Expanded Core Team scope for 2019 will include:
 * Participation in one (1) additional international conference
 * Multilingual information gathering and dissemination (English and Mandarin)
 * Establishment of BitShares Development Legal Defense Fund 
@@ -214,7 +214,7 @@ facilitate feature delivery. Compensation for a partially completed increment wi
 the Q/A Lead and Coordinator.
 
 Funding for Community Claims comes from unallocated budget within the _Core Team Effort Budget_ 
-resulting from open Roles on the Core Team. 
+resulting from open Roles on the Core Team as detailed in _Table 1_. 
 
 BitShares Core Team Framework:
 ==============================
@@ -226,8 +226,8 @@ the BTS Token Holders
 
 Transparency
 * Maintain working increments within Community facing collaboration tools
-* Maintain timely updates within Community facing collaboration tools of work in progress and
-development priorities
+* Maintain timely updates of effort estimations within relevant Issues
+* Track quality effort hours within appropriate collaboration tools
 
 Delivery
 * Deliver the highest value work first
@@ -273,6 +273,9 @@ balance and legal employee engagements he or she might have entered into, or ent
 | UI/UX Liaison                   |  ¥830/hour |
 | Coordinator                     | ¥1000/hour |
 | Coordinator Assistant           |  ¥670/hour |
+
+Core Team Member Role Descriptions
+==================================
 
 Core Developer
 ==============
@@ -380,7 +383,7 @@ issues/feature requests.
 - Assist the Coordinator to maintain an up-to-date Chinese version of roadmap and present Chinese 
 version of development progress reports regularly.
 - Assist the Coordinator to prioritize backlog based on community and market needs
-- Help with Chinese translations.
+- Help with Chinese/English translations.
 
 Core Team Member Introductions
 ==============================
@@ -525,28 +528,40 @@ their 2019 Roadmap.
 Initiatives. The intent here is to provide guidance at the outset, realizing the Core Team
 continuously evaluates and prioritizes new development tasks ongoing.
 
-TODO: 
+TODO: Core Team Review of Initiatives
 
-* Interchain Communication
+* Hardware Wallet Integrations
+* Inter-blockchain Communication
   * Atomic Cross Chain Swaps (ACCS)
   * Interledger Protocol (ILP)
+    * Check Sequence Verify (CSV)
+    * Check Lock Time Verify (CLTV)
   * Trustless Gateway
-* Hardware Wallet Integrations
+* Privacy Protections
+  * Confidential Assets / Transactions
+  * Bullet Proofs
 * Market Mechanics
-  * Market Engine Improvements
+  * Global Settlement Mechanics
+  * Dynamic Market Fees
+  * P2P Lending
   * Maker/Taker Model
-  * Bancor Protocol
 * Consensus & witness_node Enhancements
-  * Database Storage Options
   * Security and Performance Improvements
-* API & cli_wallet Enhancements
-* Community Engagement
+  * Database Storage & Plugins
   * Vote Decay
-  * Fee Schedule based on Market Pegged Assets
-* Confidential Transactions / Confidential Assets
+  * Merkle Action Proofs
+  * DPOS + BFT
+* API & cli_wallet Enhancements
+  * Custom Authorities
+  * Recurring Payments
+* Community Engagement
+  * Hackathon
+  * Developer & User Guides
 * Refine/Prioritize Existing BSIPs
 
-**TODO: Chart 1. Initiatives - 2019**
+TODO: Update resulting chart
+
+**Chart 1. Initiatives - 2019**
 
 ![TODO: BitShares Core Initiatives - 2019](https://github.com/ryanRfox/bitshares-core/blob/fox-worker-proposals/worker-proposals/initiatives.png "BitShares Core Initiatives - 2019")
 
@@ -663,7 +678,8 @@ Conrad
 * [6] [BitShares Core Contributions](https://github.com/bitshares/bitshares-core/commits?author=oxarbitrage), Alfredo Garcia
 * [7] [GitHub Repository](https://github.com/oxarbitrage), Alfredo Garcia
 * [8] [Professional Background](http://bts.quisquis.de/delegate/about.html), Peter Conrad
-* [9] [Implementation of BSIP-18](http://www.bitshares.foundation/worker/escrow/2017-07-peter-conrad), Peter * [10] [Professional Background](http://www.jmjatlanta.com/index.php/about/), John Jones
+* [9] [Implementation of BSIP-18](http://www.bitshares.foundation/worker/escrow/2017-07-peter-conrad), Peter Conrad
+* [10] [Professional Background](http://www.jmjatlanta.com/index.php/about/), John Jones
 * [11] [GitHub Profile](https://www.github.com/jmjatlanta), John Jones
 * [12] [LinkedIn Profile](https://linkedin.com/in/jmjatlanta), John Jones
 * [13] [BitShares Talk Profile](https://bitsharestalk.org/index.php?action=profile;u=5333), Ryan R. Fox
@@ -675,7 +691,7 @@ Conrad
 * [19] [LinkedIn Profile](https://www.linkedin.com/in/tshenim), 沈瞳 Tong Shen
 * [20] [Stack Exchange Profile](https://stackexchange.com/users/3895601/tong-shen?tab=accounts), 沈瞳 Tong Shen
 * [21] [Liaoyuan US-China VC Conference](https://summit.liaoyuan.io/), 沈瞳 Tong Shen
-* [22] [Boston Blockchian Meetup](https://www.meetup.com/Boston-Blockchain-Entrepreneur/), 沈瞳 Tong Shen
+* [22] [Boston Blockchain Meetup](https://www.meetup.com/Boston-Blockchain-Entrepreneur/), 沈瞳 Tong Shen
 * [23] [BitShares Documentation](), 杉本 T. Sugimoto
 * [24] [Global Graphene Blockchain DevCon](https://www.bagevent.com/event/1297890), 田蒙蒙 Linda Tian
 * [25] [Graphene Blockchain Application Center (GBAC)](http://gbacenter.org/), 田蒙蒙 Linda Tian
