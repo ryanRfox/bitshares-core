@@ -396,10 +396,7 @@ I have contributed to the BitShares code base for many years [4].
 Alfredo Garcia - Core Developer
 ===============================
 
-I've been a BitShares Core Developer for over two years [5]. Mainly I focus on the
-bitshares-core software by implementing features, fixing bugs, testing, maintenance, etc. [6]. I
-also develop outside the core tools for other developers and final applications for the BitShares
-community. [7]
+Started Bitshares contributions into the core more than 2 years ago, initially funded by my own worker proposal[5]. Activity was always maintenance, development, testing, discussion and review around the bitshares-core source code[6]. I also provide support to the community and build utility tools to increase the adoption of Bitshares technology[7]. In the second half of 2018 i joined the core team and had been working there since then. 
 
 Peter Conrad - Core Developer
 =============================
