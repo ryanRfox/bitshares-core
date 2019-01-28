@@ -565,23 +565,23 @@ Pool [5-6].
 
 **Table 8. Core Team Budget**
 
-| Description                             | Amount (Period)     | As Daily    | TOTAL BUDGET    |
-|:--------------------------------------- |:------------------- | -----------:| :---------------|
-| Total Core Team Roles (Table 1)         | $26,750 (weekly)    |             |                 |
-| ++ Convert to daily (/7 days)           |                     |      $3,821 |                 |
-| Total Collaboration Tools (Table 3)     | $5,000 (monthly)    |             |                 |
-| ++ Convert to daily (/30 days)          |                     |        $167 |                 |
-| Total Conference Budget (Table 4)       | $74,320 (one-time)  |             |                 |
-| ++ Convert to daily (/47 weeks /7 days) |                     |        $226 |                 |
-| ≈≈ TOTAL DAILY BUDGET ITEMS             |                     |  **$4,214** |                 |
-| **≈≈ ≈≈ TOTAL 47 WEEK BUDGET**          |                     |             | **$1,386,406**  |
+| Description                                     | Amount (Period)    | As Daily    | TOTAL BUDGET    |
+|:----------------------------------------------- |:------------------ | -----------:| :---------------|
+| Total Core Team Roles (Table 1)                 | $26,750 (weekly)   |             |                 |
+| ++ Convert to daily (/7 days)                   |                    |      $3,821 |                 |
+| Total Collaboration Tools (Table 3)             | $5,000 (monthly)   |             |                 |
+| ++ Convert to daily (/30 days)                  |                    |        $167 |                 |
+| Total Conference Budget (Table 4)               | $74,320 (one-time) |             |                 |
+| ++ Convert to daily (/47 weeks /7 days)         |                    |        $226 |                 |
+| ≈≈ TOTAL DAILY BUDGET ITEMS                     |                    |  **$4,214** |                 |
+| **≈≈ ≈≈ TOTAL 47 WEEK BUDGET USD**              |                    |             | **$1,386,406**  |
+| **≈≈ ≈≈ TOTAL 47 WEEK BUDGET (CNY EQUIVALENT)** |                    |             | **¥9,358,220**  |
 
 Duration and Pay
 ================
 
 **Duration:**
-This proposal will last for 47 weeks, starting from 4th February 2019, ending on 29th
-December 2019.
+This proposal will last for 47 weeks, starting from 4th February 2019, ending on 29th December 2019.
 
 **Transparent Accounting:**
 * Invoices from Core Team Members will be submitted to the Coordinator by Monday 12:00 UTC for work
@@ -602,7 +602,7 @@ market, up to the _Core Team Budget_ detailed above in _Table 8_.
 * 6.75 = USD/CNY foreign exchange rate
 * 3.93824 = bitCNY/BTS price feed 
 * 1.50 = Devaluation multiplier to mitigate market fluctuations
-* $4,214 USD/day * 6.75 USD/CNY * 3.93824 bitCNY/BTS * 1.50 devaluation multiplier ≈ **168,032 BTS/day**
+* **168,032 BTS/day** ≈ $4,214 USD/day * 6.75 USD/CNY * 3.93824 bitCNY/BTS * 1.50 devaluation multiplier 
 
 **Payments:**
 All payments are converted from USD and remitted in bitCNY with method developed by the BitShares 
