@@ -9,5 +9,4 @@ jobs:
     
     steps:
     - uses: actions/checkout@master
-    - name: configure
-      run: apt-get install --allow-unauthenticated libboost-thread-dev 
+    
