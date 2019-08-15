@@ -4,8 +4,12 @@ on: [push]
 
 jobs:
   build:
+  
+    strategy:
+      matrix:
+        os: [ubuntu-16.04, ubuntu-18.04]
 
-    runs-on: ubuntu-latest
+    runs-on: $
     
     steps:
     - uses: actions/checkout@master
@@ -16,5 +20,5 @@ jobs:
     - name: cmake
       run: cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
     - name: make
-      run: make -j2 witness_node
+      run: make -j4 witness_node
       
