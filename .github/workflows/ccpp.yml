@@ -29,14 +29,25 @@ jobs:
       run: |
            wget -O install-xcode.sh https://gist.githubusercontent.com/mokagio/b974620ee8dcf5c0671f/raw/98c372acec9a7fc6c59b5f6660a5e12af7abcff5/install-xcode-cli-tools.sh
            sh install-xcode.sh
-    - name: make
+    - name: brew
       run: |
            brew cleanup
            brew doctor
            brew update
-           brew install boost cmake git openssl autoconf automake
+    - name: boost
+      run: brew install boost 
+    - name: cmake
+      run: brew install cmake 
+    - name: openssl
+      run: brew install openssl 
+    - name: autoconf
+      run: brew install autoconf 
+    - name: automake
+      run: brew install automake
     - name: libtool
-      run: brew install libtool 
+      run: brew install libtool
+    - name: make
+      run: |
            brew link --force openssl 
            git submodule update --init --recursive
            cmake .
