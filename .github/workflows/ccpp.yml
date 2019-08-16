@@ -31,9 +31,8 @@ jobs:
            sh install-xcode.sh
            brew doctor
            brew update
-           brew install boost cmake git openssl autoconf automake libtool 
-           brew link --force openssl
-   - name: build
+           brew install boost cmake openssl autoconf automake libtool 
+   - name: make
      run: |
            git submodule update --init --recursive
            cmake .
