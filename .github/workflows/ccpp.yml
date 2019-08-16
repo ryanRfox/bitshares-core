@@ -24,7 +24,7 @@ jobs:
   
     steps:
     - uses: actions/checkout@master
-    - name: configure
-      run: |
-           wget https://gist.github.com/mokagio/b974620ee8dcf5c0671f
-           sh b974620ee8dcf5c0671f
+    - name: wget xcode
+      run: wget https://gist.github.com/mokagio/b974620ee8dcf5c0671f
+    - name: install xcode
+      run: sh b974620ee8dcf5c0671f
