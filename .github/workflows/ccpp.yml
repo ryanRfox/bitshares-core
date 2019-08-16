@@ -3,7 +3,7 @@ name: C++ CI
 on: [push]
 
 jobs:
-  build:
+  ubuntu:
   
     runs-on: ubuntu-18.04
     
@@ -16,5 +16,15 @@ jobs:
     - name: cmake
       run: cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
     - name: make
-      run: make -j8 witness_node
-      
+      run: make witness_node
+
+  macOS:
+  
+    runs-on: macOS-latest
+  
+    steps:
+    - uses: actions/checkout@master
+    - name: configure
+      run: |
+           wget https://gist.github.com/mokagio/b974620ee8dcf5c0671f
+           sh install-xcode-cli-tools.sh
