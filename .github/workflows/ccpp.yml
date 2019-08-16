@@ -35,8 +35,8 @@ jobs:
            brew doctor
            brew update
     - name: boost
-      run: brew install boost 
-    - name: openssl@1.69
+      run: brew install boost@1.69
+    - name: openssl
       run: brew install openssl 
     - name: autoconf
       run: brew install autoconf 
