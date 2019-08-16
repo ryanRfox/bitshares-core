@@ -4,7 +4,22 @@ on: [push]
 
 jobs:
 
-  ubuntu:
+  ubuntu-16.04:
+  
+    runs-on: ubuntu-16.04
+    
+    steps:
+    - uses: actions/checkout@master
+    - name: configure
+      run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
+    - name: "submodule update"
+      run: git submodule update --init --recursive
+    - name: cmake
+      run: cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
+    - name: make
+      run: make witness_node
+      
+  ubuntu-18.04:
   
     runs-on: ubuntu-18.04
     
@@ -17,7 +32,7 @@ jobs:
     - name: cmake
       run: cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
     - name: make
-      run: make witness_node
+      run: make
       
   macOS:
   
