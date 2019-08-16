@@ -31,6 +31,7 @@ jobs:
            sh install-xcode.sh
     - name: make
       run: |
+           brew cleanup
            brew doctor
            brew update
            brew install boost cmake git openssl autoconf automake libtool 
