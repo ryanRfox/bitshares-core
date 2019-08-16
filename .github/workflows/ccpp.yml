@@ -34,7 +34,9 @@ jobs:
            brew cleanup
            brew doctor
            brew update
-           brew install boost cmake git openssl autoconf automake glibtool 
+           brew install boost cmake git openssl autoconf automake
+    - name: libtool
+      run: brew install libtool 
            brew link --force openssl 
            git submodule update --init --recursive
            cmake .
