@@ -47,6 +47,6 @@ jobs:
     - name: make
       run: |
            git submodule update --init --recursive
-           cmake .
+           cmake -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl .
            make
            
