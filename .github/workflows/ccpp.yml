@@ -3,20 +3,6 @@ name: C++ CI
 on: [push]
 
 jobs:
-  ubuntu:
-  
-    runs-on: ubuntu-18.04
-    
-    steps:
-    - uses: actions/checkout@master
-    - name: configure
-      run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
-    - name: "submodule update"
-      run: git submodule update --init --recursive
-    - name: cmake
-      run: cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
-    - name: make
-      run: make witness_node
 
   macOS:
   
@@ -24,7 +10,17 @@ jobs:
   
     steps:
     - uses: actions/checkout@master
-    - name: install xcode
+    - name: configure
       run: |
            wget -O install-xcode.sh https://gist.githubusercontent.com/mokagio/b974620ee8dcf5c0671f/raw/98c372acec9a7fc6c59b5f6660a5e12af7abcff5/install-xcode-cli-tools.sh
            sh install-xcode.sh
+           brew doctor
+           brew update
+           brew install boost cmake git openssl autoconf automake libtool 
+           brew link --force openssl
+   - name: build
+     run: |
+           git submodule update --init --recursive
+           cmake .
+           make
+           
