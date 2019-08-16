@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
 
-  ubuntu-16.04:
+  xenial:
   
     runs-on: ubuntu-16.04
     
@@ -19,7 +19,7 @@ jobs:
     - name: make
       run: make witness_node
       
-  ubuntu-18.04:
+  bionic:
   
     runs-on: ubuntu-18.04
     
