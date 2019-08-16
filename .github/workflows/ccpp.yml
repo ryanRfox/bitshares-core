@@ -27,4 +27,4 @@ jobs:
     - name: configure
       run: |
            wget https://gist.github.com/mokagio/b974620ee8dcf5c0671f
-           sh install-xcode-cli-tools.sh
+           sh b974620ee8dcf5c0671f
