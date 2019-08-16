@@ -36,7 +36,7 @@ jobs:
            brew update
     - name: boost
       run: brew install boost 
-    - name: openssl
+    - name: openssl@1.69
       run: brew install openssl 
     - name: autoconf
       run: brew install autoconf 
