@@ -9,12 +9,7 @@ jobs:
   
     runs-on: macOS-latest
   
-    steps:
-    - uses: actions/checkout@test-3.3.0
-    - name: configure
-      run: |
-           wget -O install-xcode.sh https://gist.githubusercontent.com/mokagio/b974620ee8dcf5c0671f/raw/98c372acec9a7fc6c59b5f6660a5e12af7abcff5/install-xcode-cli-tools.sh
-           sh install-xcode.sh
+    steps:           
     - name: brew
       run: |
            brew cleanup
@@ -30,9 +25,13 @@ jobs:
       run: brew install automake
     - name: libtool
       run: brew install libtool
-    - name: make
+    - name: git clone
       run: |
-           git submodule update --init --recursive
+           git clone https://github.com/bitshares/bitshares/bitshares-core.git
+           cd bitshares-core
+           submodule update --init --recursive
+    - name: cmake
+      run: |
            cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl .
            make -j1 witness_node
            
