@@ -44,7 +44,7 @@ jobs:
       run: brew install automake
     - name: libtool
       run: brew install libtool
-    -name: set compiler
+    - name: set compiler
       run: |
            export CXX=g++
            export CC=gcc
