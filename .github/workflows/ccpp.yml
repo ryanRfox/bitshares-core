@@ -33,6 +33,6 @@ jobs:
            git submodule update --init --recursive
     - name: cmake
       run: |
-           cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl .
+           cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl ..
            make -j1 witness_node
            
