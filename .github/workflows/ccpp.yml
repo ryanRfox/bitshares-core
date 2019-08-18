@@ -32,8 +32,10 @@ jobs:
            brew cleanup
            brew doctor
            brew update
+    - name: gcc
+      run: brew install gcc@7
     - name: boost
-      run: brew install boost@1.70
+      run: brew install boost@1.60
     - name: openssl
       run: brew install openssl 
     - name: autoconf
