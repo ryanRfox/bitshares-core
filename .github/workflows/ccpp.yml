@@ -9,7 +9,10 @@ jobs:
   
     runs-on: macOS-latest
   
-    steps:           
+    steps: 
+    - uses: actions/chckout@master
+    - name: git submodule udate
+      run: git submodule update --init --recursive
     - name: brew
       run: |
            brew cleanup
@@ -25,12 +28,6 @@ jobs:
       run: brew install automake
     - name: libtool
       run: brew install libtool
-    - name: git clone
-      run: |
-           git clone https://github.com/bitshares/bitshares-core.git
-           cd bitshares-core
-           git checkout test-3.3.0
-           git submodule update --init --recursive
     - name: cmake
       run: |
            cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl ..
