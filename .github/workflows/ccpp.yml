@@ -27,7 +27,7 @@ jobs:
       run: brew install libtool
     - name: git clone
       run: |
-           git clone https://github.com/bitshares/bitshares/bitshares-core.git
+           git clone https://github.com/bitshares/bitshares-core.git
            cd bitshares-core
            submodule update --init --recursive
     - name: cmake
