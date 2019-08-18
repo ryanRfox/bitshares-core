@@ -29,7 +29,8 @@ jobs:
       run: |
            git clone https://github.com/bitshares/bitshares-core.git
            cd bitshares-core
-           submodule update --init --recursive
+           git checkout test-3.3.0
+           git submodule update --init --recursive
     - name: cmake
       run: |
            cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl .
