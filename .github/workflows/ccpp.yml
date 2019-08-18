@@ -10,7 +10,7 @@ jobs:
     runs-on: macOS-latest
   
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@test-3.3.0
     - name: configure
       run: |
            wget -O install-xcode.sh https://gist.githubusercontent.com/mokagio/b974620ee8dcf5c0671f/raw/98c372acec9a7fc6c59b5f6660a5e12af7abcff5/install-xcode-cli-tools.sh
