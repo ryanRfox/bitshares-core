@@ -17,7 +17,7 @@ jobs:
     - name: cmake
       run: cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
     - name: make
-      run: make
+      run: make cli_wallet
 
   macOS:
   
@@ -45,9 +45,12 @@ jobs:
     - name: submodule udate
       run: |
            git submodule update --init --recursive
-           set(CMAKE_C_COMPILER gcc CACHE STRING "C compiler" FORCE)
-           set(CMAKE_CXX_COMPILER g++ CACHE STRING "C++ compiler" FORCE)
+           export CMAKE_C_COMPILER="gcc"
+           export CMAKE_CXX_COMPILER="g++"
+           echo $CMAKE_CXX_COMPILER
     - name: cmake
-      run: cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
+      run: |
+           echo $CMAKE_CXX_COMPILER
+           cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
     - name: make
       run: make witness_node
