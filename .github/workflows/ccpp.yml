@@ -25,8 +25,6 @@ jobs:
   
     steps: 
     - uses: actions/checkout@master
-    - name: submodule udate
-      run: git submodule update --init --recursive
     - name: brew
       run: |
            brew cleanup
@@ -44,7 +42,12 @@ jobs:
       run: brew install automake
     - name: libtool
       run: brew install libtool
+    - name: submodule udate
+      run: |
+           git submodule update --init --recursive
+           set(CMAKE_C_COMPILER gcc CACHE STRING "C compiler" FORCE)
+           set(CMAKE_CXX_COMPILER g++ CACHE STRING "C++ compiler" FORCE)
     - name: cmake
-      run: cmake -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
+      run: cmake -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
     - name: make
       run: make witness_node
