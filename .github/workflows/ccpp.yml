@@ -43,10 +43,8 @@ jobs:
     - name: libtool
       run: brew install libtool
     - name: submodule udate
-      run: git submodule update --init --recursive
-    - name: set compiler
       run: |
-           touch ~/dummy.txt
+           git submodule update --init --recursive
            set(CMAKE_C_COMPILER gcc CACHE STRING "C compiler" FORCE)
            set(CMAKE_CXX_COMPILER g++ CACHE STRING "C++ compiler" FORCE)
     - name: cmake
