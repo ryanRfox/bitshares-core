@@ -60,8 +60,6 @@ jobs:
     - name: submodule udate
       run: git submodule update --init --recursive
     - name: cmake
-      run: |
-           ls -l /usr/local/bin
-           cmake -DCMAKE_CXX_COMPILER="g++-7" -DCMAKE_C_COMPILER="gcc-7" -DCMAKE_BUILD_TYPE=Debug -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
+      run: cmake -DCMAKE_CXX_COMPILER="g++-7" -DCMAKE_C_COMPILER="gcc-7" -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
     - name: make
       run: make witness_node
