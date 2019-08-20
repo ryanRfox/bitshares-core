@@ -17,7 +17,7 @@ jobs:
     - name: cmake
       run: cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
     - name: make
-      run: make cli_wallet
+      run: make witness_node
 
   ubuntu-1804:
 
@@ -34,7 +34,7 @@ jobs:
     - name: make
       run: make cli_wallet
 
-  macOS:
+  macOS-latest-boost170-gcc74:
   
     runs-on: macOS-latest
   
@@ -48,7 +48,7 @@ jobs:
     - name: gcc
       run: brew install gcc@7
     - name: boost
-      run: brew install boost@1.60
+      run: brew install boost@1.70
     - name: openssl
       run: brew install openssl 
     - name: autoconf
@@ -60,6 +60,36 @@ jobs:
     - name: submodule udate
       run: git submodule update --init --recursive
     - name: cmake
-      run: cmake -DCMAKE_CXX_COMPILER="g++-7" -DCMAKE_C_COMPILER="gcc-7" -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
+      run: cmake -DCMAKE_CXX_COMPILER="g++-7" -DCMAKE_C_COMPILER="gcc-7" -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.70 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
+    - name: make
+      run: make witness_node
+
+
+
+  macOS-boost-159-appleclang10:
+  
+    runs-on: macOS-latest
+  
+    steps: 
+    - uses: actions/checkout@master
+    - name: brew
+      run: |
+           brew cleanup
+           brew doctor
+           brew update
+    - name: boost
+      run: brew install boost@1.59
+    - name: openssl
+      run: brew install openssl 
+    - name: autoconf
+      run: brew install autoconf 
+    - name: automake
+      run: brew install automake
+    - name: libtool
+      run: brew install libtool
+    - name: submodule udate
+      run: git submodule update --init --recursive
+    - name: cmake
+      run: cmake -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.59 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
     - name: make
       run: make witness_node
