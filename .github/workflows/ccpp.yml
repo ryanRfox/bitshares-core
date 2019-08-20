@@ -14,10 +14,9 @@ jobs:
            git clone https://github.com/bitshares/bitshares-core.git
            cd bitshares-core
            git checkout release
+           git submodule update --init --recursive
     - name: configure
       run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
-    - name: "submodule update"
-      run: git submodule update --init --recursive
     - name: cmake
       run: cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
     - name: make
@@ -33,10 +32,9 @@ jobs:
            git clone https://github.com/bitshares/bitshares-core.git
            cd bitshares-core
            git checkout release
+           git submodule update --init --recursive
     - name: configure
       run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
-    - name: "submodule update"
-      run: git submodule update --init --recursive
     - name: cmake
       run: cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
     - name: make
@@ -52,6 +50,7 @@ jobs:
            https://github.com/ryanRfox/bitshares-core.git
            cd bitshares-core
            git checkout release
+           git submodule update --init --recursive
     - name: brew
       run: |
            brew cleanup
@@ -69,8 +68,6 @@ jobs:
       run: brew install automake
     - name: libtool
       run: brew install libtool
-    - name: submodule udate
-      run: git submodule update --init --recursive
     - name: cmake
       run: cmake -DCMAKE_CXX_COMPILER="g++-7" -DCMAKE_C_COMPILER="gcc-7" -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.70 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
     - name: make
@@ -88,6 +85,7 @@ jobs:
            https://github.com/ryanRfox/bitshares-core.git
            cd bitshares-core
            git checkout release
+           git submodule update --init --recursive
     - name: brew
       run: |
            brew cleanup
@@ -103,8 +101,6 @@ jobs:
       run: brew install automake
     - name: libtool
       run: brew install libtool
-    - name: submodule udate
-      run: git submodule update --init --recursive
     - name: cmake
       run: cmake -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.59 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
     - name: make
