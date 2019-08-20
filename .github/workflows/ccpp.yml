@@ -9,7 +9,10 @@ jobs:
     runs-on: ubuntu-16.04
     
     steps:
-    - uses: actions/checkout@master
+    - name: GitHub
+      run: |
+           git clone https://github.com/bitshares/bitshares-core.git
+           git checkout release
     - name: configure
       run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
     - name: "submodule update"
@@ -24,7 +27,10 @@ jobs:
     runs-on: ubuntu-18.04
     
     steps:
-    - uses: actions/checkout@master
+    - name: GitHub
+      run: |
+           git clone https://github.com/bitshares/bitshares-core.git
+           git checkout release
     - name: configure
       run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
     - name: "submodule update"
@@ -39,7 +45,10 @@ jobs:
     runs-on: macOS-latest
   
     steps: 
-    - uses: actions/checkout@master
+    - name: GitHub
+      run: |
+           git clone https://github.com/bitshares/bitshares-core.git
+           git checkout release
     - name: brew
       run: |
            brew cleanup
@@ -71,7 +80,10 @@ jobs:
     runs-on: macOS-latest
   
     steps: 
-    - uses: actions/checkout@master
+    - name: GitHub
+      run: |
+           git clone https://github.com/bitshares/bitshares-core.git
+           git checkout release
     - name: brew
       run: |
            brew cleanup
