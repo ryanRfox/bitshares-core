@@ -12,6 +12,7 @@ jobs:
     - name: GitHub
       run: |
            git clone https://github.com/bitshares/bitshares-core.git
+           cd bitshares-core
            git checkout release
     - name: configure
       run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
@@ -30,6 +31,7 @@ jobs:
     - name: GitHub
       run: |
            git clone https://github.com/bitshares/bitshares-core.git
+           cd bitshares-core
            git checkout release
     - name: configure
       run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
@@ -48,6 +50,7 @@ jobs:
     - name: GitHub
       run: |
            https://github.com/ryanRfox/bitshares-core.git
+           cd bitshares-core
            git checkout release
     - name: brew
       run: |
@@ -83,6 +86,7 @@ jobs:
     - name: GitHub
       run: |
            https://github.com/ryanRfox/bitshares-core.git
+           cd bitshares-core
            git checkout release
     - name: brew
       run: |
