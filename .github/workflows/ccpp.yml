@@ -116,6 +116,7 @@ jobs:
     - name: libtool
       run: brew install libtool
     - name: cmake
+      run: |
            cd $GIT_DIRECTORY
            cmake -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.59 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
     - name: make
