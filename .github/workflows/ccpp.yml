@@ -22,7 +22,7 @@ jobs:
       run: |
            cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
            cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
-    - name make:
+    - name: make
       run: |
            cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
            make witness_node
