@@ -17,7 +17,7 @@ jobs:
            git submodule update --init --recursive
            echo $PWD
     - name: configure
-      run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
+      run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev cmake parallel
     - name: cmake
       run: |
            cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
