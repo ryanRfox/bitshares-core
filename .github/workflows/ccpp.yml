@@ -120,11 +120,11 @@ jobs:
       run: brew install libtool
     - name: cmake
       run: |
-           cd /bitshares-core
+           cd bitshares-core
            cmake -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.59 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
     - name: make
       run: |
-           cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
+           cd bitshares-core
            make witness_node
 
   macOS-boost-170-appleclang10:
