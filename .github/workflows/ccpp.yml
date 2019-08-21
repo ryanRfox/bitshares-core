@@ -101,7 +101,6 @@ jobs:
            cd bitshares-core
            echo $PWD
            ls
-           git checkout release
            git submodule update --init --recursive
            echo $PWD
     - name: brew
