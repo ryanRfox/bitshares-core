@@ -99,6 +99,8 @@ jobs:
       run: |
            git clone https://github.com/ryanRfox/bitshares-core.git
            cd bitshares-core
+           echo $PWD
+           ls
            git checkout release
            git submodule update --init --recursive
            echo $PWD
