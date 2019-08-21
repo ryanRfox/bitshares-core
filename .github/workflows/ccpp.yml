@@ -21,7 +21,7 @@ jobs:
     - name: cmake
       run: |
            cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
-           cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
+           cmake -DCMAKE_BUILD_TYPE=Release
     - name: make
       run: |
            cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
@@ -48,7 +48,7 @@ jobs:
     - name: make
       run: |
            cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
-           make witness_node
+           make -j4
 
   macOS-latest-boost170-gcc74:
   
