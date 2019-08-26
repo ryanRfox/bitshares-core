@@ -126,7 +126,7 @@ jobs:
            cd bitshares-core
            make witness_node
 
-  macOS-develop-boost159-appleclang10:
+  macOS-develop-witness_node-boost159-appleclang10:
   
     runs-on: macOS-latest
   
@@ -164,7 +164,7 @@ jobs:
            cd bitshares-core
            make witness_node
 
-  macOS-develop-boost159-appleclang10:
+  macOS-develop-cli-boost159-appleclang10:
   
     runs-on: macOS-latest
   
