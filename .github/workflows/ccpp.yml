@@ -202,7 +202,7 @@ macOS-develop-boost159-appleclang10:
            cd bitshares-core
            make cli_node
 
-  macOS-master-boost170-appleclang10:
+macOS-master-boost170-appleclang10:
   
     runs-on: macOS-latest
   
