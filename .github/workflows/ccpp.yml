@@ -29,7 +29,28 @@ jobs:
 
   ubuntu-1804:
 
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-18.04-witness_node
+    
+    steps:
+    - name: GitHub
+      run: |
+           git clone https://github.com/bitshares/bitshares-core.git
+           cd bitshares-core
+           git checkout release
+           git submodule update --init --recursive
+           echo $PWD
+    - name: configure
+      run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
+    - name: cmake
+      run: |
+           cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
+           cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
+    - name: make
+      run: |
+           cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
+           make witness_node
+
+    runs-on: ubuntu-18.04-cli_wallet
     
     steps:
     - name: GitHub
@@ -49,82 +70,6 @@ jobs:
       run: |
            cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
            make cli_wallet
-
-  macOS-develop-boost160-gcc74:
-  
-    runs-on: macOS-latest
-  
-    steps: 
-    - name: GitHub
-      run: |
-           git clone https://github.com/ryanRfox/bitshares-core.git
-           cd bitshares-core
-           git checkout develop
-           git submodule update --init --recursive
-           echo $PWD
-    - name: brew
-      run: |
-           brew cleanup
-           brew doctor
-           brew update
-    - name: gcc
-      run: brew install gcc@7
-    - name: boost
-      run: brew install boost@1.60
-    - name: openssl
-      run: brew install openssl 
-    - name: autoconf
-      run: brew install autoconf 
-    - name: automake
-      run: brew install automake
-    - name: libtool
-      run: brew install libtool
-    - name: cmake
-      run: |
-           cd bitshares-core
-           cmake -DCMAKE_CXX_COMPILER="g++-7" -DCMAKE_C_COMPILER="gcc-7" -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
-    - name: make
-      run: |
-           cd bitshares-core
-           make witness_node
-
-  macOS-develop-boost60-appleclang10:
-  
-    runs-on: macOS-latest
-  
-    steps: 
-    - name: GitHub
-      run: |
-           git clone https://github.com/ryanRfox/bitshares-core.git
-           cd bitshares-core
-           echo $PWD
-           ls
-           git checkout develop
-           git submodule update --init --recursive
-           echo $PWD
-    - name: brew
-      run: |
-           brew cleanup
-           brew doctor
-           brew update
-    - name: boost
-      run: brew install boost@1.60
-    - name: openssl
-      run: brew install openssl 
-    - name: autoconf
-      run: brew install autoconf 
-    - name: automake
-      run: brew install automake
-    - name: libtool
-      run: brew install libtool
-    - name: cmake
-      run: |
-           cd bitshares-core
-           cmake -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
-    - name: make
-      run: |
-           cd bitshares-core
-           make witness_node
 
   macOS-develop-witness_node-boost159-appleclang10:
   
@@ -164,7 +109,7 @@ jobs:
            cd bitshares-core
            make witness_node
 
-  macOS-develop-cli-boost159-appleclang10:
+  macOS-develop-cli_wallet-boost159-appleclang10:
   
     runs-on: macOS-latest
   
@@ -200,7 +145,83 @@ jobs:
     - name: make
       run: |
            cd bitshares-core
-           make cli_node
+           make cli_wallet
+
+  macOS-develop-witness_node-boost160-gcc74:
+  
+    runs-on: macOS-latest
+  
+    steps: 
+    - name: GitHub
+      run: |
+           git clone https://github.com/ryanRfox/bitshares-core.git
+           cd bitshares-core
+           git checkout develop
+           git submodule update --init --recursive
+           echo $PWD
+    - name: brew
+      run: |
+           brew cleanup
+           brew doctor
+           brew update
+    - name: gcc
+      run: brew install gcc@7
+    - name: boost
+      run: brew install boost@1.60
+    - name: openssl
+      run: brew install openssl 
+    - name: autoconf
+      run: brew install autoconf 
+    - name: automake
+      run: brew install automake
+    - name: libtool
+      run: brew install libtool
+    - name: cmake
+      run: |
+           cd bitshares-core
+           cmake -DCMAKE_CXX_COMPILER="g++-7" -DCMAKE_C_COMPILER="gcc-7" -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
+    - name: make
+      run: |
+           cd bitshares-core
+           make witness_node
+
+  macOS-develop-witness_node-boost160-appleclang10:
+  
+    runs-on: macOS-latest
+  
+    steps: 
+    - name: GitHub
+      run: |
+           git clone https://github.com/ryanRfox/bitshares-core.git
+           cd bitshares-core
+           echo $PWD
+           ls
+           git checkout develop
+           git submodule update --init --recursive
+           echo $PWD
+    - name: brew
+      run: |
+           brew cleanup
+           brew doctor
+           brew update
+    - name: boost
+      run: brew install boost@1.60
+    - name: openssl
+      run: brew install openssl 
+    - name: autoconf
+      run: brew install autoconf 
+    - name: automake
+      run: brew install automake
+    - name: libtool
+      run: brew install libtool
+    - name: cmake
+      run: |
+           cd bitshares-core
+           cmake -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
+    - name: make
+      run: |
+           cd bitshares-core
+           make witness_node
 
   macOS-master-boost170-appleclang10:
   
