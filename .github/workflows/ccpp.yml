@@ -81,16 +81,16 @@ jobs:
       run: brew install libtool
     - name: cmake
       run: |
-           cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
+           cd bitshares-core
            cmake -DCMAKE_CXX_COMPILER="g++-7" -DCMAKE_C_COMPILER="gcc-7" -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
     - name: make
       run: |
-           cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
+           cd bitshares-core
            make witness_node
 
 
 
-  macOS-boost-159-appleclang10:
+  macOS-develop-boost159-appleclang10:
   
     runs-on: macOS-latest
   
@@ -101,7 +101,7 @@ jobs:
            cd bitshares-core
            echo $PWD
            ls
-           git checkout release
+           git checkout develop
            git submodule update --init --recursive
            echo $PWD
     - name: brew
@@ -128,7 +128,7 @@ jobs:
            cd bitshares-core
            make witness_node
 
-  macOS-boost-170-appleclang10:
+  macOS-master-boost170-appleclang10:
   
     runs-on: macOS-latest
   
