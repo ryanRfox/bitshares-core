@@ -88,9 +88,45 @@ jobs:
            cd bitshares-core
            make witness_node
 
+  macOS-develop-boost60-appleclang10:
+  
+    runs-on: macOS-latest
+  
+    steps: 
+    - name: GitHub
+      run: |
+           git clone https://github.com/ryanRfox/bitshares-core.git
+           cd bitshares-core
+           echo $PWD
+           ls
+           git checkout develop
+           git submodule update --init --recursive
+           echo $PWD
+    - name: brew
+      run: |
+           brew cleanup
+           brew doctor
+           brew update
+    - name: boost
+      run: brew install boost@1.60
+    - name: openssl
+      run: brew install openssl 
+    - name: autoconf
+      run: brew install autoconf 
+    - name: automake
+      run: brew install automake
+    - name: libtool
+      run: brew install libtool
+    - name: cmake
+      run: |
+           cd bitshares-core
+           cmake -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
+    - name: make
+      run: |
+           cd bitshares-core
+           make witness_node
 
-
-  macOS-develop-boost159-appleclang10:
+macOS-develop-boost159-appleclang10:
   
     runs-on: macOS-latest
   
@@ -127,6 +163,44 @@ jobs:
       run: |
            cd bitshares-core
            make witness_node
+
+macOS-develop-boost159-appleclang10:
+  
+    runs-on: macOS-latest
+  
+    steps: 
+    - name: GitHub
+      run: |
+           git clone https://github.com/ryanRfox/bitshares-core.git
+           cd bitshares-core
+           echo $PWD
+           ls
+           git checkout develop
+           git submodule update --init --recursive
+           echo $PWD
+    - name: brew
+      run: |
+           brew cleanup
+           brew doctor
+           brew update
+    - name: boost
+      run: brew install boost@1.59
+    - name: openssl
+      run: brew install openssl 
+    - name: autoconf
+      run: brew install autoconf 
+    - name: automake
+      run: brew install automake
+    - name: libtool
+      run: brew install libtool
+    - name: cmake
+      run: |
+           cd bitshares-core
+           cmake -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.59 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
+    - name: make
+      run: |
+           cd bitshares-core
+           make cli_node
 
   macOS-master-boost170-appleclang10:
   
