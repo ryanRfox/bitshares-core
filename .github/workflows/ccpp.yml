@@ -50,7 +50,7 @@ jobs:
            cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
            make cli_wallet
 
-  macOS-latest-boost170-gcc74:
+  macOS-latest-boost160-gcc74:
   
     runs-on: macOS-latest
   
@@ -70,7 +70,7 @@ jobs:
     - name: gcc
       run: brew install gcc@7
     - name: boost
-      run: brew install boost@1.70
+      run: brew install boost@1.60
     - name: openssl
       run: brew install openssl 
     - name: autoconf
@@ -82,7 +82,7 @@ jobs:
     - name: cmake
       run: |
            cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
-           cmake -DCMAKE_CXX_COMPILER="g++-7" -DCMAKE_C_COMPILER="gcc-7" -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.70 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
+           cmake -DCMAKE_CXX_COMPILER="g++-7" -DCMAKE_C_COMPILER="gcc-7" -DCMAKE_BUILD_TYPE=Release -DBOOST_ROOT=/usr/local/opt/boost@1.60 -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl
     - name: make
       run: |
            cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
