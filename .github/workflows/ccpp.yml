@@ -17,14 +17,14 @@ jobs:
            git submodule update --init --recursive
            echo $PWD
     - name: configure
-      run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev cmake parallel
+      run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
     - name: cmake
       run: |
-           cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
+           cd bitshares-core
            cmake -DCMAKE_BUILD_TYPE=Release
     - name: make
       run: |
-           cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
+           cd bitshares-core
            make witness_node
 
   ubuntu-1804-witness_node:
@@ -43,11 +43,11 @@ jobs:
       run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
     - name: cmake
       run: |
-           cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
+           cd bitshares-core
            cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
     - name: make
       run: |
-           cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
+           cd bitshares-core
            make witness_node
 
 
@@ -67,11 +67,11 @@ jobs:
       run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
     - name: cmake
       run: |
-           cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
+           cd bitshares-core
            cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_FLAGS=--coverage -DCMAKE_CXX_FLAGS=--coverage -DBoost_USE_STATIC_LIBS=OFF -DCMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON .
     - name: make
       run: |
-           cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
+           cd bitshares-core
            make cli_wallet
 
   macOS-develop-witness_node-boost159-appleclang10:
