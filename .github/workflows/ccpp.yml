@@ -172,7 +172,7 @@ jobs:
            cd bitshares-core
            make cli_wallet
 
-  macOS-develop-cli_wallet-boost159-appleclang10:
+  macOS-develop-boost159-appleclang10:
   
     runs-on: macOS-latest
   
