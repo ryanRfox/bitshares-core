@@ -27,9 +27,9 @@ jobs:
            cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
            make witness_node
 
-  ubuntu-1804:
+  ubuntu-1804-witness_node:
 
-    runs-on: ubuntu-18.04-witness_node
+    runs-on: ubuntu-18.04
     
     steps:
     - name: GitHub
@@ -50,7 +50,10 @@ jobs:
            cd /home/runner/work/bitshares-core/bitshares-core/bitshares-core
            make witness_node
 
-    runs-on: ubuntu-18.04-cli_wallet
+
+  ubuntu-1804-cli_wallet:
+
+    runs-on: ubuntu-18.04
     
     steps:
     - name: GitHub
