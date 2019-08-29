@@ -4,6 +4,28 @@ on: [push]
 
 jobs:
 
+
+  windows:
+  
+    runs-on: windows-latest
+    
+    steps:
+    - name: GitHub
+      run: |
+           git clone https://github.com/bitshares/bitshares-core.git
+           cd bitshares-core
+           git checkout release
+           git submodule update --init --recursive
+           echo $PWD
+    - name: cmake
+      run: |
+           cd bitshares-core
+           SET VS_VERSION="Visual Studio 16 2019"
+           SET CURL_DIR="c:\Program Files\CURL"
+
+           cmake -G %VS_VERSION% -A x64 -DBOOST_ROOT=%BOOST_ROOT_1_69_0% -DCURL_STATICLIB=ON -DCURL_LIBRARY=%CURL_DIR%\lib\libcurl_imp.lib -DCURL_INCLUDE_DIR=%CURL_DIR%\include -DOPENSSL_CONF_SOURCE="C:\Program Files\Common Files\SSL\openssl.cnf" ..
+           rem cmake --build . --target install --conf
+
   ubuntu-1604:
   
     runs-on: ubuntu-16.04
@@ -26,29 +48,6 @@ jobs:
       run: |
            cd bitshares-core
            make witness_node
-
-
-  windows:
-  
-    runs-on: windows-latest
-    
-    steps:
-    - name: GitHub
-      run: |
-           git clone https://github.com/bitshares/bitshares-core.git
-           cd bitshares-core
-           git checkout release
-           git submodule update --init --recursive
-           echo $PWD
-    - name: cmake
-      run: |
-           cd bitshares-core
-           SET VS_VERSION="Visual Studio 16 2019"
-           SET BOOST_DIR="c:\Development\cpp\boost170"
-           SET CURL_DIR="c:\Program Files\CURL"
-
-           cmake -G %VS_VERSION% -A x64 -DBOOST_ROOT=%BOOST_DIR% -DCURL_STATICLIB=ON -DCURL_LIBRARY=%CURL_DIR%\lib\libcurl_imp.lib -DCURL_INCLUDE_DIR=%CURL_DIR%\include -DOPENSSL_CONF_SOURCE="C:\Program Files\Common Files\SSL\openssl.cnf" ..
-           rem cmake --build . --target install --conf
 
   ubuntu-1804-witness_node:
 
