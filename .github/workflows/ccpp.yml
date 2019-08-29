@@ -24,7 +24,7 @@ jobs:
            git clone https://github.com/curl/curl
            cd curl
            git checkout tags/curl-7_64_1
-           biuldconf.bat
+           buildconf.bat
            mkdir curl-build
            cd curl-build
            cmake -G "Visual Studio 14 2015 Win64" -DCMAKE_USE_OPENSSL=ON -DCURL_DISABLE_FTP=ON -DCURL_DISABLE_LDAP=ON -DCURL_DISABLE_TELNET=ON -DCURL_DISABLE_DICT=ON -DCURL_DISABLE_FILE=ON -DCURL_DISABLE_TFTP=ON -DCURL_DISABLE_LDAPS=ON -DCURL_DISABLE_RTSP=ON -DCURL_DISABLE_POP3=ON -DCURL_DISABLE_IMAP=ON -DCURL_DISABLE_SMTP=ON -DCURL_DISABLE_GOPHER=ON -DCURL_STATICLIB=ON ..\
