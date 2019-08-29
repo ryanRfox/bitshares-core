@@ -19,7 +19,10 @@ jobs:
            echo $PWD
     - name: cmake
       run: |
+           cd
            cd bitshares-core
+           cd
+           echo %BOOST_ROOT_1_69_0%
            SET VS_VERSION="Visual Studio 16 2019"
            SET CURL_DIR="c:\Program Files\CURL"
 
