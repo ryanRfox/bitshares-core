@@ -34,6 +34,6 @@ jobs:
            ECHO %PATH%
            WHERE openssl.cnf
            dir %OPENSSL_ROOT_DIR%
-           cmake -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="C:/Files/Boost/1.69.0" -DCURL_STATICLIB=ON -DCURL_LIBRARY=%CURL_DIR%\lib\libcurl_imp.lib -DCURL_INCLUDE_DIR=%CURL_DIR%\include -DOPENSSL_ROOT_DIR="C:\Strawberry\c\bin\" -DOPENSSL_CRYPTO_LIBRARY="C:\Strawberry\c\bin\" .
+           cmake -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="C:/Files/Boost/1.69.0" -DCURL_STATICLIB=ON -DCURL_LIBRARY=%CURL_DIR%\lib\libcurl_imp.lib -DCURL_INCLUDE_DIR=%CURL_DIR%\include -DOPENSSL_ROOT="C:\Strawberry\c\bin\" -DOPENSSL_ROOT_DIR="C:\Strawberry\c\bin\" -DOPENSSL_CRYPTO_LIBRARY="C:\Strawberry\c\bin\" .
            rem -DOPENSSL_ROOT_DIR="C:\Strawberry\c\bin\" -DOPENSSL_CRYPTO_LIBRARY="C:\Strawberry\c\bin\" .
            rem cmake --build . --target install --conf
