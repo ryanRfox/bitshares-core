@@ -26,11 +26,9 @@ jobs:
            Expand-Archive '.\curl.zip' '.\'            
     - name: cmake
       run: |
-           cd
-           echo %PATH%
-           echo %BOOST_ROOT_1_69_0%
+           cd bitshares-core
            SET VS_VERSION="Visual Studio 15 2017 Win64"
            SET CURL_DIR="d:\curl\curl-7.65.3"
-           cmake -G %VS_VERSION% -A x64 -DCMAKE_CXX_FLAGS="--coverage" -DBOOST_ROOT="C:\Program Files\Boost\1.69.0" -DCURL_STATICLIB=ON -DCURL_LIBRARY=%CURL_DIR%\lib\libcurl_imp.lib -DCURL_INCLUDE_DIR=%CURL_DIR%\include -DOPENSSL_CONF_SOURCE="C:\Program Files\Common Files\SSL\openssl.cnf" ..
+           cmake -G %VS_VERSION% -A x64 -DCMAKE_CXX_FLAGS="--coverage" -DBOOST_ROOT=%BOOST_ROOT_1_69_0% -DCURL_STATICLIB=ON -DCURL_LIBRARY=%CURL_DIR%\lib\libcurl_imp.lib -DCURL_INCLUDE_DIR=%CURL_DIR%\include -DOPENSSL_CONF_SOURCE="C:\Program Files\Common Files\SSL\openssl.cnf" ..
            rem cmake --build . --target install --conf
            cd
