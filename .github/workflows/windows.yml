@@ -20,21 +20,12 @@ jobs:
     - name: curl
       run: |
            cd d:\
+           powershell
+           Envoke-WebRequest https://curl.haxx.se/download/curl-7.65.3.zip -O curl.zip
            cd
+           unzip curl.zip
+           $PATH=%PATH%+"d:\curl\curl.exe;"
            echo %PATH%
-           git clone https://github.com/curl/curl
-           cd curl
-           ren d:\curl\src\tool_hugehelp.c.cvs tool_hugehelp.c
-           dir src
-           buildconf.bat
-           cd
-           mkdir curl-build
-           cd curl-build
-           cd
-           cmake -G "Visual Studio 15 2017 Win64" -DCMAKE_CXX_FLAGS="--coverage" -DCMAKE_USE_OPENSSL=ON -DCURL_DISABLE_FTP=ON -DCURL_DISABLE_LDAP=ON -DCURL_DISABLE_TELNET=ON -DCURL_DISABLE_DICT=ON -DCURL_DISABLE_FILE=ON -DCURL_DISABLE_TFTP=ON -DCURL_DISABLE_LDAPS=ON -DCURL_DISABLE_RTSP=ON -DCURL_DISABLE_POP3=ON -DCURL_DISABLE_IMAP=ON -DCURL_DISABLE_SMTP=ON -DCURL_DISABLE_GOPHER=ON -DCURL_STATICLIB=ON ..\
-           cd
-           cmake --build . --target install --config Release
-           cd
            
     - name: cmake
       run: |
