@@ -21,7 +21,7 @@ jobs:
       shell: pwsh
       run: |
            cd d:\
-           Envoke-WebRequest https://curl.haxx.se/download/curl-7.65.3.zip -O curl.zip
+           Invoke-WebRequest https://curl.haxx.se/download/curl-7.65.3.zip -OutFile curl.zip
            dir
            Expand-Archive '.\curl.zip' '.\' 
            $oldpath = (Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).path
