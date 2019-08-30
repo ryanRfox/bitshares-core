@@ -26,7 +26,7 @@ jobs:
            Expand-Archive '.\curl.zip' '.\' 
            $oldpath = (Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).path
            Write-Output $oldpath
-           $newpath = "$oldpath d:\curl\curl-7.65.3;"
+           $newpath = "d:\curl\curl-7.65.3;$oldpath"
            Write-Output $newpath
            Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH -Value $newpath
            Write-Output (Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).path
