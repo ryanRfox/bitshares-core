@@ -19,8 +19,8 @@ jobs:
            cd
     - name: curl
       run: |
+        shell: powershell
            cd d:\
-           powershell
            Envoke-WebRequest https://curl.haxx.se/download/curl-7.65.3.zip -O curl.zip
            dir
            Expand-Archive '.\curl.zip' '.\' 
