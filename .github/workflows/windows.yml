@@ -21,7 +21,7 @@ jobs:
       shell: powershell
       run: |
            cd d:\
-           Import-Module BitsTransfer -SkipEditionCheck
+           Import-Module BitsTransfer
            Start-BitsTransfer -Source https://curl.haxx.se/download/curl-7.65.3.zip -Destination curl.zip
            dir
            Expand-Archive '.\curl.zip' '.\' 
