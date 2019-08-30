@@ -34,5 +34,5 @@ jobs:
            ECHO %PATH%
            WHERE openssl.cnf
            dir %OPENSSL_ROOT_DIR%
-           cmake -G %VS_VERSION% -A x64 -DBOOST_ROOT="C:/Files/Boost/1.69.0" -DCURL_STATICLIB=ON -DCURL_LIBRARY=%CURL_DIR%\lib\libcurl_imp.lib -DCURL_INCLUDE_DIR=%CURL_DIR%\include -DOPENSSL_ROOT_DIR=%OPENSSL_ROOT_DIR% -DOPENSSL_CRYPTO_LIBRARY=%OPENSSL_ROOT_DIR% .
+           cmake -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="C:/Files/Boost/1.69.0" -DCURL_STATICLIB=ON -DCURL_LIBRARY=%CURL_DIR%\lib\libcurl_imp.lib -DCURL_INCLUDE_DIR=%CURL_DIR%\include -DOPENSSL_ROOT_DIR=%OPENSSL_ROOT_DIR% -DOPENSSL_CRYPTO_LIBRARY=%OPENSSL_ROOT_DIR% .
            rem cmake --build . --target install --conf
