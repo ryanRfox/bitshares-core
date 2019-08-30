@@ -25,7 +25,7 @@ jobs:
            git clone https://github.com/curl/curl
            cd curl
            dir src
-           ren d:\curl\src\tool_hugehelp.c.cvs d:\curl\src\tool_hugehelp.c
+           ren d:\curl\src\tool_hugehelp.c.cvs tool_hugehelp.c
            cd
            buildconf.bat
            cd
