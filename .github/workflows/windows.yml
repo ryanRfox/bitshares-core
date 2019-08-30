@@ -24,9 +24,8 @@ jobs:
            echo %PATH%
            git clone https://github.com/curl/curl
            cd curl
-           dir src
            ren d:\curl\src\tool_hugehelp.c.cvs tool_hugehelp.c
-           cd
+           dir src
            buildconf.bat
            cd
            mkdir curl-build
