@@ -25,7 +25,7 @@ jobs:
            git clone https://github.com/curl/curl
            cd curl
            git checkout tags/curl-7_64_1
-           buildconf.bat --disable-werror
+           buildconf.bat --help
            cd
            mkdir curl-build
            cd curl-build
