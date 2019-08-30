@@ -3,50 +3,6 @@ name: C++ CI
 on: [push]
 
 jobs:
-
-
-  windows:
-  
-    runs-on: windows-2016
-    
-    steps:
-    - name: GitHub
-      run: |
-           git clone https://github.com/bitshares/bitshares-core.git
-           cd bitshares-core
-           git checkout release
-           git submodule update --init --recursive
-           cd
-    - name: curl
-      run: |
-           cd d:\
-           cd
-           echo %PATH%
-           git clone https://github.com/curl/curl
-           cd curl
-           ren d:\curl\src\tool_hugehelp.c.cvs d:\curl\src\tool_hugehelp.c
-           dir src
-           buildconf.bat
-           cd
-           mkdir curl-build
-           cd curl-build
-           cd
-           cmake -G "Visual Studio 15 2017 Win64" -DCMAKE_CXX_FLAGS="--coverage" -DCMAKE_USE_OPENSSL=ON -DCURL_DISABLE_FTP=ON -DCURL_DISABLE_LDAP=ON -DCURL_DISABLE_TELNET=ON -DCURL_DISABLE_DICT=ON -DCURL_DISABLE_FILE=ON -DCURL_DISABLE_TFTP=ON -DCURL_DISABLE_LDAPS=ON -DCURL_DISABLE_RTSP=ON -DCURL_DISABLE_POP3=ON -DCURL_DISABLE_IMAP=ON -DCURL_DISABLE_SMTP=ON -DCURL_DISABLE_GOPHER=ON -DCURL_STATICLIB=ON ..\
-           cd
-           cmake --build . --target install --config Release
-           cd
-           
-    - name: cmake
-      run: |
-           cd
-           echo %BOOST_ROOT_1_69_0%
-           SET VS_VERSION="Visual Studio 15 2017 Win64"
-           SET CURL_DIR="c:\Program Files\CURL"
-
-           cmake -G %VS_VERSION% -A x64 -DCMAKE_CXX_FLAGS="--coverage" -DBOOST_ROOT="C:\Program Files\Boost\1.69.0" -DCURL_STATICLIB=ON -DCURL_LIBRARY=%CURL_DIR%\lib\libcurl_imp.lib -DCURL_INCLUDE_DIR=%CURL_DIR%\include -DOPENSSL_CONF_SOURCE="C:\Program Files\Common Files\SSL\openssl.cnf" ..
-           rem cmake --build . --target install --conf
-           cd
-
   ubuntu-1604-develop:
   
     runs-on: ubuntu-16.04
