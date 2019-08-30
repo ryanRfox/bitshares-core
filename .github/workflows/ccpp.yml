@@ -27,7 +27,7 @@ jobs:
            git checkout tags/curl-7_64_1
            cd
            dir
-           buildconf.bat -clean
+           buildconf.bat
            cd
            mkdir curl-build
            cd curl-build
