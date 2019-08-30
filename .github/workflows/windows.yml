@@ -27,16 +27,17 @@ jobs:
            Expand-Archive '.\curl.zip' '.\' 
            dir
            $oldpath = (Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).path
-           $newpath = "$oldpath;d:\curl\curl-7.65.3"
+           $newpath = $oldpath + "d:\curl\curl-7.65.3;"
            Write-Output $newpath
            cd
            Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH -Value $newpath
            cd
-           Write-Output $env:path -split ";"
+           Write-Output $env:path
            
     - name: cmake
       run: |
            cd
+           echo %PATH%
            echo %BOOST_ROOT_1_69_0%
            SET VS_VERSION="Visual Studio 15 2017 Win64"
            SET CURL_DIR="c:\Program Files\CURL"
