@@ -23,16 +23,12 @@ jobs:
            cd d:\
            Import-Module BitsTransfer
            Start-BitsTransfer -Source https://curl.haxx.se/download/curl-7.65.3.zip -Destination curl.zip
-           dir
            Expand-Archive '.\curl.zip' '.\' 
-           dir
            $oldpath = (Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).path
            $newpath = $oldpath + "d:\curl\curl-7.65.3;"
            Write-Output $newpath
-           cd
            Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH -Value $newpath
-           cd
-           Write-Output $env:path
+           Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).Path
            
     - name: cmake
       run: |
