@@ -19,7 +19,7 @@ jobs:
            cd
     - name: curl
       run: 
-        shell: powershell
+      shell: powershell
            cd d:\
            Envoke-WebRequest https://curl.haxx.se/download/curl-7.65.3.zip -O curl.zip
            dir
