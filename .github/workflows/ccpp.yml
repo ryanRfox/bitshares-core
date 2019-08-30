@@ -19,12 +19,14 @@ jobs:
            cd
     - name: curl
       run: |
-           cd
            cd d:\
+           cd
            echo %PATH%
            git clone https://github.com/curl/curl
            cd curl
            git checkout tags/curl-7_64_1
+           cd
+           dir
            buildconf.bat -clean
            cd
            mkdir curl-build
