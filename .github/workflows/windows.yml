@@ -22,9 +22,11 @@ jobs:
            cd d:\
            powershell
            Envoke-WebRequest https://curl.haxx.se/download/curl-7.65.3.zip -O curl.zip
-           cd
-           unzip curl.zip
-           $PATH=%PATH%+"d:\curl\curl.exe;"
+           dir
+           Expand-Archive '.\curl.zip' '.\' 
+           $oldpath = (Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).path
+           $newpath = "$oldpath;d:\curl"
+           Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH -Value $newPath
            echo %PATH%
            
     - name: cmake
