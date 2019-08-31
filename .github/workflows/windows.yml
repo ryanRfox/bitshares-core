@@ -30,7 +30,7 @@ jobs:
            SET VS_VERSION="Visual Studio 15 2017"
            SET CURL_DIR="d:\curl\curl-7.65.3"
            SET OPENSSL_ROOT_DIR="C:\Program Files\Git\mingw64\bin\"
-           SET PATH=C:\Program Files\Git\mingw64\bin\;%PATH%
+           SET PATH="C:\Program Files\Git\mingw64\bin\;"%PATH%
            ECHO %PATH%
            WHERE openssl.cnf
            dir %OPENSSL_ROOT_DIR%
