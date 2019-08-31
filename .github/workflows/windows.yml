@@ -28,12 +28,11 @@ jobs:
       run: |
            cd d:\a\bitshares-core\bitshares-core\bitshares-core
            SET VS_VERSION="Visual Studio 15 2017"
-           SET BOOST_ROOT=C:\Files\Boost\1.69.0
            ECHO %BOOST_ROOT%
            SET CURL_DIR=d:\curl\curl-7.65.3
            SET OPENSSL_ROOT_DIR=C:\Program Files\Git\usr\bin
            ECHO %OPENSSL_ROOT_DIR%
-           SET PATH=%BOOST_ROOT%;%CURL_DIR%;%OPENSSL_ROOT_DIR%;%PATH%
+           SET PATH=%CURL_DIR%;%OPENSSL_ROOT_DIR%;%PATH%
            ECHO %PATH%
            WHERE libcrypto.so
            dir /s "%BOOST_ROOT%"
