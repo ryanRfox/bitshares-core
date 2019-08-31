@@ -30,7 +30,7 @@ jobs:
            SET VS_VERSION="Visual Studio 15 2017"
            SET BOST_ROOT="C:/Files/Boost/1.69.0"
            SET CURL_DIR=d:\curl\curl-7.65.3
-           SET OPENSSL_ROOT_DIR=C:\Program Files\Git\mingw64\bin\
+           SET OPENSSL_ROOT_DIR=C:\Strawberry\c\bin\
            SET PATH=%OPENSSL_ROOT_DIR%;%PATH%
            ECHO %PATH%
            WHERE openssl.cnf
