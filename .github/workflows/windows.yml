@@ -35,7 +35,6 @@ jobs:
            SET PATH=%CURL_DIR%;%OPENSSL_ROOT_DIR%;%PATH%
            ECHO %PATH%
            WHERE libcrypto.so
-           dir /s "%BOOST_ROOT%"
            dir /s "C:\Program Files\Git\usr"
            dir /s "C:\Program Files\OpenSSL"
            rem multiple boost installed on VM: https://help.github.com/en/articles/software-in-virtual-environments-for-github-actions#openssl
