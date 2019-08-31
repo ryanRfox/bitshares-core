@@ -26,21 +26,13 @@ jobs:
            Expand-Archive '.\curl.zip' '.\'            
     - name: cmake
       run: |
-           cd c:\
-           WHERE libcrypto.so
-           dir libcrypto.so /s
-           cd d:\
-           WHERE libcrypto.so
-           dir libcrypto.so /s
            cd d:\a\bitshares-core\bitshares-core\bitshares-core
            SET VS_VERSION="Visual Studio 15 2017"
            ECHO %BOOST_ROOT%
            SET CURL_DIR=d:\curl\curl-7.65.3
            SET OPENSSL_ROOT_DIR=C:\Program Files\Git\usr\bin
-           ECHO %OPENSSL_ROOT_DIR%
+           SET LIBCRYPTO=%OPENSSL_ROOT_DIR%\libcrypto-1_1-x64.dll
            SET PATH=%CURL_DIR%;%OPENSSL_ROOT_DIR%;%PATH%
            ECHO %PATH%
-           rem multiple boost installed on VM: https://help.github.com/en/articles/software-in-virtual-environments-for-github-actions#openssl
-           ECHO -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="%BOOST_ROOT%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DOPENSSL_ROOT="%OPENSSL_ROOT_DIR%" -DOPENSSL_CRYPTO_LIBRARY="%OPENSSL_ROOT_DIR%" .
-           cmake -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="%BOOST_ROOT%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DOPENSSL_ROOT="%OPENSSL_ROOT_DIR%" -DOPENSSL_CRYPTO_LIBRARY="%OPENSSL_ROOT_DIR%" .
+           cmake -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="%BOOST_ROOT%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DOPENSSL_ROOT="%OPENSSL_ROOT_DIR%" -DOPENSSL_CRYPTO_LIBRARY="%LIBCRYPTO%" .
            rem cmake --build . --target install --conf
