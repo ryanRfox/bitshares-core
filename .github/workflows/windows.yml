@@ -30,7 +30,7 @@ jobs:
            SET VS_VERSION="Visual Studio 15 2017"
            ECHO %BOOST_ROOT%
            SET CURL_DIR=d:\curl\curl-7.65.3
-           SET OPENSSL_ROOT_DIR=C:\Program Files\Git\usr\bin
+           SET OPENSSL_ROOT_DIR=C:\Program Files\OpenSSL\bin
            SET LIBCRYPTO=%OPENSSL_ROOT_DIR%\libcrypto-1_1-x64.dll
            SET PATH=%CURL_DIR%;%OPENSSL_ROOT_DIR%;%PATH%
            ECHO %PATH%
