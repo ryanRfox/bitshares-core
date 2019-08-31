@@ -27,13 +27,14 @@ jobs:
     - name: cmake
       run: |
            cd d:\a\bitshares-core\bitshares-core\bitshares-core
-           SET VS_VERSION='Visual Studio 15 2017'
-           SET CURL_DIR='d:\curl\curl-7.65.3'
-           SET OPENSSL_ROOT_DIR='C:\Program Files\Git\mingw64\bin\'
+           SET VS_VERSION="Visual Studio 15 2017"
+           SET BOST_ROOT="C:/Files/Boost/1.69.0"
+           SET CURL_DIR=d:\curl\curl-7.65.3
+           SET OPENSSL_ROOT_DIR=C:\Program Files\Git\mingw64\bin\
            SET PATH=%OPENSSL_ROOT_DIR%;%PATH%
            ECHO %PATH%
            WHERE openssl.cnf
            dir %OPENSSL_ROOT_DIR%
            rem multiple boost installed on VM: https://help.github.com/en/articles/software-in-virtual-environments-for-github-actions#openssl
-           cmake -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="C:/Files/Boost/1.69.0" -DCURL_STATICLIB=ON -DCURL_LIBRARY=%CURL_DIR%\lib\libcurl_imp.lib -DCURL_INCLUDE_DIR=%CURL_DIR%\include -DOPENSSL_ROOT=%OPENSSL_ROOT_DIR% -DOPENSSL_CRYPTO_LIBRARY=%OPENSSL_ROOT_DIR% .
+           cmake -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT=%BOOST_ROOT% -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DOPENSSL_ROOT="%OPENSSL_ROOT_DIR%" -DOPENSSL_CRYPTO_LIBRARY="%OPENSSL_ROOT_DIR%" .
            rem cmake --build . --target install --conf
