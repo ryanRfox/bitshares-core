@@ -17,17 +17,16 @@ jobs:
            git submodule update --init --recursive
     - name: openssl
       run: |
-           dir /s "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64"
-           "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
+           REM dir /s "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64"
+           REM "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
+           PATH=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64;%PATH%
            cd d:\
            git clone https://github.com/openssl/openssl
            cd openssl
            git checkout OpenSSL_1_1_1-stable
-           dir /s
-           cmake .
+           nmake clean
            define OPENSSL_VERSION_TEXT    "OpenSSL 1.1.1d-dev  05 Jun 2019"
            nmake all
-           C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
     - name: curl
       shell: powershell
       run: |
