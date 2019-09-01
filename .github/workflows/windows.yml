@@ -22,7 +22,7 @@ jobs:
            Import-Module BitsTransfer
            Start-BitsTransfer -Source https://aka.ms/vs/15/release/vc_redist.x64.exe -Destination vc_redist.x64.exe
            dir
-           vc_redist.x64.exe /install /quiet /log "%temp%\Install_vc_redist_2017_x64.log"          
+           .\vc_redist.x64.exe /install /quiet /log "%temp%\Install_vc_redist_2017_x64.log"          
            dir /s "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC"
 
     - name: openssl
