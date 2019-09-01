@@ -15,6 +15,7 @@ jobs:
            cd bitshares-core
            git checkout master
            git submodule update --init --recursive
+           dir /s "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC"
     - name: VC++
       shell: powershell
       run: |
@@ -24,7 +25,6 @@ jobs:
            Start-BitsTransfer -Source https://aka.ms/vs/15/release/vc_redist.x64.exe -Destination vc_redist.x64.exe
            dir
            d:\vc_redist.x64.exe /install /quiet /log "%temp%\Install_vc_redist_2017_x64.log"          
-           dir /s "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC"
 
     - name: openssl
       run: |
