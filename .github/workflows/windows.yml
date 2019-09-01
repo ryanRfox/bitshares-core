@@ -16,7 +16,6 @@ jobs:
            git checkout master
            git submodule update --init --recursive
     - name: VC++
-      run: |
       shell: powershell
       run: |
            cd d:\
