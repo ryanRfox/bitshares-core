@@ -4,13 +4,12 @@ on: [push]
 
 jobs:
 
-
-  windows:
+  windows-develop:
   
     runs-on: windows-2016
     
     steps:
-    - name: Windows-develop
+    - name: git
       run: |
            git clone https://github.com/bitshares/bitshares-core.git
            cd bitshares-core
@@ -37,6 +36,6 @@ jobs:
            ECHO %PATH%
            ECHO %LIBCRYPTO%
            dir "%OPENSSL_CONF%"
-           ECHO -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="%BOOST_ROOT%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DOPENSSL_CONF_SOURCE=%OPENSSL_CONF% .
-           cmake -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="%BOOST_ROOT%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DOPENSSL_CONF_SOURCE=%OPENSSL_CONF% .
+           ECHO -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="%BOOST_ROOT%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DOPENSSL_CONF_SOURCE="%OPENSSL_CONF%" .
+           cmake -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="%BOOST_ROOT%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DOPENSSL_CONF_SOURCE="%OPENSSL_CONF%" .
            rem cmake --build . --target install --conf
