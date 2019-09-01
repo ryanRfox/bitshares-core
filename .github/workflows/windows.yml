@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
 
-  windows-develop:
+  windows-master:
   
     runs-on: windows-2016
     
@@ -13,7 +13,7 @@ jobs:
       run: |
            git clone https://github.com/bitshares/bitshares-core.git
            cd bitshares-core
-           git checkout release
+           git checkout master
            git submodule update --init --recursive
            cd
     - name: curl
