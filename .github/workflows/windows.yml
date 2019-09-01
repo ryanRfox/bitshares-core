@@ -35,6 +35,7 @@ jobs:
            SET PATH=%CURL_DIR%;%OPENSSL_ROOT_DIR%;%PATH%
            ECHO %PATH%
            ECHO %LIBCRYPTO%
+           dir "C:\Program Files\Common Files\SSL\"
            dir "%LIBCRYPTO%"
            dir "%OPENSSL_ROOT_DIR%
            ECHO -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="%BOOST_ROOT%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DOPENSSL_ROOT="%OPENSSL_ROOT_DIR%" -DOPENSSL_CRYPTO_LIBRARY="%LIBCRYPTO%" .
