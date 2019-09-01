@@ -18,12 +18,13 @@ jobs:
     - name: VC++
       shell: powershell
       run: |
+           dir "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise"
            cd d:\
            Import-Module BitsTransfer
            Start-BitsTransfer -Source https://aka.ms/vs/15/release/vc_redist.x64.exe -Destination vc_redist.x64.exe
            dir
            d:\vc_redist.x64.exe /install /quiet /log "%temp%\Install_vc_redist_2017_x64.log"          
-           dir "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise"
+           dir /s "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC"
 
     - name: openssl
       run: |
