@@ -15,7 +15,10 @@ jobs:
            cd bitshares-core
            git checkout master
            git submodule update --init --recursive
-           cd
+    - name: nmake
+      run: |
+           dir /s "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise"
+
     - name: openssl
       run: |
            cd d:\
@@ -26,7 +29,7 @@ jobs:
            cmake .
            define OPENSSL_VERSION_TEXT    "OpenSSL 1.1.1d-dev  05 Jun 2019"
            nmake all
-           
+           C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
     - name: curl
       shell: powershell
       run: |
