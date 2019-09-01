@@ -22,7 +22,7 @@ jobs:
            git clone https://github.com/openssl/openssl
            cd openssl
            git checkout OpenSSL_1_1_1-stable
-           nmake clean
+           cmake clean
            define OPENSSL_VERSION_TEXT    "OpenSSL 1.1.1d-dev  05 Jun 2019"
            nmake all
            
