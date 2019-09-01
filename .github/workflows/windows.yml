@@ -33,7 +33,9 @@ jobs:
            REM SET LIBCRYPTO=%OPENSSL_ROOT_DIR%\libcrypto-1_1-x64.dll
            SET OPENSSL_ROOT_DIR=C:\Strawberry\c\bin           
            SET LIBCRYPTO=%OPENSSL_ROOT_DIR%\libcrypto-1_1-x64__.dll
+           dir %LIBCRYPTO%
            SET OPENSSL_CONF=C:\Program Files\Common Files\SSL\openssl.cnf
+           ECHO %OPENSSL_CONF%
            dir %OPENSSL_CONF%
            SET PATH=%CURL_DIR%;%OPENSSL_ROOT_DIR%;%PATH%
            ECHO %PATH%
@@ -44,6 +46,5 @@ jobs:
            dir "Directory of C:\Strawberry\c\lib\pkgconfig"
            dir "C:\Strawberry\c\x86_64-w64-mingw32\lib"
            dir "C:\Program Files\Common Files\SSL"
-           dir %LIBCRYPTO%
            REM cmake -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="%BOOST_ROOT%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DOPENSSL_CONF_SOURCE="%OPENSSL_CONF%" -DOPENSSL_CRYPTO_LIBRARY="%LIBCRYPTO%" -DOPENSSL_LIBRARIES="%LIBCRYPTO%" -DOPENSSL_ROOT_DIR="%OPENSSL_ROOT_DIR%" -DOPENSSL_ROOT="%OPENSSL_ROOT_DIR%" .
            rem cmake --build . --target install --conf
