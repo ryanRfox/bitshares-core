@@ -30,8 +30,9 @@ jobs:
            ECHO %BOOST_ROOT%
            SET CURL_DIR=d:\curl\curl-7.65.3
            REM SET OPENSSL_ROOT_DIR=C:\Program Files\OpenSSL\bin
-           SET OPENSSL_ROOT_DIR=C:\Strawberry\c\bin
-           SET LIBCRYPTO=%OPENSSL_ROOT_DIR%\libcrypto-1_1-x64.dll
+           REM SET LIBCRYPTO=%OPENSSL_ROOT_DIR%\libcrypto-1_1-x64.dll
+           SET OPENSSL_ROOT_DIR=C:\Strawberry\c\bin           
+           SET LIBCRYPTO=%OPENSSL_ROOT_DIR%\libcrypto-1_1-x64__.dll
            SET OPENSSL_CONF=C:\Program Files\Common Files\SSL\openssl.cnf
            SET PATH=%CURL_DIR%;%OPENSSL_ROOT_DIR%;%PATH%
            ECHO %PATH%
