@@ -15,8 +15,14 @@ jobs:
            cd bitshares-core
            git checkout master
            git submodule update --init --recursive
+    steps:
+      - name: Install libraries with vcpkg
+        run: |
+          vcpkg search
+          vcpkg list
+          dir %VCPKG_ROOT%
+          vcpkg --triplet x64-windows install openssl
     - name: openssl
-      shell: cmd {0} "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
       run: |
            REM dir /s "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64"
            REM "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
