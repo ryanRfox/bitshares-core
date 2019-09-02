@@ -15,19 +15,20 @@ jobs:
            cd bitshares-core
            git checkout master
            git submodule update --init --recursive
-    - name: vcpkg
+    - name: configure
+      shell: pwsh
       run: |
-           vcpkg search
-           vcpkg --triplet x64-windows install openssl
-           vcpkg --triplet x64-windows install curl
-           vcpkg list
-           dir %VCPKG_ROOT%
+           cd d:\
+           Import-Module BitsTransfer
+           Start-BitsTransfer -Source https://raw.githubusercontent.com/fstudio/clangbuilder/master/sources/wincurl/wincurl.ps1
+           ./wincurl.ps1
+           Get-ChildItem -Path D:\
     - name: cmake
       run: |
            cd d:\a\bitshares-core\bitshares-core\bitshares-core
            SET VS_VERSION="Visual Studio 15 2017"
            ECHO %BOOST_ROOT%
-           SET CURL_DIR=%VCPKG_ROOT%\curl
+           REM SET CURL_DIR=%VCPKG_ROOT%\curl
            REM SET OPENSSL_ROOT_DIR=C:\Program Files\OpenSSL\bin
            REM SET LIBCRYPTO=%OPENSSL_ROOT_DIR%\libcrypto-1_1-x64.dll
            SET OPENSSL_ROOT_DIR=%VCPKG_ROOT%\openssl
