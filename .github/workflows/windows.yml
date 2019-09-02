@@ -15,7 +15,6 @@ jobs:
            cd bitshares-core
            git checkout master
            git submodule update --init --recursive
-    steps:
     - name: vcpkg
       run: |
            vcpkg search
