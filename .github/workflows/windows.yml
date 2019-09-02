@@ -15,6 +15,11 @@ jobs:
            cd bitshares-core
            git checkout master
            git submodule update --init --recursive
+    - name: VC
+      run: |
+           cd d:\
+           call: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
+           cd
     - name: configure
       shell: powershell
       run: |
