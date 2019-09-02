@@ -18,51 +18,33 @@ jobs:
     - name: vcpkg
       run: |
            vcpkg search
+           vcpkg --triplet x64-windows install openssl
+           vcpkg --triplet x64-windows install curl
            vcpkg list
            dir %VCPKG_ROOT%
-           vcpkg --triplet x64-windows install openssl
-    - name: openssl
-      run: |
-           REM dir /s "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64"
-           REM "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
-           PATH=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64;%PATH%
-           cd d:\
-           git clone https://github.com/openssl/openssl
-           cd openssl
-           git checkout OpenSSL_1_1_1-stable
-           nmake clean
-           define OPENSSL_VERSION_TEXT    "OpenSSL 1.1.1d-dev  05 Jun 2019"
-           nmake all
-    - name: curl
-      shell: powershell
-      run: |
-           cd d:\
-           Import-Module BitsTransfer
-           Start-BitsTransfer -Source https://curl.haxx.se/download/curl-7.65.3.zip -Destination curl.zip
-           Expand-Archive '.\curl.zip' '.\'            
     - name: cmake
       run: |
            cd d:\a\bitshares-core\bitshares-core\bitshares-core
            SET VS_VERSION="Visual Studio 15 2017"
            ECHO %BOOST_ROOT%
-           SET CURL_DIR=d:\curl\curl-7.65.3
+           SET CURL_DIR=%VCPKG_ROOT%\curl
            REM SET OPENSSL_ROOT_DIR=C:\Program Files\OpenSSL\bin
            REM SET LIBCRYPTO=%OPENSSL_ROOT_DIR%\libcrypto-1_1-x64.dll
-           SET OPENSSL_ROOT_DIR=C:\Strawberry\c\bin
-           SET LIBCRYPTO=%OPENSSL_ROOT_DIR%\libcrypto-1_1-x64__.dll
-           dir %LIBCRYPTO%
-           SET OPENSSL_CONF=C:\Program Files\Common Files\SSL\openssl.cnf
+           SET OPENSSL_ROOT_DIR=%VCPKG_ROOT%\openssl
+           REM SET LIBCRYPTO=%OPENSSL_ROOT_DIR%\libcrypto-1_1-x64__.dll
+           REM dir %LIBCRYPTO%
+           REM SET OPENSSL_CONF=%VCPKG_ROOT%\openssl.cnf
            ECHO %OPENSSL_CONF%
            dir %OPENSSL_CONF%
            SET PATH=%CURL_DIR%;%OPENSSL_ROOT_DIR%;%PATH%
            ECHO %PATH%
-           dir /s "C:\Program Files\Common Files"
+           REM dir /s "C:\Program Files\Common Files"
            REM dir /s C:\Strawberry
-           dir "C:\Strawberry\c\include\openssl"
-           dir "C:\Strawberry\c\lib"
-           dir "Directory of C:\Strawberry\c\lib\pkgconfig"
-           dir "C:\Strawberry\c\x86_64-w64-mingw32\lib"
-           dir "C:\Program Files\Common Files\SSL"
+           REM dir "C:\Strawberry\c\include\openssl"
+           REM dir "C:\Strawberry\c\lib"
+           REM dir "Directory of C:\Strawberry\c\lib\pkgconfig"
+           REM dir "C:\Strawberry\c\x86_64-w64-mingw32\lib"
+           REM dir "C:\Program Files\Common Files\SSL"
            ECHO -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="%BOOST_ROOT%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DOPENSSL_CONF_SOURCE="%OPENSSL_CONF%" -DOPENSSL_ROOT_DIR="%OPENSSL_ROOT_DIR%" -DOPENSSL_ROOT="%OPENSSL_ROOT_DIR%" -DOPENSSL_INCLUDE_DIR="C:\Strawberry\c\include\openssl" -DOPENSSL_CRYPTO_LIBRARY="C:\Strawberry\c\include\openssl" -DOPENSSL_LIBRARIES="C:\Strawberry\c\include\openssl" .
            cmake -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="%BOOST_ROOT%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DOPENSSL_CONF_SOURCE="%OPENSSL_CONF%" -DOPENSSL_ROOT_DIR="%OPENSSL_ROOT_DIR%" -DOPENSSL_ROOT="%OPENSSL_ROOT_DIR%" -DOPENSSL_INCLUDE_DIR="C:\Strawberry\c\include\openssl" -DOPENSSL_CRYPTO_LIBRARY="C:\Strawberry\c\include\openssl" -DOPENSSL_LIBRARIES="C:\Strawberry\c\include\openssl" .
            rem cmake --build . --target install --conf
