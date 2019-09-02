@@ -16,6 +16,7 @@ jobs:
            git checkout master
            git submodule update --init --recursive
     - name: VC
+      shell: %ComSpec% /D /E:ON /V:OFF /S /C "CALL "{0}"" "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64
       run: |
            cd d:\
            dir "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build"
