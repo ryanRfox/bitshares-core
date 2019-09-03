@@ -64,7 +64,7 @@ jobs:
            SET OPENSSL_ROOT_DIR=C:\Miniconda\pkgs\openssl-1.1.1b-he774522_1\Library
            SET PATH=%CURL_ROOT%;%OPENSSL_ROOT_DIR%;%PATH%
            cd d:\bitshares-core
-           cmake -G %VS_VERSION% -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_ROOT_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_ROOT_DIR%\include" -DBOOST_ROOT="%BOOST_ROOT%" -DCMAKE_GENERATOR_PLATFORM=x64 .
+           cmake -G %VS_VERSION% -DCMAKE_C_FLAGS=Werror -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_ROOT_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_ROOT_DIR%\include" -DBOOST_ROOT="%BOOST_ROOT%" -DCMAKE_GENERATOR_PLATFORM=x64 .
     - name: make
       run: |
            cd d:\bitshares-core
