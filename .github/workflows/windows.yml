@@ -49,8 +49,5 @@ jobs:
            SET OPENSSL_ROOT_DIR=C:\Miniconda\pkgs\openssl-1.1.1b-he774522_1\Library
            SET PATH=%CURL_ROOT%;%OPENSSL_ROOT_DIR%;%PATH%
            ECHO %PATH%
-           cmake -G %VS_VERSION% -DCURL_STATICLIB=ON -DCURL_ROOT="%CURL_ROOT_DIR%" -DCURL_LIBRARY="%CURL_ROOT_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_ROOT_DIR%\include" -DBOOST_ROOT="%BOOST_ROOT%" -DCMAKE_GENERATOR_PLATFORM=x64 .
-           REM 
-           REM -DOPENSSL_CONF_SOURCE="%OPENSSL_ROOT_DIR%\openssl.cnf" -DOPENSSL_ROOT="%OPENSSL_ROOT_DIR%" 
-           REM -DOPENSSL_CRYPTO_LIBRARY="%OPENSSL_ROOT_DIR%" -DOPENSSL_LIBRARIES="%OPENSSL_ROOT_DIR%" -DOPENSSL_INCLUDE_DIR="%OPENSSL_ROOT_DIR%" 
-           rem cmake --build . --target install --conf
+           cmake -G %VS_VERSION% -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_ROOT_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_ROOT_DIR%\include" -DBOOST_ROOT="%BOOST_ROOT%" -DCMAKE_GENERATOR_PLATFORM=x64 .
+           cmake --build . --target install --conf
