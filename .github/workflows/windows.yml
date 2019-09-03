@@ -28,24 +28,21 @@ jobs:
            SET VS_VERSION="Visual Studio 15 2017"
            ECHO %BOOST_ROOT%
            SET CURL_DIR=d:\curl\curl-7.65.3
-           dir d:\
-           REM SET OPENSSL_ROOT_DIR=C:\Program Files\OpenSSL\bin
+           SET OPENSSL_ROOT_DIR=C:\Program Files\OpenSSL\bin
+           dir /s "C:\Program Files\OpenSSL"
+           dir /s "C:\Program Files\Common Files\SSL"
+           dir "C:\Program Files\Common Files"           
            REM SET LIBCRYPTO=%OPENSSL_ROOT_DIR%\libcrypto-1_1-x64.dll
-           SET OPENSSL_ROOT_DIR=%LIBCRYPTO%\openssl
-           REM SET LIBCRYPTO=%OPENSSL_ROOT_DIR%\libcrypto-1_1-x64__.dll
-           REM dir %LIBCRYPTO%
-           REM SET OPENSSL_CONF=%LIBCRYPTO%\openssl.cnf
-           ECHO %OPENSSL_CONF%
-           dir %OPENSSL_CONF%
+           SET OPENSSL_CONF=%LIBCRYPTO%\openssl.cnf
+           REM ECHO %OPENSSL_CONF%
+           REM dir %OPENSSL_CONF%
            SET PATH=%CURL_DIR%;%OPENSSL_ROOT_DIR%;%PATH%
            ECHO %PATH%
-           dir /s "C:\Program Files\Common Files"
            REM dir /s C:\Strawberry
            REM dir "C:\Strawberry\c\include\openssl"
            REM dir "C:\Strawberry\c\lib"
            REM dir "Directory of C:\Strawberry\c\lib\pkgconfig"
            REM dir "C:\Strawberry\c\x86_64-w64-mingw32\lib"
-           dir /s "C:\Program Files\Common Files\SSL"
            ECHO -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="%BOOST_ROOT%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DOPENSSL_CONF_SOURCE="%OPENSSL_CONF%" -DOPENSSL_ROOT_DIR="%OPENSSL_ROOT_DIR%" -DOPENSSL_ROOT="%OPENSSL_ROOT_DIR%" -DOPENSSL_INCLUDE_DIR="C:\Strawberry\c\include\openssl" -DOPENSSL_CRYPTO_LIBRARY="C:\Strawberry\c\include\openssl" -DOPENSSL_LIBRARIES="C:\Strawberry\c\include\openssl" .
            cmake -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DBOOST_ROOT="%BOOST_ROOT%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DOPENSSL_CONF_SOURCE="%OPENSSL_CONF%" -DOPENSSL_ROOT_DIR="%OPENSSL_ROOT_DIR%" -DOPENSSL_ROOT="%OPENSSL_ROOT_DIR%" -DOPENSSL_INCLUDE_DIR="C:\Strawberry\c\include\openssl" -DOPENSSL_CRYPTO_LIBRARY="C:\Strawberry\c\include\openssl" -DOPENSSL_LIBRARIES="C:\Strawberry\c\include\openssl" .
            rem cmake --build . --target install --conf
