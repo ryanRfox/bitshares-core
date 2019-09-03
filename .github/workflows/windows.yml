@@ -9,13 +9,15 @@ jobs:
     runs-on: windows-2016
     
     steps:
-    - name: git
+    - name: git-bitshares
       run: |
            cd d:\
+           cd
            git clone https://github.com/bitshares/bitshares-core.git
            cd bitshares-core
            git checkout master
            git submodule update --init --recursive
+           cd
     - name: curl-download
       shell: powershell
       run: |
