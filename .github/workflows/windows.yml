@@ -20,6 +20,7 @@ jobs:
            cd d:\
            "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64
            dir "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build"
+           ECHO done
     - name: configure
       shell: powershell
       run: |
