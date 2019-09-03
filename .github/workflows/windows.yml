@@ -46,14 +46,14 @@ jobs:
            cd d:\a\bitshares-core\bitshares-core\bitshares-core
            SET VS_VERSION="Visual Studio 15 2017"
            SET CURL_DIR=d:\curl\curl-7.65.3
-           SET OPENSSL_ROOT_DIR=C:\Program Files\OpenSSL
-           dir /s "C:\Program Files\OpenSSL"
-           dir /s "C:\Program Files\Common Files\SSL"
-           dir "C:\Program Files\Common Files"           
+           SET OPENSSL_ROOT_DIR=C:\Miniconda\pkgs\openssl-1.1.1b-he774522_1\Library
+           REM dir /s "C:\Program Files\OpenSSL"
+           REM dir /s "C:\Program Files\Common Files\SSL"
+           REM dir "C:\Program Files\Common Files"           
            REM SET LIBCRYPTO=%OPENSSL_ROOT_DIR%\libcrypto-1_1-x64.dll
-           SET OPENSSL_CONF=C:\Program Files\Common Files\SSL\openssl.cnf
+           REM SET OPENSSL_CONF=C:\Program Files\Common Files\SSL\openssl.cnf
            SET PATH=%CURL_DIR%;%OPENSSL_ROOT_DIR%;%PATH%
            ECHO %PATH%
-           ECHO -G %VS_VERSION% -DOPENSSL_CRYPTO_LIBRARY="%OPENSSL_ROOT_DIR%" -DOPENSSL_CONF_SOURCE="%OPENSSL_CONF%" -DOPENSSL_LIBRARIES="%OPENSSL_ROOT_DIR%" -DOPENSSL_INCLUDE_DIR="%OPENSSL_ROOT_DIR%" -DOPENSSL_ROOT="%OPENSSL_ROOT_DIR%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DBOOST_ROOT="%BOOST_ROOT%" -DCMAKE_GENERATOR_PLATFORM=x64  .
-           cmake -G %VS_VERSION% -DOPENSSL_CRYPTO_LIBRARY="%OPENSSL_ROOT_DIR%" -DOPENSSL_CONF_SOURCE="%OPENSSL_CONF%" -DOPENSSL_LIBRARIES="%OPENSSL_ROOT_DIR%" -DOPENSSL_INCLUDE_DIR="%OPENSSL_ROOT_DIR%" -DOPENSSL_ROOT="%OPENSSL_ROOT_DIR%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DBOOST_ROOT="%BOOST_ROOT%" -DCMAKE_GENERATOR_PLATFORM=x64  .
+           cmake -G %VS_VERSION% -DOPENSSL_CONF_SOURCE="%OPENSSL_ROOT_DIR%\openssl.cnf" -DOPENSSL_ROOT="%OPENSSL_ROOT_DIR%" -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_DIR%\include" -DBOOST_ROOT="%BOOST_ROOT%" -DCMAKE_GENERATOR_PLATFORM=x64  .
+           REM -DOPENSSL_CRYPTO_LIBRARY="%OPENSSL_ROOT_DIR%" -DOPENSSL_LIBRARIES="%OPENSSL_ROOT_DIR%" -DOPENSSL_INCLUDE_DIR="%OPENSSL_ROOT_DIR%" 
            rem cmake --build . --target install --conf
