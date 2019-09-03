@@ -24,11 +24,11 @@ jobs:
     - name: configure
       shell: powershell
       run: |
-           cd d:\
-           Import-Module BitsTransfer
-           Start-BitsTransfer -Source https://raw.githubusercontent.com/fstudio/clangbuilder/master/sources/wincurl/wincurl.ps1
-           REM ./wincurl.ps1
-           Get-ChildItem -Path D:\
+           # cd d:\
+           # Import-Module BitsTransfer
+           # Start-BitsTransfer -Source https://raw.githubusercontent.com/fstudio/clangbuilder/master/sources/wincurl/wincurl.ps1
+           # ./wincurl.ps1
+           # Get-ChildItem -Path D:\
     - name: cmake
       run: |
            cd d:\a\bitshares-core\bitshares-core\bitshares-core
