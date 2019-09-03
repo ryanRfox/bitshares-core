@@ -22,10 +22,27 @@ jobs:
            Import-Module BitsTransfer
            Start-BitsTransfer -Source https://curl.haxx.se/download/curl-7.65.3.zip -Destination curl.zip
            Expand-Archive '.\curl.zip' '.\'
-           Get-ChildItem -Path C:\ -Include openssl.cnf -File -Recurse -ErrorAction SilentlyContinue
-           Get-ChildItem -Path D:\ -Include openssl.cnf -File -Recurse -ErrorAction SilentlyContinue
+    - name: openssl
+      shell: powershell
+      run: |
+           ### These are the paths containing openssl.conf
+           # C:\hostedtoolcache\windows\Ruby\2.4.6\x64\msys64\usr\ssl
+           # C:\hostedtoolcache\windows\Ruby\2.5.5\x64\msys64\usr\ssl
+           # C:\hostedtoolcache\windows\Ruby\2.6.3\x64\msys64\usr\ssl
+           # C:\Miniconda\Library
+           # C:\Miniconda\pkgs\openssl-1.1.1b-he774522_1\Library
+           # C:\Program Files\Common Files\SSL
+           # C:\Program Files\Git\mingw64\ssl
+           # C:\Program Files\Git\usr\ssl
+           # C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\mingw32\ssl
+           # C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\usr\ssl
+           # C:\tools\php\extras\ssl
+           ### They were found using this and took about 30 minutes to execute
+           # Get-ChildItem -Path C:\ -Include openssl.cnf -File -Recurse -ErrorAction SilentlyContinue
+           # Get-ChildItem -Path D:\ -Include openssl.cnf -File -Recurse -ErrorAction SilentlyContinue
     - name: cmake
       run: |
+           dir /s "C:\Miniconda\pkgs\openssl-1.1.1b-he774522_1"
            cd d:\a\bitshares-core\bitshares-core\bitshares-core
            SET VS_VERSION="Visual Studio 15 2017"
            SET CURL_DIR=d:\curl\curl-7.65.3
