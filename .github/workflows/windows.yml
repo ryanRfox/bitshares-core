@@ -28,7 +28,7 @@ jobs:
            SET VS_VERSION="Visual Studio 15 2017"
            REM ECHO %BOOST_ROOT%
            SET CURL_DIR=d:\curl\curl-7.65.3
-           SET OPENSSL_ROOT_DIR=C:\Program Files\OpenSSL\bin
+           SET OPENSSL_ROOT_DIR=C:\Program Files\OpenSSL
            REM dir /s "C:\Program Files\OpenSSL"
            REM dir /s "C:\Program Files\Common Files\SSL"
            REM dir "C:\Program Files\Common Files"           
