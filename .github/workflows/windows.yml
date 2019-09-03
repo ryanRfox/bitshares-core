@@ -15,26 +15,20 @@ jobs:
            cd bitshares-core
            git checkout master
            git submodule update --init --recursive
-    - name: VC
-      run: |
-           cd d:\
-           "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64
-           dir "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build"
-           ECHO done
-    - name: configure
+    - name: curl
       shell: powershell
       run: |
-           # cd d:\
-           # Import-Module BitsTransfer
-           # Start-BitsTransfer -Source https://raw.githubusercontent.com/fstudio/clangbuilder/master/sources/wincurl/wincurl.ps1
-           # ./wincurl.ps1
-           # Get-ChildItem -Path D:\
+           cd d:\
+           Import-Module BitsTransfer
+           Start-BitsTransfer -Source https://curl.haxx.se/download/curl-7.65.3.zip -Destination curl.zip
+           Expand-Archive '.\curl.zip' '.\'            
     - name: cmake
       run: |
            cd d:\a\bitshares-core\bitshares-core\bitshares-core
            SET VS_VERSION="Visual Studio 15 2017"
            ECHO %BOOST_ROOT%
-           REM SET CURL_DIR=%CURL_ROOT%\curl
+           SET CURL_DIR=d:\curl\curl-7.65.3
+           dir d:\
            REM SET OPENSSL_ROOT_DIR=C:\Program Files\OpenSSL\bin
            REM SET LIBCRYPTO=%OPENSSL_ROOT_DIR%\libcrypto-1_1-x64.dll
            SET OPENSSL_ROOT_DIR=%LIBCRYPTO%\openssl
