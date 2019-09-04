@@ -60,8 +60,9 @@ jobs:
            cd d:\
            SET VS_VERSION="Visual Studio 15 2017"
            SET CURL_ROOT_DIR=d:\curl\curl-7.65.3
+           dir /s %CURL_ROOT_DIR%
            SET OPENSSL_ROOT_DIR=C:\Miniconda\pkgs\openssl-1.1.1b-he774522_1\Library
-           SET PATH=%CURL_ROOT%;%OPENSSL_ROOT_DIR%;%PATH%
+           SET PATH=%CURL_ROOT_DIR%;%OPENSSL_ROOT_DIR%;%PATH%
            ECHO %PATH%
            git clone https://github.com/bitshares/bitshares-core.git
            cd bitshares-core
