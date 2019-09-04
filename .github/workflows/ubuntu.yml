@@ -5,12 +5,12 @@ on: [push]
 jobs:
   ubuntu:
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-16.04, ubuntu-18.04]
         branch: [master, develop]
         make: [witness_node, cli_wallet]
     runs-on: ${{ matrix.os }}
-    fail-fast: false
     steps:
     - name: configure
       run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
