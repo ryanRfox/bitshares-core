@@ -7,9 +7,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-16.04, ubuntu-18.04]
+        os: [ubuntu-18.04] #, ubuntu-16.04]
         branch: [master, develop]
-        make: [witness_node, cli_wallet]
+        make: [witness_node, cli_wallet, all]
     runs-on: ${{ matrix.os }}
     steps:
     - name: configure
