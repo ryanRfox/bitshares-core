@@ -1,0 +1,30 @@
+name: C++ CI
+
+on: [push]
+
+jobs:
+  ubuntu:
+    strategy:
+      matrix:
+        os: [ubuntu-16.04, ubuntu-18.04]
+        compiler: [gcc-5, gcc-7, clang]
+        branch: [master, develop]
+        make: [witness_node, cli_wallet, all]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - name: configure
+      run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
+    - name: checkout
+      run: |
+           git clone https://github.com/bitshares/bitshares-core.git
+           cd bitshares-core
+           git checkout ${{ matrix.branch }}
+           git submodule update --init --recursive
+    - name: cmake
+      run: |
+           cd bitshares-core
+           cmake -DCMAKE_BUILD_TYPE=Release
+    - name: make
+      run: |
+           cd bitshares-core
+           make ${{ matrix.make }}
