@@ -12,23 +12,23 @@ jobs:
     - name: curl-download
       shell: powershell
       run: |
-           # cd d:\
-           # Import-Module BitsTransfer
-           # Start-BitsTransfer -Source https://curl.haxx.se/download/curl-7.65.3.zip -Destination curl.zip
-           # Expand-Archive '.\curl.zip' '.\'
+           cd d:\
+           Import-Module BitsTransfer
+           Start-BitsTransfer -Source https://curl.haxx.se/download/curl-7.65.3.zip -Destination curl.zip
+           Expand-Archive '.\curl.zip' '.\'
     - name: curl-build
       run: |
            SET VS_VERSION="Visual Studio 15 2017"
            cd d:\
            git clone https://github.com/curl/curl
            cd curl
-           REM git checkout tags/curl-7_64_1
-           buildconf.bat
+           git checkout tags/curl-7_64_1
+           REM buildconf.bat
            mkdir curl-build
            cd curl-build
            cd
-           cmake -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DCMAKE_C_FLAGS=Werror -DCMAKE_USE_OPENSSL=ON -DCURL_DISABLE_FTP=ON -DCURL_DISABLE_LDAP=ON -DCURL_DISABLE_TELNET=ON -DCURL_DISABLE_DICT=ON -DCURL_DISABLE_FILE=ON -DCURL_DISABLE_TFTP=ON -DCURL_DISABLE_LDAPS=ON -DCURL_DISABLE_RTSP=ON -DCURL_DISABLE_POP3=ON -DCURL_DISABLE_IMAP=ON -DCURL_DISABLE_SMTP=ON -DCURL_DISABLE_GOPHER=ON -DCURL_STATICLIB=ON ..\
-           cmake --build . --target install --config Release    
+           REM cmake -G %VS_VERSION% -DCMAKE_GENERATOR_PLATFORM=x64 -DCMAKE_C_FLAGS=Werror -DCMAKE_USE_OPENSSL=ON -DCURL_DISABLE_FTP=ON -DCURL_DISABLE_LDAP=ON -DCURL_DISABLE_TELNET=ON -DCURL_DISABLE_DICT=ON -DCURL_DISABLE_FILE=ON -DCURL_DISABLE_TFTP=ON -DCURL_DISABLE_LDAPS=ON -DCURL_DISABLE_RTSP=ON -DCURL_DISABLE_POP3=ON -DCURL_DISABLE_IMAP=ON -DCURL_DISABLE_SMTP=ON -DCURL_DISABLE_GOPHER=ON -DCURL_STATICLIB=ON ..\
+           REM cmake --build . --target install --config Release    
            cd
     - name: openssl
       shell: powershell
@@ -52,7 +52,7 @@ jobs:
       run: |
            cd d:\
            SET VS_VERSION="Visual Studio 15 2017"
-           SET CURL_ROOT_DIR=d:\curl\curl-build
+           SET CURL_ROOT_DIR=d:\curl\curl-7.65.3
            SET OPENSSL_ROOT_DIR=C:\Miniconda\pkgs\openssl-1.1.1b-he774522_1\Library
            SET PATH=%CURL_ROOT%;%OPENSSL_ROOT_DIR%;%PATH%
            git clone https://github.com/bitshares/bitshares-core.git
