@@ -9,15 +9,6 @@ jobs:
     runs-on: windows-2016
     
     steps:
-    - name: git-bitshares
-      run: |
-           cd d:\
-           cd
-           git clone https://github.com/bitshares/bitshares-core.git
-           cd bitshares-core
-           git checkout master
-           git submodule update --init --recursive
-           cd
     - name: curl-download
       shell: powershell
       run: |
@@ -31,7 +22,7 @@ jobs:
            cd d:\
            git clone https://github.com/curl/curl
            cd curl
-           git checkout tags/curl-7_64_1
+           REM git checkout tags/curl-7_64_1
            buildconf.bat
            mkdir curl-build
            cd curl-build
@@ -57,13 +48,17 @@ jobs:
            ### They were found using this and took about 30 minutes to execute
            # Get-ChildItem -Path C:\ -Include openssl.cnf -File -Recurse -ErrorAction SilentlyContinue
            # Get-ChildItem -Path D:\ -Include openssl.cnf -File -Recurse -ErrorAction SilentlyContinue
-    - name: cmake
+    - name: bitshares
       run: |
+           cd d:\
            SET VS_VERSION="Visual Studio 15 2017"
            SET CURL_ROOT_DIR=d:\curl\curl-build
            SET OPENSSL_ROOT_DIR=C:\Miniconda\pkgs\openssl-1.1.1b-he774522_1\Library
            SET PATH=%CURL_ROOT%;%OPENSSL_ROOT_DIR%;%PATH%
-           cd d:\bitshares-core
+           git clone https://github.com/bitshares/bitshares-core.git
+           cd bitshares-core
+           git checkout master
+           git submodule update --init --recursive
            cmake -G %VS_VERSION% -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_ROOT_DIR%\lib\libcurl_imp.lib" -DCURL_INCLUDE_DIR="%CURL_ROOT_DIR%\include" -DBOOST_ROOT="%BOOST_ROOT%" -DCMAKE_GENERATOR_PLATFORM=x64 .
     - name: make
       run: |
