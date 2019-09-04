@@ -7,9 +7,8 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-16.04, ubuntu-18.04]
-        compiler: [gcc-5, gcc-7, clang]
         branch: [master, develop]
-        make: [witness_node, cli_wallet, all]
+        make: [witness_node, cli_wallet]
     runs-on: ${{ matrix.os }}
     steps:
     - name: configure
