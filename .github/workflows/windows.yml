@@ -64,13 +64,13 @@ jobs:
            dir /s "%CURL_ROOT_DIR%"
            SET OPENSSL_ROOT_DIR=C:\Miniconda\pkgs\openssl-1.1.1b-he774522_1\Library
            SET ZLIB_ROOT=C:\vcpkg\packages\zlib_x64-windows
-           SET PATH=%CURL_ROOT_DIR%;%OPENSSL_ROOT_DIR%;%LIB_ROOT%;%PATH%
+           SET PATH=%CURL_ROOT_DIR%;%OPENSSL_ROOT_DIR%;%ZLIB_ROOT%;%PATH%
            ECHO %PATH%
            git clone https://github.com/bitshares/bitshares-core.git
            cd bitshares-core
            git checkout master
            git submodule update --init --recursive
-           cmake -G %VS_VERSION% -DCURL_STATICLIB=ON -DCURL_LIBRARY="%CURL_ROOT_DIR%\lib\libcurl.lib" -DCURL_INCLUDE_DIR="%CURL_ROOT_DIR%\include\curl" -DBOOST_ROOT="%BOOST_ROOT%" -DCMAKE_GENERATOR_PLATFORM=x64 .
+           cmake -G %VS_VERSION% -DCURL_STATICLIB=ON -DZLIB_LIBRARY="%ZLIB_ROOT\lib\zlib.lib%" -DCURL_LIBRARY="%CURL_ROOT_DIR%\lib\libcurl.lib" -DCURL_INCLUDE_DIR="%CURL_ROOT_DIR%\include\curl" -DBOOST_ROOT="%BOOST_ROOT%" -DCMAKE_GENERATOR_PLATFORM=x64 .
     - name: make
       run: |
            cd d:\bitshares-core
