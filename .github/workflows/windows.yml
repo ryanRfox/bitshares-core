@@ -9,6 +9,13 @@ jobs:
     runs-on: windows-2016
     
     steps:
+    - name: vcpkg
+      run: |
+           vcpkg search
+           vcpkg --triplet x64-windows install zlib
+           vcpkg --triplet x64-windows install curl
+           vcpkg list
+           dir %VCPKG_INSTALLATION_ROOT%
     - name: curl-download
       shell: powershell
       run: |
