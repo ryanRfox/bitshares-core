@@ -15,7 +15,7 @@ jobs:
            vcpkg --triplet x64-windows install zlib
            vcpkg --triplet x64-windows install curl
            vcpkg list
-           dir %VCPKG_INSTALLATION_ROOT%
+           dir /s %VCPKG_INSTALLATION_ROOT%
     - name: curl-download
       shell: powershell
       run: |
@@ -62,6 +62,7 @@ jobs:
            SET CURL_ROOT_DIR=d:\curl\curl-7.65.3
            SET OPENSSL_ROOT_DIR=C:\Miniconda\pkgs\openssl-1.1.1b-he774522_1\Library
            SET PATH=%CURL_ROOT%;%OPENSSL_ROOT_DIR%;%PATH%
+           ECHO %PATH%
            git clone https://github.com/bitshares/bitshares-core.git
            cd bitshares-core
            git checkout master
