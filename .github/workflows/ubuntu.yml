@@ -8,8 +8,8 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-18.04] #, ubuntu-16.04]
-        branch: [master, develop]
-        make: [witness_node, cli_wallet, all]
+        branch: [master, 3.0.2, 3.1.1, 3.2.2]
+        make: [all] #, witness_node, cli_wallet]
     runs-on: ${{ matrix.os }}
     steps:
     - name: configure
@@ -23,7 +23,7 @@ jobs:
     - name: cmake
       run: |
            cd bitshares-core
-           cmake -DCMAKE_BUILD_TYPE=Release
+           cmake -DCMAKE_BUILD_TYPE=Release .
     - name: make
       run: |
            cd bitshares-core
