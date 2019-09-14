@@ -37,8 +37,6 @@
 
 #include <graphene/protocol/fee_schedule.hpp>
 
-#include <fc/uint128.hpp>
-
 namespace graphene { namespace chain {
 
 void database::update_global_dynamic_data( const signed_block& b, const uint32_t missed_blocks )
@@ -381,6 +379,13 @@ void database::clear_expired_orders()
             cancel_settle_order(order);
             continue;
          }
+         if( GRAPHENE_100_PERCENT == mia.options.force_settlement_offset_percent ) // settle something for nothing
+         {
+            ilog( "Canceling a force settlement in ${asset} because settlement offset is 100%",
+                  ("asset", mia_object.symbol));
+            cancel_settle_order(order);
+            continue;
+         }
          if( max_settlement_volume.asset_id != current_asset )
             max_settlement_volume = mia_object.amount(mia.max_force_settlement_volume(mia_object.dynamic_data(*this).current_supply));
          // When current_asset_finished is true, this would be the 2nd time processing the same order.
@@ -412,9 +417,9 @@ void database::clear_expired_orders()
          {
             auto& pays = order.balance;
             auto receives = (order.balance * mia.current_feed.settlement_price);
-            receives.amount = ( fc::uint128_t(receives.amount.value) *
+            receives.amount = static_cast<uint64_t>( fc::uint128_t(receives.amount.value) *
                                 (GRAPHENE_100_PERCENT - mia.options.force_settlement_offset_percent) /
-                                GRAPHENE_100_PERCENT ).to_uint64();
+                                GRAPHENE_100_PERCENT );
             assert(receives <= order.balance * mia.current_feed.settlement_price);
             settlement_price = pays / receives;
          }
