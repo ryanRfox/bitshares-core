@@ -8,7 +8,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-18.04] #, ubuntu-16.04]
-        branch: [master, develop]
+        branch: [master, develop, libsecp256k1]
         make: [all] #, witness_node, cli_wallet]
     runs-on: ${{ matrix.os }}
     steps:
