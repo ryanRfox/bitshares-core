@@ -1,0 +1,30 @@
+name: Ubuntu Builds
+
+on: [push]
+
+jobs:
+  ubuntu:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-18.04] #, ubuntu-16.04]
+        branch: [master, develop]
+        make: [all] #, witness_node, cli_wallet]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - name: configure
+      run: sudo apt-get install --allow-unauthenticated libsecp256k1 libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
+    - name: checkout
+      run: |
+           git clone https://github.com/bitshares/bitshares-core.git
+           cd bitshares-core
+           git checkout ${{ matrix.branch }}
+           git submodule update --init --recursive
+    - name: cmake
+      run: |
+           cd bitshares-core
+           cmake -DCMAKE_BUILD_TYPE=Release .
+    - name: make
+      run: |
+           cd bitshares-core
+           make ${{ matrix.make }}
