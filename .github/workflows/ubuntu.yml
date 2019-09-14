@@ -24,7 +24,7 @@ jobs:
       run: |
            cd bitshares-core
            cmake -DCMAKE_BUILD_TYPE=Release .
-    - name: make -j
+    - name: make -j4
       run: |
            cd bitshares-core
            make ${{ matrix.make }}
