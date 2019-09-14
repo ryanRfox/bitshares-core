@@ -9,7 +9,7 @@ jobs:
       matrix:
         os: [ubuntu-18.04] #, ubuntu-16.04]
         branch: [master, develop, libsecp256k1]
-        make: [all] #, witness_node, cli_wallet]
+        make: [witness_node] #all] #, witness_node, cli_wallet]
     runs-on: ${{ matrix.os }}
     steps:
     - name: configure
@@ -24,7 +24,7 @@ jobs:
       run: |
            cd bitshares-core
            cmake -DCMAKE_BUILD_TYPE=Release .
-    - name: make
+    - name: make -j
       run: |
            cd bitshares-core
            make ${{ matrix.make }}
