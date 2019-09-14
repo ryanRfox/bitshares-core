@@ -19,6 +19,11 @@ jobs:
            git clone https://github.com/ryanrfox/bitshares-core.git
            cd bitshares-core
            git checkout ${{ matrix.branch }}
+           cd libraries/fc
+           git remote remove origin
+           git remote add origin http://github.com/ryanrfox/bitshares-fc
+           git pull
+           cd ..
            git submodule update --init --recursive
     - name: cmake
       run: |
