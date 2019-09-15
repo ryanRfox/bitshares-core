@@ -24,8 +24,9 @@ jobs:
            git remote remove origin
            git remote add origin https://github.com/ryanrfox/bitshares-fc
            git remote -v
-           git pull origin ${{ matrix.branch }}
            cd ..
+           git remote -v
+           git pull origin ${{ matrix.branch }}
            git submodule update --init --recursive
     - name: cmake
       run: |
