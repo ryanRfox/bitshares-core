@@ -18,7 +18,7 @@ jobs:
       run: |
            git clone https://github.com/ryanrfox/bitshares-core.git
            cd bitshares-core
-           git checkout ${{ matrix.branch }}
+           git remove -v
            cd libraries/fc
            git remote remove origin
            git remote add origin http://github.com/ryanrfox/bitshares-fc
