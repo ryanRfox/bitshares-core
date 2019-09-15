@@ -23,7 +23,7 @@ jobs:
            git remote remove origin
            git remote add origin https://github.com/ryanrfox/bitshares-fc
            git remote -v
-           git pull --allow-unrelated-histories
+           git pull origin ${{ matrix.branch }} --allow-unrelated-histories
            cd ..
            git submodule update --init --recursive
     - name: cmake
