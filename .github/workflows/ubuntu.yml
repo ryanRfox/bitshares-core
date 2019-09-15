@@ -7,13 +7,22 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-18.04, ubuntu-16.04]
+        os: [ubuntu-16.04] #,ubuntu-18.04
         branch: [master, develop]
         make: [all] #, witness_node, cli_wallet]
     runs-on: ${{ matrix.os }}
     steps:
     - name: configure
-      run: sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
+      run: |
+           whereis boost
+           ls -la /usr/include/boost
+           dpkg -s libboost-dev | grep 'Version'
+           dpkg -s libboost-thread-dev | grep 'Version'
+           sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
+           whereis boost
+           dpkg -s libboost-dev | grep 'Version'
+           ls -la /usr/include/boost
+           dpkg -s libboost-thread-dev | grep 'Version'
     - name: checkout
       run: |
            git clone https://github.com/bitshares/bitshares-core.git
