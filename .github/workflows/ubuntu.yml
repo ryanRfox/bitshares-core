@@ -30,4 +30,4 @@ jobs:
     - name: make
       run: |
            cd bitshares-core
-           make  -j2 ${{ matrix.make }}
+           make ${{ matrix.make }}
