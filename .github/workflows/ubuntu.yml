@@ -18,10 +18,13 @@ jobs:
       run: |
            git clone https://github.com/ryanrfox/bitshares-core.git
            cd bitshares-core
+           git remote -v
            git checkout ${{ matrix.branch }}
            cd libraries/fc
+           git remote -v
            git remote remove origin
            git remote add origin https://github.com/ryanrfox/bitshares-fc
+           git remote -v
            git config --global user.email "you@example.com"
            git config --global user.name "Your Name"
            git pull origin ${{ matrix.branch }} --allow-unrelated-histories
