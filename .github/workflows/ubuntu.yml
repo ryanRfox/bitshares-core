@@ -15,12 +15,10 @@ jobs:
     - name: configure
       run: |
            whereis boost
-           dpkg -s libboost-dev | grep 'Version'
-           dpkg -s libboost-thread-dev | grep 'Version'
+           ECHO $BOOST_ROOT
            sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
            whereis boost
-           dpkg -s libboost-dev | grep 'Version'
-           dpkg -s libboost-thread-dev | grep 'Version'
+           ECHO $BOOST_ROOT
     - name: checkout
       run: |
            git clone https://github.com/bitshares/bitshares-core.git
