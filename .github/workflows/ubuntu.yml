@@ -17,8 +17,6 @@ jobs:
       run: |
            sudo apt update
            sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
-           BOOST_ROOT=${{ matrix.boost_root }}
-           echo $BOOST_ROOT
     - name: checkout
       run: |
            git clone https://github.com/bitshares/bitshares-core.git
@@ -28,8 +26,8 @@ jobs:
     - name: cmake
       run: |
            cd bitshares-core
-           cmake -DCMAKE_BUILD_TYPE=Release .
-    - name: make -j2
+           cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_BOOST_ROOT=${{ matrix.boost_root }} .
+    - name: make
       run: |
            cd bitshares-core
-           make ${{ matrix.make }}
+           make  -j2 ${{ matrix.make }}
