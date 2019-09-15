@@ -18,7 +18,7 @@ jobs:
       run: |
            git clone https://github.com/ryanrfox/bitshares-core.git
            cd bitshares-core
-           git remove -v
+           git remote -v
            cd libraries/fc
            git remote remove origin
            git remote add origin http://github.com/ryanrfox/bitshares-fc
