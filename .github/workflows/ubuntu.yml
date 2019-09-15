@@ -22,7 +22,6 @@ jobs:
            cd libraries/fc
            git remote remove origin
            git remote add origin http://github.com/ryanrfox/bitshares-fc
-           git pull http://github.com/ryanrfox/bitshares-fc libsecp256k1 --force
            cd ..
            git submodule update --init --recursive
     - name: cmake
