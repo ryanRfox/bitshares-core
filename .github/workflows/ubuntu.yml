@@ -15,10 +15,10 @@ jobs:
     steps:
     - name: configure
       run: |
+           ls -lr /usr/include/openssl
            sudo apt update
-           ls -l /usr/include
            sudo apt-get install --allow-unauthenticated libcurl4-openssl-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-chrono-dev libboost-test-dev libboost-context-dev libboost-regex-dev libboost-coroutine-dev cmake parallel
-           ls -l /usr/include
+           ls -lr /usr/include/openssl
     - name: checkout
       run: |
            git clone https://github.com/bitshares/bitshares-core.git
