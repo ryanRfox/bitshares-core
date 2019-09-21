@@ -7,10 +7,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-16.04, ubuntu-18.04]
+        os: [ubuntu-18.04] # ,ubuntu-16.04
         branch: [secp256k1-zkp] # master, develop]
-        boost_root: [/usr/include/boost, /usr/local/share/boost/1.69.0] # apt default, 1.69.0
-        make: [all, witness_node, cli_wallet]
+        boost_root: [/usr/include/boost] #, /usr/local/share/boost/1.69.0] # apt default, 1.69.0
+        make: [all] #, witness_node, cli_wallet]
     runs-on: ${{ matrix.os }}
     steps:
     - name: configure
